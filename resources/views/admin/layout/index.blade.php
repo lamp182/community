@@ -10,26 +10,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="renderer" content="webkit">
     <meta http-equiv="Cache-Control" content="no-siteapp" />
-    <link rel="icon" type="image/png" href="assets/i/favicon.png">
-    <link rel="apple-touch-icon-precomposed" href="assets/i/app-icon72x72@2x.png">
+    <link rel="icon" type="image/png" href="{{asset('admin/assets/i/favicon.png')}}">
+    <link rel="apple-touch-icon-precomposed" href="{{asset('admin/assets/i/app-icon72x72@2x.png')}}">
     <meta name="apple-mobile-web-app-title" content="Amaze UI" />
-    <script src="assets/js/echarts.min.js"></script>
-    <link rel="stylesheet" href="assets/css/amazeui.min.css" />
-    <link rel="stylesheet" href="assets/css/amazeui.datatables.min.css" />
-    <link rel="stylesheet" href="assets/css/app.css">
-    <script src="assets/js/jquery.min.js"></script>
+    <script src="{{asset('admin/assets/js/echarts.min.js')}}"></script>
+    <link rel="stylesheet" href="{{asset('admin/assets/css/amazeui.min.css')}}" />
+    <link rel="stylesheet" href="{{asset('admin/assets/css/amazeui.datatables.min.css')}}" />
+    <link rel="stylesheet" href="{{asset('admin/assets/css/app.css')}}">
+    <script src="{{asset('admin/assets/js/jquery.min.js')}}"></script>
+
 
 </head>
 
 <body data-type="index">
-    <script src="assets/js/theme.js"></script>
-    <div class="am-g tpl-g">
-        <!-- 头部 -->
-        <header>
-            <!-- logo -->
-            <div class="am-fl tpl-header-logo">
-                <a href="javascript:;"><img src="assets/img/logo.png" alt=""></a>
-            </div>
+<script src="{{asset('admin/assets/js/theme.js')}}"></script>
+<div class="am-g tpl-g">
+    <!-- 头部 -->
+    <header>
+        <!-- logo -->
+        <div class="am-fl tpl-header-logo">
+            <a href="javascript:;"><img src="{{asset('admin/assets/img/logo.png')}}" alt=""></a>
+        </div>
             <!-- 右侧内容 -->
             <div class="tpl-header-fluid">
 
@@ -76,7 +77,7 @@
        		  <div class="tpl-sidebar-user-panel">
                 <div class="tpl-user-panel-slide-toggleable">
                     <div class="tpl-user-panel-profile-picture">
-                        <img src="assets/img/user04.png" alt="">
+                        <img src="{{asset('admin/assets/img/user04.png')}}" alt="">
                     </div>
                     <span class="user-panel-logged-in-text">
               <i class="am-icon-circle-o am-text-success tpl-user-panel-status-icon"></i>
@@ -225,10 +226,11 @@
         </div>
     </div>
     </div>
-    <script src="assets/js/amazeui.min.js"></script>
-    <script src="assets/js/amazeui.datatables.min.js"></script>
-    <script src="assets/js/dataTables.responsive.min.js"></script>
-    <script src="assets/js/app.js"></script>
+<script src="{{asset('admin/assets/js/amazeui.min.js')}}"></script>
+<script src="{{asset('admin/assets/js/amazeui.datatables.min.js')}}"></script>
+<script src="{{asset('admin/assets/js/dataTables.responsive.min.js')}}"></script>
+<script src="{{asset('admin/assets/js/app.js')}}"></script>
+
 
 </body>
 

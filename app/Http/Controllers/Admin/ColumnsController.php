@@ -9,7 +9,7 @@ use App\Http\Controllers\Controller;
 
 class ColumnsController extends Controller
 {
-    public function index()
+    public function getIndex()
     {
         return view('admin.columns.index');
     }

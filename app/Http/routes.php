@@ -15,4 +15,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/admin/index','Admin\ColumnsController@index');
+Route::group(['prefix'=>'admin','namespace'=>'Admin'],function(){
+    // 栏目路由
+    Route::controller('columns','ColumnsController');
+});
