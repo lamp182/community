@@ -18,4 +18,8 @@ Route::get('/', function () {
 Route::group(['prefix'=>'admin','namespace'=>'Admin'],function(){
     // 栏目路由
     Route::controller('columns','ColumnsController');
+    // 板块路由
+
+    Route::resource('sections','SectionsController');
+    Route::any('upload','SectionsController@upload');
 });

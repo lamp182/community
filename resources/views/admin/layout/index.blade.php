@@ -91,7 +91,7 @@
             <ul class="sidebar-nav">
                 
                 <li class="sidebar-nav-link">
-                    <a href="index.html" class="active">
+                    <a href="{{url('admin/index')}}" >
                         <i class="am-icon-home sidebar-nav-link-logo"></i> 首页
                     </a>
                 </li>
@@ -103,13 +103,13 @@
                     </a>
                     <ul class="sidebar-nav sidebar-nav-sub">
                         <li class="sidebar-nav-link">
-                            <a href="table-list.html">
+                            <a href="{{url('admin/columns/add')}}">
                                 <span class="am-icon-angle-right sidebar-nav-link-logo"></span> 添加栏目
                             </a>
                         </li>
 
                         <li class="sidebar-nav-link">
-                            <a href="table-list-img.html">
+                            <a href="{{url('admin/columns/index')}}">
                                 <span class="am-icon-angle-right sidebar-nav-link-logo"></span> 栏目列表
                             </a>
                         </li>
@@ -123,13 +123,13 @@
                     </a>
                     <ul class="sidebar-nav sidebar-nav-sub">
                         <li class="sidebar-nav-link">
-                            <a href="table-list.html">
+                            <a href="{{url('admin/sections/create')}}">
                                 <span class="am-icon-angle-right sidebar-nav-link-logo"></span> 添加板块
                             </a>
                         </li>
 
                         <li class="sidebar-nav-link">
-                            <a href="table-list-img.html">
+                            <a href="{{url('admin/sections/index')}}">
                                 <span class="am-icon-angle-right sidebar-nav-link-logo"></span> 板块列表
                             </a>
                         </li>
