@@ -42,6 +42,12 @@ class SectionsController extends Controller
         }
     }
 
+    public function select(Request $request)
+    {
+        $res = $request -> all();
+        echo $res['value'];
+    }
+
 
 
 
@@ -54,6 +60,13 @@ class SectionsController extends Controller
     public function index()
     {
         //
+        $res = Columns::all();
+         $section = Section::orderBy('id')->paginate(10);
+         foreach($section as $k=>$v){
+            $v['cname'] = Columns::where('id',$v['cid'])->first()['name'];
+         }
+         // dump($section);
+        return view('admin.sections.index',["data"=>$res,'section'=>$section]);
     }
 
     /**
@@ -77,8 +90,27 @@ class SectionsController extends Controller
     public function store(Request $request)
     {
         //
-        $res = $request -> all();
-        dump($res);
+
+        // 自动验证
+        $this->validate($request, [
+            'name' => 'required',
+            'characteristic' => 'required',
+            'icon' => 'required',
+          
+        ],[
+            'name.required' => '用户名必填',
+            'characteristic.required' => '密码必填',
+            'icon.required' => '必须选择一张图片',
+          
+        ]);
+
+        $user = $request -> except('_token','file_upload');
+        $user['ctime'] = time();
+        $user['ltime'] = time();
+        $res = Section::create($user);
+        if($res){
+            return redirect('/admin/sections')->with('保存成功');
+        }
     }
 
     /**

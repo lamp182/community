@@ -28,9 +28,9 @@
                                     </div>
 									 {{ csrf_field() }}
                                   	   <div class="am-form-group">
-                                        <label for="user-weibo" class="am-u-sm-3 am-form-label">栏目名称 <span class="tpl-form-line-small-title">Type</span></label>
+                                        <label for="user-weibo" class="am-u-sm-3 am-form-label">板块名称 <span class="tpl-form-line-small-title">Type</span></label>
                                         <div class="am-u-sm-9">
-                                            <input type="text" id="user-weibo" placeholder="请添加分类用点号隔开" name="name" value="">
+                                            <input type="text" id="user-weibo" placeholder="请输入板块名" name="name" value="">
                                             <div>
 
                                             </div>
@@ -38,9 +38,9 @@
                                     </div>
 
                                        <div class="am-form-group">
-                                        <label for="user-weibo" class="am-u-sm-3 am-form-label">栏目描述 <span class="tpl-form-line-small-title">Type</span></label>
+                                        <label for="user-weibo" class="am-u-sm-3 am-form-label">板块描述 <span class="tpl-form-line-small-title">Type</span></label>
                                         <div class="am-u-sm-9">
-                                            <input type="text" id="user-weibo" placeholder="请添加分类用点号隔开" name="characteristic" value="">
+                                            <input type="text" id="user-weibo" placeholder="请输入板块描述" name="characteristic" value="">
                                            
                                             <div>
 											
@@ -48,19 +48,20 @@
                                         </div>
                                     </div>
                                   
-
                               
 
                                     <div class="am-form-group">
-                                        <label for="user-weibo" class="am-u-sm-3 am-form-label">栏目图片 <span class="tpl-form-line-small-title">Images</span></label>
+                                        <label for="user-weibo" class="am-u-sm-3 am-form-label">板块图片 <span class="tpl-form-line-small-title">Images</span></label>
                                         <div class="am-u-sm-9">
                                             <div class="am-form-group am-form-file">
                                                 <div class="tpl-form-file-img">
                                                     <img src="assets/img/a5.png" id="pic" alt="" style="width:240px;height:120px;display:none">
                                                 </div>
-                                                <button type="button" class="am-btn am-btn-danger am-btn-sm">
-    											<i class="am-icon-cloud-upload"></i> 添加栏目图片</button>
+                                                <button type="button"  class="am-btn am-btn-danger am-btn-sm">
+    											<i class="am-icon-cloud-upload"></i> 添加板块图片</button>
+    											<input type="hidden" name="icon" id="art_thumb" style=style="width:120px;height:60px">
                                                 <input type="file" name="file_upload" id="doc_form_file" value="">
+                                                <!-- <input type="hidden" name="icon" id="icon" value=""> -->
                                             </div>
 
                                         </div>
@@ -102,12 +103,13 @@
 		                                        contentType: false,
 		                                        processData: false,
 		                                        // console.log(formData);
-		                                        success: function(data) {
-		//                                    console.log(data);
-		                                   // alert("上传成功");
-		                                            $('#pic').attr('src','/'+data);
+		                                        success: function(res) {
+		                                   // console.log(data);
+		                                   // alert(res);
+		                                            $('#pic').attr('src','/'+res);
 		                                            $('#pic').show();
-		                                            $('#art_thumb').val(data);
+		                                            $("#art_thumb").val(res);
+		                                            // $('#icon').val(data);
 
 		                                        },
 		                                        error: function(XMLHttpRequest, textStatus, errorThrown) {
@@ -117,6 +119,8 @@
 		                                    });
 		                                }
 
+		                
+
                             		</script>
 
 
@@ -125,7 +129,7 @@
                                     <div class="am-form-group">
                                         <div class="am-u-sm-9 am-u-sm-push-3">
                                             <!-- <button type="submit" class="am-btn am-btn-primary tpl-btn-bg-color-success ">提交</button> -->
-                                            <input type="submit" class="am-btn am-btn-primary tpl-btn-bg-color-success" value="提交" >
+                                            <input type="submit" id="submit" class="am-btn am-btn-primary tpl-btn-bg-color-success" value="提交" >
                                         </div>
                                     </div>
                                 </form>

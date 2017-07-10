@@ -31,10 +31,14 @@ Route::group(['prefix'=>'admin','namespace'=>'Admin'],function(){
 
     Route::resource('sections','SectionsController');
     Route::any('upload','SectionsController@upload');
+    Route::any('select','SectionsController@select');
+
 
     //后台管理员
     Route::controller('root','RootController');
     Route::post('root/upload','RootController@upload');
+
+   
 
 });
 
