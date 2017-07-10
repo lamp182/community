@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/home/index', 'Home\IndexController@index');
+Route::get('/home/column', 'Home\ColumnController@index');
+Route::get('/home/section', 'Home\SectionController@index');

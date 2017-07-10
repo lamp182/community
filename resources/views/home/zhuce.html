@@ -1,0 +1,372 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>17173通行证_中国游戏第一门户站</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><!--fix：多核浏览器兼容模式下jQuery误判导致表单检测插件bug-->
+<!-- buildX:css https://s.ue.17173cdn.com/a/passport/v1/css/dist/site.css -->
+<link href="../../../public/home/css/reset-and-utils-1.0.css" rel="stylesheet" type="text/css" />
+<link href="../../../public/home/css/n-style.css" rel="stylesheet" type="text/css" />
+<link href="../../../public/home/css/passport-artdialog.css" rel="stylesheet" type="text/css" />
+<link href="../../../public/home/css/global-topbar.css" rel="stylesheet">
+<!-- endbuild -->
+<script type="text/javascript" src="../../../public/home/js/jquery-1.7.2.js"></script>
+<script type="text/javascript" src="../../../public/home/js/passport.js"></script>
+<!-- build:js https://s.ue.17173cdn.com/a/passport/v1/js/dist/plugins.js -->
+<script type="text/javascript" src="../../../public/home/js/placeholder.js"></script>
+<script type="text/javascript" src="../../../public/home/js/artdialog.min.js"></script>
+<script type="text/javascript" src="../../../public/home/js/artdialog.plugins.js"></script>
+<script type="text/javascript" src="../../../public/home/js/jquery.validate.js"></script>
+<script type="text/javascript" src="../../../public/home/js/jquery.pwstrength.js"></script>
+<script type="text/javascript" src="../../../public/home/js/jquery.emailmatch.js"></script>
+<script type="text/javascript" src="../../../public/home/js/jquery.mask.js"></script>
+<script type="text/javascript" src="../../../public/home/js/hideshowpassword.js"></script>
+<script type="text/javascript" src="../../../public/home/js/md5.js"></script>
+<script type="text/javascript" src="../../../public/home/js/retina-1.1.0.min.js"></script>
+<!-- endbuild -->
+<!-- build:js https://s.ue.17173cdn.com/a/passport/v1/js/dist/script.js -->
+<script type="text/javascript" src="../../../public/home/js/passport-script.js"></script>
+<script type="text/javascript" src="../../../public/home/js/n-script.js"></script>
+<script type="text/javascript" src="../../../public/home/js/ppcontrol.js"></script>
+<!-- endbuild -->
+<link type="image/x-icon" rel="shortcut icon" href="/favicon.ico" />
+<link type="image/x-icon" rel="icon" href="/favicon-hd.ico" />
+<!--[if IE 6]>
+    <script type="text/javascript" src="../../../public/home/js/ddpng-0.0.8a.min.js"></script>
+    <script type="text/javascript">
+        jQuery(function ($) {
+            DD_belatedPNG.fix('.logo-17173');
+            DD_belatedPNG.fix('#reg-page .btn-login');
+            DD_belatedPNG.fix('#reg-page.reg-form-page .btn-submit span');
+            DD_belatedPNG.fix('.box-nav-way ul li a');
+        });
+    </script>
+    <![endif]-->
+</head>
+
+<body class="guest">
+<div id="wrap">
+  <div id="wrapTop">
+    <div id="wrapBtm"> 
+        <div id="header">
+            <div class="con-in">
+                <a class="logo logo-17173" href="/" title="17173.com 通行证">17173.com 通行证</a>
+				<span class="logo-17173-nolink"></span>
+                <ul class="nav-header">
+                    <li><a class="a-nav" href="http://help.17173.com" target="_blank" title="帮助中心">帮助中心</a></li>
+                    <li><a class="a-nav" href="http://about.17173.com/control.shtml" target="_blank" title="家长监护">家长监护</a></li>
+					<li><a class="a-nav" href="http://help.17173.com/help/wenti.shtml" target="_blank" title="意见反馈">意见反馈</a></li>
+					<li class="">
+						<a class="a-nav" href="http://about.17173.com/site-map.shtml" target="_blank" title="站内导航">站内导航</a>
+					</li>
+                </ul>
+                            </div>
+		</div>	   
+			<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<!--div#content-->
+<div id="content" class="content-reg clearfix">
+  <div class="con-in reg-form-page" id="reg-page"> 
+    <!--main-->
+    <div class="main">
+<!--2015年3月10号
+<div class="reg-do-list">
+<span class="reg-do-list-on"><strong>1</strong>账号信息</span>
+<span><strong>2</strong>激活邮箱</span>
+<span><strong>3</strong>完成注册</span>
+</div>
+
+<div class="reg-do-list none">
+<span class="reg-do-list-on"><strong>1</strong>账号信息</span>
+<span><strong>2</strong>完成注册</span>
+</div>
+-->
+
+
+<ul class="reg-tab">
+<li class="reg-tab-nav no1 on">邮箱注册</li>
+<li class="reg-tab-nav">手机注册</li>
+</ul>
+
+      <!--login-form-->
+      <form class="login-form js-validateMe content-reg-mail" action="/register/save" method="post">
+        <!--reg-tab-link 
+        <a href="javascript:;" class="reg-tab-link none">手机号注册</a> 
+        //reg-tab-link-->
+        
+        <div class="fbox passport">
+          <div class="fbox-main">
+            <div class="border-passport">
+              <input type="text" class="input-txt input-passport" id="passport" name="username" data-maillist='["qq.com","163.com","sina.com","126.com","sohu.com","gmail.com","hotmail.com"]' placeholder="邮箱" autofocus/>
+            </div>
+          </div>
+          <div class="fbox-tip"> <span class="errContainer"></span> 
+            <!--<span class="clear"></span>--> 
+            <span class="tip">填写的邮箱可用于登录和找回密码</span> </div>
+        </div>
+        <!--<div class="fbox nickname">
+							<div class="fbox-main">
+                            	<input type="text" class="input-txt input-nickname" id="nickname" name="nickname" maxlength="20" placeholder="昵称"/>
+							</div>
+							<div class="fbox-tip">
+                            	<span class="errContainer"></span>
+                            	<span class="clear"></span>
+                            	<span class="tip">可使用字母、数字、字符、不区分大小写</span>
+							</div>
+							<div class="errShow js-validate-board" id="recmd_nicks"></div>
+                        </div>-->
+        <div class="fbox pw">
+          <div class="fbox-main">
+            <input type="password" autocomplete="off" class="input-txt input-pw" name="password" maxlength="20" data-indicator="pwindicator" placeholder="密码"/>
+            <span class="tip-block" style="display:none"> <span id="pwindicator"> <span class="block block3"></span> <span class="block block2"></span> <span class="block block1"></span> <span class="words"></span> </span> </span> </div>
+          <div class="fbox-tip"> <span class="errContainer"></span> <span class="clear"></span> <span class="tip">6~20个字符，区分大小写</span> </div>
+        </div>
+        <!--<div class="fbox pw-re">
+							<div class="fbox-main">
+                            	<input type="password" autocomplete="off" class="input-txt input-pw-re" id="pw-re" name="password_confirm" maxlength="20" placeholder="重复密码"/>
+							</div>
+							<div class="fbox-tip">
+                            	<span class="errContainer"></span>
+                            	<span class="clear"></span>
+                            	<span class="tip"><span></span></span>
+							</div>
+                        </div>-->
+        <!-- <div class="fbox email js-field-email">
+          <div class="fbox-main">
+            <input type="text" class="input-txt input-email" id="email" name="email" placeholder="安全邮箱"/>
+          </div>
+          <div class="fbox-tip"> <span class="errContainer"></span> <span class="clear"></span> <span class="tip">密码遗忘或被盗时，可通过邮箱取回密码</span> </div>
+        </div> -->
+        <div class="fbox safe-code" id="codeDo">
+          <div class="fbox-main clearfix">
+            <input type="text" class="input-txt input-safe-code" id="safe-code" name="validcode" placeholder="验证码"/>
+            <span class="box-safe-code js-validcode-container"> <img src="" data-src="/register/captcha" alt="验证码" class="js-validcode" /> <span class="txt"><!--看不清图片？--><a href="javascript:;" class="js-validcode-change" title="刷新验证码">换一张</a></span> </span> </div>
+          <div class="fbox-tip"> <span class="errContainer"></span> <span class="tip"><span></span></span> </div>
+            
+          <em class="mobile-em-none none">X</em>
+          <strong class="mobile-strong-none none">确定</strong>
+        </div>
+        <div class="fbox idcard">
+          <div class="fbox-main">
+            <input type="text" class="input-txt input-idcard" id="idcard" name="idcard" maxlength="20" placeholder="身份证"/>
+          </div>
+          <div class="fbox-tip"> <span class="errContainer"></span> <span class="tip"></span> </div>
+        </div>
+        <div class="fbox realname">
+          <div class="fbox-main">
+            <input type="text" class="input-txt input-realname" id="realname" name="realname" maxlength="20" placeholder="姓名"/>
+          </div>
+          <div class="fbox-tip"> <span class="errContainer"></span> <span class="tip"></span> </div>
+        </div>
+        <div class="fbox agreement">
+          <input type="checkbox" id="agreement" name="agreement" value="1" checked />
+          <label for="agreement">同意<a href="/register/clause" title="《17173通行证服务条款》">《17173通行证服务条款》</a></label>
+          <span class="errContainer"></span> </div>
+        <div class="fbox box-btn">
+          <button class="btn btn-submit" type="submit" name="submit"><span>同意服务条款并注册</span></button>
+        </div>
+        <span class="mobile-agreement"><a href="/register/clause" title="《17173通行证服务条款》">《17173通行证服务条款》</a></span>
+        <input type="hidden" name="_random_license" value="e57f9cf5306180ec21fb86b917011bf671836e27"/>
+        <input type="hidden" name="referer" value=""/>
+      </form>
+      <!--//form--> 
+      
+      <!--form-->
+      <form class="login-form js-validateMe content-reg-mobile" action="/register/save" method="post" autocomplete="off">
+        <!--reg-tab-link
+        <a href="javascript:;" class="reg-tab-link none">邮箱注册</a> 
+        //reg-tab-link-->
+        <div class="fbox phone-reg">
+          <div class="fbox-main">
+            <div class="border-passport">
+              <input type="text" class="input-txt input-passport" id="passport" name="mobile" placeholder="中国大陆手机号"/>
+            </div>
+          </div>
+          <div class="fbox-tip"> <span class="errContainer"></span> <span class="tip">填写的手机号可用于登录和找回密码</span> </div>
+        </div>
+        <div class="fbox pw">
+          <div class="fbox-main">
+            <input type="password" autocomplete="off" class="input-txt input-pw" id="pw" name="password" maxlength="20" data-indicator="pwindicator-mobile" placeholder="密码"/>
+            <span class="tip-block" style="display:none"> <span id="pwindicator-mobile"> <span class="block block3"></span> <span class="block block2"></span> <span class="block block1"></span> <span class="words"></span> </span> </span> </div>
+          <div class="fbox-tip"> <span class="errContainer"></span> <span class="clear"></span> <span class="tip">6~20个字符，区分大小写</span> </div>
+        </div>
+        <div class="fbox safe-code">
+          <div class="fbox-main clearfix zg-code-box">
+            <input type="text" name="mobile_verify_code" id="safe-code-mobile" maxlength="6" class="input-txt input-safe-code" placeholder="验证码"/>
+            <span class="zg-code-btn">点击获取验证码</span>
+                        
+            <!--<button data-input="input[name='mobile']" data-url="</div>/?php echo $send_checkcode_url;?>" class="btn btn-get-code js-btn-countdown">获取短信验证码</button>-->
+          </div>
+          <div class="fbox-tip"> <span class="errContainer"></span> <span class="tip"><span></span></span> </div>
+        </div>
+        <div class="fbox idcard">
+          <div class="fbox-main">
+            <input type="text" class="input-txt input-idcard" id="idcard" name="idcard" maxlength="20" placeholder="身份证"/>
+          </div>
+          <div class="fbox-tip"> <span class="errContainer"></span> <span class="tip"></span> </div>
+        </div>
+        <div class="fbox realname">
+          <div class="fbox-main">
+            <input type="text" class="input-txt input-realname" id="realname" name="realname" maxlength="20" placeholder="姓名"/>
+          </div>
+          <div class="fbox-tip"> <span class="errContainer"></span> <span class="tip"></span> </div>
+        </div>
+        <div class="fbox agreement">
+          <input type="checkbox" id="agreement" name="agreement" value="1" checked />
+          <label for="agreement">同意<a href="/register/clause" title="《17173通行证服务条款》">《17173通行证服务条款》</a></label>
+          <span class="errContainer"></span> </div>
+        <div class="fbox box-btn">
+          <button class="btn btn-submit" type="submit" name="submit"><span>同意服务条款并注册</span></button>
+        </div>
+        <span class="mobile-agreement"><a href="/register/clause" title="《17173通行证服务条款》">《17173通行证服务条款》</a></span>
+        <input type="hidden" name="_random_license" value="e57f9cf5306180ec21fb86b917011bf671836e27"/>
+        <input type="hidden" name="referer" value=""/>
+        <input type="hidden" name="reg_type" value="mobile"/>
+
+
+		<div class="codeDoTip-bg"></div>
+      </form>
+      <!--/login-form--> 
+    </div>
+    <!--/main--> 
+    <!--side-login--> 
+    <div class="side-login pprt-form-box" id="box">
+                	<h2>已有通行证?</h2>
+                    <a class="btn btn-login ppcontrol" href="/main" title="立即登录" data-currevent="even2">立即登录</a>
+					<form class="pprt-form">
+						<input type="hidden" name="email"/>
+						<input type="hidden" name="password"/>
+						<span style="display:none;"><span class="login-err alarm"></span></span>
+						<!--quick-login-->
+						<div class="quick-login">
+    <span>一键登录：</span>
+	<a class="a-3 open-platform-qq" href="#" title="可使用腾讯帐号登录"></a>
+	<a class="open-platform-weixin" style="background: url(../../../public/home/images/weixin.png)" href="#" title="可使用微信帐号登录"></a>
+    <a class="a-2 open-platform-weibo" href="#"  title="可使用微博帐号登录"></a>
+	<a class="a-5 open-platform-baidu" href="#" title="可使用百度帐号登录"></a>
+	<!--<a class="a-1 open-platform-sohu" href="#" title="可使用搜狐帐号登录"></a>-->
+	<a class="a-6 open-platform-renren" href="#" title="可使用人人帐号登录"></a>
+	<a class="a-7 open-platform-douban" href="#" title="可使用豆瓣帐号登录"></a>
+    <a class="a-8 open-platform-cyou" href="#" title="可使用畅游帐号登录"></a>
+	<!--<a class="a-4 open-platform-ww37" href="#" title="可使用37玩玩帐号登录"></a>-->
+    
+    <a href="javascript:" class="quickdo"></a>
+	
+	
+    <!-- <a class="a-2" href="#" title=""></a>
+    <a class="a-3" href="#" title=""></a>
+    <a class="a-4" href="#" title=""></a>
+    <a class="a-5" href="#" title=""></a>
+    <a class="a-6" href="#" title=""></a>
+    <a class="a-7" href="#" title=""></a> -->
+</div>
+ 
+						<!--/quick-login-->
+					</form>
+					<script>
+						Passport.on(Passport.EVENTS.loginSuccess, function () {
+							location.href= '/main';
+						});
+						Passport.uiExtend('PassportReg',{
+							element: document.getElementById('box') 
+						});
+					</script>
+					<div class="box-passport-tool">
+                    	<h3>使用通行证，可享受17173提供的以下服务:</h3>
+                    	
+                    	<span class="box-icon">
+                        	<span class="line">
+                        		<a class="icon-60x60 a-1" href="http://shop.17173.com" target="_blank" title=""><span>游戏商城</span></a>
+                        		<a class="icon-60x60 a-2" href="http://my.17173.com" target="_blank" title=""><span>玩家中心</span></a>
+                        		<a class="icon-60x60 a-3" href="http://bbs.17173.com" target="_blank" title=""><span>游戏论坛</span></a>
+                        	</span>
+                        	<span class="line">
+                        		<a class="icon-60x60 a-4" href="http://hao.17173.com" target="_blank" title=""><span>发号中心</span></a>
+                        		<a class="icon-60x60 a-5" href="http://act.17173.com" target="_blank" title=""><span>活动频道</span></a>
+                        		<a class="icon-60x60 a-6" href="http://vlog.17173.com" target="_blank" title=""><span>视频中心</span></a>
+                        	</span>
+                    	</span>
+                    	<a class="more-service" href="http://about.17173.com/site-map.shtml" target="_blank">更多产品服务&gt;&gt;</a>
+					</div>
+                </div> 
+    <!--/side-login--> 
+  </div>
+</div>
+<!--/div#content--> 
+<div class="global-footer">
+	<a href="http://about.17173.com/" target="_blank">关于17173</a> |
+	<a href="http://about.17173.com/join-us.shtml" target="_blank">人才招聘</a> |
+	<a href="http://about.17173.com/adv-service.shtml" target="_blank">广告服务</a> |
+	<a href="http://about.17173.com/business-cooperate.shtml" target="_blank">商务洽谈</a> |
+	<a href="http://about.17173.com/contact-us.shtml" target="_blank">联系方式</a> |
+	<a href="http://help.17173.com/" target="_blank">客服中心</a> |
+	<a href="http://about.17173.com/site-map.shtml" target="_blank">网站导航</a> <br>
+	<span class="copyright">Copyright © 2001-2013 17173. All rights reserved.</span>
+</div> 
+<div class="mobile-footer">
+	<span class="copyright">Copyright © 2001-2013 17173. All rights reserved.</span>
+</div> 
+
+<script type="text/javascript">
+jQuery(function($){
+	$('form.js-validateMe input[name="password"]').each(function(i, el){
+		var $el= $(el);
+		$el.pwstrength();
+		$el.rules('add', {
+			pwstrength: true,
+			exclusive: ["123456", "123456789", "12345678", "123123", "5201314", "1234567", "7758521", "654321", "1314520", "123321", "1234567890", "147258369", "123654", "5211314", "woaini", "1230123", "987654321", "147258", "123123123", "7758258", "520520", "789456", "456789", "159357", "112233", "1314521", "456123", "110110", "521521", "zxcvbnm", "789456123", "0123456789", "0123456", "123465", "159753", "qwertyuiop", "987654", "115415", "1234560", "123000", "123789", "100200", "963852741", "121212", "111222", "123654789", "12301230", "456456", "741852963", "asdasd", "asdfghjkl", "369258", "863786", "258369", "8718693", "666888", "5845201314", "741852", "168168", "iloveyou", "852963", "4655321", "102030", "147852369", "321321"] //弱密码
+		});
+	});
+
+	//同步抢注检测
+	$('input[name="username"]').rules('add', {
+		email: true,
+		mailOrPhone: false,
+		ajaxCheck: ['/register/validate', '已被抢注啦']
+	});
+	/* $('input[name="nickname"]').rules('add', {
+		ajaxCheck: ['/register/validate', '']
+	}); */
+	$('input[name="email"]').rules('add', {
+		ajaxCheck: ['/register/validate', '']
+	});
+	$('input[name="mobile"]').rules('add', {
+		ajaxCheck: ['/register/validate', '']
+	});
+	
+	
+//【增加】通过url判断是否为手机注册
+var pageUrl = window.location.href;
+if(pageUrl.indexOf("#mobile") != -1){
+	$(".reg-tab-nav").eq(1).click();
+}
+//end
+});
+
+var regSetUrl = "/register/mobileCaptcha";
+
+
+</script>
+<style>
+body{
+background-color:#f7f7f7
+}
+.content-reg form .safe-code .box-safe-code .txt a {
+font-size:16px;
+margin:7px 0 0 5px;
+}
+.content-reg form .safe-code .box-safe-code .txt a:hover {
+color:#fda700;
+}
+</style>
+    </div>
+  </div>
+</div>
+<!-- START 17173 Site Census -->
+<script type="text/javascript" src="../../../public/home/js/ping.js"></script>
+<noscript>
+  <img src="../../../public/home/picture/ping.gif" height="0" width="0" />
+</noscript>
+<!-- END 17173 Site Census -->
+</body>
+</html>

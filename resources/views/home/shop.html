@@ -1,0 +1,787 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>17173会员商城</title>
+<!--globalHeadBegin-->
+
+
+
+
+
+
+
+<link rel="dns-prefetch" href="//ue.17173cdn.com/" />
+<link rel="dns-prefetch" href="//ue1.17173cdn.com/" />
+<link rel="dns-prefetch" href="//ue2.17173cdn.com/" />
+<link rel="dns-prefetch" href="//ue3.17173cdn.com/" />
+<link type="image/x-icon" rel="icon" href="//ue.17173cdn.com/images/lib/v1/favicon-hd.ico" />
+<link type="image/x-icon" rel="shortcut icon" href="//ue.17173cdn.com/images/lib/v1/favicon.ico" />
+
+
+
+<link href="../../../public/home/css/master.css" rel="stylesheet" type="text/css" />
+<link href="../../../public/home/css/layout.css" rel="stylesheet" type="text/css" />
+<link href="../../../public/home/css/cz.css" rel="stylesheet" type="text/css" />
+<link type="text/css" rel="stylesheet" href="../../../public/home/css/reset-and-utils-1.0.css" />
+<!--[if IE 6]>
+    <style type="text/css">@import '../../../public/home/css/ie6.css';</style><![endif]-->
+<!--[if gte IE 7]>
+    <style type="text/css">@import '../../../public/home/css/ie7.css';</style><![endif]-->
+<!--[if gte IE 8]>
+    <style type="text/css">@import '../../../public/home/css/ie8.css';</style><![endif]-->
+<script type="text/javascript" src="../../../public/home/js/jquery-1.4.4.js"></script>
+<script type="text/javascript" src="../../../public/home/js/tabs.all.min.js"></script>
+
+<!--[if IE 6]>
+    <script type="text/javascript" src="../../../public/home/js/ddpng-0.0.8a.min.js"></script>
+    <script type="text/javascript">
+        DD_belatedPNG.fix('.ico');
+        DD_belatedPNG.fix('.png');
+    </script>
+    <![endif]-->
+
+
+
+
+
+
+</head>
+<body>
+
+<script type="text/javascript" src="../../../public/home/js/seed.js"></script>
+
+
+<!--[if lte IE 6]>
+<script src="../../../public/home/js/browser_update.min.js"></script>
+<![endif]-->
+
+
+
+<!--header-->
+<!--header-->
+<div id="bigheader">
+  <div id="header">
+    <div id="headertop">
+      <div id="headertopL"><a href="/pshop/index.php"><img src="../../../public/home/picture/shop-logo.jpg" width="219" height="131" alt="" border="0"/></a></div>
+      <div id="headertopR">
+        <div class="rightTop">
+          <div class="denglu">
+            <table border="0" cellspacing="0" cellpadding="0" align="right">
+              <tr>
+                <td width="23" align="left"><img src="../../../public/home/picture/shop_7.jpg" width="23" height="29" /></td>
+                <td align="center" background="../../../public/home/images/shop_6.jpg">
+				<!--登陆开始-->
+				<link href="../../../public/home/css/jifen.css" rel="stylesheet" type="text/css" />
+				<LINK rel="stylesheet" type="text/css" href="../../../public/home/css/spp_style.css">
+				<style>
+				.passportc_title{color:#c3aa83;border:1px solid #c3aa83;}
+				.passportc_content{border:1px solid #c3aa83;}
+				.passportc{
+					border-bottom:1px solid #c3aa83;
+					border-right:1px solid #c3aa83;
+				}
+				.ppouter{
+					border-right:1px solid #c3aa83;
+					border-bottom:1px solid #c3aa83;
+				}
+				.passportc_login{width:60px:height:24px; background:url(../../../public/home/images/pp_login.gif) no-repeat;}
+				.passportc_register{width:60px:height:24px;background:url(../../../public/home/images/pp_register.gif) no-repeat;}
+                        .passportc .card .ppinput {border:1px #AEAEAE solid;}
+				</style>
+<!--				<SCRIPT type="text/javascript" src="js/spp_core.js"></SCRIPT>
+				<SCRIPT type="text/javascript" src="js/spp_ui.js"></SCRIPT>-->
+                
+				<style type="text/css">
+.hidden{display:none;}
+</style>
+<!--<script type="text/javascript" src="js/loader.js"></script>-->
+
+<script type="text/javascript" src="../../../public/home/js/passport.js"></script>
+<script type="text/javascript">
+
+var Request = new Object();
+Request.send = function(url, method, callback, data, urlencoded) {
+	var req;
+	if(window.XMLHttpRequest){
+		req = new XMLHttpRequest();
+	}else if(window.ActiveXObject){
+		req = new ActiveXObject("Microsoft.XMLHTTP");
+	}
+	req.onreadystatechange = function() {
+		if(req.readyState == 4){
+			if (req.status < 400) {
+				(method=="POST") ? callback(req) : callback(req,data);
+			}else{
+				//alert("???″?ㄧ?蹇?璇风?????璇?!");
+			}
+		}
+	}
+	if (method=="POST") {
+		req.open("POST", url, true);
+		if (urlencoded) req.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+		req.send(data);
+	} else {
+		req.open("GET", url, true);
+		req.send(null);
+	}
+	return req;
+}
+Request.sendRawPOST = function(url, data, callback) {
+	Request.send(url, "POST", callback, data, false);
+}
+Request.sendPOST = function(url, data, callback) {
+	Request.send(url, "POST", callback, data, true);
+}
+Request.sendGET = function(url, callback, args) {
+	return Request.send(url, "GET", callback, args);
+}
+
+
+var shopWinLogin = function(){
+	Passport.Dialog.show({
+		modal:true, //?????剧ず妯℃??灞?,??瀹?涔?ui?舵????
+		//?抽???婚??妗??剁????璋??芥????浼??ㄦ??娆″?抽???惰??ㄤ?娆?
+		onHide:function(){
+			//console.log('onHide');
+			if(typeof __pageLogin == "undefined"){
+				__pageLogin = false;
+			}
+			if(__pageLogin && !shopWinIsLogin()) {
+				//window.location.href="/pshop/index.php";
+			}
+		}	
+	});
+};
+var shopWinLogout = function(){
+	if (window.VBArray && !window.XMLHttpRequest){
+		Passport.logout(event); // 娉ㄩ??
+	} else {
+		Passport.logout(); // 娉ㄩ??
+	}	
+};
+var shopWinIsLogin = function(){
+	return Passport.isLoggedIn();	
+}
+</script>                <div id="idBox"></div><div id="idOverlay"></div>
+				<script language="javascript" src="../../../public/home/js/jifen.js" charset="UTF-8"></script>
+              
+
+
+				<SCRIPT type=text/javascript>
+				<!--
+				var is_gecko = /gecko/i.test(navigator.userAgent);
+				var is_ie    = /MSIE/.test(navigator.userAgent);
+				var is_ie6   = is_ie && ([/MSIE (\d)\.0/i.exec(navigator.userAgent)][0][1] == 6);
+				//overlay & dragdrop
+				function Each(list, fun) {
+				    for (var i = 0, len = list.length; i < len; i++) {
+					  fun(list[i], i);
+				    }
+				};
+				var $ = function(id) {
+				    return "string" == typeof id ? document.getElementById(id) : id;
+				};
+				var Class = {
+				    create: function() {
+					  return function() {
+						this.initialize.apply(this, arguments);
+					  }
+				    }
+				}
+				Object.extend = function(destination, source) {
+				    for (var property in source) {
+					  destination[property] = source[property];
+				    }
+				    return destination;
+				}
+				Function.prototype.bind = function(object) {
+				    var __method = this,
+				    args = Array.apply(null, arguments);
+				    args.shift();
+				    return function() {
+					  return __method.apply(object, args);
+				    }
+				}
+				var OverLay = Class.create();
+				OverLay.prototype = {
+				    initialize: function(overlay, options) {
+					  this.Lay = $(overlay); //覆盖层
+					  //ie6设置覆盖层大小程序
+					  this._size = function() {};
+					  this.SetOptions(options);
+					  this.Color = this.options.Color;
+					  this.Opacity = parseInt(this.options.Opacity);
+					  this.zIndex = parseInt(this.options.zIndex);
+					  this.Set();
+				    },
+				    //设置默认属性
+				    SetOptions: function(options) {
+					  this.options = { //默认值
+						Color: "#fff",
+						//背景色
+						Opacity: 50,
+						//透明度(0-100)
+						zIndex: 1000 //层叠顺序
+					  };
+					  Object.extend(this.options, options || {});
+				    },
+				    //创建
+				    Set: function() {
+					  this.Lay.style.display = "none";
+					  this.Lay.style.zIndex = this.zIndex;
+					  this.Lay.style.left = this.Lay.style.top = 0;
+					  if (is_ie6) {
+						this.Lay.style.position = "absolute";
+						this._size = function() {
+						    this.Lay.style.width = Math.max(document.documentElement.scrollWidth, document.documentElement.clientWidth) + "px";
+						    this.Lay.style.height = Math.max(document.documentElement.scrollHeight, document.documentElement.clientHeight) + "px";
+						}.bind(this);
+						//遮盖select
+						this.Lay.innerHTML = '<iframe style="position:absolute;top:0;left:0;width:100%;height:100%;filter:alpha(opacity=0);"></iframe>'
+					  } else {
+						this.Lay.style.position = "fixed";
+						this.Lay.style.width = this.Lay.style.height = "100%";
+					  }
+				    },
+				    //显示
+				    Show: function() {
+					  //设置样式
+					  this.Lay.style.backgroundColor = this.Color;
+					  //设置透明度
+					  if (is_ie) {
+						this.Lay.style.filter = "alpha(opacity:" + this.Opacity + ")";
+					  } else {
+						this.Lay.style.opacity = this.Opacity / 100;
+					  }
+					  //兼容ie6
+					  if (is_ie6) {
+						this._size();
+						window.attachEvent("onresize", this._size);
+					  }
+					  this.Lay.style.display = "block";
+				    },
+				    //关闭
+				    Close: function() {
+					  this.Lay.style.display = "none";
+					  if (is_ie6) {
+						window.detachEvent("onresize", this._size);
+					  }
+					  //notLoginBack();
+				    }
+				};
+				var LightBox = Class.create();
+				LightBox.prototype = {
+				    initialize: function(box, overlay, options) {
+					  this.Box = $(box); //显示层
+					  this.OverLay = new OverLay(overlay, options); //覆盖层
+					  this.SetOptions(options);
+					  this.Fixed = !!this.options.Fixed;
+					  this.Over = !!this.options.Over;
+					  this.Center = !!this.options.Center;
+					  this.onShow = this.options.onShow;
+					  this.Box.style.zIndex = this.OverLay.zIndex + 1;
+					  this.Box.style.display = "none";
+					  //兼容ie6用的属性
+					  if (is_ie6) {
+						this._top = this._left = 0;
+						this._select = [];
+					  }
+				    },
+				    //设置默认属性
+				    SetOptions: function(options) {
+					  this.options = { //默认值
+						Fixed: false,
+						//是否固定定位
+						Over: true,
+						//是否显示覆盖层
+						Center: false,
+						//是否居中
+						onShow: function() {} //显示时执行
+					  };
+					  Object.extend(this.options, options || {});
+				    },
+				    //兼容ie6的固定定位程序
+				    _fixed: function() {
+					  var iTop = this.Box.offsetTop + document.documentElement.scrollTop - this._top,
+					  iLeft = this.Box.offsetLeft + document.documentElement.scrollLeft - this._left;
+					  //居中时需要修正
+					  if (this.Center) {
+						iTop += this.Box.offsetHeight / 2;
+						iLeft += this.Box.offsetWidth / 2;
+					  }
+					  this.Box.style.top = iTop + "px";
+					  this.Box.style.left = iLeft + "px";
+					  this._top = document.documentElement.scrollTop;
+					  this._left = document.documentElement.scrollLeft;
+				    },
+				    //显示
+				    Show: function(options) {
+					  //固定定位
+					  if (this.Fixed) {
+						if (is_ie6) {
+						    //兼容ie6
+						    this.Box.style.position = "absolute";
+						    this._top = document.documentElement.scrollTop;
+						    this._left = document.documentElement.scrollLeft;
+						    window.attachEvent("onscroll", this._fixed.bind(this));
+						} else {
+						    this.Box.style.position = "fixed";
+						}
+					  } else {
+						this.Box.style.position = "absolute";
+					  }
+					  //覆盖层
+					  if (this.Over) {
+						//显示覆盖层，覆盖层自带select隐藏
+						this.OverLay.Show();
+					  } else {
+						//ie6需要把不在Box上的select隐藏
+						if (is_ie6) {
+						    this._select = [];
+						    var oThis = this;
+						    Each(document.getElementsByTagName("select"),
+						    function(o) {
+							  if (oThis.Box.contains ? !oThis.Box.contains(o) : !(oThis.Box.compareDocumentPosition(o) & 16)) {
+								o.style.visibility = "hidden";
+								oThis._select.push(o);
+							  }
+						    })
+						}
+					  }
+					  this.Box.style.display = "block";
+					  //居中
+					  if (this.Center) {
+						this.Box.style.top = this.Box.style.left = "50%";
+						//显示后才能获取
+						var iTop = -this.Box.offsetHeight / 2,
+						iLeft = -this.Box.offsetWidth / 2;
+						//不是fixed或ie6要修正
+						if (!this.Fixed || is_ie6) {
+						    iTop += document.documentElement.scrollTop;
+						    iLeft += document.documentElement.scrollLeft;
+						}
+						this.Box.style.marginTop = iTop + "px";
+						this.Box.style.marginLeft = iLeft + "px";
+					  }
+					  this.onShow();
+				    },
+				    //关闭
+				    Close: function() {
+					  this.Box.style.display = "none";
+					  this.OverLay.Close();
+					  if (is_ie6) {
+						window.detachEvent("onscroll", this._fixed);
+						Each(this._select,
+						function(o) {
+						    o.style.visibility = "visible";
+						});
+					  }
+					  //notLoginBack();
+				    }
+				};
+				function addEventHandler(oTarget, sEventType, fnHandler) {
+				    if (oTarget.addEventListener) {
+					  oTarget.addEventListener(sEventType, fnHandler, false);
+				    } else if (oTarget.attachEvent) {
+					  oTarget.attachEvent("on" + sEventType, fnHandler);
+				    } else {
+					  oTarget["on" + sEventType] = fnHandler;
+				    }
+				};
+				function removeEventHandler(oTarget, sEventType, fnHandler) {
+				    if (oTarget.removeEventListener) {
+					  oTarget.removeEventListener(sEventType, fnHandler, false);
+				    } else if (oTarget.detachEvent) {
+					  oTarget.detachEvent("on" + sEventType, fnHandler);
+				    } else {
+					  oTarget["on" + sEventType] = null;
+				    }
+				};
+				if (!is_ie) {
+				    HTMLElement.prototype.__defineGetter__("currentStyle",
+				    function() {
+					  return this.ownerDocument.defaultView.getComputedStyle(this, null);
+				    });
+				}
+				//拖放程序
+				var Drag = Class.create();
+				Drag.prototype = {
+				    //拖放对象,触发对象
+				    initialize: function(obj, drag, options) {
+					  var oThis = this;
+					  this._obj = $(obj); //拖放对象
+					  this.Drag = $(drag); //触发对象
+					  this._x = this._y = 0; //记录鼠标相对拖放对象的位置
+					  //事件对象(用于移除事件)
+					  this._fM = function(e) {
+						oThis.Move(window.event || e);
+					  }
+					  this._fS = function() {
+						oThis.Stop();
+					  }
+					  this.SetOptions(options);
+					  this.Limit = !!this.options.Limit;
+					  this.mxLeft = parseInt(this.options.mxLeft);
+					  this.mxRight = parseInt(this.options.mxRight);
+					  this.mxTop = parseInt(this.options.mxTop);
+					  this.mxBottom = parseInt(this.options.mxBottom);
+					  this.mxContainer = this.options.mxContainer;
+					  this.onMove = this.options.onMove;
+					  this.Lock = !!this.options.Lock;
+					  this._obj.style.position = "absolute";
+					  addEventHandler(this.Drag, "mousedown",
+					  function(e) {
+						oThis.Start(window.event || e);
+					  });
+				    },
+				    //设置默认属性
+				    SetOptions: function(options) {
+					  this.options = { //默认值
+						Limit: false,
+						//是否设置限制(为true时下面参数有用,可以是负数)
+						mxLeft: 0,
+						//左边限制
+						mxRight: 0,
+						//右边限制
+						mxTop: 0,
+						//上边限制
+						mxBottom: 0,
+						//下边限制
+						mxContainer: null,
+						//指定限制在容器内
+						onMove: function() {},
+						//移动时执行
+						Lock: false //是否锁定
+					  };
+					  Object.extend(this.options, options || {});
+				    },
+				    //准备拖动
+				    Start: function(oEvent) {
+					  if (this.Lock) {
+						return;
+					  }
+					  //记录鼠标相对拖放对象的位置
+					  this._x = oEvent.clientX - this._obj.offsetLeft;
+					  this._y = oEvent.clientY - this._obj.offsetTop;
+					  //mousemove时移动 mouseup时停止
+					  addEventHandler(document, "mousemove", this._fM);
+					  addEventHandler(document, "mouseup", this._fS);
+					  //使鼠标移到窗口外也能释放
+					  if (is_ie) {
+						addEventHandler(this.Drag, "losecapture", this._fS);
+						this.Drag.setCapture();
+					  } else {
+						addEventHandler(window, "blur", this._fS);
+					  }
+				    },
+				    //拖动
+				    Move: function(oEvent) {
+					  //判断是否锁定
+					  if (this.Lock) {
+						this.Stop();
+						return;
+					  }
+					  //清除选择(ie设置捕获后默认带这个)
+					  window.getSelection && window.getSelection().removeAllRanges();
+					  //当前鼠标位置减去相对拖放对象的位置得到offset位置
+					  var iLeft = oEvent.clientX - this._x,
+					  iTop = oEvent.clientY - this._y;
+					  //设置范围限制
+					  if (this.Limit) {
+						//如果设置了容器,因为容器大小可能会变化所以每次都要设
+						if ( !! this.mxContainer) {
+						    this.mxLeft = this.mxTop = 0;
+						    this.mxRight = this.mxContainer.clientWidth;
+						    this.mxBottom = this.mxContainer.clientHeight;
+						}
+						//获取超出长度
+						var iRight = iLeft + this._obj.offsetWidth - this.mxRight,
+						iBottom = iTop + this._obj.offsetHeight - this.mxBottom;
+						//这里是先设置右边下边再设置左边上边,可能会不准确
+						if (iRight > 0) iLeft -= iRight;
+						if (iBottom > 0) iTop -= iBottom;
+						if (this.mxLeft > iLeft) iLeft = this.mxLeft;
+						if (this.mxTop > iTop) iTop = this.mxTop;
+					  }
+					  //设置位置
+					  //由于offset是把margin也算进去的所以要减去
+					  this._obj.style.left = iLeft - (parseInt(this._obj.currentStyle.marginLeft) || 0) + "px";
+					  this._obj.style.top = iTop - (parseInt(this._obj.currentStyle.marginTop) || 0) + "px";
+					  //附加程序
+					  this.onMove();
+				    },
+				    //停止拖动
+				    Stop: function() {
+					  //移除事件
+					  removeEventHandler(document, "mousemove", this._fM);
+					  removeEventHandler(document, "mouseup", this._fS);
+					  if (is_ie) {
+						removeEventHandler(this.Drag, "losecapture", this._fS);
+						this.Drag.releaseCapture();
+					  } else {
+						removeEventHandler(window, "blur", this._fS);
+					  }
+				    }
+				};
+
+				var box  = new LightBox("idBox", "idOverlay", { Center: true, Color:"#EFEFEF", Opacity:50, zIndex: 1000 });;
+				//var drag = new Drag("idBox", "17173passport", { mxContainer: document.documentElement, Lock: true });
+				//drag.Lock = false;
+				//drag.Limit = false;
+				box.Fixed = false;
+				//shopWinLogin();
+				//-->
+				</SCRIPT>
+				<span id="shopLogin" class="pp17173">
+				 <A onclick="shopWinLogin();" href="javascript:void(0)">请登录</a>&nbsp;&nbsp;<a href="http://passport.17173.com/register" target="_blank">注册</a>&nbsp;&nbsp;<img src="../../../public/home/picture/shop_82.jpg" width="15" height="15" />&nbsp;<span class="p12 cOrange1"><a href="/pshop/mem/mygood.php">我的商城</a></span>
+				</span>
+				  <!--登陆结束-->
+
+				<script language="javascript">
+                
+                    var islogin=false; 
+											
+					var loginHTML='<form class="form-box hidden" autocomplete="off">'+
+							'<div class="passportc_title" id="passportc_title"><div id="pp_title_left">17173会员登录</div><div id="pp_title_right"><img onclick="box.Close();" src="../../../public/home/picture/pp_close.gif" style="cursor:pointer" width="18" height="18" alt="" /></div></div>'+
+							'<div class="passportc_content" id="ppcontid" style="width:280px;"><ul class="card"><div id="pperrmsg" class="err"></div><li>用户名： '+
+							'<input name="email" type="text" class="ppinput" /></li>'+
+							'<li>密　码： '+
+							'<input name="password" type="password" class="ppinput" /></li>'+
+							'<li class="loginSubimt"><span class="login"><input name="persistentcookie" type="checkbox" value="1" />记住密码</span><a href="http://passport.17173.com/register" target="_blank"><img src="../../../public/home/picture/loginicon.gif" width="60" height="24" class="passportc_register" alt="注 册"></img></a> <input type="image" src="http://ue1.17173.itc.cn/sy/loginicon.gif" class="passportc_login" width="60" height="24" value="登 录" alt="登 录" cache /></li>'+
+							'</ul></div></form>	'+
+							'<div class="wait-box hidden" style="margin: 20px 10px;">'+
+							'	<span class="logging-in">正在登录, 请稍候...</span>'+
+							'	<span class="logging-out">正在注销, 请稍候...</span>'+
+							'</div>';				
+											
+					
+					document.getElementById("idBox").innerHTML = loginHTML ;
+					
+					var tempLoginHtml = document.getElementById("shopLogin").innerHTML;	
+					var headerLoginSuccessCbk = function(){
+						islogin = true;
+						Request.sendGET('/pshop/spp/login_success.php', infoUpdater);
+					};
+					var headerLogoutSuccessCbk = function(){
+						document.getElementById("shopLogin").innerHTML = tempLoginHtml;
+						islogin = false;
+						Request.sendGET('/pshop/spp/login_out.php', function(){});
+					};
+					Passport.on(Passport.EVENTS.loginSuccess, headerLoginSuccessCbk);
+					Passport.on(Passport.EVENTS.logoutSuccess, headerLogoutSuccessCbk);
+					
+					if( shopWinIsLogin() ){
+						headerLoginSuccessCbk();
+					} else {
+						headerLogoutSuccessCbk();
+					}
+					if(typeof __pageLogin != "undefined"){
+						if (__pageLogin) {
+							Passport.on(Passport.EVENTS.loginSuccess, function() {
+								
+								//location.reload()
+									
+								});
+							Passport.on(Passport.EVENTS.logoutSuccess, function() {location.href="/pshop/index.php"});
+						}
+					}
+/*					
+					//require(['passport'], function(Passport) {
+						window.commonPspt = new Passport({
+							element: document.getElementById('idBox'),
+							ui: 'none',
+							onInit: function() {
+				
+							},
+							onLoginStart: function() {
+				
+							},
+							onLoginSuccess: function() {
+
+								var o =this;
+								box.Close();
+								//document.getElementById("shopLogin").innerHTML = "您好，"+o.data('username')+"	<a  onclick='commonPspt.doLogout(event);' style='cursor:pointer;'>退出</a>"
+								islogin = true;
+								Request.sendGET('/pshop/spp/login_success.php', infoUpdater);
+								
+							},
+							onLoginFailure: function(msg) {
+				
+							},
+							onLogoutStart: function() {
+				
+							},
+							onLogoutSuccess: function() {
+								document.getElementById("shopLogin").innerHTML = tempLoginHtml;
+								islogin = false;
+								Request.sendGET('/pshop/spp/login_out.php', function(){});
+							},
+							onLogoutFailure: function(msg) {
+				
+							}
+							
+							//loginRedirectUrl: 'http://hao.17173.com/'
+						});
+					//});
+*/					
+					function infoUpdater(originalRequest)
+					{
+							var userInfo = originalRequest.responseText;
+							document.getElementById("shopLogin").innerHTML = userInfo;
+							jifen.init(0);
+					}					              
+                                
+                                
+                </script>   
+                  
+                  
+                </td>
+                <td width="15"><img src="../../../public/home/picture/shop_5.jpg" width="15" height="29" /></td>
+              </tr>
+            </table>
+          </div>
+          <!-- <div id="sskuang2">
+            <form action="/pshop/mem/search.php" method="post" name="form1" id="form2">
+              <div id="sskuangL2">
+                <input type="text" name="keyword" id="textfield2" class="ssinput2" />
+              </div>
+              <div id="sskuangR2"><input name="search" type="image" src="http://ue1.17173.itc.cn/mall/search.jpg" width="66" height="23" border="0"/></div>
+            </form>
+	
+            <div class="clear"></div>
+          </div> -->
+        </div>
+        <div class="menu">
+          <div id="menutitle">
+            <ul>
+					  <!-- <li><a href='/pshop/index.php'>商城首页</a></li>
+			  <li><a href='/pshop/mem/exgold.php'>G币兑换区</a></li>
+			  <li><a href='/pshop/mem/hubi.php'>狐币消费区</a></li>
+			  <li><a href='/pshop/mem/level_list.php'>成长特权区</a></li>
+			  <li><a href='/pshop/mem/lottery_list.php'>抽奖区</a></li> -->
+			  <li class='current'><a href='/pshop/mem/recharge/center.php'>直充中心</a></li>
+			                </ul>
+          </div>
+       
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="clear"></div>
+</div>
+
+<div class="side-pn layer-side">
+	<a href="http://bbs.17173.com/forum-2407-1.html" target="_blank" class="side-bt-advice">意见反馈</a>
+	<a href="http://wpa.qq.com/msgrd?v=3&amp;uin=1401993324&amp;site=qq&amp;menu=yes" target="blank" class="side-bt-service">在线客服</a>
+
+</div><!--content-->
+<div class="content">
+    <div class="daodu">您现在的位置：<a href="/pshop/index.php">会员商城</a> &gt; 直充中心</div>
+        <div class="focus-w">
+			<div class="focus-in"> 
+				<div class="focus-con">
+					<div class="focus-item">
+						<div class="img"><a href="http://bbs.17173.com/thread-7902621-1-1.html" target="_blank"><img src="../../../public/home/picture/zc-0416.jpg" width="960" height="300" alt="" /></a></div>
+					</div>
+					<div class="focus-item">
+						<div class="img"><a href="http://shop.17173.com/pshop/mem/recharge/qq.php" target="_blank"><img src="../../../public/home/picture/zc-04162.jpg" width="960" height="300" alt="" /></a></div>
+					</div>
+									</div>
+				<div class="focus-num">
+					<a href="javascript:;" class="current"> </a>
+					<a href="javascript:;"> </a>
+
+						 </div>
+			</div>
+		</div><!--end the focua-w-->
+
+		<div class="channel-wrap">
+			<div class="channel-box">
+				<div class="channel-item channel-item1">
+					<h2 class="channel-tit"><a href="./qq.php" target="_self"><i class="ico ico-qq"></i><span>Q币充值</span></a></h2>
+					<ul class="channel-list">
+						<li>&gt;<a href="./qq.php" target="_self">q币(Q点)充值</a></li>
+					</ul>
+				</div>
+				<div class="channel-item channel-item2">
+					<h2 class="channel-tit"><a href="./sdcard.php" target="_self"><i class="ico ico-card"></i><span>一卡通充值</span></a></h2>
+					<ul class="channel-list">
+						
+						<li>&gt;<a href="./sdcard.php" target="_self">盛大</a></li>
+						<li>&gt;<a href="./jrcard.php" target="_self">巨人</a></li>
+						<li>&gt;<a href="./wycard.php" target="_self">网易</a></li>
+						<li>&gt;<a href="./zwcard.php" target="_self">战网</a></li>
+						<li>&gt;<a href="./wmcard.php" target="_self">完美</a></li>
+						<li>&gt;<a href="./jscard.php" target="_self">金山</a></li>
+						<li>&gt;<a href="./kzwcard.php" target="_self">空中网</a></li>
+						<li>&gt;<a href="./sjtccard.php" target="_self">世纪天成</a></li>
+						<li>&gt;<a href="./tycard.php" target="_self">天游</a></li>
+					</ul>
+				</div>
+				<div class="channel-item channel-item3">
+					<h2 class="channel-tit"><a href="./calls.php" target="_self"><i class="ico ico-phone"></i><span>手机充值</span></a></h2>
+					<ul class="channel-list">
+						<li>&gt;<a href="./calls.php" target="_self">话费充值</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+</div>
+
+<script type="text/javascript">
+    jQuery.noConflict();
+    jQuery(".focus-num").tabs(".focus-item", {
+		event:'mouseover',
+		effect: 'fade',
+		fadeOutSpeed: "300",
+		rotate: true
+	}).slideshow();
+	
+    jQuery(".focus-num").data("slideshow").play();
+</script>
+
+<script type="text/javascript" src="../../../public/home/js/jquery-1.4.4.js"></script>
+
+<div class="global-footer">
+	<a href="http://about.17173.com/" target="_blank">&#x5173;&#x4E8E;17173</a> |
+	<a href="http://about.17173.com/join-us.shtml" target="_blank">&#x4EBA;&#x624D;&#x62DB;&#x8058;</a> |
+	<a href="http://marketing.17173.com" target="_blank">&#x5E7F;&#x544A;&#x670D;&#x52A1;</a> |
+	<a href="http://about.17173.com/business-cooperate.shtml" target="_blank">&#x5546;&#x52A1;&#x6D3D;&#x8C08;</a> |
+	<a href="http://about.17173.com/contact-us.shtml" target="_blank">&#x8054;&#x7CFB;&#x65B9;&#x5F0F;</a> |
+	<a href="http://help.17173.com/" target="_blank">&#x5BA2;&#x670D;&#x4E2D;&#x5FC3;</a> |
+	<a href="http://about.17173.com/site-map.shtml" target="_blank">&#x7F51;&#x7AD9;&#x5BFC;&#x822A;</a> <br />
+	<span class="copyright">Copyright &copy; 2001-2017 17173. All rights reserved.</span>
+</div>
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">advConfigs.loadConfigFile('//s.17173cdn.com/global/global.js');</script>
+<script type="text/javascript" src="../../../public/home/js/apptip.js"></script>
+
+
+
+	<script type="text/javascript" src="../../../public/home/js/popupnews.config.js" charset="gbk"></script>
+	<script type="text/javascript">
+	(function($){var pn=window.location.pathname;pn=pn=='/'&&pn!='/index.shtml';if($('.gb-newfix-box').length>0||('0'==1&&pn))return;var p=document.createElement('script');p.type='text/javascript';p.async=true;p.src='//ue.17173cdn.com/a/money/2014/zq-pop/js/popupnews.js';document.body.appendChild(p)})(jQuery);
+	</script>
+
+
+
+
+<!-- START 17173 Site Census -->
+<script type="text/javascript" src="../../../public/home/js/ping.js"></script>
+<!-- END 17173 Site Census -->
+
+<script type="text/javascript" src="../../../public/home/js/lp.min.js"></script>
+
+
+
+</body>
+</html>

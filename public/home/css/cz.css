@@ -1,0 +1,137 @@
+body { background:#fff url(../images/bj.jpg) repeat-x center top;}
+
+/*the page-index*/
+a{ text-decoration:none;}
+.content{ background-color:#f6f6f6;}
+
+.ico{ display:inline-block; vertical-align:middle; background:url(../images/icon-png24.png) no-repeat;}
+.ico-card, .ico-phone, .ico-qq, .ico-sd, .ico-jr, .ico-wy, .ico-zw, .ico-wm, .ico-js, .ico-kzw, .ico-sjtc{ width:30px; height:30px;}
+.ico-card{ background-position:0 0;}
+.ico-phone{ background-position:0 -50px;}
+.ico-qq{ background-position:0 -100px;}
+.ico-sd{ background-position:0 -250px;}
+.ico-jr{ background-position:0 -300px;}
+.ico-wy{ background-position:0 -350px;}
+.ico-zw{ background-position:0 -400px;}
+.ico-wm{ background-position:0 -450px;}
+.ico-js{ background-position:0 -500px;}
+.ico-kzw{ background-position:0 -550px;}
+.ico-sjtc{ background-position:0 -600px;}
+.ico-ty{ background-position: 0 -640px; width: 32px; height: 30px;}
+.ico-error, .ico-warning, .ico-ok{ width:14px; height:14px;}
+.ico-ok{ background-position:0 -150px;}
+.ico-warning{ background-position:-25px -150px;}
+.ico-error{ background-position:0 -175px;}
+.ico-refresh{ width:16px; height:20px; background-position:0 -200px;}
+.ico-tip{ width:17px; height:21px; background-position: -25px -175px;}
+
+.bt1{ display:inline-block; width:98px; height:34px; text-align:center; line-height:34px; background-color:#fbfbfb; border:1px solid #d7d7d7; font-size:18px; color:#999; position:relative;}
+.bt1 i{ display:none; width:9px; height:9px; overflow:hidden; position:absolute; right:0; bottom:0; background:url(../images/icon.png) no-repeat 0 0;}
+.bt1:hover, .bt1-cur{ border-color:#f80010; background-color:#fff; color:#e90005;}
+.bt1-cur i{ display:block;}
+
+.bt2{ display:inline-block; padding:0; width:150px; height:45px; text-align:center; line-height:43px; background-color:#d6222a; border:1px solid #c21f2e; font-size:20px; color:#fff; cursor:pointer; font-family:"Microsoft Yahei";}
+.bt2:hover{ background-color:#f36537; border-color:#ea5432;}
+.bt2-disable, .bt2-disable:hover{background-color:#ccc; border-color:#c3c3c3; cursor:default}
+
+.focus-w,.focus-in{ overflow:hidden; width:960px; height:300px; margin:0 auto;}
+.focus-w{}
+.focus-in{ position:relative}
+.focus-item{ position:absolute; top:0; left:0}
+.focus-item img{ width:960px; height:300px;}
+.focus-item .txt{ overflow:hidden; position:absolute; z-index:3; left:0; bottom:0; width:381px; height:40px; padding:5px 165px 0 10px; white-space:nowrap}
+.focus-item .txt a{ color:#c0bcbc; width:315px; overflow:hidden; display:block; font-size:22px;}
+.focus-item .txt a:hover{ text-decoration:none}
+.focus-item .tit{ display:block; font:normal 22px/39px; color:#fff; overflow:hidden; text-overflow: ellipsis; white-space:nowrap}
+.focus-item a:hover .tit{ text-decoration:underline}
+.focus-item .bg{ display:block; position:absolute; z-index:-1; top:0; left:0; width:1000px; height:1000px; background:#000; filter:alpha(opacity:50); opacity:.5}
+.focus-num{ overflow:hidden; position:absolute; z-index:4; bottom:0; right:0px; height:30px; width:100%; text-align:center; font-size:0;}
+.focus-num a{ display:inline-block; width:10px; height:10px; overflow:hidden; margin-right:5px; background-color:#e1e1e1;-moz-border-radius:7px; -webkit-border-radius:7px; border-radius:7px;}
+.focus-num a:hover{ text-decoration:none}
+.focus-num .current{ background-color:#ff4400;}
+
+.channel-wrap{ background:#fff; min-height:207px; _height:207px;}
+.channel-box{ width:960px; margin:0 auto; overflow:hidden; *zoom:1; padding-top:10px;}
+.channel-item{ float:left; width:225px; padding-left:95px;}
+.channel-tit{ line-height:60px; height:60px;}
+.channel-tit span{ font-size:22px; color:#333; font-family: "Microsoft Yahei"; font-weight:normal; margin-left:10px; display:inline-block;}
+.channel-tit i{ margin-bottom:6px;}
+.channel-list{ padding-left:20px; font-size:14px; color:#99999a; overflow:hidden; *zoom:1; line-height:28px;}
+.channel-list li a{color:#99999a; margin-left:12px;}
+.channel-list li a:hover{ color:#e90005; text-decoration:underline;}
+.channel-item2 .channel-list li{ float:left; width:90px;}
+
+/*the page-sub*/
+.pay-box{ width:958px; background:#fff; border:1px solid #eee; overflow:hidden; *zoom:1; margin-bottom:30px;font-family: "Microsoft Yahei";}
+.pay-c1{ float:left; width:219px;min-height:800px; _height:800px; background-color:#fcfcfc; border-right:1px solid #eee;}
+.pay-c2{ overflow:hidden; *zoom:1; }
+
+.pay-nav-c, .pay-nav-c1, .pay-nav-c2{ display:block;}
+.pay-nav-item{ border-bottom:1px solid #eee; font-weight:normal; margin-right:-1px;}
+.pay-nav-c{ border-right:1px solid #eee; padding:15px 0; width:219px; position:relative;}
+.pay-nav-c2{ font-size:12px; color:#999; margin-left:85px; display:none;}
+.pay-nav-item .current{ background-color:#fff; border-right-color:#fff;}
+.pay-nav-item .current .pay-nav-c2{ display:block;}
+.pay-nav-item .current .pay-nav-c1 span{ color:#e90005;}
+
+.pay-nav-item .pay-nav-c1 .ico{ margin:0 15px 0 40px; *margin-bottom:5px;}
+.pay-nav-item .pay-nav-c1 span{ font-size:18px; color:#333; vertical-align:middle}
+
+/*.pay-nav-sub .pay-nav-c1{ font-size:16px; color:#999;}
+.pay-nav-sub .pay-nav-c1 .ico-arrow{ margin:0 15px 0 60px; font-family:"SimSun"; font-style:normal; font-size:18px; color:#e1e1e1;}*/
+
+tr, th, td{ padding:0; margin:0;}
+.pay-form{ padding:50px 0 50px 55px;}
+.pay-form th, .pay-form td{ padding-bottom:20px;}
+.pay-form th{ font-size:14px; color:#333; text-align:right; font-weight:normal; padding-right:5px;}
+.pay-form .input-txt, .pay-form .input-txt2, .pay-form .select-box{  background-color:#fff; border:1px solid #cdcdcd; padding:7px 5px;}
+.pay-form .input-txt{ width:290px;}
+.pay-form .input-txt2{ width:90px;}
+.pay-form .select-box{ font-size:18px; color:#333; padding:6px 5px;}
+
+.zw-con .pay-c1{min-height: 1016px; _height: 1016px;}
+.red{color:red}
+.zw-warning{ width:470px;}
+input[type="text"],input[type="password"],textarea{ font-size:18px; color:#999; *color:#333; font-family:"SimSun";}
+input[type="text"]:hover,input[type="password"]:hover,textarea:hover,input[type="text"]:focus,input[type="password"]:focus,textarea:focus{ color:#333}
+
+.pay-form .error, .pay-form .error .input-txt, .pay-form .error .input-txt2, .pay-form .warning .input-txt, .pay-form .warning .input-txt2{ border-color:#f80010;}
+.pay-form .help-inline, .pay-form .help-block{ font-size:12px; color:#999;}
+.pay-form .help-block{ margin:5px 0 -24px 0}
+.pay-form .help-inline .ico{ margin:0 5px 2px 20px;}
+.pay-form .help-block .ico{ margin:0 5px 2px 0;}
+.pay-form .help-block{ display:block}
+.pay-form .hidden{ display:none}
+.pay-form .unit{ font-size:18px; color:#333; margin:0 10px;}
+.pay-form .help-inline2{ display:inline-block; font-size:14px; color:#999; margin-bottom:-2px;}
+.pay-form .align-bt td span{ vertical-align:bottom;}
+.pay-form .align-md td span{ vertical-align:middle;}
+.pay-form .up{ color:#e90005;}
+.pay-form .sum{ font-size:18px; color:#333; margin-right:10px;}
+.pay-form .sum .up{ font-size:24px;}
+.pay-form .bt1{ margin-right:5px;}
+.pay-form .bt1-mz{ width:50px; margin-right:1px;}
+.pay-form .verify-box{ display:inline-block; cursor:pointer; overflow:hidden; *zoom:1; margin-left:5px;}
+.pay-form .verify-box img{ float:left;}
+.pay-form .verify-box .ico{ margin:10px 0 0 5px;}
+.pay-form .bt2{ margin-left:105px;}
+.pay-form .submit-bar td{ padding-top:20px}
+
+.pay-tip{ border-top:1px solid #efefef; margin:0 50px; padding-left:20px;}
+.pay-tip .tit{ font-size:12px; color:#14ac16; line-height:36px; margin-top:5px;}
+.pay-tip p{ font-size:12px; color:#999; line-height:24px; padding-left:13px; background:url(../images/icon.png) no-repeat 0 -39px; margin-left:9px;}
+.pay-tip .ico-tip{ margin:2px 5px 0 0;}
+
+.side-bt-advice, .side-bt-service, .side-bt-service1{ display:block; width:60px; height:25px; padding-top:35px; background:url(../images/icon.png) no-repeat; font-size:12px; color:#999; text-align:center;}
+.side-bt-advice:hover, .side-bt-service:hover{ color:#fff;}
+.side-bt-advice{ background-position:0 -100px;}
+.side-bt-advice:hover{ background-position:0 -250px;}
+.side-bt-service{ background-position:0 -159px;}
+.side-bt-service:hover{ background-position:0 -309px;}
+
+.side-bt-service1, .side-bt-service1:hover{ color:#fff;}
+.side-bt-service1{ background-position:0 -400px;}
+.side-bt-service1:hover{ background-position:0 -500px;}
+
+.side-pn{ position:fixed; _position:absolute; width:60px; top:160px; left:50%; margin-left:520px;}
+.side-pn .side-bt-advice{ margin-bottom:-1px;}
