@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="{{asset('admin/assets/css/amazeui.datatables.min.css')}}" />
     <link rel="stylesheet" href="{{asset('admin/assets/css/app.css')}}">
     <script src="{{asset('admin/assets/js/jquery.min.js')}}"></script>
+    <script type="text/javascript" src="{{asset('layer/layer.js')}}"></script>
+    <script src="{{asset('admin/assets/js/img123.js')}}"></script>
 
 
 </head>
@@ -91,7 +93,7 @@
             <ul class="sidebar-nav">
                 
                 <li class="sidebar-nav-link">
-                    <a href="index.html" class="active">
+                    <a href="{{url('admin/index')}}" class="active">
                         <i class="am-icon-home sidebar-nav-link-logo"></i> 首页
                     </a>
                 </li>
@@ -143,13 +145,13 @@
                     </a>
                     <ul class="sidebar-nav sidebar-nav-sub">
                         <li class="sidebar-nav-link">
-                            <a href="table-list.html">
+                            <a href="{{url('admin/root/add')}}">
                                 <span class="am-icon-angle-right sidebar-nav-link-logo"></span> 管理员添加
                             </a>
                         </li>
 
                         <li class="sidebar-nav-link">
-                            <a href="table-list-img.html">
+                            <a href="{{url('admin/root/index')}}">
                                 <span class="am-icon-angle-right sidebar-nav-link-logo"></span> 管理员列表
                             </a>
                         </li>

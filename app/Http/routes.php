@@ -17,5 +17,11 @@ Route::get('/', function () {
 
 Route::group(['prefix'=>'admin','namespace'=>'Admin'],function(){
     // 栏目路由
-    Route::controller('columns','ColumnsController');
+    // Route::controller('columns','ColumnsController');
+
+    //后台管理员
+    Route::controller('root','RootController');
+    Route::post('root/upload','RootController@upload');
 });
+
+
