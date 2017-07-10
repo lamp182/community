@@ -129,7 +129,7 @@
                         </li>
 
                         <li class="sidebar-nav-link">
-                            <a href="{{url('admin/sections/index')}}">
+                            <a href="{{url('admin/sections')}}">
                                 <span class="am-icon-angle-right sidebar-nav-link-logo"></span> 板块列表
                             </a>
                         </li>

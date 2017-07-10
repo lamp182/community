@@ -4,7 +4,7 @@ namespace App\Http\Model;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Sections extends Model
+class Section extends Model
 {
     //
      protected $table = 'sections';

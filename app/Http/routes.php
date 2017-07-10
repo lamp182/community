@@ -22,4 +22,5 @@ Route::group(['prefix'=>'admin','namespace'=>'Admin'],function(){
 
     Route::resource('sections','SectionsController');
     Route::any('upload','SectionsController@upload');
+    Route::any('select','SectionsController@select');
 });
