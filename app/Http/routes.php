@@ -18,3 +18,11 @@ Route::get('/', function () {
 Route::get('/home/index', 'Home\IndexController@index');
 Route::get('/home/column', 'Home\ColumnController@index');
 Route::get('/home/section', 'Home\SectionController@index');
+Route::group(['prefix'=>'admin','namespace'=>'Admin'],function(){
+    // 栏目路由
+    Route::controller('columns','ColumnsController');
+    // 板块路由
+
+    Route::resource('sections','SectionsController');
+    Route::any('upload','SectionsController@upload');
+});

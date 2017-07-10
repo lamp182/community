@@ -4,6 +4,7 @@ namespace App\Http\Model;
 
 use Illuminate\Database\Eloquent\Model;
 
+
 class Section extends Model
 {
     //
@@ -20,4 +21,3 @@ class Section extends Model
     {
         return $this -> hasMany('\App\Http\Model\Post', 'sid', 'id');
     }
-}
