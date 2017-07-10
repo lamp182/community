@@ -33,12 +33,17 @@ class SectionController extends Controller
         foreach ($moderators as $moderator){
             $moderator['user'] = User::find($moderator['moderator']) -> userDetail;
         }
-//        dd($moderators);
+       $posts = Section::find($section['id']) -> posts;
+        foreach ($posts as $post){
+            $post['auther'] = User::find($post['uid']) -> userDetail;
+            $post['theme'] = Theme::where('sid', $section['id']) -> where('id', $post['tid']) -> first()['name'];
+        }
+       // dd($posts);
         $data = [
             'section' => $section,
             'themes' => $themes,
             'moderators' => $moderators,
-//            'users' => $users
+            'posts' => $posts,
         ];
         return view('home.section.index', $data);
     }

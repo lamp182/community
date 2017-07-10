@@ -17,11 +17,6 @@
     <!--globalHeadBegin-->
 
 
-
-
-
-
-
     <link rel="dns-prefetch" href="//ue.17173cdn.com/" />
     <link rel="dns-prefetch" href="//ue1.17173cdn.com/" />
     <link rel="dns-prefetch" href="//ue2.17173cdn.com/" />
@@ -220,6 +215,8 @@
                             <a href="javascript:;" onClick="widthauto(this)" id="widthauto-btn" class="y widthauto-btn">切换到窄版</a>
                         </div>
                     </div>
+
+
                     <!-- CMS CACHE BEGIN --><div id="pt1" class="cl">
                         <div class="hd-r"><span></span></div>
                         <div class="z">
@@ -322,32 +319,40 @@
                                         <input type="hidden" name="formhash" value="2f70169e" />
                                         <input type="hidden" name="listextra" value="page%3D1" />
                                         <table summary="forum_8706" cellspacing="0" cellpadding="0" id="threadlisttableid">
+                                            @foreach($posts as $post)
+
                                             <tbody id="stickthread_9844523">
                                             <tr>
                                                 <td class="icn">
-                                                    <a href="http://bbs.17173.com/thread-9844523-1-1.html" title="本版置顶主题 - 新窗口打开" target="_blank">
-                                                        <img src="picture/pin_1.gif" alt="本版置顶" />
+                                                    <a href="{{ url('home/post?id='.$post['id']) }}" title="本版置顶主题 - 新窗口打开" target="_blank">
+                                                        <img src="/home/picture/pin_1.gif" alt="本版置顶" />
                                                     </a>
                                                 </td>
                                                 <th class="common">
                                                     <a href="javascript:;" id="content_9844523" class="showcontent y" title="更多操作" onclick="CONTENT_TID='9844523';CONTENT_ID='stickthread_9844523';showMenu({'ctrlid':this.id,'menuid':'content_menu'})"></a>
                                                     <a href="javascript:void(0);" onclick="hideStickThread('9844523')" class="showhide y" title="隐藏置顶帖">隐藏置顶帖</a></em>
-                                                    <em>[<a href="http://bbs.17173.com/forum.php?mod=forumdisplay&fid=8706&amp;filter=typeid&amp;typeid=1054">活动</a>]</em> <a href="http://bbs.17173.com/thread-9844523-1-1.html" style="color: #EE1B2E;" onclick="atarget(this)" class="s xst">免费帮你订做补丁！想要就快来留言吧~</a>
+                                                    <em>[<a href="http://bbs.17173.com/forum.php?mod=forumdisplay&fid=8706&amp;filter=typeid&amp;typeid=1054">{{ $post['theme'] }}</a>]</em> 
+                                                    <a href="{{ url('home/post?id='.$post['id']) }}" style="color: #EE1B2E;" onclick="atarget(this)" class="s xst">{{ $post['title'] }}</a>
                                                     <img src="picture/image_s.gif" alt="attach_img" title="图片附件" align="absmiddle" />
-                                                    <span class="tps">&nbsp;...<a href="http://bbs.17173.com/thread-9844523-2-1.html">2</a><a href="http://bbs.17173.com/thread-9844523-3-1.html">3</a><a href="http://bbs.17173.com/thread-9844523-4-1.html">4</a><a href="http://bbs.17173.com/thread-9844523-5-1.html">5</a><a href="http://bbs.17173.com/thread-9844523-6-1.html">6</a>..<a href="http://bbs.17173.com/thread-9844523-184-1.html">184</a></span>
+                                                    <span class="tps">&nbsp;...<a href="http://bbs.17173.com/thread-9844523-2-1.html">2</a>
+                                                    <a href="http://bbs.17173.com/thread-9844523-3-1.html">3</a>
+                                                    <a href="http://bbs.17173.com/thread-9844523-4-1.html">4</a>
+                                                    <a href="http://bbs.17173.com/thread-9844523-5-1.html">5</a>
+                                                    <a href="http://bbs.17173.com/thread-9844523-6-1.html">6</a>..<a href="http://bbs.17173.com/thread-9844523-184-1.html">184</a></span>
                                                 </th>
                                                 <td class="by">
                                                     <cite>
-                                                        <a href="http://bbs.17173.com/space-uid-116454341.html" c="1" style="color: #FF0000;">浅蓝幻象流星落</a></cite>
-                                                    <em><span>2016-10-8</span></em>
+                                                        <a href="http://bbs.17173.com/space-uid-116454341.html" c="1" style="color: #FF0000;">{{ $post['auther']['username'] }}</a></cite>
+                                                    <em><span>{{ date('Y-m-d H:i:s', $post['ctime']) }}</span></em>
                                                 </td>
-                                                <td class="num"><a href="http://bbs.17173.com/thread-9844523-1-1.html" class="xi2">2784</a><em>306866</em></td>
+                                                <td class="num"><a href="http://bbs.17173.com/thread-9844523-1-1.html" class="xi2">{{ $post['count'] }}</a><em>{{ $post['pvs'] }}</em></td>
                                                 <td class="by">
                                                     <cite><a href="http://bbs.17173.com/space-username-%E7%9B%9B%E5%A4%A7%E7%9B%9B%E5%A4%A7%E9%80%9F%E5%BA%A61.html" c="1">盛大盛大速度1</a></cite>
                                                     <em><a href="http://bbs.17173.com/forum.php?mod=redirect&tid=9844523&goto=lastpost#lastpost"><span title="2017-6-26 20:23">1&nbsp;小时前</span></a></em>
                                                 </td>
                                             </tr>
                                             </tbody>
+                                            @endforeach
 
 
                                             <tbody id="stickthread_9659734">

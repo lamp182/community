@@ -21,3 +21,4 @@ class Section extends Model
     {
         return $this -> hasMany('\App\Http\Model\Post', 'sid', 'id');
     }
+}

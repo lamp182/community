@@ -13,7 +13,7 @@
     <meta http-equiv="MSThemeCompatible" content="Yes" />
     <meta name="baidu-site-verification" content="f5874a3f8e49646e5917517f21be2764"/>
     <link rel="stylesheet" type="text/css" href="/home/css/style_6_common.css" /><link rel="stylesheet" type="text/css" href="/home/css/style_6_forum_index.css" /><script>var STYLEID = '6', STATICURL = 'static/', IMGDIR = 'static/image/common', VERHASH = 'Z88', charset = 'utf-8', discuz_uid = '0', cookiepre = 'bbsPro_2132_', cookiedomain = '', cookiepath = '/', showusercard = '1', attackevasive = '0', disallowfloat = 'newthread', creditnotice = '1|经验|,2|小伙伴|,3|崇高石|,4|水晶|,5|板砖|,6|零食|,7|悬赏币|,8|VR币|', defaultstyle = '', REPORTURL = 'aHR0cDovL2Jicy4xNzE3My5jb20v', SITEURL = 'http://bbs.17173.com/', JSPATH = 'static/js/', CSSPATH = 'data/cache/style_', DYNAMICURL = '';</script>
-    <script src="/home/js/common.js" type="text/javascript"></script>
+    <script src="/home/js/common.js"></script>
     <!--globalHeadBegin-->
 
 
@@ -38,11 +38,11 @@
     <link rel="stylesheet" id="css_widthauto" type="text/css" href='/home/css/style_6_widthauto.css' />
     <script>HTMLNODE.className += ' widthauto'</script>
 
-    <script src="/home/js/forum.js" type="text/javascript"></script>
+    <script src="/home/js/forum.js"></script>
     <link rel="stylesheet" type="text/css" href="/home/css/forum.css" />
-    <script src="/home/js/jquery-1.7.2.js" type="text/javascript"></script>
-    <script src="/home/js/libs.js" type="text/javascript"></script>
-    <script src="/home/js/passport.js" type="text/javascript"></script>
+    <script src="/home/js/jquery-1.7.2.js"></script>
+    <script src="/home/js/libs.js"></script>
+    <script src="/home/js/passport.js"></script>
     <script>
         var J = jQuery.noConflict();
         if(self != top){
@@ -57,7 +57,7 @@
 
 <body id="nv_forum" class="pg_index" onkeydown="if(event.keyCode==27) return false;">
 
-<script type="text/javascript" src="/home/js/seed.js"></script>
+<script src="/home/js/seed.js"></script>
 
 
 <!--[if lte IE 6]>
@@ -67,7 +67,7 @@
 <div id="append_parent"></div><div id="ajaxwaitid"></div>
 <div id="toptb" class="cl">
     <div class="wp" style="display:none;">
-        <div class="z"><a href="javascript:;"  onclick="setHomepage('http://bbs.17173.com/');">设为首页</a><a href="http://bbs.17173.com/"  onclick="addFavorite(this.href, '17173有料社区');return false;">收藏本站</a><script type="text/javascript">var _speedMark = new Date();</script></div>
+        <div class="z"><a href="javascript:;"  onclick="setHomepage('http://bbs.17173.com/');">设为首页</a><a href="http://bbs.17173.com/"  onclick="addFavorite(this.href, '17173有料社区');return false;">收藏本站</a><script>var _speedMark = new Date();</script></div>
         <div class="y">
             <a id="switchblind" href="javascript:;" onclick="toggleBlind(this)" title="开启辅助访问" class="switchblind">开启辅助访问</a>
             <a href="javascript:;" id="switchwidth" onclick="widthauto(this)" title="切换到窄版" class="switchwidth">切换到窄版</a>
@@ -112,7 +112,8 @@
                     </div>
                     <ul class="p_pop h_pop" id="plugin_menu" style="display: none">  <li><a href="plugin.php?id=hux_zp2:hux_zp2" id="mn_plink_hux_zp2">转盘抽奖</a></li>
                     </ul>
-                    <div class="p_pop h_pop" id="mn_userapp_menu" style="display: none"></div><div id="mu" class="cl">
+                    <div class="p_pop h_pop" id="mn_userapp_menu" style="display: none"></div>
+                    <div id="mu" class="cl">
                     </div>
                     <div class="sc-quick-bar cl">
                         <div class="sc-quick-bar-c">
@@ -168,7 +169,7 @@
 
                                     </div>
                                     <ul id="scbar_type_menu" class="p_pop" style="display: none;"><li><a href="javascript:;" rel="forum" class="curtype">帖子</a></li><li><a href="javascript:;" rel="user">用户</a></li></ul>
-                                    <script type="text/javascript">
+                                    <script>
                                         initSearchmenu('scbar', '');
                                     </script>
                                 </div>
@@ -200,4 +201,167 @@
                     </div>
                 </div>
             </div>
+            <div id="wp" class="wp">
+                <div id="pt" class="bm cl">
+                    <div class="z">
+                        <a href="/home" class="nvhm" title="首页">17173有料社区</a><em>&raquo;</em><a href="http://bbs.17173.com/forum.php">论坛</a></div>
+                    <div class="z"></div>
+                </div>
 
+
+                <style id="diy_style" type="text/css"></style>
+
+                <div class="wp">
+                    <!--[diy=diy1]--><div id="diy1" class="area"></div><!--[/diy]-->
+                </div>
+
+
+                <div id="ct" class="wp cl">
+                    <div id="chart" class="bw0 cl">
+                        <p class="chart z">今日: <em>16482</em><span class="pipe">|</span>昨日: <em>13934</em><span class="pipe">|</span>帖子: <em>139128697</em><span class="pipe">|</span>会员: <em>23766869</em><span class="pipe">|</span>欢迎新会员: <em><a href="http://bbs.17173.com/space-username-%CF%89o%E3%8A%A3%E2%91%A1_r8td.html" target="_blank" class="xi2">ωo㊣②_r8td</a></em></p>
+                        <div class="y" style="display:none;">
+                            <a href="http://bbs.17173.com/forum.php?mod=guide&amp;view=new" title="最新回复" class="xi2">最新回复</a></div>
+                        <div class="y chart-bar">
+                            <a href="javascript:;" id="qmenu" onMouseOver="showMenu({'ctrlid':'qmenu','pos':'34!','ctrlclass':'a','duration':2});">快捷导航</a>
+                            <a href="javascript:;" onclick="widthauto(this);return false;"  class="y widthauto-btn" id="widthauto-btn">切换到窄版</a>
+                            <a href="http://a.17173.com/tg/channel/index.html?id=A0011502201" target="_blank" class="y app-download-btn">下载17173手机版</a>
+                        </div>
+
+                    </div>
+                    <!--[diy=diy_chart]--><div id="diy_chart" class="area"></div><!--[/diy]-->
+
+
+                    <div class="screen-hot" id="screen-hot">
+                        <div class="icon"></div>
+                        <div class="sch-co01">
+                            <div class="temp-flash02"> <a href="#" target="_blank" class="more" title="鏇村"></a>
+                                <div class="panes">
+                                    <div class="con"><a href="http://bbs.17173.com/thread-10318180-1-1.html" target="_blank"><img
+                                                    src="/home/picture/300-200.jpg" alt="17173游戏论坛活动"/></a></div>
+
+                                    <div class="con"><a href="http://asktao.17173.com/zt/201706221546/index.shtml" target="_blank"><img
+                                                    src="/home/picture/wd.jpg" alt="17173游戏论坛活动"/></a></div>
+
+                                    <div class="con"><a href="http://bbs.17173.com/thread-10300546-1-1.html" target="_blank"><img
+                                                    src="/home/picture/qadovxblthkhzvr.jpg" alt="17173游戏论坛活动"/></a></div>
+
+                                    <div class="con"><a href="http://bbs.17173.com/thread-10321997-1-1.html" target="_blank"><img
+                                                    src="/home/picture/321.png" alt="17173游戏论坛活动"/></a></div>
+
+
+                                    <div class="con"><a href="http://bbs.17173.com/thread-10320858-1-1.html" target="_blank"><img src="/home/picture/ihfcelbltkvegvs.jpg" alt="17173游戏论坛活动"/></a></div>
+
+                                    <div class="con"><a href="http://newgame.17173.com/game-info-1000027.html" target="_blank"><img
+                                                    src="/home/picture/ft.jpg" alt="17173游戏论坛活动"/></a></div>
+
+
+                                </div><!--end .panes-->
+                                <ul class="tab js-hover">
+                                    <li><span>1</span></li>
+                                    <li><span>2</span></li>
+                                    <li><span>3</span></li>
+                                    <li><span>4</span></li>
+                                    <li><span>5</span></li>
+                                    <li><span>6</span></li>
+                                </ul>
+                            </div><!--end .temp-flash-->
+
+
+
+
+                            <script>
+                                jQuery.noConflict();
+                                jQuery(function($){
+
+                                    $('.temp-flash02 .panes > div').soChange({
+
+
+                                        thumbObj:'.temp-flash02 .tab li',
+                                        thumbNowClass:'current'
+                                    });
+
+
+                                })
+                            </script>
+
+
+                        </div><!--end sch-co01-->
+
+
+                        <div class="sch-co02">
+
+                            <ul class="mod-news bbs-news-list">
+                                <li><span class="time"><a href="http://bbs.17173.com/forum-9414-1.html" target="_blank">[炉石传说]</a></span><a href="http://bbs.17173.com/thread-10321975-1-1.html" target="_blank" title=17173游戏论坛攻略 class="title">&nbsp;炉石你绝对想不到系列最厉害10个6费随从</a></li>
+                                <li><span class="time"><a href="http://bbs.17173.com/forum-8706-1.html" target="_blank">[DNF话题]</a></span><a href="http://bbs.17173.com/thread-10322200-1-1.html" target="_blank" title=17173游戏论坛攻略 class="title">&nbsp;卢克Raid暗帝开荒视角附带一二阶段建议</a></li>
+                                <li><span class="time"><a href="http://bbs.17173.com/forum-9987-1.html" target="_blank">[流放之路]</a></span><a href="http://bbs.17173.com/thread-10320309-1-1.html" target="_blank" title=17173游戏论坛攻略 class="title">&nbsp;流放之路我想拿刀阵开荒但是有几个问题</a></li>
+                                <li><span class="time"><a href="http://bbs.17173.com/forum-10026-1.html" target="_blank">[王者荣耀]</a></span><a href="http://bbs.17173.com/thread-10320508-1-2.html" target="_blank" title=17173游戏论坛攻略 class="title">&nbsp;王者荣耀造富游戏代练勤快点可月入2万</a></li>
+                                <li><span class="time"><a href="http://bbs.17173.com/forum-10041-1.html" target="_blank">[古剑奇谭]</a></span><a href="http://bbs.17173.com/thread-10317757-1-1.html" target="_blank" title=17173游戏论坛攻略 class="title">&nbsp;古剑奇谭OL预建角色界面各门派展示欣赏</a></li>
+                                <li><span class="time"><a href="http://bbs.17173.com/forum-10049-1.html" target="_blank">[论坛活动]</a></span><a href="http://bbs.17173.com/thread-10318180-1-1.html" target="_blank" title=17173游戏论坛攻略 class="title">&nbsp;分享宝藏世界你最喜欢的角色赢周边好礼</a></li>
+                                <li><span class="time"><a href="http://bbs.17173.com/forum-9619-1.html" target="_blank">[论坛活动]</a></span><a href="http://bbs.17173.com/thread-10321997-1-1.html" target="_blank" title=17173游戏论坛攻略 class="title">&nbsp;火源计划送大量QB激活资格根本领不完</a></li>
+                                <li><span class="time"><a href="http://bbs.17173.com/forum-9619-1.html" target="_blank">[论坛活动]</a></span><a href="http://bbs.17173.com/thread-10314517-1-1.html" target="_blank" title=17173游戏论坛攻略 class="title">&nbsp;古剑OL6.23删档封测珍稀豪情大礼抢不完</a></li>
+
+
+                            </ul>
+                            <!--update in 20130523 star-->
+                            <div class="hot-discuss">
+                                <ul class="hot-discuss-list">
+
+                                    <li class="item">
+                                        <div class="hot-discuss-c1"><a href="http://bbs.17173.com/thread-10317641-1-1.html" target="_blank" class="avatar-box"><img src="/home/picture/6.jpg" alt="17173游戏论坛活动" /></a></div>
+                                        <div class="hot-discuss-c2">
+                                            <p class="txt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;火影忍者一招鲜·第二期：主播FJ教你玩四代波风水门</p>
+                                            <span class="to-look"><a href="http://bbs.17173.com/thread-10317641-1-1.html" target="_blank">点击进入</a></span>
+                                        </div>
+                                    </li>
+                                    <li class="item">
+                                        <div class="hot-discuss-c1"><a href="http://bbs.17173.com/thread-10312295-1-1.html" target="_blank" class="avatar-box"><img src="/home/picture/g1.png" alt="17173游戏论坛活动" /></a></div>
+                                        <div class="hot-discuss-c2">
+                                            <p class="txt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;寒娜《全职高手 沐雨橙风》</p>
+                                            <span class="to-look"><a href="http://bbs.17173.com/thread-10312295-1-1.html" target="_blank">点击欣赏</a></span>
+                                        </div>
+                                    </li>
+
+                                </ul>
+                            </div>
+                            <!--update in 20130523 end-->
+
+                        </div>
+                        <!--end sch-co02-->
+
+
+                        <div class="sch-co03">
+                            <div class="user-info clearfix">
+                                <div class="img-area"><a href="http://bbs.17173.com/thread-10313032-1-1.html" target="_blank"><img src="/home/picture/327.png" alt="趣味月刊" /></a></div>
+                                <div class="txt-area">
+                                    <div class="ui-introduction">[趣味月刊]</br>2017年第6期</div>
+                                    <ul class="ui-attr-list">
+                                        <li><span class="ui-ico author-ico">作者：</span>胖胖胖砸</li>
+                                        <li><span class="ui-ico source-ico">来源：</span>趣味社区</li>
+                                    </ul>
+                                </div>
+
+                            </div><!--end user-info-->
+                            <div class="user-op clearfix">
+                                <ul class="uo-list clearfix">
+                                    <li class="item01"><a href="http://bbs.17173.com/plugin.php?id=auction" target="_blank">有料商城</a></li>
+                                    <li class="item02"><a href="http://bbs.17173.com/forum-9619-1.html" target="_blank">有料活动</a></li>
+                                    <li class="item03"><a href="http://bbs.17173.com/thread-10049979-1-1.html" target="_blank">论坛规则</a></li>
+                                    <li class="item04"><a href="http://bbs.17173.com/forum-1484-1.html" target="_blank">论坛站务</a></li>
+
+                                </ul>
+                            </div><!--end user-op-->
+
+                        </div><!--end sch-co03-->
+
+                    </div><!--end screen-hot-->
+
+                    <div class="mn-main">
+                        <div class="mn">
+
+
+                            <div class="fl bm mn-main-in">
+
+      
+
+
+            </div>

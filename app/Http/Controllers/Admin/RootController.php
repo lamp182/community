@@ -1,0 +1,171 @@
+<?php
+
+namespace App\Http\Controllers\Admin;
+
+use Illuminate\Http\Request;
+
+use App\Http\Requests;
+use App\Http\Controllers\Controller;
+
+
+use App\Http\Model\Root;
+use Illuminate\Support\Facades\Crypt;
+use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Facades\Input;
+
+
+class RootController extends Controller
+{
+    public function getIndex(Request $request)
+    {
+        // dd($request -> all());
+        if($request->has('keywords')){
+            $key = trim($request->input('keywords')) ;
+            // echo $key;
+            $root = Root::where('name','like',"%".$key."%")->paginate(2);;
+            // dd($root);
+            return view('admin.root.index',['data'=>$root,'key'=>$key]);
+            // return $key;
+        }else{
+             $root = Root::orderBy('id','asc') -> paginate(2);
+        return view('admin.root.index',['data'=>$root]);
+        }
+       
+    }
+
+
+    /**
+    *添加页面
+    */
+    public function getAdd()
+    {
+        return view('admin.root.add');
+    }
+
+    /**
+    *
+    *处理添加
+    */
+    public function postDoadd(Request $request)
+    {
+        // $data = $request -> except('_token');
+        $input  =  Input::except('_token');
+        // dd($data);
+        //表单验证
+         $role =[
+            'name'=>'required',
+            'password'=>'required|between:6,18',
+            'realname'=>'required',
+            // 'cid'=>'regex:/^[1-9]{1}[0-9]{14}$|^[1-9]{1}[0-9]{16}([0-9]|[xX])$/|required',
+            'cid'=>'regex:/^[1-9]{1}[0-9]{16}([0-9xX])$/|required',
+            'phone'=>'regex:/^1[34578][0-9]{9}$/|required',
+            'email'=>'required|email',
+        ];
+
+        $mess =[
+            'name.required'=>'用户名必填',
+            'password.required'=>'密码必填',
+            'password.between'=>'密码必须在6-18位之间',
+            'realname.required'=>'用户名必填',
+            'cid.required'=>'身份证号码必填',
+            'cid.regex'=>'身份证号码不正确',
+            'phone.required'=>'手机号码必填',
+            'phone.regex'=>'手机号码不正确',
+            'email.required'=>'邮箱必填',
+            'email.email'=>'邮箱格式不正确',
+            
+        ];
+        $v = Validator::make($input,$role,$mess);
+        if($v->passes()){
+        // $res = $request -> except('_token');
+        // dd($res);
+        $user = new Root();
+        $user -> name = $res['name'];
+        $user -> password = Crypt::encrypt($res['password']);
+        $user -> realname = $res['realname'];
+        $user -> cid = $res['cid'];
+        $user -> phone = $res['phone'];
+        $user -> email = $res['email'];
+        $user -> faceico = $res['faceico'];
+
+        // dd($user);
+        $re = $user -> save();
+        if($re)
+        {
+            return redirect('admin/root/index');
+        }else{
+            return back()->with('error','添加失败');
+        }
+        }else{
+            return back()->withErrors($v);
+        }
+    }
+    /**
+    *图片上传
+    */
+    public function postUpload()
+    {
+               // 将上传文件移动到制定目录，并以新文件名命名
+        $file = Input::file('file_upload');
+        if($file->isValid()) {
+            $entension = $file->getClientOriginalExtension();//上传文件的后缀名
+            $newName = date('YmdHis') . mt_rand(1000, 9999) . '.' . $entension;
+
+        //            将图片上传到本地服务器
+            $path = $file->move(public_path() . '/uploads', $newName);
+
+        //            将图片上传到七牛云
+        //            \Storage::disk('qiniu')->writeStream('uploads/'.$newName, fopen($file->getRealPath(), 'r'));
+
+        //        返回文件的上传路径
+            $filepath = 'uploads/' . $newName;
+            return $filepath;
+        }
+    }
+
+    /**
+    *处理修改
+    */
+    public function getUpdate($id)
+    {
+        //接收要修改的用户记录
+        $data = Root::where('id',$id)->first(); 
+        // dd($data);
+        return view('admin.root.update',['data'=>$data]);
+    }
+
+    /**
+    *将修改后的值更新到数据库
+    */
+   public function postDoupdate(Request $request)
+   {
+    //接受修改后的值
+    $data = $request -> except('_token');
+    //将修改后的值存入数据库
+    $res = Root::where('id',$data['id']) -> update($data);
+    if($res){
+        return redirect('admin/root/index');
+    }else{
+        return back()->with('errors','修改失败');
+    }
+   }
+
+   public function postDelroot($id)
+   {
+    // echo 1111111;
+    $res = Root::where('id',$id)->delete();
+     // 0表示成功 其他表示失败
+       if($res){
+           $data = [
+                'status'=>0,
+                'msg'=>'删除成功！'
+           ];
+       }else{
+           $data = [
+               'status'=>1,
+               'msg'=>'删除失败！'
+           ];
+       }
+       return $data;
+   }
+}

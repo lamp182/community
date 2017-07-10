@@ -14,15 +14,28 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::group(['prefix' => 'home', 'namespace' => 'Home'], function ()
+{
+	Route::get('/index', 'IndexController@index');
+	Route::get('/column', 'ColumnController@index');
+	Route::get('/section', 'SectionController@index');
+	Route::get('/post', 'PostController@index');
+});
 
-Route::get('/home/index', 'Home\IndexController@index');
-Route::get('/home/column', 'Home\ColumnController@index');
-Route::get('/home/section', 'Home\SectionController@index');
+
 Route::group(['prefix'=>'admin','namespace'=>'Admin'],function(){
     // 栏目路由
+
     Route::controller('columns','ColumnsController');
     // 板块路由
 
     Route::resource('sections','SectionsController');
     Route::any('upload','SectionsController@upload');
+
+    //后台管理员
+    Route::controller('root','RootController');
+    Route::post('root/upload','RootController@upload');
+
 });
+
+

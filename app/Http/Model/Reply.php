@@ -4,16 +4,10 @@ namespace App\Http\Model;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Post extends Model
+class Reply extends Model
 {
-    //
-    protected $table = 'posts';
+    protected $table = 'replies';
     protected $primaryKey="id";
     protected $guarded = [];
     public $timestamps = false;
-
-    public function theme()
-    {
-    	return $this -> hasOne('App\Http\Model\Theme', 'id', 'tid');
-    }
 }

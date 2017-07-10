@@ -67,7 +67,8 @@
 <div id="append_parent"></div><div id="ajaxwaitid"></div>
 <div id="toptb" class="cl">
     <div class="wp" style="display:none;">
-        <div class="z"><a href="javascript:;"  onclick="setHomepage('http://bbs.17173.com/');">设为首页</a><a href="http://bbs.17173.com/"  onclick="addFavorite(this.href, '17173有料社区');return false;">收藏本站</a><script>var _speedMark = new Date();</script></div>
+        <div class="z"><a href="javascript:;"  onclick="setHomepage('http://bbs.17173.com/');">设为首页</a><a href="http://bbs.17173.com/"  onclick="addFavorite(this.href, '17173有料社区');return false;">收藏本站</a><script>var _speedMark = new Date();</script>
+        </div>
         <div class="y">
             <a id="switchblind" href="javascript:;" onclick="toggleBlind(this)" title="开启辅助访问" class="switchblind">开启辅助访问</a>
             <a href="javascript:;" id="switchwidth" onclick="widthauto(this)" title="切换到窄版" class="switchwidth">切换到窄版</a>
@@ -97,12 +98,13 @@
     </div>
 </div>
 
-</div><div class="wrap">
+<div class="wrap">
     <div class="wrap-bottom">
         <div class="wrap-top">
+        @section('carousel')
             <div id="hd">
                 <div class="wp">
-                    <div class="hdc cl" id="hdc"><h2><a href="/home"><img src="/home/picture/youliao-logo.png" alt="17173有料社区"></a></h2>
+                    <div class="hdc cl" id="hdc"><h2><a href="{{ url('home') }}"><img src="/home/picture/youliao-logo.png" alt="17173有料社区"></a></h2>
                         <div class="h-ad y">                    </div>
                     </div>
 
@@ -112,7 +114,8 @@
                     </div>
                     <ul class="p_pop h_pop" id="plugin_menu" style="display: none">  <li><a href="plugin.php?id=hux_zp2:hux_zp2" id="mn_plink_hux_zp2">转盘抽奖</a></li>
                     </ul>
-                    <div class="p_pop h_pop" id="mn_userapp_menu" style="display: none"></div><div id="mu" class="cl">
+                    <div class="p_pop h_pop" id="mn_userapp_menu" style="display: none"></div>
+                    <div id="mu" class="cl">
                     </div>
                     <div class="sc-quick-bar cl">
                         <div class="sc-quick-bar-c">
@@ -199,9 +202,10 @@
 
                     </div>
                 </div>
+            @show
             </div>
-
-            <div id="wp" class="wp"><div id="pt" class="bm cl">
+            <div id="wp" class="wp">
+                <div id="pt" class="bm cl">
                     <div class="z">
                         <a href="/home" class="nvhm" title="首页">17173有料社区</a><em>&raquo;</em><a href="http://bbs.17173.com/forum.php">论坛</a></div>
                     <div class="z"></div>
@@ -359,13 +363,10 @@
 
 
                             <div class="fl bm mn-main-in">
-
-            @section('contents')
+            </div>
+                  @section('contents')
 
         @show
-
-
-            </div>
             <div class="quick-nav">
                 <div class="qn-hd">
                     <h2 class="title"><i class="jg"></i>版面导航</h2>
@@ -447,9 +448,6 @@
 
                                 });
 
-
-
-
                             })
                         </script>
 
@@ -500,7 +498,7 @@
 
         </div>
         {{--<script>fixed_top_nv();</script>--}}
-                    </div>
+        </div>
 
 <div class="wp a_f AdBbs2BannerBottom"></div><div class="wp a_f"><iframe align=center marginWidth=0 marginHeight=0 src="http://bbs.17173.com/x/bbsbottom96060.htm" frameBorder=0 width=960 scrolling=no height=60></iframe></div><script>
     var seourl='http://bbs.17173.com/-forum--1.html';
@@ -719,7 +717,7 @@
 <script>
     advConfigs.loadConfigFile('http://s.17173cdn.com/bbs/final.js');
 </script>
-<script src="/home/js/setlink.min.js"></script>
+<script src="/home/js/setlink.min.js">
 if($('debuginfo')) {
 $('debuginfo').innerHTML = '. This page is cached  at 21:16:31  .';
 }
