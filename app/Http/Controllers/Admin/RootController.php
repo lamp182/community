@@ -77,7 +77,7 @@ class RootController extends Controller
         ];
         $v = Validator::make($input,$role,$mess);
         if($v->passes()){
-        // $res = $request -> except('_token');
+        $res = $request -> except('_token');
         // dd($res);
         $user = new Root();
         $user -> name = $res['name'];
@@ -86,7 +86,7 @@ class RootController extends Controller
         $user -> cid = $res['cid'];
         $user -> phone = $res['phone'];
         $user -> email = $res['email'];
-        $user -> faceico = $res['faceico'];
+        // $user -> faceico = $res['faceico'];
 
         // dd($user);
         $re = $user -> save();
@@ -168,4 +168,60 @@ class RootController extends Controller
        }
        return $data;
    }
+
+   /**
+    *修改密码
+    */
+    public function getChangepass($id)
+    {
+        $data = Root::where('id',$id)->first();
+        $res = $data->password;
+       
+        // dd($pass);
+        return view('admin.root.changepass',['id'=>$id]);
+    }
+
+    /**
+    *更新密码
+    */
+
+    public function postUppass(Request $request)
+    {
+        // dd($id);
+        $res = $request ->all();
+        // dd($res);
+
+        //用户id
+        $id = $res['hidden'];
+
+        //用户输入的密码
+        $old = $res['oldname'];
+        // dd($old);
+        $data = Root::where('id',$id)->first();
+        // dd($data);
+        $pass = $data->password;
+        // dd($pass);
+        //数据库中的密码
+        $pass = Crypt::decrypt($pass);
+        // echo 11111;
+        // dd($pass);
+        // $old = $pass;
+        // 判断用户输入的密码是否正确
+        if($old != $pass){
+            
+            echo '原密码错误!';die;
+        }else if($res['name'] !=$res['relname']){
+            echo '新密码输入不一致!';die;
+        }
+        $data = [];
+        $data['password'] = Crypt::encrypt($pass);
+        // dd($data);
+        $flag = Root::where('id',$id) -> update($data);
+        if($flag){
+            return redirect('admin/root/index');
+        }else{
+            return back()->with('errors','修改失败');
+        }
+    }
+
 }

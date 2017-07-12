@@ -22,6 +22,12 @@ Route::group(['prefix'=>'admin','namespace'=>'Admin'],function(){
     //后台管理员
     Route::controller('root','RootController');
     Route::post('root/upload','RootController@upload');
+
+    //用户管理
+    Route::controller('user','UserController');
+
+    //网站配置
+    Route::controller('web','WebController');
 });
 
 
