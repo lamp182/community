@@ -3,8 +3,8 @@
 @section('contents')
 
 @foreach($columns as $column)
-                            <div class="bm bmw  flg cl con0{{ $column['id'] }}">
-                                <div class="bm_h cl">
+    <div class="fl bm mn-main-in">
+    <div class="bm bmw  flg cl con0{{ $column['id'] }}"><div class="bm_h cl">
 <span class="o">
 <img id="column_{{ $column['id'] }}_img" src="/home/picture/collapsed_no.gif" title="收起/展开" alt="收起/展开" onclick="fun('column_{{ $column['id'] }}');" />
 </span>
