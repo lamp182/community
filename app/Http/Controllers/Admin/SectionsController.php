@@ -43,9 +43,28 @@ class SectionsController extends Controller
     }
 
     public function select(Request $request)
-    {
+    {   
+
+        // 接收传过来的id，获取分页信息
         $res = $request -> all();
-        echo $res['value'];
+
+        if($res['value'] == 0){
+            return redirect('admin/sections');
+        }else{
+            $req = Columns::all();
+            $section = Section::where('cid',$res['value'])->paginate(10);
+             // 把板块名加到数组中
+            foreach($section as $k=>$v){
+               $v['cname'] = Columns::where('id',$v['cid'])->first()['name'];
+            }    
+
+        // dump($req);
+        // dump($section);
+
+        return view('admin.sections.index',["data"=>$req,'section'=>$section,'id'=>$res['value']]);
+        }
+
+       
     }
 
 
@@ -57,16 +76,20 @@ class SectionsController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
     public function index()
     {
         //
+
         $res = Columns::all();
-         $section = Section::orderBy('id')->paginate(10);
-         foreach($section as $k=>$v){
-            $v['cname'] = Columns::where('id',$v['cid'])->first()['name'];
-         }
+        // 获取分页信息  一页十条
+        $section = Section::orderBy('id')->paginate(10);
+        // 把板块名加到数组中
+        foreach($section as $k=>$v){
+           $v['cname'] = Columns::where('id',$v['cid'])->first()['name'];
+        }
          // dump($section);
-        return view('admin.sections.index',["data"=>$res,'section'=>$section]);
+        return view('admin.sections.index',["data"=>$res,'section'=>$section,'id'=>'0']);
     }
 
     /**
@@ -121,7 +144,19 @@ class SectionsController extends Controller
      */
     public function show($id)
     {
-        //
+        // 接收传过来的id  通过id获取详细信息
+        $section = Section::where("id",$id)->get();
+        // 把板块名加到数组中
+        foreach($section as $k=>$v){
+           $v['cname'] = Columns::where('id',$v['cid'])->first()['name'];
+           // dump($v['cid']);
+        }
+       
+        return view('admin.sections.details',['section'=>$v]);
+
+
+        // dump($id);
+        // return view('admin.sections.details');
     }
 
     /**
@@ -132,7 +167,15 @@ class SectionsController extends Controller
      */
     public function edit($id)
     {
-        //
+        // 根据id获取详细信息
+        $res = Section::where('id',$id)->first();
+        $data = Columns::get();
+
+        // dump($res);
+        // dd($data);
+        // 返回页面，并把信息传递过去
+        return view('admin.sections.edit',['data'=>$data,'res'=>$res]);
+        
     }
 
     /**
@@ -144,7 +187,24 @@ class SectionsController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        // 接收传过来的所有数据
+        $data = $request -> except('file_upload','_method','_token');
+        // 如果不修改图片，就把数组中的空值删除
+        foreach($data as $k=>$v){   
+            if( !$v )   
+                unset( $data[$k] );   
+        }   
+        // 执行修改
+        $res = Section::where('id',$id) -> update($data);
+        // dump($data);
+        // 判断返回结果，并跳转页面
+        if($res){
+             $hehe['ltime'] = time();
+             $res = Section::where('id',$id) -> update($hehe);
+            return redirect("admin/sections");
+        }  else {
+            return back() -> with('error','修改失败');
+        }     
     }
 
     /**
@@ -156,5 +216,12 @@ class SectionsController extends Controller
     public function destroy($id)
     {
         //
+        $res = Section::destroy($id);
+        // echo $res;
+        if($res){
+            echo '删除成功';
+        }else{
+            echo '删除失败';
+        }
     }
 }
