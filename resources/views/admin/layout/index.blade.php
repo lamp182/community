@@ -171,7 +171,7 @@
                     </a>
                 </li>
                  <li class="sidebar-nav-link">
-                    <a href="chart.html">
+                    <a href="{{url('admin/user/index')}}">
                         <i class="am-icon-bar-chart sidebar-nav-link-logo"></i> 前台用户管理
 
                     </a>
@@ -179,7 +179,7 @@
 
                
                  <li class="sidebar-nav-link">
-                    <a href="chart.html">
+                    <a href="{{url('admin/web/index')}}">
                         <i class="am-icon-bar-chart sidebar-nav-link-logo"></i> 网站信息管理
 
                     </a>

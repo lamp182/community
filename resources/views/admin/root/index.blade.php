@@ -3,7 +3,7 @@
 <form action="{{url('admin/root/index')}}" method="get">
     <div class="widget-body  am-fr">
 
-                                
+                                <div class="widget-title  am-cf">管理员列表</div>
                                 <div class="am-u-sm-12 am-u-md-6 am-u-lg-3">
                                     <div class="am-form-group tpl-table-list-select">
                                         
@@ -51,6 +51,10 @@
                                                         <a href="javascript:;" onclick="delroot({{$v->id}})" class="tpl-table-black-operation-del" >
                                                             <i class="am-icon-trash"></i> 删除
                                                         </a>
+                                                        <a href="{{ url('admin/root/changepass/'.$v->id) }}">
+                                                        <i class="am-icon-asterisk"></i> 
+                                                        修改密码
+                                                    </a>
                                             </div>
                                     </td>
                                 </tr>
@@ -81,12 +85,12 @@
                                             {!! $data->appends(['keywords' => $key])->render() !!}
                                         </ul>
                                         <style>
-                    .am-pagination ul li{
-                    float: left;
-                    font-size: 15px;
-                    padding: 0px 5px;
-                    }
-                </style>
+                                            .am-pagination ul li{
+                                            float: left;
+                                            font-size: 15px;
+                                            padding: 0px 5px;
+                                            }
+                                        </style>
                                 </div>
     </div>
 </form>
