@@ -2,7 +2,7 @@
 
 @section('contents')
 <div class="fl bm mn-main-in">
-    <div class="bm bmw  flg cl con01"><div class="bm_h cl">
+    <div class="bm bmw  flg cl con0{{ $column['id'] }}"><div class="bm_h cl">
 <span class="o">
 <img id="category_8704_img" src="/home/picture/collapsed_no.gif" title="收起/展开" alt="收起/展开" onclick="toggle_collapse('category_8704');">
 </span>

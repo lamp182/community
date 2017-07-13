@@ -11,6 +11,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Input;
+use App\Http\Model\Post;
 
 class SectionController extends Controller
 {
@@ -33,12 +34,12 @@ class SectionController extends Controller
         foreach ($moderators as $moderator){
             $moderator['user'] = User::find($moderator['moderator']) -> userDetail;
         }
-       $posts = Section::find($section['id']) -> posts;
+        $posts = Post::where('sid', $id) -> paginate(2);
         foreach ($posts as $post){
             $post['auther'] = User::find($post['uid']) -> userDetail;
             $post['theme'] = Theme::where('sid', $section['id']) -> where('id', $post['tid']) -> first()['name'];
         }
-       // dd($posts);
+//        dd($posts -> render());
         $data = [
             'section' => $section,
             'themes' => $themes,

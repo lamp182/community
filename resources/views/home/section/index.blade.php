@@ -381,113 +381,18 @@
                                                 </td>
                                             </tr>
                                             </tbody>
-                                            <tbody id="separatorline">
-                                            <tr class="ts">
-                                                <td>&nbsp;</td>
-                                                <th><a href="javascript:;" onclick="checkForumnew_btn('8706')" title="查看更新" class="forumrefresh">版块主题</a></th>
-                                                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
-                                            </tr>
-                                            </tbody>
-                                            <script type="text/javascript">hideStickThread();</script>
-                                            <tbody id="normalthread_10321879">
-                                            <tr>
-                                                <td class="icn">
-                                                    <a href="http://bbs.17173.com/thread-10321879-1-1.html" title="有新回复 - 新窗口打开" target="_blank">
-                                                    </a>
-                                                </td>
-                                                <th class="new">
-                                                    <a href="javascript:;" id="content_10321879" class="showcontent y" title="更多操作" onclick="CONTENT_TID='10321879';CONTENT_ID='normalthread_10321879';showMenu({'ctrlid':this.id,'menuid':'content_menu'})"></a>
-                                                    <em>[<a href="http://bbs.17173.com/forum.php?mod=forumdisplay&fid=8706&amp;filter=typeid&amp;typeid=1054">活动</a>]</em> <a href="http://bbs.17173.com/thread-10321879-1-1.html" style="font-weight: bold;color: #2897C5;" onclick="atarget(this)" class="s xst">新版趣味拼图活动，还有奖品送，快来参加吧！V6.26</a>
-                                                    <img src="picture/image_s.gif" alt="attach_img" title="图片附件" align="absmiddle" />
-                                                    - <span class="xi1">[回帖奖励 <strong> 680</strong> ]</span>
-                                                    <span class="tps">&nbsp;...<a href="http://bbs.17173.com/thread-10321879-2-1.html">2</a></span>
-                                                    <a href="http://bbs.17173.com/forum.php?mod=redirect&amp;tid=10321879&amp;goto=lastpost#lastpost" class="xi1">New</a>
-                                                </th>
-                                                <td class="by">
-                                                    <cite>
-                                                        <a href="http://bbs.17173.com/space-uid-119792832.html" c="1" style="color: #FF0000;">浪里の尐白熊</a></cite>
-                                                    <em><span class="xi1"><span title="2017-6-26">13&nbsp;小时前</span></span></em>
-                                                </td>
-                                                <td class="num"><a href="http://bbs.17173.com/thread-10321879-1-1.html" class="xi2">17</a><em>1123</em></td>
-                                                <td class="by">
-                                                    <cite><a href="http://bbs.17173.com/space-username-%E4%B9%96%E4%B9%96%E5%85%94%E7%81%B5.html" c="1">乖乖兔灵</a></cite>
-                                                    <em><a href="http://bbs.17173.com/forum.php?mod=redirect&tid=10321879&goto=lastpost#lastpost"><span title="2017-6-27 08:34">帖子提升 <img src="picture/bmp.png"></img</span></a></em>
-                                                </td>
-                                            </tr>
-                                            </tbody>
-                                            <tbody id="normalthread_10020265">
-                                            <tr>
-                                                <td class="icn">
-                                                    <a href="http://bbs.17173.com/thread-10020265-1-1.html" title="有新回复 - 新窗口打开" target="_blank">
-                                                    </a>
-                                                </td>
-                                                <th class="new">
-                                                    <a href="javascript:;" id="content_10020265" class="showcontent y" title="更多操作" onclick="CONTENT_TID='10020265';CONTENT_ID='normalthread_10020265';showMenu({'ctrlid':this.id,'menuid':'content_menu'})"></a>
-                                                    <em>[<a href="http://bbs.17173.com/forum.php?mod=forumdisplay&fid=8706&amp;filter=typeid&amp;typeid=1058">分享</a>]</em> <a href="http://bbs.17173.com/thread-10020265-1-1.html" onclick="atarget(this)" class="s xst">史诗掉落闪瞎眼补丁!!</a>
-                                                    <img src="picture/common.gif" alt="attachment" title="附件" align="absmiddle" />
-                                                    <img src="picture/hot_3.gif" align="absmiddle" alt="heatlevel" title="热度: 396" />
-                                                    <span class="tps">&nbsp;...<a href="http://bbs.17173.com/thread-10020265-2-1.html">2</a><a href="http://bbs.17173.com/thread-10020265-3-1.html">3</a><a href="http://bbs.17173.com/thread-10020265-4-1.html">4</a><a href="http://bbs.17173.com/thread-10020265-5-1.html">5</a><a href="http://bbs.17173.com/thread-10020265-6-1.html">6</a>..<a href="http://bbs.17173.com/thread-10020265-27-1.html">27</a></span>
-                                                </th>
-                                                <td class="by">
-                                                    <cite>
-                                                        <a href="http://bbs.17173.com/space-uid-120828390.html" c="1" style="color: #FF00FF;">皮卡丶皮卡</a></cite>
-                                                    <em><span>2017-3-20</span></em>
-                                                </td>
-                                                <td class="num"><a href="http://bbs.17173.com/thread-10020265-1-1.html" class="xi2">404</a><em>201199</em></td>
-                                                <td class="by">
-                                                    <cite><a href="http://bbs.17173.com/space-username-%E9%A3%9E%E7%BF%94%E7%9A%84%E8%8D%89%E6%B3%A5%E9%A9%AC3.html" c="1">飞翔的草泥马3</a></cite>
-                                                    <em><a href="http://bbs.17173.com/forum.php?mod=redirect&tid=10020265&goto=lastpost#lastpost"><span title="2017-6-26 21:39">3&nbsp;分钟前</span></a></em>
-                                                </td>
-                                            </tr>
-                                            </tbody>
 
                                         </table><!-- end of table "forum_G[fid]" branch 1/3 -->
                                     </form>
                                 </div>
                             </div>
 
-                            <div id="filter_special_menu" class="p_pop" style="display:none" change="location.href='forum.php?mod=forumdisplay&fid=8706&filter='+$('filter_special').value">
-                                <ul>
-                                    <li><a href="http://bbs.17173.com/forum-8706-1.html">全部主题</a></li>
-                                    <li><a href="http://bbs.17173.com/forum.php?mod=forumdisplay&amp;fid=8706&amp;filter=specialtype&amp;specialtype=poll">投票</a></li></ul>
-                            </div>
-                            <div id="filter_reward_menu" class="p_pop" style="display:none" change="forum.php?mod=forumdisplay&amp;fid=8706&amp;filter=specialtype&amp;specialtype=reward&amp;rewardtype='+$('filter_reward').value">
-                                <ul>
-                                    <li><a href="http://bbs.17173.com/forum.php?mod=forumdisplay&amp;fid=8706&amp;filter=specialtype&amp;specialtype=reward">全部悬赏</a></li>
-                                    <li><a href="http://bbs.17173.com/forum.php?mod=forumdisplay&amp;fid=8706&amp;filter=specialtype&amp;specialtype=reward&amp;rewardtype=1">进行中</a></li></ul>
-                            </div>
-                            <div id="filter_dateline_menu" class="p_pop" style="display:none">
-                                <ul class="pop_moremenu">
-                                    <li>排序:
-                                        <a href="http://bbs.17173.com/forum.php?mod=forumdisplay&amp;fid=8706&amp;filter=author&amp;orderby=dateline" >发帖时间</a><span class="pipe">|</span>
-                                        <a href="http://bbs.17173.com/forum.php?mod=forumdisplay&amp;fid=8706&amp;filter=reply&amp;orderby=replies" >回复/查看</a><span class="pipe">|</span>
-                                        <a href="http://bbs.17173.com/forum.php?mod=forumdisplay&amp;fid=8706&amp;filter=reply&amp;orderby=views" >查看</a>
-                                    </li>
-                                    <li>时间:
-                                        <a href="http://bbs.17173.com/forum.php?mod=forumdisplay&amp;fid=8706&amp;orderby=lastpost&amp;filter=dateline" class="xw1">全部时间</a><span class="pipe">|</span>
-                                        <a href="http://bbs.17173.com/forum.php?mod=forumdisplay&amp;fid=8706&amp;orderby=lastpost&amp;filter=dateline&amp;dateline=86400" >一天</a><span class="pipe">|</span>
-                                        <a href="http://bbs.17173.com/forum.php?mod=forumdisplay&amp;fid=8706&amp;orderby=lastpost&amp;filter=dateline&amp;dateline=172800" >两天</a><span class="pipe">|</span>
-                                        <a href="http://bbs.17173.com/forum.php?mod=forumdisplay&amp;fid=8706&amp;orderby=lastpost&amp;filter=dateline&amp;dateline=604800" >一周</a><span class="pipe">|</span>
-                                        <a href="http://bbs.17173.com/forum.php?mod=forumdisplay&amp;fid=8706&amp;orderby=lastpost&amp;filter=dateline&amp;dateline=2592000" >一个月</a><span class="pipe">|</span>
-                                        <a href="http://bbs.17173.com/forum.php?mod=forumdisplay&amp;fid=8706&amp;orderby=lastpost&amp;filter=dateline&amp;dateline=7948800" >三个月</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div id="filter_orderby_menu" class="p_pop" style="display:none">
-                                <ul>
-                                    <li><a href="http://bbs.17173.com/forum-8706-1.html">默认排序</a></li>
-                                    <li><a href="http://bbs.17173.com/forum.php?mod=forumdisplay&amp;fid=8706&amp;filter=author&amp;orderby=dateline">发帖时间</a></li>
-                                    <li><a href="http://bbs.17173.com/forum.php?mod=forumdisplay&amp;fid=8706&amp;filter=reply&amp;orderby=replies">回复/查看</a></li>
-                                    <li><a href="http://bbs.17173.com/forum.php?mod=forumdisplay&amp;fid=8706&amp;filter=reply&amp;orderby=views">查看</a></li>
-                                    <li><a href="http://bbs.17173.com/forum.php?mod=forumdisplay&amp;fid=8706&amp;filter=lastpost&amp;orderby=lastpost">最后发表</a></li>
-                                    <li><a href="http://bbs.17173.com/forum.php?mod=forumdisplay&amp;fid=8706&amp;filter=heat&amp;orderby=heats">热门</a></li>
-                                </ul>
-                            </div>
-                            <a class="bm_h" href="javascript:;" rel="forum.php?mod=forumdisplay&fid=8706&page=2" curpage="1" id="autopbn" totalpage="1000" picstyle="0" forumdefstyle="">下一页 &raquo;</a>
+    
+                           
                             <script src="/home/js/autoloadpage.js" type="text/javascript"></script>
                             <div class="bm bw0 pgs cl">
-                                <span id="fd_page_bottom"><div class="pg"><strong>1</strong><a href="http://bbs.17173.com/forum-8706-2.html">2</a><a href="http://bbs.17173.com/forum-8706-3.html">3</a><a href="http://bbs.17173.com/forum-8706-4.html">4</a><a href="http://bbs.17173.com/forum-8706-5.html">5</a><a href="http://bbs.17173.com/forum-8706-6.html">6</a><a href="http://bbs.17173.com/forum-8706-7.html">7</a><a href="http://bbs.17173.com/forum-8706-8.html">8</a><a href="http://bbs.17173.com/forum-8706-9.html">9</a><a href="http://bbs.17173.com/forum-8706-10.html">10</a><a href="http://bbs.17173.com/forum-8706-1000.html" class="last">... 3759</a><label><input type="text" name="custompage" class="px" size="2" title="输入页码，按回车快速跳转" value="1" onkeydown="if(event.keyCode==13) {window.location='forum.php?mod=forumdisplay&fid=8706&amp;page='+this.value;; doane(event);}" /><span title="共 1000 页"> / 1000 页</span></label><a href="http://bbs.17173.com/forum-8706-2.html" class="nxt">下一页</a></div></span>
-                                <span  class="pgb y"><a href="http://bbs.17173.com/forum.php">返&nbsp;回</a></span>
+                            {!! $posts -> render() !!}
+                               
                                 <a href="javascript:;" id="newspecialtmp" onmouseover="$('newspecial').id = 'newspecialtmp';this.id = 'newspecial';showMenu({'ctrlid':this.id})" onclick="showWindow('newthread', 'forum.php?mod=post&action=newthread&fid=8706')" title="发新帖">
                                     <img src="picture/pn_post.png" alt="发新帖" />
                                 </a>

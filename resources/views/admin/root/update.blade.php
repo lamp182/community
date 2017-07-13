@@ -2,9 +2,16 @@
 
 @section('content')
 
+
+ 
 <form class="am-form tpl-form-border-form" action="{{url('admin/root/doupdate')}}"  method="post" id="root_form">
 {{csrf_field()}}
     <input type="hidden" name="id" value="{{ $data->id }}">
+  <div class="am-u-sm-12">
+            @if(session('errors'))
+              <p>  {{session('errors')}}</p>
+            @endif
+  </div>
     <div class="am-form-group">
         <label for="user-name" class="am-u-sm-12 am-form-label am-text-left">
             管理员名
@@ -124,13 +131,6 @@
 
          }
     });
-
-
-
-
-
-
-
 
             $(function () {
                    $("#file_upload").change(function () {
