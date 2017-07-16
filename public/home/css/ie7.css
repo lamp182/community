@@ -1,0 +1,25 @@
+.game{ width: 178px; height: 174px; padding-top: 11px; float: left; border: 0px solid #91C0DE; margin: 5px 0px 0px 3px; }
+
+.jtList LI { float: left; display: block; margin: 10px 5px 4px 10px; padding: 0; height: 199px; width: 161px; background-image: url(../images/kuang.jpg); background-repeat: no-repeat; background-position: top; }
+
+.jtList1 LI { float: left; margin: 10px 25px 12px 30px; padding: 0; WIDTH: 182px; }
+
+.jtList2 LI { float: left; margin: 10px 10px 12px 20px; padding: 0; WIDTH: 110px; }
+
+.duihuanList li{ float: left; margin: 5px 5px 5px 12px; text-align: center; width: 111px; display: block; }
+
+.newlpJtList li{ float: left; margin: 10px 15px 10px 18px; text-align: center; width: 111px; display: block; }
+
+.dhmaL{ float: left; width: 372px; text-align: left; margin-left: 12px; }
+
+.jtList21 LI { float: left; display: block; margin: 10px 31px 0px 16px; padding: 0; WIDTH: 182px; }
+
+.jpList LI { float: left; display: block; margin: 12px 9px 0px 6px; padding: 0; WIDTH: 92px; }
+
+.jpList1 li{ float: left; text-align: center; width: 190px; height: 168px; display: block; background-image: url(../images/shopact_12.jpg); background-repeat: no-repeat; background-position: center top; margin: 15px 35px 25px 0px; }
+
+.dkList LI { float: left; display: block; margin: 10px 5px 4px 10px; padding: 0; height: 225px; width: 161px; background-image: url(../images/kuang11.gif); background-repeat: no-repeat; background-position: top; }
+
+.dkList2 LI { float: left; margin: 10px 8px 4px 15px; padding: 0; WIDTH: 324px; height: 294px; background-image: url(../images/act_3.jpg); background-repeat: no-repeat; background-position: top; }
+
+.dkList1 LI { float: left; margin: 10px 5px 4px 15px; padding: 0; WIDTH: 209px; height: 240px; border: 1px solid #e9e9e9; }

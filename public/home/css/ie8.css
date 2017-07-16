@@ -1,0 +1,8 @@
+.xtggList{ background-image: url(../images/index_12.jpg); background-repeat: no-repeat; background-position: bottom; height: 70px; }
+
+.hotactL{ background-image: url(../images/index_17.jpg); background-repeat: no-repeat; background-position: bottom; height: 122px; }
+
+#menutitle li a{ text-align: center; font-size: 14px; color: #ffffff; line-height: 40px; text-decoration: none; font-weight: bold; }
+
+#menutitle li a:hover{ text-align: center; font-size: 14px; color: #ffffff; text-decoration: none; font-weight: bold; background-image: url(../images/shop_9.jpg); background-repeat: no-repeat; background-position: top; display: block; width: 112px; height: 40px; padding: 0px; line-height: 40px; }
+

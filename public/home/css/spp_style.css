@@ -1,0 +1,102 @@
+/*\767b\5f55\53e3\6838\5fc3\90e8\5206,\8bf7\52ff\6539\52a8*/
+/* \5168\5c40CSS\5b9a\4e49 */
+.passportc ul,.passportc ol,.passportc li,.passportc span,.passportc p,.passportc form {margin: 0; padding: 0; border: 0;}
+.passportc img,.passportc a img{border:0; margin:0; padding:0;}
+.passportc ul,.passportc ol,.passportc li {list-style:none}
+
+/*\5c0f\8721\70dbFlash*/
+.sohuMsgFlash{
+	padding:0 25px 0 0;
+}
+.sohuMsgFlash embed{
+	width:170px;
+	height:120px;
+	position:absolute;
+	margin:-4px 0 0 -2px;
+}
+/* \767b\5f55\524d */
+.passportc {width:280px;height:auto;font-size:12px;text-align:left;}
+.passportc_title{height:34px;line-height:34px;font-size:14px;color:#015599;font-weight:bold;border:1px solid #015599;background-image:url(../images/pp_title.gif); background-repeat:repeat-x; background-position:3px 3px}
+.passportc_title a,.passportc_title a:link,.passportc_title a:visited{color:#9E9E9E}
+.passportc .card {font-weight: normal;padding:3px 0px 0px 23px!important;padding:10px 0px 0px 23px;}
+.passportc .card li{margin:0px 0px 5px 0px!important;margin:0px 0px 3px 0px;}
+.passportc .card li img{margin:0 10px 0 10px;}
+.passportc .card .loginSubimt{height:41px;padding-top:13px;}
+.passportc .card .login{margin:5px 4px 0px 8px!important;margin:5px 1px 0px 8px;color: #313031;float:left;}
+.passportc .card .ppinput {border:1px #676767 solid;height:17px;width:166px!important;width:164px;background:#fff;font-size:12px;background:url(../images/pp_input.gif) no-repeat;padding:3px 0 0 5px;}
+/* \8f93\5165\4e0b\62c9\6846\989c\8272 */
+.ppselecter, .ppselecter * {font-size:12px; font-family:"\5b8b\4f53", Verdana, Arial, Helvetica, sans-serif; line-height:normal;}
+.ppselecter {border: 1px solid #FFA700; width: 166px;margin-left:1px;}
+.ppselecter .ppseltit {background-color: #FFF6DF;height:15px;padding-top:4px;text-indent:6px; color:#FF6000;}
+.ppselecter table td table td {padding: 3px;}
+.ppselecter .active {background:#FDD463; color:#333; font-weight: normal;}
+/* \767b\5f55\4e2d */
+.ppWaitMsg{background:url(../images/load.gif) no-repeat center;color:#FF6000;padding-top:90px;font-size:12px;text-align:center;font-weight:normal;}
+/* \767b\5f55\540e */
+.passportc .listContA{width:273px;height:auto;margin:0 0 0 3px;}
+/*\767b\5f55\53e3\6838\5fc3\90e8\5206\7ed3\675f*/
+
+/*\8fb9\6846\3001\80cc\666f\3001\9ed8\8ba4\5b57\989c\8272*/
+.passportc{
+	background:#fff;
+	border-bottom:1px solid #24689E;
+	border-right:1px solid #24689E;
+	color:#000;
+}
+
+/*\767b\5f55\5931\8d25\9519\8bef\63d0\793a*/
+.passportc .err {color:#FF6000;font-weight: normal;height:14px;margin-left:42px;}
+/*\6807\9898\680f17173\5b57\989c\8272*/
+.passportc b{color:#FF0000;}
+/*\662f\5426\663e\793a\5361\7247\6807\9898\680f normal none*/
+.passportc_title {display:normal}
+/*.passportc_logout{display:none}*/
+.passportc_logout{padding-left:230px;}
+/* \94fe\63a5\989c\8272 */
+.passportc a {color: #FF6000;text-decoration:none}
+.passportc a:hover {text-decoration:underline;}
+/* \8f93\5165\4e0b\62c9\6846\989c\8272 */
+.ppselecter {border: 1px solid #FFA700;}
+.ppselecter .ppseltit {background-color: #FFF6DF;color:#FF6000;}
+.ppselecter .active {background:#FDD463; color:#333; font-weight: normal;}
+/*\5185\5bb9\6846\6837\5f0f*/
+.passportc_content{clear:both;height:auto;margin:0;border:1px solid #015599;background-image:url(../images/pp_content.gif); background-repeat:repeat-x;}
+/*\5185\5bb9\6846\4e8c\5c42*/
+/*.passportc .listContA{border:1px #FFD391 solid;background:#fff;color:#FF6000;}
+/*\5185\5bb9\5757\4e09\5c42*/
+#spp_app_block{margin-left:6px}
+/*\7ad9\5185\4e92\52a8\5bfc\822a*/
+.spp_app_behavior li{float:left;background:#F3F3F3;margin:4px 1px 4px 1px;padding:0;line-height:normal;}
+.spp_app_behavior .spp_current_app {background:#FF9E3A;}
+.spp_app_behavior .spp_current_app a{padding:2px 10px 2px 10px;color:#FFF;font-weight:bold;border:1px solid #FF6600;}
+.spp_app_behavior a{display:block;padding:2px 12px 2px 12px;color:#515151; border:1px solid #CBCBCB}
+.spp_app_behavior a:hover{padding:2px 11px 2px 11px;border:1px solid #FF6600;background:#FF9E3A;font-weight:bold;color:#FFF;}
+
+/*\767b\9646\6210\529f\5185\5bb9\4fe1\606f\5757*/
+.spp_app_info {color:#818181;line-height:20px;}
+/*\767b\5f55\6309\94ae*/
+.passportc_login{width:60px:height:24px; background:url(../images/pp_login.gif) no-repeat;}
+.passportc_register{width:60px:height:24px;background:url(../images/pp_register.gif) no-repeat;}
+#pp_title_left{
+	height:34px;
+	line-height:34px;
+	width:185px;
+	padding-left:10px;
+	float:left;
+}
+#pp_title_right{
+	height:25px;
+	text-align:right;
+	width:40px;
+	padding:8px 5px 0 0;
+	float:right;
+}
+#idBox{
+	border-right:1px solid #5983A5;
+	border-bottom:1px solid #5983A5;
+}
+.ppouter{
+	clear:both;
+	border-right:1px solid #24689E;
+	border-bottom:1px solid #24689E;
+}

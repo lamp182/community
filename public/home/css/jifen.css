@@ -1,0 +1,36 @@
+.jifen {
+	FONT-SIZE: 12px; HEIGHT: 24px
+}
+.jifen TD {
+	FONT-SIZE: 12px; HEIGHT: 24px
+}
+.jifen IMG {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px;vertical-align:middle;
+}
+A.toolTip {
+	COLOR: blue; POSITION: relative; BACKGROUND-COLOR: transparent; TEXT-DECORATION: none
+}
+A.toolTip:hover {
+	COLOR: blue; POSITION: relative; BACKGROUND-COLOR: transparent; TEXT-DECORATION: none
+}
+A.toolTip1 {
+	COLOR: blue; POSITION: relative; BACKGROUND-COLOR: transparent; TEXT-DECORATION: none
+}
+A.toolTip1:hover {
+	COLOR: blue; POSITION: relative; BACKGROUND-COLOR: transparent; TEXT-DECORATION: none
+}
+.pp17173 .tooltipInfo {
+	PADDING-RIGHT: 0.6em; DISPLAY: none; PADDING-LEFT: 0.6em; LEFT: -0.6em; PADDING-BOTTOM: 0px; OVERFLOW: hidden; WIDTH: 300px; COLOR: #000; WORD-BREAK: break-all; LINE-HEIGHT: 18px; PADDING-TOP: 0px; WHITE-SPACE: normal; POSITION: absolute; TOP: 1.8em; TEXT-DECORATION: none
+}
+.tooltipInfo_left {
+	BACKGROUND-IMAGE: url(../images/1267171002986.png); WIDTH: 3px; BACKGROUND-REPEAT: no-repeat
+}
+.tooltipInfo_content {
+	PADDING-RIGHT: 1px; PADDING-LEFT: 1px; BACKGROUND-IMAGE: url(../images/1267171002925.png); PADDING-BOTTOM: 1px; LINE-HEIGHT: 20px; PADDING-TOP: 1px; BACKGROUND-REPEAT: repeat-x
+}
+.tooltipInfo_right {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BACKGROUND-IMAGE: url(../images/1267171002232.png); PADDING-BOTTOM: 0px; LINE-HEIGHT: 0; PADDING-TOP: 0px; BACKGROUND-REPEAT: no-repeat
+}
+.pp17173 .tooltipInfo1 {
+	PADDING-RIGHT: 0.6em; DISPLAY: none; PADDING-LEFT: 2em; LEFT: 2em; BACKGROUND-IMAGE: url(../images/1267415843167.gif); PADDING-BOTTOM: 1em; OVERFLOW: hidden; WIDTH: 184px; COLOR: #000; WORD-BREAK: break-all; LINE-HEIGHT: 20px; PADDING-TOP: 0.4em; BACKGROUND-REPEAT: no-repeat; WHITE-SPACE: normal; POSITION: absolute; TOP: 1em; TEXT-DECORATION: none
+}
