@@ -206,6 +206,9 @@
 @section('contents')
            
 @show
+@section('content')
+           
+@show
 
 
 <div class="wp a_f AdBbs2BannerBottom"></div><div class="wp a_f"><iframe align=center marginWidth=0 marginHeight=0 src="http://bbs.17173.com/x/bbsbottom96060.htm" frameBorder=0 width=960 scrolling=no height=60></iframe></div><script type="text/javascript">

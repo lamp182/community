@@ -53,7 +53,7 @@ class LoginController extends Controller
 
                       echo '登录成功';
                             
-                      }
+                      // }
 
                   }
                  }else{

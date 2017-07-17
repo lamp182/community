@@ -1,4 +1,4 @@
-   @extends('home.layout.index')
+   @extends('home.layout.zhuce')
 @section('content')
 
 <div id="content" class="clearfix pw-find-mobile content-comm content-mmgl">
