@@ -23,7 +23,7 @@ Route::group(['prefix' => 'home', 'namespace' => 'Home'], function ()
 });
 
 
-Route::group(['prefix'=>'admin','namespace'=>'Admin'],function(){
+    Route::group(['prefix'=>'admin','namespace'=>'Admin'],function(){
     // 栏目路由
 
     Route::controller('columns','ColumnsController');
@@ -42,7 +42,22 @@ Route::group(['prefix'=>'admin','namespace'=>'Admin'],function(){
     Route::controller('user','UserController');
 
     //网站配置
-    Route::controller('web','WebController');
+    Route::resource('web','WebController');
+    Route::any('upload','WebController@upload');
+
+    // 友情链接
+    Route::controller('link','LinkController');
+
+    //广告申请
+    // Route::controller('adverts','AdvertsController');
+    Route::resource('adverts','AdvertsController');
+    Route::any('upload','AdvertsController@upload');
+
+    //版主申请
+    Route::resource('moderators','ModeratorsController');
+
+
+
 
 });
 

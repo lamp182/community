@@ -1,5 +1,6 @@
 @extends('admin.layout.index')
 @section('content')
+<form action="{{url('admin/user/index')}}" method="get">
 <div class="am-u-sm-12 am-u-md-12 am-u-lg-12">
                         <div class="widget am-cf">
                             <div class="widget-head am-cf">
@@ -7,6 +8,18 @@
                                 <div class="widget-function am-fr">
                                 </div>
                             </div>
+
+                            <div class="am-u-sm-12 am-u-md-12 am-u-lg-3" style="float:right; margin-top:10px; margin-right:200px;">
+                                    <div class="am-input-group am-input-group-sm tpl-form-border-form cl-p">
+                                        <input type="text" id="inp" class="am-form-field" placeholder="按手机号码查找" name="keywords" value="@if(!empty($key)){{$key}}@endif"/>
+                                        <span class="am-input-group-btn">
+                                            <button class="am-btn  am-btn-default am-btn-success tpl-table-list-field am-icon-search" type="submit">
+                                            </button>
+                                        </span>
+                                    </div>
+                                </div>
+
+
 
                             <div class="widget-body  widget-body-lg am-fr">
 								
@@ -48,19 +61,44 @@
                                     </tbody>
 
                                 </table>
-									<ul class="am-pagination">
-                                            {!! $data->render() !!}
+                                <!--<ul class="am-pagination">
+                                    {!! $data->render() !!}
+                                </ul>
+                                <style>
+                                    .am-pagination ul li{
+                                        float: left;
+                                        font-size: 15px;
+                                        padding: 0px 5px;
+                                    }
+                                </style>-->
+                                <div class="am-u-lg-12 am-cf">
+                                    <?php
+                                        $key = empty($key)?'':$key;
+                                        ?>
+                                        <ul class="am-pagination">
+                                                    
+                                            <!-- {!! $data->render() !!} -->
+                                            {!! $data->appends(['keywords' => $key])->render() !!}
                                         </ul>
                                         <style>
-                    .am-pagination ul li{
-                    float: left;
-                    font-size: 15px;
-                    padding: 0px 5px;
-                    }
-                </style>
+                                            .am-pagination ul li{
+                                            float: left;
+                                            font-size: 15px;
+                                            padding: 0px 5px;
+                                            }
+                                        </style>
+                                </div>
+
+
+
+
+
+
+
                             </div>
                         </div>
                     </div>
+</form>
 <script type="text/javascript">
 
     function deluser(id){

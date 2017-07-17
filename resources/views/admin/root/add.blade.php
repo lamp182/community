@@ -2,7 +2,7 @@
 
 @section('content')
 
-<form class="am-form tpl-form-border-form" action="{{url('admin/root/doadd')}}"method="post" id="root_form">
+<form class="am-form tpl-form-border-form" enctype="multipart/form-data" action="{{url('admin/root/doadd')}}" method="post" id="root_form"  >
     {{csrf_field()}}
         @if (count($errors) > 0)
             <div class="mark" style="color:red">
@@ -124,43 +124,30 @@
                 <div class="am-form-group am-form-file">
 
                     <div class="tpl-form-file-img">
-                        <img src="" id="img0">
+                        <img id="pic" src="" width="100px" height="100px" style="display:none" alt="">
                     </div>
 
                     <button type="button" class="am-btn am-btn-danger am-btn-sm ">
                         <i class="am-icon-cloud-upload">
                         </i>
-                        添加
+                        添加头像
                     </button>
-                    <input id="file0" type="file" multiple="" value="">
+                    <input type="hidden" name="faceico" id="art_thumb" style="width:120px;height:60px" value="">
+                    <input type="file" name="file_upload" id="doc_form_file" value="">
                 </div>
             </div>
         </div>
-        <tr>
-            <th>
-            </th>
-            <td>
-                <img src="" alt="" name="pic" id="pic" style="width:100px;display:none;">
-            </td>
-        </tr>
-        <div class="am-form-group">
-            <div class="am-u-sm-12 am-u-sm-push-12">
-            <button type="submit" class="am-btn am-btn-primary tpl-btn-bg-color-success id='button' ">
-                提交
-            </button>
-            </div>
-        </div>
-        <!--
-        <script type="text/javascript">
+
+         <script type="text/javascript">
             $(function() {
-                $("#file_upload").change(function() {
+                $("#doc_form_file").change(function() {
                     uploadImage();
                 });
             });
 
             function uploadImage() {
                 //                            判断是否有选择上传文件
-                var imgPath = $("#file_upload").val();
+                var imgPath = $("#doc_form_file").val();
                 // alert(imgPath);
                 if (imgPath == "") {
                     alert("请选择上传图片！");
@@ -176,22 +163,22 @@
                 var formData = new FormData($('#root_form')[0]);
                 console.log(formData);
                 $.ajax({
-                    type: "POST",
+                    type: "post",
                     url: "/admin/root/upload",
                     data: formData,
                     async: true,
                     cache: false,
                     contentType: false,
                     processData: false,
-                    success: function(data) {
-                        // alert(data);
-                        //                                    console.log(data);
-                        //                                    alert("上传成功");
-                        $('#pic').attr('src', '{{env('QINIU_DOMAIN ')}}' + data);
-                        $('#pic').show();
-                        $('#doc-form-file').val(data);
+                     success: function(res) {
+                       // console.log(data);
+                       // alert(res);
+                                $('#pic').attr('src','/'+res);
+                                $('#pic').show();
+                                $("#art_thumb").val(res);
+                                // $('#icon').val(data);
 
-                    },
+                            },
                     // alert('2345');
                     error: function(XMLHttpRequest, textStatus, errorThrown) {
                         alert("上传失败，请检查网络后重试");
@@ -199,7 +186,30 @@
                 });
             }
         </script>
-        -->
+
+
+
+
+
+
+
+        <tr>
+            <th>
+            </th>
+            <td>
+                <img src="" alt="" name="pic" id="pic" style="width:100px;display:none;">
+            </td>
+        </tr>
+        <div class="am-form-group">
+            <div class="am-u-sm-12 am-u-sm-push-12">
+            <button type="submit" class="am-btn am-btn-primary tpl-btn-bg-color-success id='button' ">
+                提交
+            </button>
+            </div>
+        </div>
+        
+       
+        
 </form>
 
 

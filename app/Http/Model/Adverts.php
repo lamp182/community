@@ -4,10 +4,9 @@ namespace App\Http\Model;
 
 use Illuminate\Database\Eloquent\Model;
 
-class UserDetail extends Model
+class Adverts extends Model
 {
-    //
-    protected $table = 'userdetails';
+    protected $table = 'adverts';
     protected $primaryKey="id";
     protected $guarded = [];
     public $timestamps = false;

@@ -17,9 +17,20 @@ class UserController extends Controller
     */
     public function getIndex(Request $request)
     {
-    	$user = User::orderBy('id','asc') -> paginate(2);
-    	// // dd($user);
-        return view('admin.users.index',['data'=>$user]);
+
+      if($request->has('keywords')){
+            $key = trim($request->input('keywords')) ;
+            // echo $key;
+            $root = User::where('phone','like',"%".$key."%")->paginate(5);
+            // dd($root);
+            return view('admin.users.index',['data'=>$root,'key'=>$key]);
+            // return $key;
+        }else{
+            $user = User::orderBy('id','asc') -> paginate(2);
+      // // dd($user);
+            return view('admin.users.index',['data'=>$user]);
+        }
+    	
 
     }
 
@@ -72,15 +83,10 @@ class UserController extends Controller
     */
    public function getDetails($id)
    {
-   	$data = User::find($id) -> detail;
+   	$data = User::find($id) -> userDetail;
     $data2 = User::find($id) -> operate;
-   	foreach($data as $k=>$v){
-
-    }
-    foreach($data2 as $m=>$n){
-
-    }
-   	return view('admin.users.usersdetails',['data'=>$v,'res'=>$n]);
+      
+   	return view('admin.users.usersdetails',['data'=>$data,'oper'=>$data2]);
    }
 
     

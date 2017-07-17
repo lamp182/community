@@ -7,12 +7,11 @@ use Illuminate\Support\Facades\Input;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
-use App\Http\Model\Web;
+use App\Http\Model\Adverts;
+use Illuminate\Support\Facades\Validator;
 
-class WebController extends Controller
+class AdvertsController extends Controller
 {
-
-
      public function upload(Request $request)
     {
         // $aa = $request -> all();
@@ -41,6 +40,8 @@ class WebController extends Controller
             return $filepath;
         }
     }
+    
+
     /**
      * Display a listing of the resource.
      *
@@ -48,14 +49,7 @@ class WebController extends Controller
      */
     public function index()
     {
-        $res = Web::all();
-
-        // dd($res);
-        foreach($res as $v){}
-        // dd($v);
-
-        return view('admin.website.index',['data'=>$v]);
-        
+        return view('admin.adverts.index');
     }
 
     /**
@@ -63,13 +57,9 @@ class WebController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create(Request $request)
+    public function create()
     {
-        $res = $request -> all();
-        // dd($res['id']);
-        // dd($res);
-        return view('admin.website.edit',['data'=>$res]);
-
+        //
     }
 
     /**
@@ -80,15 +70,42 @@ class WebController extends Controller
      */
     public function store(Request $request)
     {
-        // dd($id);
-        $data = $request -> except('_token','file_upload');
-        // $logo = $data['icon'];
-        // dd($data);
-         $res = Web::where('id',$data['id']) -> update($data);
-         if($res){
-        return redirect('admin/web');
-        }else{
-            return back()->with('errors','修改配置失败');
+        $input  =  Input::except('_token','file_upload');
+       dd($input);
+       $role =[
+            'name'=>'required',
+            'url'=>'required',
+            'etime'=>'required',
+            'picture'=>'required',
+        ];
+
+         $mess =[
+            'name.required'=>'链接名必填',
+            'url.required'=>'链接地址必填',
+            'etime.required'=>'截止日期必选',
+            'picture.required'=>'图片必选',
+        ];
+        $v = Validator::make($input,$role,$mess);
+        if($v->passes()){
+            $res = $request -> except('_token');
+            // dd($res);
+            $adverts = new Adverts();
+            $adverts -> name = $res['name'];
+            $adverts -> url = $res['url'];
+            $adverts -> ctime = $res['ctime'];
+            $adverts -> etime = $res['etime']; 
+            $adverts -> picture = $res['picture']; 
+
+                // dd($link);
+                $re = $adverts -> save();
+                if($re)
+                {
+                    return redirect('admin/adverts');
+                }else{
+                    return back()->with('error','添加失败');
+                }
+            }else{
+            return back()->withErrors($v);
         }
     }
 
@@ -111,7 +128,7 @@ class WebController extends Controller
      */
     public function edit($id)
     {
-        
+        //
     }
 
     /**
@@ -123,7 +140,7 @@ class WebController extends Controller
      */
     public function update(Request $request, $id)
     {
-        
+        //
     }
 
     /**

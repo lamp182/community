@@ -4,11 +4,11 @@ namespace App\Http\Model;
 
 use Illuminate\Database\Eloquent\Model;
 
-class UserDetail extends Model
+class Link extends Model
 {
-    //
-    protected $table = 'userdetails';
+      protected $table = 'links';
     protected $primaryKey="id";
+//    protected $fillable = ['user_name', 'user_pass'];
     protected $guarded = [];
     public $timestamps = false;
 }
