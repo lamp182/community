@@ -32,6 +32,10 @@ Route::group(['prefix' => 'home', 'namespace' => 'Home'], function ()
     Route::resource('sections','SectionsController');
     Route::any('upload','SectionsController@upload');
     Route::any('select','SectionsController@select');
+    // 帖子路由
+    Route::resource('posts','PostsController');
+    // 后台首页
+    Route::resource('index','IndexController');
 
 
     //后台管理员
