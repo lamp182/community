@@ -1,4 +1,4 @@
-   @extends('home.layout.index')
+   @extends('home.layout.zhuce')
 @section('content')
 
         <!--/box-nav-->

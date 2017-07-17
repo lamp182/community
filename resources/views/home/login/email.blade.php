@@ -1,4 +1,4 @@
-   @extends('home.layout.index')
+   @extends('home.layout.zhuce')
 @section('content')
 
 <div id="content" class="clearfix content-comm content-mmgl">
@@ -65,7 +65,8 @@
                     <p class="result result-right-small">
                     	<!-- <span class="result-right">验证邮件已发出，请48小时内登录邮箱验证。</span> -->
                         <span>登录邮箱 <span class="focus">{{$em}}</span> 并按邮件指示操作即可</span>
-                        <button class="btn btn-submit" onclick="location.href='http://mail.163.com';"><span>马上登录邮箱验证</span></button>
+                        <button class="btn btn-submit" onclick="location.href='http://mail.163.com';"><span>163登录邮箱验证</span></button>
+                        <button class="btn btn-submit" onclick="location.href='http://mail.qq.com';"><span>qq登录邮箱验证</span></button>
                     </p>
                     <!--/box-result-->
                 </div>

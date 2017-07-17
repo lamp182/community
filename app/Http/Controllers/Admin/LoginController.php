@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers\Admin;
-use App\Http\Model\user;
+use App\Http\Model\Root;
 use DB;
 use Illuminate\Http\Request;
 use Validator;
@@ -44,7 +44,7 @@ class LoginController extends Controller
           }
      
           //用户名
-          $user = User::where('name',$input['name'])->first();
+          $user = Root::where('name',$input['name'])->first();
           if(!$user){
               return back()->with('errors','无此用户')->withInput();
           }
@@ -57,7 +57,7 @@ class LoginController extends Controller
           //将用户信息添加到session中
           session(['user'=>$user]);
           //登录
-           return view('admin.layout.index');
+           return view('admin.index');
            // return redirect('admin/layout/index');
       }else{
 //          如果没有通过表单验证
