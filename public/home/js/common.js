@@ -1558,9 +1558,10 @@ function runslideshow() {
 	$F('_runslideshow', []);
 }
 
-// function toggle_collapse(objname, noimg, complex, lang) {
-// 	$F('_toggle_collapse', arguments);
-// }
+function toggle_collapse(objname, noimg, complex, lang) {
+	$F('_toggle_collapse', arguments);
+}
+
 
 function updatestring(str1, str2, clear) {
 	str2 = '_' + str2 + '_';
