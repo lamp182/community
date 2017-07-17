@@ -8,7 +8,15 @@
                             </div>
                             <div class="widget-body  am-fr">
                              <form action="{{url('admin/posts/create')}}" method="get">
-                                <div class="am-u-sm-12 am-u-md-6 am-u-lg-3" style="margin:0px 0px 0px 570px">
+                                <div class="am-u-sm-12 am-u-md-12 am-u-lg-3" style="float:right" >
+                                    <div class="am-input-group am-input-group-sm tpl-form-border-form cl-p">
+                                        <input type="text" name="zkey" class="am-form-field " value="{{$key}}">
+                                        <span class="am-input-group-btn">
+							           		<button type="submit" class="am-btn  am-btn-default am-btn-success tpl-table-list-field am-icon-search"></button>
+							          	</span>
+                                    </div>
+                                </div>
+                                <div class="am-u-sm-12 am-u-md-6 am-u-lg-3" style="float: right">
                                     <div class="am-form-group tpl-table-list-select">
 							            <select name="section" data-am-selected="{btnSize: 'sm'}" style="display: none;">
 							            		<option value="0">所有分类</option>
@@ -19,14 +27,6 @@
                                     </div>
                                 </div>
                            
-                                <div class="am-u-sm-12 am-u-md-12 am-u-lg-3" style="float:right" >
-                                    <div class="am-input-group am-input-group-sm tpl-form-border-form cl-p">
-                                        <input type="text" name="zkey" class="am-form-field " value="{{$key}}">
-                                        <span class="am-input-group-btn">
-							           		<button type="submit" class="am-btn  am-btn-default am-btn-success tpl-table-list-field am-icon-search"></button>
-							          	</span>
-                                    </div>
-                                </div>
 							</form>
                                 <div class="am-u-sm-12">
                                     <table width="100%" class="am-table am-table-compact am-table-striped tpl-table-black " id="example-r">

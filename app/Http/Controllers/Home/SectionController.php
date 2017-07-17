@@ -35,7 +35,7 @@ class SectionController extends Controller
         foreach ($moderators as $moderator){
             $moderator['user'] = User::find($moderator['moderator']) -> userDetail;
         }
-        $posts = Post::where('sid', $params['id']) -> paginate(2);
+        $posts = Post::where('sid', $params['id']) -> where('status', 0) -> paginate(2);
         foreach ($posts as $post){
             $post['auther'] = User::find($post['uid']) -> userDetail;
             $post['theme'] = Theme::where('sid', $section['id']) -> where('id', $post['tid']) -> first()['name'];
