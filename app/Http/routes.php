@@ -19,7 +19,8 @@ Route::group(['prefix' => 'home', 'namespace' => 'Home'], function ()
 	Route::get('/index', 'IndexController@index');
 	Route::get('/column', 'ColumnController@index');
 	Route::get('/section', 'SectionController@index');
-	Route::get('/post', 'PostController@index');
+	
+	Route::resource('post', 'PostController');
 });
 
 

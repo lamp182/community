@@ -10,4 +10,9 @@ class Reply extends Model
     protected $primaryKey="id";
     protected $guarded = [];
     public $timestamps = false;
+    
+    public function user()
+    {
+    	return $this -> belongsTo('App\Http\Model\User', 'uid', 'id');
+    }
 }

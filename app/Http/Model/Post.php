@@ -16,4 +16,8 @@ class Post extends Model
     {
     	return $this -> hasOne('App\Http\Model\Theme', 'id', 'tid');
     }
+    public function replies()
+    {
+    	return $this -> hasMany('App\Http\Model\Reply', 'pid', 'id');
+    }
 }

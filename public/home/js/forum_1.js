@@ -1,4 +1,4 @@
-Passport.defaultOption.mobileBindOn = false;
+
 
 
 function lsSubmit(){

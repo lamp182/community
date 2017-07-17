@@ -24,22 +24,23 @@ class SectionController extends Controller
 
     public function index(Request $request)
     {
-        $id = Input::get();
-        $section = Section::where('id', $id) -> first();
+        $params = Input::get();
+       
+        $section = Section::where('id', $params['id']) -> first();
         $themes = Section::find($section['id']) -> themes;
         foreach ($themes as $theme){
             $theme['count'] = Theme::find($theme['id']) -> posts -> count();
         }
-        $moderators = Moderator::where('sid', $id) -> get();
+        $moderators = Moderator::where('sid', $params['id']) -> get();
         foreach ($moderators as $moderator){
             $moderator['user'] = User::find($moderator['moderator']) -> userDetail;
         }
-        $posts = Post::where('sid', $id) -> paginate(2);
+        $posts = Post::where('sid', $params['id']) -> paginate(2);
         foreach ($posts as $post){
             $post['auther'] = User::find($post['uid']) -> userDetail;
             $post['theme'] = Theme::where('sid', $section['id']) -> where('id', $post['tid']) -> first()['name'];
         }
-//        dd($posts -> render());
+        
         $data = [
             'section' => $section,
             'themes' => $themes,

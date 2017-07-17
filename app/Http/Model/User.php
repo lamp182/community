@@ -45,4 +45,15 @@ class User extends Model implements AuthenticatableContract,
     {
         return $this->hasOne('App\Http\Model\UserDetail', 'uid', 'id');
     }
+    
+
+    public function userOperate()
+    {
+        return $this->hasOne('App\Http\Model\UserOperate', 'uid', 'id');
+    }
+    
+    public function replies()
+    {
+    	return $this -> hasMany('App\Http\Model\Reply', 'uid', 'id');
+    }
 }

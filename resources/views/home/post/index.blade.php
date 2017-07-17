@@ -1,8 +1,8 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>快来看看有没有你的职业表情包！此时有一位靓仔偶然路过-地下城与勇士-表情包,职业 -  爱游戏，爱17173!</title>
+<title>{{ $post -> title }}</title>
 <link href="http://bbs.17173.com/thread-10312367-1-1.html" rel="canonical" /><meta name="keywords" content="表情包,职业论坛,快来看看有没有你的职业表情包！此时有一位靓仔偶然路过,有料社区" />
 <meta name="description" content="快来看看有没有你的职业表情包！此时有一位靓仔偶然路过,表情包,职业论坛,有料社区,17173游戏论坛 " />
     <meta name="renderer" content="webkit" />
@@ -40,12 +40,12 @@
   
 <script src="/home/js/forum_1.js" type="text/javascript"></script>
     <link rel="stylesheet" type="text/css" href="/home/css/forum_1.css" />
-<script src="/home/js/jquery-1.7.2_1.js" type="text/javascript"></script>
+<script src="/home/js/jquery-1.7.2_1.js" type="text/javascript"></script> 
 <script src="/home/js/libs_1.js" type="text/javascript"></script>
     <script src="/home/js/passport_1.js" type="text/javascript"></script>
 <script>
-        var J = jQuery.noConflict();
-        if(self != top){
+    	var J = jQuery.noConflict();
+    	if(self != top){
 J('<style type="text/css">.bbs-global-bar, .boardnav #bnav, #hd, #pt1, .sub-screen-hot, .mn-main .bml, .mn-main .bm.bmw.fl, #ft, .a_f{ display:none;}.wrap-top, .wrap-bottom, .wrap{background:none;}</style>').appendTo('head');
 }
     </script>
@@ -102,7 +102,7 @@ J('<style type="text/css">.bbs-global-bar, .boardnav #bnav, #hd, #pt1, .sub-scre
 <div class="wrap-top">
 <div id="hd">
 <div class="wp">
-<div class="hdc cl" id="hdc"><h2><a href="/home"><img src="/home/picture/youliao-logo_1.png" alt="17173有料社区"></a></h2>
+<div class="hdc cl" id="hdc"><h2><a href="./"><img src="/home/picture/youliao-logo_1.png" alt="17173有料社区"></a></h2>
                     <div class="h-ad y">                    </div>
 </div>
 
@@ -174,7 +174,7 @@ initSearchmenu('scbar', '');
                         </div>
                     </div>
                     <div class="scqb-co02">
-                        <div class="pp-login pp-login2" style="display:none;">
+                    	<div class="pp-login pp-login2" style="display:none;">
                             <div class="pp-login-in">
                                 <div class="pp-login-c1">
                                     <a href="javascript:;" class="pp-login-bt1"><i class="ico-user"></i>安全登录</a>
@@ -195,7 +195,7 @@ initSearchmenu('scbar', '');
                                                     </div>
                     </div>
                     <div class="sc-quick-bar-r"></div>
-                    </div>
+                	</div>
                     
                 </div>
 </div>
@@ -208,30 +208,14 @@ initSearchmenu('scbar', '');
 <script type="text/javascript">zoomstatus = parseInt(1);var imagemaxwidth = '760';var aimgcount = new Array();</script>
 
 <style id="diy_style" type="text/css"></style>
-<!--[diy=diynavtop]--><div id="diynavtop" class="area"></div><!--[/diy]-->
-<!-- CMS CACHE BEGIN -->    <div id="pt1" class="cl">
-        <div class="hd-r"><span></span></div>
-        <div class="z">
-    <a href="/home" class="nvhm" title="首页" target="_blank" >17173有料社区</a>
-    <em>?</em>
-    <a href="forum.php?gid=8702" target="_blank">游戏周边</a>
-    <em>?</em>
-    <a href="http://bbs.17173.com/forum-8739-1.html" target="_blank">新网游</a>
-    <em>?</em>
-    <a href="http://bbs.17173.com/plugin.php?id=auction" target="_blank" >有料商城</a>
-    <em>?</em>
-    <a href="http://www.17173.com/" target="_blank" >17173首页</a>
-</div>
-</div>
-<iframe width="100%" height="165" marginwidth=0 marginheight=0 hspace=0 vspace=0 frameborder=0 scrolling=no src="http://dnf.17173.com/bbs/dnf2013bbs.shtml"></iframe><!-- CMS CACHE END -->
-<div id="pt" class="bm cl">
+
+<div id="pt" style="background: url(/home/images/hd-bg01_1.jpg) no-repeat;" class="bm cl">
 <div class="z">
-<a href="/home" class="nvhm" title="首页">17173有料社区</a> <em>&rsaquo;</em> <a href="http://bbs.17173.com/forum-8706-1.html">地下城与勇士</a> <em>&rsaquo;</em> <a href="http://bbs.17173.com/thread-10312367-1-1.html">快来看看有没有你的职业表情包！此时有一位靓仔偶然路过 ...</a>
+<a href="./" class="nvhm" title="首页">17173有料社区</a> <em>&rsaquo;</em> 
+<a href="http://bbs.17173.com/forum-8706-1.html">{{ $section -> name }}</a> <em>&rsaquo;</em> 
+<a href="http://bbs.17173.com/thread-10312367-1-1.html">{{ $post -> title }}</a>
 </div>
-    <div class="y chart-bar">
-        <a href="javascript:;" id="qmenu" onmouseover="showMenu({'ctrlid':'qmenu','pos':'34!','ctrlclass':'a','duration':2});" initialized="true" class="">快捷导航</a>
-                            <a href="javascript:;" onClick="widthauto(this)" id="widthauto-btn" class="y widthauto-btn">切换到窄版</a>
-                </div>
+    
 </div>
 
 <script type="text/javascript">
@@ -260,9 +244,27 @@ document.body.appendChild(jljs);
 <div id="ct" class="wp cl">
 
 <div id="pgt" class="pgs mbm cl  AdBbsTujianLink">
-<div class="pgt"><div class="pg"><strong>1</strong><a href="http://bbs.17173.com/thread-10312367-2-1.html">2</a><a href="http://bbs.17173.com/thread-10312367-3-1.html">3</a><a href="http://bbs.17173.com/thread-10312367-4-1.html">4</a><a href="http://bbs.17173.com/thread-10312367-5-1.html">5</a><a href="http://bbs.17173.com/thread-10312367-6-1.html">6</a><a href="http://bbs.17173.com/thread-10312367-7-1.html">7</a><a href="http://bbs.17173.com/thread-10312367-8-1.html">8</a><a href="http://bbs.17173.com/thread-10312367-9-1.html">9</a><a href="http://bbs.17173.com/thread-10312367-10-1.html">10</a><a href="http://bbs.17173.com/thread-10312367-35-1.html" class="last">... 35</a><label><input type="text" name="custompage" class="px" size="2" title="输入页码，按回车快速跳转" value="1" onkeydown="if(event.keyCode==13) {window.location='forum.php?mod=viewthread&tid=10312367&amp;extra=page%3D1&amp;page='+this.value;; doane(event);}" /><span title="共 35 页"> / 35 页</span></label><a href="http://bbs.17173.com/thread-10312367-2-1.html" class="nxt">下一页</a></div></div>
-<span class="y pgb"><a href="http://bbs.17173.com/forum-8706-1.html">返回列表</a></span>
-<a id="newspecial" onmouseover="$('newspecial').id = 'newspecialtmp';this.id = 'newspecial';showMenu({'ctrlid':this.id})" onclick="lsSubmit()" href="javascript:;" title="发新帖"><img src="/home/picture/pn_post_1.png" alt="发新帖" /></a></div>
+<div class="pgt"><div class="pg">
+	@if(!empty($uid))
+		{!! $replies -> appends(['uid' => $uid]) -> render() !!}
+	@else
+		{!! $replies -> render() !!}
+	@endif
+	<style>
+		.pgt>.pg li {
+			float: left;
+		}
+	</style>
+</div></div>
+<span class="y pgb"><a href="{{ url('home/section?id='.$section['id']) }}">返回列表</a></span>
+	<a href="javascript:;" class="newpost"  onclick="newpost()" title="发新帖"><img src="/home/picture/pn_post.png" alt="发新帖" /></a>
+                                 <span id="sign_placeholder" style="display:none;"></span>
+	<script type="text/javascript">
+		function newpost() {
+			location.href = '{{ url('home/post/create?id='.$section['id']) }}';
+		}
+	 </script>
+</div>
 
 
 
@@ -276,13 +278,13 @@ document.body.appendChild(jljs);
 </td>
 <td class="plc ptm pbn vwthd">
 <div class="y">
-<a href="http://bbs.17173.com/forum.php?mod=viewthread&amp;action=printable&amp;tid=10312367" title="打印" target="_blank"><img src="/home/picture/print.png" alt="打印" class="vm" /></a>
-<a href="http://bbs.17173.com/forum.php?mod=redirect&amp;goto=nextoldset&amp;tid=10312367" title="上一主题"><img src="/home/picture/thread-prev.png" alt="上一主题" class="vm" /></a>
-<a href="http://bbs.17173.com/forum.php?mod=redirect&amp;goto=nextnewset&amp;tid=10312367" title="下一主题"><img src="/home/picture/thread-next.png" alt="下一主题" class="vm" /></a>
+<a href="" title="打印" target="_blank"><img src="/home/picture/print.png" alt="打印" class="vm" /></a>
+<a href="" title="上一主题"><img src="/home/picture/thread-prev.png" alt="上一主题" class="vm" /></a>
+<a href="" title="下一主题"><img src="/home/picture/thread-next.png" alt="下一主题" class="vm" /></a>
 </div>
 <h1 class="ts">
 <a href="http://bbs.17173.com/forum.php?mod=forumdisplay&amp;fid=8706&amp;filter=typeid&amp;typeid=1058">[分享]</a>
-<span id="thread_subject">快来看看有没有你的职业表情包！此时有一位靓仔偶然路过</span>
+<span id="thread_subject">{{ $post['title'] }}</span>
 </h1>
 <span class="xg1">
 &nbsp;<img src="/home/picture/hot_3_1.gif" alt="" title="热度: 508" />
@@ -300,29 +302,41 @@ document.body.appendChild(jljs);
 <td class="plc">
 </td>
 </tr>
-</table><div id="post_187510523" >
+</table>
+
+@foreach($replies as $reply)
+<div id="post_187510523" >
 <table id="pid187510523" class="plhin" summary="pid187510523" cellspacing="0" cellpadding="0">
 <tr>
 <td class="pls" rowspan="2">
 <div id="favatar187510523" class="pls favatar">
  <div class="pi">
-<div class="authi"><a href="http://bbs.17173.com/space-uid-68660209.html" target="_blank" class="xw1" style="color: #FF0000">午后阳光、暖</a>
+<div class="authi">
+	<a href="{{ url('home/user/'.$reply['user']['id']) }}" target="_blank" class="xw1" style="color: #FF0000">
+		{{ $reply['user']['userdetail']['username'] }}
+	</a>
 
 <a href="http://bbs.17173.com/home.php?mod=spacecp&amp;ac=profile&amp;op=verify&amp;vid=1" target="_blank">
-<img src="/home/picture/%7B1aeced34-8254-418f-8374-13aad7b8f8e8%7D_1.png" class="vm" alt="个人认证" title="个人认证" /></a>
+<img src="/home/picture/{1aeced34-8254-418f-8374-13aad7b8f8e8}_1.png" class="vm" alt="个人认证" title="个人认证" /></a>
 
 <a href="http://bbs.17173.com/home.php?mod=spacecp&amp;ac=profile&amp;op=verify&amp;vid=2" target="_blank">
 </a>
 
 </div>
 </div>
+<!-- 用户状态 -->
+ <!-- 
 <div class="p_pop blk bui card_gender_1" id="userinfo187510523" style="display: none; margin-top: -11px;">
 <div class="m z">
 <div id="userinfo187510523_ma"></div>
 </div>
 <div class="i y">
 <div>
-<strong><a href="http://bbs.17173.com/space-uid-68660209.html" target="_blank" class="xi2" style="color: #FF0000">午后阳光、暖</a></strong>
+<strong>
+	<a href="{{ url('home/user/'.$reply['user']['id']) }}" target="_blank" class="xi2" style="color: #FF0000">
+		{{ $reply['user']['userdetail']['username'] }}
+	</a>
+</strong>
 <em>当前在线</em>
 </div><dl class="cl">
 <dt>UID</dt><dd><a href="?68660209" target="_blank" class="xi2">68660209</a></dd>
@@ -337,534 +351,114 @@ document.body.appendChild(jljs);
 <dt>VR币</dt><dd>2 </dd>
 
 </dl><div class="imicn">
-<a href="http://bbs.17173.com/home.php?mod=space&amp;uid=68660209&amp;do=profile" target="_blank" title="查看详细资料"><img src="/home/picture/userinfo.gif" alt="查看详细资料" /></a>
+<a href="http://bbs.17173.com/home.php?mod=space&amp;uid=68660209&amp;do=profile" target="_blank" title="查看详细资料">
+<img src="/home/picture/userinfo.gif" alt="查看详细资料" /></a>
 </div>
 <div id="avatarfeed"><span id="threadsortswait"></span></div>
 </div>
 </div>
+ -->
+ <!-- 用户状态结束 -->
 <div>
-<div class="avatar" onmouseover="showauthor(this, 'userinfo187510523')"><a href="http://bbs.17173.com/space-uid-68660209.html" class="avtm" target="_blank"><img src="/home/picture/avatar.php" /></a></div>
-
-
-<!--BEGIN prestige 68660209-->
-<div class="user_prestige">
-    <img src="/home/picture/dnf-lv14.gif" data-prestige="11037" data-rank="1" alt="使徒之影" >
+<div class="avatar" onmouseover="showauthor(this, 'userinfo187510523')">
+	<a href="http://bbs.17173.com/space-uid-68660209.html" class="avtm" target="_blank">
+		<img src="{{ $reply['user']['userdetail']['faceico'] }}" />
+	</a>
 </div>
-<!--END prestige 68660209-->
 
 </div>
-<div class="tns xg2"><table cellspacing="0" cellpadding="0"><th><p><a href="http://bbs.17173.com/home.php?mod=space&uid=68660209&do=thread&type=thread&view=me&from=space" class="xi2">2234</a></p>主题</th><th><p><a href="http://bbs.17173.com/home.php?mod=space&uid=68660209&do=thread&type=reply&view=me&from=space" class="xi2"><span title="14113">1万</span></a></p>帖子</th><td><p><a href="http://bbs.17173.com/home.php?mod=space&uid=68660209&do=profile" class="xi2"><span title="21750">2万</span></a></p>积分</td></table></div>
 
-<p><em><a href="http://bbs.17173.com/home.php?mod=spacecp&amp;ac=usergroup&amp;gid=60" target="_blank"><font color="#FF0000">总版主</font></a></em></p>
-<p class="xg1">嘿嘿嘿    　　 　　　</p>
+<div class="tns xg2">
+	<table cellspacing="0" cellpadding="0">
+		<th>
+			<p>
+				<a href="" class="xi2">{{ $reply['user']['replies'] }}</a>
+			</p>主题
+		</th>
+		<th>
+			<p>
+				<a href="" class="xi2"><span title="14113">{{ $reply['user']['replies'] }}</span></a>
+			</p>帖子
+		</th>
+		<td>
+			<p>
+				<a href="" class="xi2"><span title="21750">{{ $reply['user']['operate']['score'] }}</span></a>
+			</p>积分
+		</td>
+	</table>
+</div>
 
-<p><span><img src="/home/picture/star_level3.gif" alt="Rank: 32" /><img src="/home/picture/star_level3.gif" alt="Rank: 32" /></span></p>
-
-
-
-<dl class="pil cl">
-
-</dl>
-<p class="md_ctrl"><a href="http://bbs.17173.com/home.php?mod=medal"><img id="md_187510523_145" src="/home/picture/1.gif" alt="DNF圣骑士勋章" title="" onmouseover="showMenu({'ctrlid':this.id, 'menuid':'md_145_menu', 'pos':'12!'})" /><img id="md_187510523_152" src="/home/picture/17173-bbs-xz-zh.gif" alt="DNF召唤师勋章" title="" onmouseover="showMenu({'ctrlid':this.id, 'menuid':'md_152_menu', 'pos':'12!'})" /><img id="md_187510523_154" src="/home/picture/17173dnf-bbs-002.gif" alt="DNF死灵术士勋章" title="" onmouseover="showMenu({'ctrlid':this.id, 'menuid':'md_154_menu', 'pos':'12!'})" /><img id="md_187510523_158" src="/home/picture/wsj.gif" alt="万圣节勋章" title="" onmouseover="showMenu({'ctrlid':this.id, 'menuid':'md_158_menu', 'pos':'12!'})" /></a></p><ul class="xl xl2 o cl">
+<ul class="xl xl2 o cl">
 <li class="pm2">
-                                                <a href="javascript:;" onclick="lsSubmit()" title="发消息" class="xi2">发消息</a>
-                                            
-                    
-                    
-                    
-                    </li>
+      <a href="javascript:;" onclick="lsSubmit()" title="发消息" class="xi2">发消息</a> 
+</li>
 </ul>
 </div>
 </td>
-<td class="plc">
-<div class="pi">
-<div id="fj" class="y">
-<label class="z">电梯直达</label>
-<input type="text" class="px p_fre z" size="2" onkeyup="$('fj_btn').href='forum.php?mod=redirect&ptid=10312367&authorid=0&postno='+this.value" onkeydown="if(event.keyCode==13) {window.location=$('fj_btn').href;return false;}" title="跳转到指定楼层" />
-<a href="javascript:;" id="fj_btn" class="z" title="跳转到指定楼层"><img src="/home/picture/fj_btn.png" alt="跳转到指定楼层" class="vm" /></a>
-</div>
-<strong>
-<a href="http://bbs.17173.com/thread-10312367-1-1.html"   id="postnum187510523" onclick="setCopy(this.href, '帖子地址复制成功');return false;">
-楼主</a>
-</strong>
-<div class="pti">
-<div class="pdbt">
-</div>
-<div class="authi">
-<img class="authicn vm" id="authicon187510523" src="/home/picture/online_member.gif" />
-<em id="authorposton187510523">发表于 2017-6-9 09:34:10</em>
-<span class="pipe">|</span>
-<a href="http://bbs.17173.com/forum.php?mod=viewthread&amp;tid=10312367&amp;page=1&amp;authorid=68660209" rel="nofollow">只看该作者</a>
-<span class="pipe">|</span><a href="http://bbs.17173.com/forum.php?mod=viewthread&amp;tid=10312367&amp;from=album">只看大图</a>
-<span class="pipe">|</span><a href="http://bbs.17173.com/forum.php?mod=viewthread&amp;tid=10312367&amp;extra=page%3D1&amp;ordertype=1">倒序浏览</a>
-<span class="pipe">|</span><a href="javascript:;" onclick="readmode($('thread_subject').innerHTML, 187510523);">阅读模式</a>
-</div>
-</div>
-</div><div class="pct"><style type="text/css">.pcb{margin-right:0}</style><div class="pcb">
- 
-<div class="t_fsz">
-<table cellspacing="0" cellpadding="0"><tr><td class="t_f" id="postmessage_187510523">
-<script type="text/javascript">replyreload += ',' + 187510523;</script><i class="pstatus"> 本帖最后由 午后阳光、暖 于 2017-6-9 16:40 编辑 </i><br />
-<br />
-先放出DNF版本的目前就收集了这么多，如果有补充的小伙伴记得跟帖就行~<br />
-觉得好玩的可以拿来当表情包来用<img src="/home/picture/3099.gif" smilieid="94" border="0" alt="" /><br />
-
-<ignore_js_op>
-
-<img id="aimg_2680665" aid="2680665" src="/home/picture/none.gif" zoomfile="http://i1.17173cdn.com/9ih5jd/YWxqaGBf/forum/201706/09/093951jzh9xhv79n6ppaqj.png" file="http://i1.17173cdn.com/9ih5jd/YWxqaGBf/forum/201706/09/093951jzh9xhv79n6ppaqj.png" class="zoom" onclick="zoom(this, this.src, 0, 0, 0)" width="198" id="aimg_2680665" inpost="1" onmouseover="showMenu({'ctrlid':this.id,'pos':'12'})" />
-
-<div class="tip tip_4 aimg_tip" id="aimg_2680665_menu" style="position: absolute; display: none" disautofocus="true">
-<div class="xs0">
-<p><strong>QQ图片20170609092845.png</strong> <em class="xg1">(39.14 KB, 下载次数: 14)</em></p>
-<p>
-<a href="http://bbs.17173.com/forum.php?mod=attachment&amp;aid=MjY4MDY2NXwyZjc0YTY3MnwxNDk4NDg0MzU4fDB8MTAzMTIzNjc%3D&amp;nothumb=yes" target="_blank">下载附件</a>
-
-</p>
-
-<p class="xg1 y">2017-6-9 09:39 上传</p>
-
-</div>
-<div class="tip_horn"></div>
-</div>
-
-</ignore_js_op>
-
-<ignore_js_op>
-
-<img id="aimg_2680667" aid="2680667" src="/home/picture/none.gif" zoomfile="http://i1.17173cdn.com/9ih5jd/YWxqaGBf/forum/201706/09/093952eiyddldk77yi3ril.png" file="http://i1.17173cdn.com/9ih5jd/YWxqaGBf/forum/201706/09/093952eiyddldk77yi3ril.png" class="zoom" onclick="zoom(this, this.src, 0, 0, 0)" width="198" id="aimg_2680667" inpost="1" onmouseover="showMenu({'ctrlid':this.id,'pos':'12'})" />
-
-<div class="tip tip_4 aimg_tip" id="aimg_2680667_menu" style="position: absolute; display: none" disautofocus="true">
-<div class="xs0">
-<p><strong>QQ图片20170609092920.png</strong> <em class="xg1">(45.76 KB, 下载次数: 12)</em></p>
-<p>
-<a href="http://bbs.17173.com/forum.php?mod=attachment&amp;aid=MjY4MDY2N3wzYTQ4MGVhMHwxNDk4NDg0MzU4fDB8MTAzMTIzNjc%3D&amp;nothumb=yes" target="_blank">下载附件</a>
-
-</p>
-
-<p class="xg1 y">2017-6-9 09:39 上传</p>
-
-</div>
-<div class="tip_horn"></div>
-</div>
-
-</ignore_js_op>
-
-<ignore_js_op>
-
-<img id="aimg_2680645" aid="2680645" src="/home/picture/none.gif" zoomfile="http://i1.17173cdn.com/9ih5jd/YWxqaGBf/forum/201706/09/093938ar0ppgcjh04g4obq.jpg" file="http://i1.17173cdn.com/9ih5jd/YWxqaGBf/forum/201706/09/093938ar0ppgcjh04g4obq.jpg" class="zoom" onclick="zoom(this, this.src, 0, 0, 0)" width="198" id="aimg_2680645" inpost="1" onmouseover="showMenu({'ctrlid':this.id,'pos':'12'})" />
-
-<div class="tip tip_4 aimg_tip" id="aimg_2680645_menu" style="position: absolute; display: none" disautofocus="true">
-<div class="xs0">
-<p><strong>QQ图片20170608093715.jpg</strong> <em class="xg1">(58.54 KB, 下载次数: 12)</em></p>
-<p>
-<a href="http://bbs.17173.com/forum.php?mod=attachment&amp;aid=MjY4MDY0NXxlMzg4ZWFiMHwxNDk4NDg0MzU4fDB8MTAzMTIzNjc%3D&amp;nothumb=yes" target="_blank">下载附件</a>
-
-</p>
-
-<p class="xg1 y">2017-6-9 09:39 上传</p>
-
-</div>
-<div class="tip_horn"></div>
-</div>
-
-</ignore_js_op>
-
-<ignore_js_op>
-
-<img id="aimg_2680646" aid="2680646" src="/home/picture/none.gif" zoomfile="http://i1.17173cdn.com/9ih5jd/YWxqaGBf/forum/201706/09/093939zq3a5bq5zvzc5gop.jpg" file="http://i1.17173cdn.com/9ih5jd/YWxqaGBf/forum/201706/09/093939zq3a5bq5zvzc5gop.jpg" class="zoom" onclick="zoom(this, this.src, 0, 0, 0)" width="198" id="aimg_2680646" inpost="1" onmouseover="showMenu({'ctrlid':this.id,'pos':'12'})" />
-
-<div class="tip tip_4 aimg_tip" id="aimg_2680646_menu" style="position: absolute; display: none" disautofocus="true">
-<div class="xs0">
-<p><strong>QQ图片20170608093718.jpg</strong> <em class="xg1">(74.02 KB, 下载次数: 13)</em></p>
-<p>
-<a href="http://bbs.17173.com/forum.php?mod=attachment&amp;aid=MjY4MDY0NnwwM2ZkNjYxMHwxNDk4NDg0MzU4fDB8MTAzMTIzNjc%3D&amp;nothumb=yes" target="_blank">下载附件</a>
-
-</p>
-
-<p class="xg1 y">2017-6-9 09:39 上传</p>
-
-</div>
-<div class="tip_horn"></div>
-</div>
-
-</ignore_js_op>
-
-<ignore_js_op>
-
-<img id="aimg_2680649" aid="2680649" src="/home/picture/none.gif" zoomfile="http://i1.17173cdn.com/9ih5jd/YWxqaGBf/forum/201706/09/093941mcrbe9zpphmzrfc6.jpg" file="http://i1.17173cdn.com/9ih5jd/YWxqaGBf/forum/201706/09/093941mcrbe9zpphmzrfc6.jpg" class="zoom" onclick="zoom(this, this.src, 0, 0, 0)" width="198" id="aimg_2680649" inpost="1" onmouseover="showMenu({'ctrlid':this.id,'pos':'12'})" />
-
-<div class="tip tip_4 aimg_tip" id="aimg_2680649_menu" style="position: absolute; display: none" disautofocus="true">
-<div class="xs0">
-<p><strong>QQ图片20170608093735.jpg</strong> <em class="xg1">(20.71 KB, 下载次数: 12)</em></p>
-<p>
-<a href="http://bbs.17173.com/forum.php?mod=attachment&amp;aid=MjY4MDY0OXxkMmQ2ZWU4MHwxNDk4NDg0MzU4fDB8MTAzMTIzNjc%3D&amp;nothumb=yes" target="_blank">下载附件</a>
-
-</p>
-
-<p class="xg1 y">2017-6-9 09:39 上传</p>
-
-</div>
-<div class="tip_horn"></div>
-</div>
-
-</ignore_js_op>
-
-<ignore_js_op>
-
-<img id="aimg_2680650" aid="2680650" src="/home/picture/none.gif" zoomfile="http://i1.17173cdn.com/9ih5jd/YWxqaGBf/forum/201706/09/093941qk2ft7zlof0f1740.jpg" file="http://i1.17173cdn.com/9ih5jd/YWxqaGBf/forum/201706/09/093941qk2ft7zlof0f1740.jpg" class="zoom" onclick="zoom(this, this.src, 0, 0, 0)" width="198" id="aimg_2680650" inpost="1" onmouseover="showMenu({'ctrlid':this.id,'pos':'12'})" />
-
-<div class="tip tip_4 aimg_tip" id="aimg_2680650_menu" style="position: absolute; display: none" disautofocus="true">
-<div class="xs0">
-<p><strong>QQ图片20170608093742.jpg</strong> <em class="xg1">(6.54 KB, 下载次数: 14)</em></p>
-<p>
-<a href="http://bbs.17173.com/forum.php?mod=attachment&amp;aid=MjY4MDY1MHw2MDBmMWVhN3wxNDk4NDg0MzU4fDB8MTAzMTIzNjc%3D&amp;nothumb=yes" target="_blank">下载附件</a>
-
-</p>
-
-<p class="xg1 y">2017-6-9 09:39 上传</p>
-
-</div>
-<div class="tip_horn"></div>
-</div>
-
-</ignore_js_op>
-
-<ignore_js_op>
-
-<img id="aimg_2680651" aid="2680651" src="/home/picture/none.gif" zoomfile="http://i1.17173cdn.com/9ih5jd/YWxqaGBf/forum/201706/09/093942ag54rc9kqe2rjcec.png" file="http://i1.17173cdn.com/9ih5jd/YWxqaGBf/forum/201706/09/093942ag54rc9kqe2rjcec.png" class="zoom" onclick="zoom(this, this.src, 0, 0, 0)" width="198" id="aimg_2680651" inpost="1" onmouseover="showMenu({'ctrlid':this.id,'pos':'12'})" />
-
-<div class="tip tip_4 aimg_tip" id="aimg_2680651_menu" style="position: absolute; display: none" disautofocus="true">
-<div class="xs0">
-<p><strong>QQ图片20170609092559.png</strong> <em class="xg1">(49.52 KB, 下载次数: 12)</em></p>
-<p>
-<a href="http://bbs.17173.com/forum.php?mod=attachment&amp;aid=MjY4MDY1MXw2ZTUzZDVjMXwxNDk4NDg0MzU4fDB8MTAzMTIzNjc%3D&amp;nothumb=yes" target="_blank">下载附件</a>
-
-</p>
-
-<p class="xg1 y">2017-6-9 09:39 上传</p>
-
-</div>
-<div class="tip_horn"></div>
-</div>
-
-</ignore_js_op>
-
-<ignore_js_op>
-
-<img id="aimg_2680652" aid="2680652" src="/home/picture/none.gif" zoomfile="http://i1.17173cdn.com/9ih5jd/YWxqaGBf/forum/201706/09/093943etnm4an64aa440a6.png" file="http://i1.17173cdn.com/9ih5jd/YWxqaGBf/forum/201706/09/093943etnm4an64aa440a6.png" class="zoom" onclick="zoom(this, this.src, 0, 0, 0)" width="198" id="aimg_2680652" inpost="1" onmouseover="showMenu({'ctrlid':this.id,'pos':'12'})" />
-
-<div class="tip tip_4 aimg_tip" id="aimg_2680652_menu" style="position: absolute; display: none" disautofocus="true">
-<div class="xs0">
-<p><strong>QQ图片20170609092602.png</strong> <em class="xg1">(49.42 KB, 下载次数: 12)</em></p>
-<p>
-<a href="http://bbs.17173.com/forum.php?mod=attachment&amp;aid=MjY4MDY1MnwzNTI5NDQ0OHwxNDk4NDg0MzU4fDB8MTAzMTIzNjc%3D&amp;nothumb=yes" target="_blank">下载附件</a>
-
-</p>
-
-<p class="xg1 y">2017-6-9 09:39 上传</p>
-
-</div>
-<div class="tip_horn"></div>
-</div>
-
-</ignore_js_op>
-
-<ignore_js_op>
-
-<img id="aimg_2680655" aid="2680655" src="/home/picture/none.gif" zoomfile="http://i1.17173cdn.com/9ih5jd/YWxqaGBf/forum/201706/09/093944bd7dew5j45ltrstt.png" file="http://i1.17173cdn.com/9ih5jd/YWxqaGBf/forum/201706/09/093944bd7dew5j45ltrstt.png" class="zoom" onclick="zoom(this, this.src, 0, 0, 0)" width="229" id="aimg_2680655" inpost="1" onmouseover="showMenu({'ctrlid':this.id,'pos':'12'})" />
-
-<div class="tip tip_4 aimg_tip" id="aimg_2680655_menu" style="position: absolute; display: none" disautofocus="true">
-<div class="xs0">
-<p><strong>QQ图片20170609092658.png</strong> <em class="xg1">(69.35 KB, 下载次数: 12)</em></p>
-<p>
-<a href="http://bbs.17173.com/forum.php?mod=attachment&amp;aid=MjY4MDY1NXxjZTA0YjYyYnwxNDk4NDg0MzU4fDB8MTAzMTIzNjc%3D&amp;nothumb=yes" target="_blank">下载附件</a>
-
-</p>
-
-<p class="xg1 y">2017-6-9 09:39 上传</p>
-
-</div>
-<div class="tip_horn"></div>
-</div>
-
-</ignore_js_op>
-
-<ignore_js_op>
-
-<img id="aimg_2680656" aid="2680656" src="/home/picture/none.gif" zoomfile="http://i1.17173cdn.com/9ih5jd/YWxqaGBf/forum/201706/09/093945noppz4j126js371t.png" file="http://i1.17173cdn.com/9ih5jd/YWxqaGBf/forum/201706/09/093945noppz4j126js371t.png" class="zoom" onclick="zoom(this, this.src, 0, 0, 0)" width="198" id="aimg_2680656" inpost="1" onmouseover="showMenu({'ctrlid':this.id,'pos':'12'})" />
-
-<div class="tip tip_4 aimg_tip" id="aimg_2680656_menu" style="position: absolute; display: none" disautofocus="true">
-<div class="xs0">
-<p><strong>QQ图片20170609092732.png</strong> <em class="xg1">(57.3 KB, 下载次数: 13)</em></p>
-<p>
-<a href="http://bbs.17173.com/forum.php?mod=attachment&amp;aid=MjY4MDY1NnxjNTkyZTE1MXwxNDk4NDg0MzU4fDB8MTAzMTIzNjc%3D&amp;nothumb=yes" target="_blank">下载附件</a>
-
-</p>
-
-<p class="xg1 y">2017-6-9 09:39 上传</p>
-
-</div>
-<div class="tip_horn"></div>
-</div>
-
-</ignore_js_op>
-
-<ignore_js_op>
-
-<img id="aimg_2680657" aid="2680657" src="/home/picture/none.gif" zoomfile="http://i1.17173cdn.com/9ih5jd/YWxqaGBf/forum/201706/09/093945kncm4bnte4spez44.png" file="http://i1.17173cdn.com/9ih5jd/YWxqaGBf/forum/201706/09/093945kncm4bnte4spez44.png" class="zoom" onclick="zoom(this, this.src, 0, 0, 0)" width="198" id="aimg_2680657" inpost="1" onmouseover="showMenu({'ctrlid':this.id,'pos':'12'})" />
-
-<div class="tip tip_4 aimg_tip" id="aimg_2680657_menu" style="position: absolute; display: none" disautofocus="true">
-<div class="xs0">
-<p><strong>QQ图片20170609092745.png</strong> <em class="xg1">(64.96 KB, 下载次数: 11)</em></p>
-<p>
-<a href="http://bbs.17173.com/forum.php?mod=attachment&amp;aid=MjY4MDY1N3w2Yzg1YWMxOHwxNDk4NDg0MzU4fDB8MTAzMTIzNjc%3D&amp;nothumb=yes" target="_blank">下载附件</a>
-
-</p>
-
-<p class="xg1 y">2017-6-9 09:39 上传</p>
-
-</div>
-<div class="tip_horn"></div>
-</div>
-
-</ignore_js_op>
-
-<ignore_js_op>
-
-<img id="aimg_2680662" aid="2680662" src="/home/picture/none.gif" zoomfile="http://i1.17173cdn.com/9ih5jd/YWxqaGBf/forum/201706/09/093949bysd3yh4ddtdddxd.png" file="http://i1.17173cdn.com/9ih5jd/YWxqaGBf/forum/201706/09/093949bysd3yh4ddtdddxd.png" class="zoom" onclick="zoom(this, this.src, 0, 0, 0)" width="198" id="aimg_2680662" inpost="1" onmouseover="showMenu({'ctrlid':this.id,'pos':'12'})" />
-
-<div class="tip tip_4 aimg_tip" id="aimg_2680662_menu" style="position: absolute; display: none" disautofocus="true">
-<div class="xs0">
-<p><strong>QQ图片20170609092833.png</strong> <em class="xg1">(67.9 KB, 下载次数: 11)</em></p>
-<p>
-<a href="http://bbs.17173.com/forum.php?mod=attachment&amp;aid=MjY4MDY2Mnw4NDI1ZTE1MnwxNDk4NDg0MzU4fDB8MTAzMTIzNjc%3D&amp;nothumb=yes" target="_blank">下载附件</a>
-
-</p>
-
-<p class="xg1 y">2017-6-9 09:39 上传</p>
-
-</div>
-<div class="tip_horn"></div>
-</div>
-
-</ignore_js_op>
-
-<ignore_js_op>
-
-<img id="aimg_2680663" aid="2680663" src="/home/picture/none.gif" zoomfile="http://i1.17173cdn.com/9ih5jd/YWxqaGBf/forum/201706/09/093949zh3lrhrhwb09byy0.png" file="http://i1.17173cdn.com/9ih5jd/YWxqaGBf/forum/201706/09/093949zh3lrhrhwb09byy0.png" class="zoom" onclick="zoom(this, this.src, 0, 0, 0)" width="198" id="aimg_2680663" inpost="1" onmouseover="showMenu({'ctrlid':this.id,'pos':'12'})" />
-
-<div class="tip tip_4 aimg_tip" id="aimg_2680663_menu" style="position: absolute; display: none" disautofocus="true">
-<div class="xs0">
-<p><strong>QQ图片20170609092837.png</strong> <em class="xg1">(50.33 KB, 下载次数: 13)</em></p>
-<p>
-<a href="http://bbs.17173.com/forum.php?mod=attachment&amp;aid=MjY4MDY2M3w2NDA1NzE5MHwxNDk4NDg0MzU4fDB8MTAzMTIzNjc%3D&amp;nothumb=yes" target="_blank">下载附件</a>
-
-</p>
-
-<p class="xg1 y">2017-6-9 09:39 上传</p>
-
-</div>
-<div class="tip_horn"></div>
-</div>
-
-</ignore_js_op>
-
-<ignore_js_op>
-
-<img id="aimg_2680664" aid="2680664" src="/home/picture/none.gif" zoomfile="http://i1.17173cdn.com/9ih5jd/YWxqaGBf/forum/201706/09/093950aia1fi1i4s46lydy.png" file="http://i1.17173cdn.com/9ih5jd/YWxqaGBf/forum/201706/09/093950aia1fi1i4s46lydy.png" class="zoom" onclick="zoom(this, this.src, 0, 0, 0)" width="198" id="aimg_2680664" inpost="1" onmouseover="showMenu({'ctrlid':this.id,'pos':'12'})" />
-
-<div class="tip tip_4 aimg_tip" id="aimg_2680664_menu" style="position: absolute; display: none" disautofocus="true">
-<div class="xs0">
-<p><strong>QQ图片20170609092841.png</strong> <em class="xg1">(67.08 KB, 下载次数: 13)</em></p>
-<p>
-<a href="http://bbs.17173.com/forum.php?mod=attachment&amp;aid=MjY4MDY2NHwwYTM0YzU3NHwxNDk4NDg0MzU4fDB8MTAzMTIzNjc%3D&amp;nothumb=yes" target="_blank">下载附件</a>
-
-</p>
-
-<p class="xg1 y">2017-6-9 09:39 上传</p>
-
-</div>
-<div class="tip_horn"></div>
-</div>
-
-</ignore_js_op>
-
-<ignore_js_op>
-
-<img id="aimg_2680666" aid="2680666" src="/home/picture/none.gif" zoomfile="http://i1.17173cdn.com/9ih5jd/YWxqaGBf/forum/201706/09/093952wm9k95bsv2po9k58.png" file="http://i1.17173cdn.com/9ih5jd/YWxqaGBf/forum/201706/09/093952wm9k95bsv2po9k58.png" class="zoom" onclick="zoom(this, this.src, 0, 0, 0)" width="198" id="aimg_2680666" inpost="1" onmouseover="showMenu({'ctrlid':this.id,'pos':'12'})" />
-
-<div class="tip tip_4 aimg_tip" id="aimg_2680666_menu" style="position: absolute; display: none" disautofocus="true">
-<div class="xs0">
-<p><strong>QQ图片20170609092912.png</strong> <em class="xg1">(37.45 KB, 下载次数: 16)</em></p>
-<p>
-<a href="http://bbs.17173.com/forum.php?mod=attachment&amp;aid=MjY4MDY2NnxjNzVmNmM0YnwxNDk4NDg0MzU4fDB8MTAzMTIzNjc%3D&amp;nothumb=yes" target="_blank">下载附件</a>
-
-</p>
-
-<p class="xg1 y">2017-6-9 09:39 上传</p>
-
-</div>
-<div class="tip_horn"></div>
-</div>
-
-</ignore_js_op>
-
-<ignore_js_op>
-
-<img id="aimg_2680660" aid="2680660" src="/home/picture/none.gif" zoomfile="http://i1.17173cdn.com/9ih5jd/YWxqaGBf/forum/201706/09/093947v9yv8qq08dg1wcwz.png" file="http://i1.17173cdn.com/9ih5jd/YWxqaGBf/forum/201706/09/093947v9yv8qq08dg1wcwz.png" class="zoom" onclick="zoom(this, this.src, 0, 0, 0)" width="198" id="aimg_2680660" inpost="1" onmouseover="showMenu({'ctrlid':this.id,'pos':'12'})" />
-
-<div class="tip tip_4 aimg_tip" id="aimg_2680660_menu" style="position: absolute; display: none" disautofocus="true">
-<div class="xs0">
-<p><strong>QQ图片20170609092815.png</strong> <em class="xg1">(44.98 KB, 下载次数: 12)</em></p>
-<p>
-<a href="http://bbs.17173.com/forum.php?mod=attachment&amp;aid=MjY4MDY2MHwxNjM3NjRhOHwxNDk4NDg0MzU4fDB8MTAzMTIzNjc%3D&amp;nothumb=yes" target="_blank">下载附件</a>
-
-</p>
-
-<p class="xg1 y">2017-6-9 09:39 上传</p>
-
-</div>
-<div class="tip_horn"></div>
-</div>
-
-</ignore_js_op>
-
-<ignore_js_op>
-
-<img id="aimg_2681062" aid="2681062" src="/home/picture/none.gif" zoomfile="http://i1.17173cdn.com/9ih5jd/YWxqaGBf/forum/201706/09/164001j2aat8b88q8hj8bq.jpg" file="http://i1.17173cdn.com/9ih5jd/YWxqaGBf/forum/201706/09/164001j2aat8b88q8hj8bq.jpg" class="zoom" onclick="zoom(this, this.src, 0, 0, 0)" width="230" id="aimg_2681062" inpost="1" onmouseover="showMenu({'ctrlid':this.id,'pos':'12'})" />
-
-<div class="tip tip_4 aimg_tip" id="aimg_2681062_menu" style="position: absolute; display: none" disautofocus="true">
-<div class="xs0">
-<p><strong>QQ图片20170609164106.jpg</strong> <em class="xg1">(8.62 KB, 下载次数: 13)</em></p>
-<p>
-<a href="http://bbs.17173.com/forum.php?mod=attachment&amp;aid=MjY4MTA2Mnw1YmY5NGFkY3wxNDk4NDg0MzU4fDB8MTAzMTIzNjc%3D&amp;nothumb=yes" target="_blank">下载附件</a>
-
-</p>
-
-<p class="xg1 y">2017-6-9 16:40 上传</p>
-
-</div>
-<div class="tip_horn"></div>
-</div>
-
-</ignore_js_op>
-<br />
-
-<ignore_js_op>
-
-<img id="aimg_2680659" aid="2680659" src="/home/picture/none.gif" zoomfile="http://i1.17173cdn.com/9ih5jd/YWxqaGBf/forum/201706/09/093947r3w1yjtoi5oi683g.png" file="http://i1.17173cdn.com/9ih5jd/YWxqaGBf/forum/201706/09/093947r3w1yjtoi5oi683g.png" class="zoom" onclick="zoom(this, this.src, 0, 0, 0)" width="198" id="aimg_2680659" inpost="1" onmouseover="showMenu({'ctrlid':this.id,'pos':'12'})" />
-
-<div class="tip tip_4 aimg_tip" id="aimg_2680659_menu" style="position: absolute; display: none" disautofocus="true">
-<div class="xs0">
-<p><strong>QQ图片20170609092801.png</strong> <em class="xg1">(48.81 KB, 下载次数: 12)</em></p>
-<p>
-<a href="http://bbs.17173.com/forum.php?mod=attachment&amp;aid=MjY4MDY1OXxmYjNlZTFhZXwxNDk4NDg0MzU4fDB8MTAzMTIzNjc%3D&amp;nothumb=yes" target="_blank">下载附件</a>
-
-</p>
-
-<p class="xg1 y">2017-6-9 09:39 上传</p>
-
-</div>
-<div class="tip_horn"></div>
-</div>
-
-</ignore_js_op>
-
-<ignore_js_op>
-
-<img id="aimg_2680654" aid="2680654" src="/home/picture/none.gif" zoomfile="http://i1.17173cdn.com/9ih5jd/YWxqaGBf/forum/201706/09/093944luwetah7eajcu7rs.jpg" file="http://i1.17173cdn.com/9ih5jd/YWxqaGBf/forum/201706/09/093944luwetah7eajcu7rs.jpg" class="zoom" onclick="zoom(this, this.src, 0, 0, 0)" width="247" id="aimg_2680654" inpost="1" onmouseover="showMenu({'ctrlid':this.id,'pos':'12'})" />
-
-<div class="tip tip_4 aimg_tip" id="aimg_2680654_menu" style="position: absolute; display: none" disautofocus="true">
-<div class="xs0">
-<p><strong>QQ图片20170609092644.jpg</strong> <em class="xg1">(72.43 KB, 下载次数: 13)</em></p>
-<p>
-<a href="http://bbs.17173.com/forum.php?mod=attachment&amp;aid=MjY4MDY1NHw5N2Q4YjgxOXwxNDk4NDg0MzU4fDB8MTAzMTIzNjc%3D&amp;nothumb=yes" target="_blank">下载附件</a>
-
-</p>
-
-<p class="xg1 y">2017-6-9 09:39 上传</p>
-
-</div>
-<div class="tip_horn"></div>
-</div>
-
-</ignore_js_op>
-
-<ignore_js_op>
-
-<img id="aimg_2680653" aid="2680653" src="/home/picture/none.gif" zoomfile="http://i1.17173cdn.com/9ih5jd/YWxqaGBf/forum/201706/09/093943d93ppvk8zh0kva39.png" file="http://i1.17173cdn.com/9ih5jd/YWxqaGBf/forum/201706/09/093943d93ppvk8zh0kva39.png" class="zoom" onclick="zoom(this, this.src, 0, 0, 0)" width="198" id="aimg_2680653" inpost="1" onmouseover="showMenu({'ctrlid':this.id,'pos':'12'})" />
-
-<div class="tip tip_4 aimg_tip" id="aimg_2680653_menu" style="position: absolute; display: none" disautofocus="true">
-<div class="xs0">
-<p><strong>QQ图片20170609092637.png</strong> <em class="xg1">(47.61 KB, 下载次数: 12)</em></p>
-<p>
-<a href="http://bbs.17173.com/forum.php?mod=attachment&amp;aid=MjY4MDY1M3wyNTFkNjZhZnwxNDk4NDg0MzU4fDB8MTAzMTIzNjc%3D&amp;nothumb=yes" target="_blank">下载附件</a>
-
-</p>
-
-<p class="xg1 y">2017-6-9 09:39 上传</p>
-
-</div>
-<div class="tip_horn"></div>
-</div>
-
-</ignore_js_op>
-
-<ignore_js_op>
-
-<img id="aimg_2680648" aid="2680648" src="/home/picture/none.gif" zoomfile="http://i1.17173cdn.com/9ih5jd/YWxqaGBf/forum/201706/09/093940d66jidxddg6jgig6.jpg" file="http://i1.17173cdn.com/9ih5jd/YWxqaGBf/forum/201706/09/093940d66jidxddg6jgig6.jpg" class="zoom" onclick="zoom(this, this.src, 0, 0, 0)" width="198" id="aimg_2680648" inpost="1" onmouseover="showMenu({'ctrlid':this.id,'pos':'12'})" />
-
-<div class="tip tip_4 aimg_tip" id="aimg_2680648_menu" style="position: absolute; display: none" disautofocus="true">
-<div class="xs0">
-<p><strong>QQ图片20170608093727.jpg</strong> <em class="xg1">(50.3 KB, 下载次数: 15)</em></p>
-<p>
-<a href="http://bbs.17173.com/forum.php?mod=attachment&amp;aid=MjY4MDY0OHxiMzE1MTBhZnwxNDk4NDg0MzU4fDB8MTAzMTIzNjc%3D&amp;nothumb=yes" target="_blank">下载附件</a>
-
-</p>
-
-<p class="xg1 y">2017-6-9 09:39 上传</p>
-
-</div>
-<div class="tip_horn"></div>
-</div>
-
-</ignore_js_op>
-<br />
-<br />
-<font size="4"><font color="#ff0000"><strong>还有正常版本的，就放在隐藏里面了</strong></font></font><br />
-<div class="locked">游客，如果您要查看本帖隐藏内容请<a href="http://bbs.17173.com/forum.php?mod=post&amp;action=reply&amp;fid=8706&amp;tid=10312367" onclick="showWindow('reply', this.href)">回复</a></div><br />
-<br />
-</td></tr></table>
-
-<div class="ptg mbm mtn">
-<a title="表情包" href="misc.php?mod=tag&amp;id=2258" target="_blank">表情包</a>, <a title="职业" href="misc.php?mod=tag&amp;id=64" target="_blank">职业</a></div>
-
-</div>
-<div id="comment_187510523" class="cm">
-</div>
-
-<div id="post_rate_div_187510523"></div>
-</div>
-</div>
-
-</td></tr>
-<tr><td class="plc plm">
-
-<div id="p_btn" class="mtw mbm hm cl">
-                    <!-- Baidu Button BEGIN -->
-<div class="bdsharebuttonbox" id="bdshare"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a></div>
-                    <!-- Baidu Button END -->
-
-<a href="javascript:;" id="k_favorite" onclick="lsSubmit()" onmouseover="this.title = $('favoritenumber').innerHTML + ' 人收藏'" title="收藏本帖">
-
-<i><img src="/home/picture/fav.gif" alt="收藏" />收藏<span id="favoritenumber" style="display:none">0</span></i></a>
-<a id="recommend_add" href="forum.php?mod=misc&amp;action=recommend&amp;do=add&amp;tid=10312367&amp;hash=e79c97f0"  onclick="showWindow('login', this.href)" onmouseover="this.title = $('recommendv_add').innerHTML + ' 人支持'" title="顶一下"><i><img src="/home/picture/rec_add.gif" alt="支持" />支持<span id="recommendv_add" style="display:none">0</span></i></a>
-<a id="recommend_subtract" href="forum.php?mod=misc&amp;action=recommend&amp;do=subtract&amp;tid=10312367&amp;hash=e79c97f0"  onclick="showWindow('login', this.href)" onmouseover="this.title = $('recommendv_subtract').innerHTML + ' 人反对'" title="踩一下"><i><img src="/home/picture/rec_subtract.gif" alt="反对" />反对<span id="recommendv_subtract" style="display:none">0</span></i></a>
-</div>
-<div class="sign" style="max-height:400px;maxHeightIE:400px;"><img id="aimg_QP18h" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" src="/home/picture/234141g034xm2wm723a20f.gif" onmouseover="img_onmouseoverfunc(this)" onload="thumbImg(this)" border="0" alt="" /><font color="Red"><strong>甜的齁死人e神和小天使</strong></font></div>
-</td>
+	<td class="plc">
+		<div class="pi">
+			<strong>
+			<a href="http://bbs.17173.com/thread-10312367-1-1.html" id="postnum187510523" onclick="setCopy(this.href, '帖子地址复制成功');return false;">
+				@if($reply['count'] == 1)
+					楼主
+				@elseif($reply['count'] == 2)
+					沙发
+				@elseif($reply['count'] == 3)
+					板凳
+				@else
+					{{ $reply['count'] }}楼
+				@endif
+			</a>
+			</strong>
+			<div class="pti">
+				<div class="pdbt">
+				</div>
+				<div class="authi">
+					<img class="authicn vm" id="authicon187510523" src="/home/picture/online_member.gif" />
+					<em id="authorposton187510523">发表于 {{ date('Y-m-d H:i:s', $reply['ctime']) }}</em>
+					<span class="pipe">|</span>
+					<a href="{{ url('home/post/'.$post['id'].'?uid='.$reply['user']['id']) }}" rel="nofollow">只看该作者</a>
+				</div>
+			</div>
+		</div>
+
+			<style type="text/css">.pcb{margin-right:0}</style>
+			<div class="pcb">
+				<div class="t_fsz">
+					<table cellspacing="0" cellpadding="0">
+						<tr>
+							<td class="t_f" id="postmessage_187510523">
+								{!! $reply['content'] !!}
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		
+	</td>
 </tr>
-<tr id="_postposition187510523"></tr>
+<tr>
+	<td class="plc plm">
+		<div id="p_btn" class="mtw mbm hm cl">
+		                    <!-- Baidu Button BEGIN -->
+		<div class="bdsharebuttonbox" id="bdshare">
+			<a href="#" class="bds_more" data-cmd="more"></a>
+			<a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+			<a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+			<a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a>
+			<a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a>
+			<a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+		</div>
+		                    <!-- Baidu Button END -->
+		
+		<a href="javascript:;" id="k_favorite" onclick="lsSubmit()" onmouseover="this.title = $('favoritenumber').innerHTML + ' 人收藏'" title="收藏本帖">
+		
+		<i><img src="/home/picture/fav.gif" alt="收藏" />收藏<span id="favoritenumber" style="display:none">0</span></i></a>
+		<a id="recommend_add" href="forum.php?mod=misc&amp;action=recommend&amp;do=add&amp;tid=10312367&amp;hash=e79c97f0"  onclick="showWindow('login', this.href)" onmouseover="this.title = $('recommendv_add').innerHTML + ' 人支持'" title="顶一下"><i><img src="/home/picture/rec_add.gif" alt="支持" />支持<span id="recommendv_add" style="display:none">0</span></i></a>
+		<a id="recommend_subtract" href="forum.php?mod=misc&amp;action=recommend&amp;do=subtract&amp;tid=10312367&amp;hash=e79c97f0"  onclick="showWindow('login', this.href)" onmouseover="this.title = $('recommendv_subtract').innerHTML + ' 人反对'" title="踩一下"><i><img src="/home/picture/rec_subtract.gif" alt="反对" />反对<span id="recommendv_subtract" style="display:none">0</span></i></a>
+		</div>
+	</td>
+</tr>
 <tr>
 <td class="pls"></td>
 <td class="plc" style="overflow:visible;">
@@ -933,7 +527,7 @@ var pvalue = jQuery(this).attr('data-prestige');
     jQuery('#pop-user-pvalue').text('');
             jQuery("#pop-rank").hide();
         }, 400);
-    }); 
+    });	
 })
 
 jQuery("#pop-rank").hover(function() {
@@ -944,2504 +538,9 @@ jQuery("#pop-rank").hover(function() {
     jQuery('#pop-user-pvalue').text('');
 });
 </script>
-<!-- END 声望 --></div><div id="post_187510563" >
-<table id="pid187510563" class="plhin" summary="pid187510563" cellspacing="0" cellpadding="0">
-<tr>
-<td class="pls" rowspan="2">
-<div id="favatar187510563" class="pls favatar">
- <div class="pi">
-<div class="authi"><a href="http://bbs.17173.com/space-uid-135522725.html" target="_blank" class="xw1">任性的欧尼酱</a>
-
-<a href="http://bbs.17173.com/home.php?mod=spacecp&amp;ac=profile&amp;op=verify&amp;vid=1" target="_blank">
-</a>
-
-<a href="http://bbs.17173.com/home.php?mod=spacecp&amp;ac=profile&amp;op=verify&amp;vid=2" target="_blank">
-</a>
-
-</div>
-</div>
-<div class="p_pop blk bui card_gender_0" id="userinfo187510563" style="display: none; margin-top: -11px;">
-<div class="m z">
-<div id="userinfo187510563_ma"></div>
-</div>
-<div class="i y">
-<div>
-<strong><a href="http://bbs.17173.com/space-uid-135522725.html" target="_blank" class="xi2">任性的欧尼酱</a></strong>
-<em>当前离线</em>
-</div><dl class="cl">
-<dt>UID</dt><dd><a href="?135522725" target="_blank" class="xi2">135522725</a></dd>
-<dt>精华</dt><dd>0</dd>
-<dt>经验</dt><dd>184 </dd>
-<dt>小伙伴</dt><dd>0 </dd>
-<dt>崇高石</dt><dd>0 </dd>
-<dt>水晶</dt><dd>0 </dd>
-<dt>板砖</dt><dd>1601 </dd>
-<dt>零食</dt><dd>0 </dd>
-<dt>悬赏币</dt><dd>0 </dd>
-<dt>VR币</dt><dd>0 </dd>
-
-</dl><div class="imicn">
-<a href="http://bbs.17173.com/home.php?mod=space&amp;uid=135522725&amp;do=profile" target="_blank" title="查看详细资料"><img src="/home/picture/userinfo.gif" alt="查看详细资料" /></a>
-</div>
-<div id="avatarfeed"><span id="threadsortswait"></span></div>
-</div>
-</div>
-<div>
-<div class="avatar" onmouseover="showauthor(this, 'userinfo187510563')"><a href="http://bbs.17173.com/space-uid-135522725.html" class="avtm" target="_blank"><img src="/home/picture/avatar.php" /></a></div>
-
-
-<!--BEGIN prestige 135522725-->
-<div class="user_prestige">
-    <img src="/home/picture/dnf-lv7.gif" data-prestige="539" data-rank="1078" alt="神都根特" >
-</div>
-<!--END prestige 135522725-->
-
-</div>
-<div class="tns xg2"><table cellspacing="0" cellpadding="0"><th><p><a href="http://bbs.17173.com/home.php?mod=space&uid=135522725&do=thread&type=thread&view=me&from=space" class="xi2">16</a></p>主题</th><th><p><a href="http://bbs.17173.com/home.php?mod=space&uid=135522725&do=thread&type=reply&view=me&from=space" class="xi2">418</a></p>帖子</th><td><p><a href="http://bbs.17173.com/home.php?mod=space&uid=135522725&do=profile" class="xi2">634</a></p>积分</td></table></div>
-
-<p><em><a href="http://bbs.17173.com/home.php?mod=spacecp&amp;ac=usergroup&amp;gid=12" target="_blank">Lv.3</a></em></p>
-
-
-<p><span id="g_up187510563" onmouseover="showMenu({'ctrlid':this.id, 'pos':'12!'});"><img src="/home/picture/star_level1.gif" alt="Rank: 3" /><img src="/home/picture/star_level1.gif" alt="Rank: 3" /><img src="/home/picture/star_level1.gif" alt="Rank: 3" /></span></p>
-<div id="g_up187510563_menu" class="tip tip_4" style="display: none;"><div class="tip_horn"></div><div class="tip_c">Lv.3, 积分 634, 距离下一级还需 366 积分</div></div>
-
-
-<p><span class="pbg2"  id="upgradeprogress_187510563" onmouseover="showMenu({'ctrlid':this.id, 'pos':'12!', 'menuid':'g_up187510563_menu'});"><span class="pbr2" style="width:8%;"></span></span></p>
-<div id="g_up187510563_menu" class="tip tip_4" style="display: none;"><div class="tip_horn"></div><div class="tip_c">Lv.3, 积分 634, 距离下一级还需 366 积分</div></div>
-
-<dl class="pil cl">
-
-</dl>
-<ul class="xl xl2 o cl">
-<li class="pm2">
-                                                <a href="javascript:;" onclick="lsSubmit()" title="发消息" class="xi2">发消息</a>
-                                            
-                    
-                    
-                    
-                    </li>
-</ul>
-</div>
-</td>
-<td class="plc">
-<div class="pi">
-<strong>
-<a href="http://bbs.17173.com/forum.php?mod=redirect&goto=findpost&ptid=10312367&pid=187510563"   id="postnum187510563" onclick="setCopy(this.href, '帖子地址复制成功');return false;">
-沙发</a>
-</strong>
-<div class="pti">
-<div class="pdbt">
-</div>
-<div class="authi">
-<img class="authicn vm" id="authicon187510563" src="/home/picture/online_member.gif" />
-<em id="authorposton187510563">发表于 2017-6-9 09:38:00</em>
-<span class="pipe">|</span>
-<a href="http://bbs.17173.com/forum.php?mod=viewthread&amp;tid=10312367&amp;page=1&amp;authorid=135522725" rel="nofollow">只看该作者</a>
-</div>
-</div>
-</div><div class="pct"><div class="pcb">
-<div class="t_fsz">
-<table cellspacing="0" cellpadding="0"><tr><td class="t_f" id="postmessage_187510563">
-<img src="/home/picture/3110.gif" smilieid="96" border="0" alt="" />昨天看贴吧看到这些 笑死我了。还有你的图重复了很多哦</td></tr></table>
-
-
-</div>
-<div id="comment_187510563" class="cm">
-<h3 class="psth xs1"><span class="icon_ring vm"></span>点评</h3>
-<div class="pstl xs1 cl">
-<div class="psta vm">
-<a href="http://bbs.17173.com/space-uid-135929704.html" c="1"><img src="/home/picture/avatar.php" /></a>
-<a data-tid="10312367" data-pid="187510563" data-touid="135929704" href="forum.php?mod=misc&amp;action=comment&amp;tid=10312367&amp;pid=187510563&amp;extra=page%3D1&amp;page=1&amp;touid=135929704" class="xi2 xw1" onclick="showWindow('comment', this.href, 'get', 0)">注册送15元</a>
-</div>
-<div class="psti">
-<b>几十款热门<font color="#ff0000">网页游戏</font>，注册每天送<font color="#ff0000">10-300元</font>首冲，永久<font color="#ff0000">300%</font>返利，：<font color="#ff00ff">www.088ww.com</font></b>&nbsp;
-<span class="xg1">
-发表于 <span title="2017-6-21 16:33">5&nbsp;天前</span></span>
-</div>
-</div>
-</div>
-
-<div id="post_rate_div_187510563"></div>
-</div>
-</div>
-
-</td></tr>
-<tr><td class="plc plm">
-</td>
-</tr>
-<tr id="_postposition187510563"></tr>
-<tr>
-<td class="pls"></td>
-<td class="plc" style="overflow:visible;">
-<div class="po hin">
-<div class="pob cl">
-<em>
-<a class="fastre" href="javascript:;" onclick="lsSubmit()">回复</a>
-                                </em>
-
-<p>
-<a href="javascript:;" id="mgc_post_187510563" onmouseover="showMenu(this.id)" class="showmenu">使用道具</a>
-                            <a href="javascript:;" onclick="lsSubmit()">举报</a>
-                            </p>
-
-<ul id="mgc_post_187510563_menu" class="p_pop mgcmn" style="display: none;">
-</ul>
-<script type="text/javascript" reload="1">checkmgcmn('post_187510563')</script>
-</div>
-</div>
-</td>
-</tr>
-<tr class="ad">
-<td class="pls"></td>
-<td class="plc">
-</td>
-</tr>
-
-</table>
-<!-- BEGIN 声望 -->
-<link rel="stylesheet" type="text/css" href="/home/css/prestige_1.css" />
-<div class="pop-rank" id="pop-rank">
-    <span class="p">本版排名：<span id="pop-user-prank" style="display:inline;"><img src="/home/picture/ajax-loader_1.gif" /></span></span>
-    <span class="p">本版声望：<span id="pop-user-pvalue" style="display:inline;"><img src="/home/picture/ajax-loader_1.gif" /></span></span>
-    <span class="link"><a href="plugin.php?id=prestige" target="_blank">[关注管理]</a>&nbsp;<a target="_blank" href="plugin.php?id=prestige:prestige&amp;view=about">[声望说明]</a></span>
-</div>
-<script type="text/javascript">
-var popRankTimer = null;
-jQuery('.user_prestige img').each(function(){
-var prank = jQuery(this).attr('data-rank');
-var pvalue = jQuery(this).attr('data-prestige');
-    jQuery(this).hover(function() {
-
-    jQuery('#pop-user-prank').text(prank);
-    jQuery('#pop-user-pvalue').text(pvalue);
-        var pos = jQuery(this).position();
-        jQuery("#pop-rank").css({
-            left: pos.left,
-            top: pos.top + 38
-        }).show();
-    }, function() {
-        clearTimeout(popRankTimer);
-
-        popRankTimer = setTimeout(function() {
-    jQuery('#pop-user-prank').text('');
-    jQuery('#pop-user-pvalue').text('');
-            jQuery("#pop-rank").hide();
-        }, 400);
-    }); 
-})
-
-jQuery("#pop-rank").hover(function() {
-    clearTimeout(popRankTimer);
-}, function() {
-    jQuery("#pop-rank").hide();
-    jQuery('#pop-user-prank').text('');
-    jQuery('#pop-user-pvalue').text('');
-});
-</script>
-<!-- END 声望 --></div><div id="post_187510577" >
-<table id="pid187510577" class="plhin" summary="pid187510577" cellspacing="0" cellpadding="0">
-<tr>
-<td class="pls" rowspan="2">
-<div id="favatar187510577" class="pls favatar">
- <div class="pi">
-<div class="authi"><a href="http://bbs.17173.com/space-uid-19376992.html" target="_blank" class="xw1" style="color: #FF0000">小狼ck</a>
-
-<a href="http://bbs.17173.com/home.php?mod=spacecp&amp;ac=profile&amp;op=verify&amp;vid=1" target="_blank">
-</a>
-
-<a href="http://bbs.17173.com/home.php?mod=spacecp&amp;ac=profile&amp;op=verify&amp;vid=2" target="_blank">
-</a>
-
-</div>
-</div>
-<div class="p_pop blk bui card_gender_1" id="userinfo187510577" style="display: none; margin-top: -11px;">
-<div class="m z">
-<div id="userinfo187510577_ma"></div>
-</div>
-<div class="i y">
-<div>
-<strong><a href="http://bbs.17173.com/space-uid-19376992.html" target="_blank" class="xi2" style="color: #FF0000">小狼ck</a></strong>
-<em>当前离线</em>
-</div><dl class="cl">
-<dt>UID</dt><dd><a href="?19376992" target="_blank" class="xi2">19376992</a></dd>
-<dt>精华</dt><dd>0</dd>
-<dt>经验</dt><dd>815 </dd>
-<dt>小伙伴</dt><dd>0 </dd>
-<dt>崇高石</dt><dd>0 </dd>
-<dt>水晶</dt><dd>5 </dd>
-<dt>板砖</dt><dd>25224 </dd>
-<dt>零食</dt><dd>0 </dd>
-<dt>悬赏币</dt><dd>0 </dd>
-<dt>VR币</dt><dd>2 </dd>
-
-</dl><div class="imicn">
-<a href="http://bbs.17173.com/home.php?mod=space&amp;uid=19376992&amp;do=profile" target="_blank" title="查看详细资料"><img src="/home/picture/userinfo.gif" alt="查看详细资料" /></a>
-</div>
-<div id="avatarfeed"><span id="threadsortswait"></span></div>
-</div>
-</div>
-<div>
-<div class="avatar" onmouseover="showauthor(this, 'userinfo187510577')"><a href="http://bbs.17173.com/space-uid-19376992.html" class="avtm" target="_blank"><img src="/home/picture/avatar.php" /></a></div>
-
-
-<!--BEGIN prestige 19376992-->
-<div class="user_prestige">
-    <img src="/home/picture/dnf-lv13.gif" data-prestige="5403" data-rank="188" alt="镇魂挽歌" >
-</div>
-<!--END prestige 19376992-->
-
-</div>
-<div class="tns xg2"><table cellspacing="0" cellpadding="0"><th><p><a href="http://bbs.17173.com/home.php?mod=space&uid=19376992&do=thread&type=thread&view=me&from=space" class="xi2">713</a></p>主题</th><th><p><a href="http://bbs.17173.com/home.php?mod=space&uid=19376992&do=thread&type=reply&view=me&from=space" class="xi2">5538</a></p>帖子</th><td><p><a href="http://bbs.17173.com/home.php?mod=space&uid=19376992&do=profile" class="xi2">7779</a></p>积分</td></table></div>
-
-<p><em><a href="http://bbs.17173.com/home.php?mod=spacecp&amp;ac=usergroup&amp;gid=61" target="_blank"><font color="#FF0000">版主组长</font></a></em></p>
-
-
-<p><span><img src="/home/picture/star_level3.gif" alt="Rank: 16" /></span></p>
-
-
-
-<dl class="pil cl">
-
-</dl>
-<ul class="xl xl2 o cl">
-<li class="pm2">
-                                                <a href="javascript:;" onclick="lsSubmit()" title="发消息" class="xi2">发消息</a>
-                                            
-                    
-                    
-                    
-                    </li>
-</ul>
-</div>
-</td>
-<td class="plc">
-<div class="pi">
-<strong>
-<a href="http://bbs.17173.com/forum.php?mod=redirect&goto=findpost&ptid=10312367&pid=187510577"   id="postnum187510577" onclick="setCopy(this.href, '帖子地址复制成功');return false;">
-板凳</a>
-</strong>
-<div class="pti">
-<div class="pdbt">
-</div>
-<div class="authi">
-<img class="authicn vm" id="authicon187510577" src="/home/picture/online_member.gif" />
-<em id="authorposton187510577">发表于 2017-6-9 09:39:06</em>
-<span class="pipe">|</span>
-<a href="http://bbs.17173.com/forum.php?mod=viewthread&amp;tid=10312367&amp;page=1&amp;authorid=19376992" rel="nofollow">只看该作者</a>
-</div>
-</div>
-</div><div class="pct"><div class="pcb">
-<div class="t_fsz">
-<table cellspacing="0" cellpadding="0"><tr><td class="t_f" id="postmessage_187510577">
-说的靓仔是我么</td></tr></table>
-
-
-</div>
-<div id="comment_187510577" class="cm">
-</div>
-
-<div id="post_rate_div_187510577"></div>
-</div>
-</div>
-
-</td></tr>
-<tr><td class="plc plm">
-<div class="sign" style="max-height:400px;maxHeightIE:400px;"><font size="4"><font color="Red"><strong>告诉你，不要认为有钱就可以得到一切东西。<br />
-就像李嘉诚，都87岁了，至今都没得到过我的留言。<br />
-但! 你有 所以你要好好珍惜</strong></font></font></div>
-</td>
-</tr>
-<tr id="_postposition187510577"></tr>
-<tr>
-<td class="pls"></td>
-<td class="plc" style="overflow:visible;">
-<div class="po hin">
-<div class="pob cl">
-<em>
-<a class="fastre" href="javascript:;" onclick="lsSubmit()">回复</a>
-                                </em>
-
-<p>
-<a href="javascript:;" id="mgc_post_187510577" onmouseover="showMenu(this.id)" class="showmenu">使用道具</a>
-                            <a href="javascript:;" onclick="lsSubmit()">举报</a>
-                            </p>
-
-<ul id="mgc_post_187510577_menu" class="p_pop mgcmn" style="display: none;">
-</ul>
-<script type="text/javascript" reload="1">checkmgcmn('post_187510577')</script>
-</div>
-</div>
-</td>
-</tr>
-<tr class="ad">
-<td class="pls"></td>
-<td class="plc">
-</td>
-</tr>
-
-</table>
-<!-- BEGIN 声望 -->
-<link rel="stylesheet" type="text/css" href="/home/css/prestige_1.css" />
-<div class="pop-rank" id="pop-rank">
-    <span class="p">本版排名：<span id="pop-user-prank" style="display:inline;"><img src="/home/picture/ajax-loader_1.gif" /></span></span>
-    <span class="p">本版声望：<span id="pop-user-pvalue" style="display:inline;"><img src="/home/picture/ajax-loader_1.gif" /></span></span>
-    <span class="link"><a href="plugin.php?id=prestige" target="_blank">[关注管理]</a>&nbsp;<a target="_blank" href="plugin.php?id=prestige:prestige&amp;view=about">[声望说明]</a></span>
-</div>
-<script type="text/javascript">
-var popRankTimer = null;
-jQuery('.user_prestige img').each(function(){
-var prank = jQuery(this).attr('data-rank');
-var pvalue = jQuery(this).attr('data-prestige');
-    jQuery(this).hover(function() {
-
-    jQuery('#pop-user-prank').text(prank);
-    jQuery('#pop-user-pvalue').text(pvalue);
-        var pos = jQuery(this).position();
-        jQuery("#pop-rank").css({
-            left: pos.left,
-            top: pos.top + 38
-        }).show();
-    }, function() {
-        clearTimeout(popRankTimer);
-
-        popRankTimer = setTimeout(function() {
-    jQuery('#pop-user-prank').text('');
-    jQuery('#pop-user-pvalue').text('');
-            jQuery("#pop-rank").hide();
-        }, 400);
-    }); 
-})
-
-jQuery("#pop-rank").hover(function() {
-    clearTimeout(popRankTimer);
-}, function() {
-    jQuery("#pop-rank").hide();
-    jQuery('#pop-user-prank').text('');
-    jQuery('#pop-user-pvalue').text('');
-});
-</script>
-<!-- END 声望 --></div><div id="post_187510588" >
-<table id="pid187510588" class="plhin" summary="pid187510588" cellspacing="0" cellpadding="0">
-<tr>
-<td class="pls" rowspan="2">
-<div id="favatar187510588" class="pls favatar">
- <div class="pi">
-<div class="authi"><a href="http://bbs.17173.com/space-uid-135522725.html" target="_blank" class="xw1">任性的欧尼酱</a>
-
-<a href="http://bbs.17173.com/home.php?mod=spacecp&amp;ac=profile&amp;op=verify&amp;vid=1" target="_blank">
-</a>
-
-<a href="http://bbs.17173.com/home.php?mod=spacecp&amp;ac=profile&amp;op=verify&amp;vid=2" target="_blank">
-</a>
-
-</div>
-</div>
-<div class="p_pop blk bui card_gender_0" id="userinfo187510588" style="display: none; margin-top: -11px;">
-<div class="m z">
-<div id="userinfo187510588_ma"></div>
-</div>
-<div class="i y">
-<div>
-<strong><a href="http://bbs.17173.com/space-uid-135522725.html" target="_blank" class="xi2">任性的欧尼酱</a></strong>
-<em>当前离线</em>
-</div><dl class="cl">
-<dt>UID</dt><dd><a href="?135522725" target="_blank" class="xi2">135522725</a></dd>
-<dt>精华</dt><dd>0</dd>
-<dt>经验</dt><dd>184 </dd>
-<dt>小伙伴</dt><dd>0 </dd>
-<dt>崇高石</dt><dd>0 </dd>
-<dt>水晶</dt><dd>0 </dd>
-<dt>板砖</dt><dd>1601 </dd>
-<dt>零食</dt><dd>0 </dd>
-<dt>悬赏币</dt><dd>0 </dd>
-<dt>VR币</dt><dd>0 </dd>
-
-</dl><div class="imicn">
-<a href="http://bbs.17173.com/home.php?mod=space&amp;uid=135522725&amp;do=profile" target="_blank" title="查看详细资料"><img src="/home/picture/userinfo.gif" alt="查看详细资料" /></a>
-</div>
-<div id="avatarfeed"><span id="threadsortswait"></span></div>
-</div>
-</div>
-<div>
-<div class="avatar" onmouseover="showauthor(this, 'userinfo187510588')"><a href="http://bbs.17173.com/space-uid-135522725.html" class="avtm" target="_blank"><img src="/home/picture/avatar.php" /></a></div>
-
-
-<!--BEGIN prestige 135522725-->
-<div class="user_prestige">
-    <img src="/home/picture/dnf-lv7.gif" data-prestige="539" data-rank="1078" alt="神都根特" >
-</div>
-<!--END prestige 135522725-->
-
-</div>
-<div class="tns xg2"><table cellspacing="0" cellpadding="0"><th><p><a href="http://bbs.17173.com/home.php?mod=space&uid=135522725&do=thread&type=thread&view=me&from=space" class="xi2">16</a></p>主题</th><th><p><a href="http://bbs.17173.com/home.php?mod=space&uid=135522725&do=thread&type=reply&view=me&from=space" class="xi2">418</a></p>帖子</th><td><p><a href="http://bbs.17173.com/home.php?mod=space&uid=135522725&do=profile" class="xi2">634</a></p>积分</td></table></div>
-
-<p><em><a href="http://bbs.17173.com/home.php?mod=spacecp&amp;ac=usergroup&amp;gid=12" target="_blank">Lv.3</a></em></p>
-
-
-<p><span id="g_up187510588" onmouseover="showMenu({'ctrlid':this.id, 'pos':'12!'});"><img src="/home/picture/star_level1.gif" alt="Rank: 3" /><img src="/home/picture/star_level1.gif" alt="Rank: 3" /><img src="/home/picture/star_level1.gif" alt="Rank: 3" /></span></p>
-<div id="g_up187510588_menu" class="tip tip_4" style="display: none;"><div class="tip_horn"></div><div class="tip_c">Lv.3, 积分 634, 距离下一级还需 366 积分</div></div>
-
-
-<p><span class="pbg2"  id="upgradeprogress_187510588" onmouseover="showMenu({'ctrlid':this.id, 'pos':'12!', 'menuid':'g_up187510588_menu'});"><span class="pbr2" style="width:8%;"></span></span></p>
-<div id="g_up187510588_menu" class="tip tip_4" style="display: none;"><div class="tip_horn"></div><div class="tip_c">Lv.3, 积分 634, 距离下一级还需 366 积分</div></div>
-
-<dl class="pil cl">
-
-</dl>
-<ul class="xl xl2 o cl">
-<li class="pm2">
-                                                <a href="javascript:;" onclick="lsSubmit()" title="发消息" class="xi2">发消息</a>
-                                            
-                    
-                    
-                    
-                    </li>
-</ul>
-</div>
-</td>
-<td class="plc">
-<div class="pi">
-<strong>
-<a href="http://bbs.17173.com/forum.php?mod=redirect&goto=findpost&ptid=10312367&pid=187510588"   id="postnum187510588" onclick="setCopy(this.href, '帖子地址复制成功');return false;">
-地板</a>
-</strong>
-<div class="pti">
-<div class="pdbt">
-</div>
-<div class="authi">
-<img class="authicn vm" id="authicon187510588" src="/home/picture/online_member.gif" />
-<em id="authorposton187510588">发表于 2017-6-9 09:40:21</em>
-<span class="pipe">|</span>
-<a href="http://bbs.17173.com/forum.php?mod=viewthread&amp;tid=10312367&amp;page=1&amp;authorid=135522725" rel="nofollow">只看该作者</a>
-</div>
-</div>
-</div><div class="pct"><div class="pcb">
-<div class="t_fsz">
-<table cellspacing="0" cellpadding="0"><tr><td class="t_f" id="postmessage_187510588">
-对了，你还少了召唤和元素姐妹的那个</td></tr></table>
-
-
-</div>
-<div id="comment_187510588" class="cm">
-</div>
-
-<div id="post_rate_div_187510588"></div>
-</div>
-</div>
-
-</td></tr>
-<tr><td class="plc plm">
-</td>
-</tr>
-<tr id="_postposition187510588"></tr>
-<tr>
-<td class="pls"></td>
-<td class="plc" style="overflow:visible;">
-<div class="po hin">
-<div class="pob cl">
-<em>
-<a class="fastre" href="javascript:;" onclick="lsSubmit()">回复</a>
-                                </em>
-
-<p>
-<a href="javascript:;" id="mgc_post_187510588" onmouseover="showMenu(this.id)" class="showmenu">使用道具</a>
-                            <a href="javascript:;" onclick="lsSubmit()">举报</a>
-                            </p>
-
-<ul id="mgc_post_187510588_menu" class="p_pop mgcmn" style="display: none;">
-</ul>
-<script type="text/javascript" reload="1">checkmgcmn('post_187510588')</script>
-</div>
-</div>
-</td>
-</tr>
-<tr class="ad">
-<td class="pls"></td>
-<td class="plc">
-</td>
-</tr>
-
-</table>
-<!-- BEGIN 声望 -->
-<link rel="stylesheet" type="text/css" href="/home/css/prestige_1.css" />
-<div class="pop-rank" id="pop-rank">
-    <span class="p">本版排名：<span id="pop-user-prank" style="display:inline;"><img src="/home/picture/ajax-loader_1.gif" /></span></span>
-    <span class="p">本版声望：<span id="pop-user-pvalue" style="display:inline;"><img src="/home/picture/ajax-loader_1.gif" /></span></span>
-    <span class="link"><a href="plugin.php?id=prestige" target="_blank">[关注管理]</a>&nbsp;<a target="_blank" href="plugin.php?id=prestige:prestige&amp;view=about">[声望说明]</a></span>
-</div>
-<script type="text/javascript">
-var popRankTimer = null;
-jQuery('.user_prestige img').each(function(){
-var prank = jQuery(this).attr('data-rank');
-var pvalue = jQuery(this).attr('data-prestige');
-    jQuery(this).hover(function() {
-
-    jQuery('#pop-user-prank').text(prank);
-    jQuery('#pop-user-pvalue').text(pvalue);
-        var pos = jQuery(this).position();
-        jQuery("#pop-rank").css({
-            left: pos.left,
-            top: pos.top + 38
-        }).show();
-    }, function() {
-        clearTimeout(popRankTimer);
-
-        popRankTimer = setTimeout(function() {
-    jQuery('#pop-user-prank').text('');
-    jQuery('#pop-user-pvalue').text('');
-            jQuery("#pop-rank").hide();
-        }, 400);
-    }); 
-})
-
-jQuery("#pop-rank").hover(function() {
-    clearTimeout(popRankTimer);
-}, function() {
-    jQuery("#pop-rank").hide();
-    jQuery('#pop-user-prank').text('');
-    jQuery('#pop-user-pvalue').text('');
-});
-</script>
-<!-- END 声望 --></div><div id="post_187511495" >
-<table id="pid187511495" class="plhin" summary="pid187511495" cellspacing="0" cellpadding="0">
-<tr>
-<td class="pls" rowspan="2">
-<div id="favatar187511495" class="pls favatar">
- <div class="pi">
-<div class="authi"><a href="http://bbs.17173.com/space-uid-125433921.html" target="_blank" class="xw1">阿良良木。</a>
-
-<a href="http://bbs.17173.com/home.php?mod=spacecp&amp;ac=profile&amp;op=verify&amp;vid=1" target="_blank">
-</a>
-
-<a href="http://bbs.17173.com/home.php?mod=spacecp&amp;ac=profile&amp;op=verify&amp;vid=2" target="_blank">
-</a>
-
-</div>
-</div>
-<div class="p_pop blk bui card_gender_0" id="userinfo187511495" style="display: none; margin-top: -11px;">
-<div class="m z">
-<div id="userinfo187511495_ma"></div>
-</div>
-<div class="i y">
-<div>
-<strong><a href="http://bbs.17173.com/space-uid-125433921.html" target="_blank" class="xi2">阿良良木。</a></strong>
-<em>当前在线</em>
-</div><dl class="cl">
-<dt>UID</dt><dd><a href="?125433921" target="_blank" class="xi2">125433921</a></dd>
-<dt>精华</dt><dd>0</dd>
-<dt>经验</dt><dd>1694 </dd>
-<dt>小伙伴</dt><dd>0 </dd>
-<dt>崇高石</dt><dd>0 </dd>
-<dt>水晶</dt><dd>1490 </dd>
-<dt>板砖</dt><dd>1078 </dd>
-<dt>零食</dt><dd>0 </dd>
-<dt>悬赏币</dt><dd>0 </dd>
-<dt>VR币</dt><dd>0 </dd>
-
-</dl><div class="imicn">
-<a href="http://bbs.17173.com/home.php?mod=space&amp;uid=125433921&amp;do=profile" target="_blank" title="查看详细资料"><img src="/home/picture/userinfo.gif" alt="查看详细资料" /></a>
-</div>
-<div id="avatarfeed"><span id="threadsortswait"></span></div>
-</div>
-</div>
-<div>
-<div class="avatar" onmouseover="showauthor(this, 'userinfo187511495')"><a href="http://bbs.17173.com/space-uid-125433921.html" class="avtm" target="_blank"><img src="/home/picture/avatar.php" /></a></div>
-
-
-<!--BEGIN prestige 125433921-->
-<div class="user_prestige">
-    <img src="/home/picture/dnf-lv12.gif" data-prestige="4001" data-rank="282" alt="亡者峡谷" >
-</div>
-<!--END prestige 125433921-->
-
-</div>
-<div class="tns xg2"><table cellspacing="0" cellpadding="0"><th><p><a href="http://bbs.17173.com/home.php?mod=space&uid=125433921&do=thread&type=thread&view=me&from=space" class="xi2">0</a></p>主题</th><th><p><a href="http://bbs.17173.com/home.php?mod=space&uid=125433921&do=thread&type=reply&view=me&from=space" class="xi2">317</a></p>帖子</th><td><p><a href="http://bbs.17173.com/home.php?mod=space&uid=125433921&do=profile" class="xi2">2011</a></p>积分</td></table></div>
-
-<p><em><a href="http://bbs.17173.com/home.php?mod=spacecp&amp;ac=usergroup&amp;gid=17" target="_blank">Lv.5</a></em></p>
-
-
-<p><span id="g_up187511495" onmouseover="showMenu({'ctrlid':this.id, 'pos':'12!'});"><img src="/home/picture/star_level2.gif" alt="Rank: 5" /><img src="/home/picture/star_level1.gif" alt="Rank: 5" /></span></p>
-<div id="g_up187511495_menu" class="tip tip_4" style="display: none;"><div class="tip_horn"></div><div class="tip_c">Lv.5, 积分 2011, 距离下一级还需 989 积分</div></div>
-
-
-<p><span class="pbg2"  id="upgradeprogress_187511495" onmouseover="showMenu({'ctrlid':this.id, 'pos':'12!', 'menuid':'g_up187511495_menu'});"><span class="pbr2" style="width:2%;"></span></span></p>
-<div id="g_up187511495_menu" class="tip tip_4" style="display: none;"><div class="tip_horn"></div><div class="tip_c">Lv.5, 积分 2011, 距离下一级还需 989 积分</div></div>
-
-<dl class="pil cl">
-
-</dl>
-<ul class="xl xl2 o cl">
-<li class="pm2">
-                                                <a href="javascript:;" onclick="lsSubmit()" title="发消息" class="xi2">发消息</a>
-                                            
-                    
-                    
-                    
-                    </li>
-</ul>
-</div>
-</td>
-<td class="plc">
-<div class="pi">
-<strong>
-<a href="http://bbs.17173.com/forum.php?mod=redirect&goto=findpost&ptid=10312367&pid=187511495"   id="postnum187511495" onclick="setCopy(this.href, '帖子地址复制成功');return false;">
-<em>5</em>楼</a>
-</strong>
-<div class="pti">
-<div class="pdbt">
-</div>
-<div class="authi">
-<img class="authicn vm" id="authicon187511495" src="/home/picture/online_member.gif" />
-<em id="authorposton187511495">发表于 2017-6-9 10:59:36</em>
-<span class="pipe">|</span>
-<a href="http://bbs.17173.com/forum.php?mod=viewthread&amp;tid=10312367&amp;page=1&amp;authorid=125433921" rel="nofollow">只看该作者</a>
-</div>
-</div>
-</div><div class="pct"><div class="pcb">
-<div class="t_fsz">
-<table cellspacing="0" cellpadding="0"><tr><td class="t_f" id="postmessage_187511495">
-回复</td></tr></table>
-
-
-</div>
-<div id="comment_187511495" class="cm">
-</div>
-
-<div id="post_rate_div_187511495"></div>
-</div>
-</div>
-
-</td></tr>
-<tr><td class="plc plm">
-</td>
-</tr>
-<tr id="_postposition187511495"></tr>
-<tr>
-<td class="pls"></td>
-<td class="plc" style="overflow:visible;">
-<div class="po hin">
-<div class="pob cl">
-<em>
-<a class="fastre" href="javascript:;" onclick="lsSubmit()">回复</a>
-                                </em>
-
-<p>
-<a href="javascript:;" id="mgc_post_187511495" onmouseover="showMenu(this.id)" class="showmenu">使用道具</a>
-                            <a href="javascript:;" onclick="lsSubmit()">举报</a>
-                            </p>
-
-<ul id="mgc_post_187511495_menu" class="p_pop mgcmn" style="display: none;">
-</ul>
-<script type="text/javascript" reload="1">checkmgcmn('post_187511495')</script>
-</div>
-</div>
-</td>
-</tr>
-<tr class="ad">
-<td class="pls"></td>
-<td class="plc">
-</td>
-</tr>
-
-</table>
-<!-- BEGIN 声望 -->
-<link rel="stylesheet" type="text/css" href="/home/css/prestige_1.css" />
-<div class="pop-rank" id="pop-rank">
-    <span class="p">本版排名：<span id="pop-user-prank" style="display:inline;"><img src="/home/picture/ajax-loader_1.gif" /></span></span>
-    <span class="p">本版声望：<span id="pop-user-pvalue" style="display:inline;"><img src="/home/picture/ajax-loader_1.gif" /></span></span>
-    <span class="link"><a href="plugin.php?id=prestige" target="_blank">[关注管理]</a>&nbsp;<a target="_blank" href="plugin.php?id=prestige:prestige&amp;view=about">[声望说明]</a></span>
-</div>
-<script type="text/javascript">
-var popRankTimer = null;
-jQuery('.user_prestige img').each(function(){
-var prank = jQuery(this).attr('data-rank');
-var pvalue = jQuery(this).attr('data-prestige');
-    jQuery(this).hover(function() {
-
-    jQuery('#pop-user-prank').text(prank);
-    jQuery('#pop-user-pvalue').text(pvalue);
-        var pos = jQuery(this).position();
-        jQuery("#pop-rank").css({
-            left: pos.left,
-            top: pos.top + 38
-        }).show();
-    }, function() {
-        clearTimeout(popRankTimer);
-
-        popRankTimer = setTimeout(function() {
-    jQuery('#pop-user-prank').text('');
-    jQuery('#pop-user-pvalue').text('');
-            jQuery("#pop-rank").hide();
-        }, 400);
-    }); 
-})
-
-jQuery("#pop-rank").hover(function() {
-    clearTimeout(popRankTimer);
-}, function() {
-    jQuery("#pop-rank").hide();
-    jQuery('#pop-user-prank').text('');
-    jQuery('#pop-user-pvalue').text('');
-});
-</script>
-<!-- END 声望 --></div><div id="post_187511524" >
-<table id="pid187511524" class="plhin" summary="pid187511524" cellspacing="0" cellpadding="0">
-<tr>
-<td class="pls" rowspan="2">
-<div id="favatar187511524" class="pls favatar">
- <div class="pi">
-<div class="authi"><a href="http://bbs.17173.com/space-uid-126739472.html" target="_blank" class="xw1">帅气逼人的tree</a>
-
-<a href="http://bbs.17173.com/home.php?mod=spacecp&amp;ac=profile&amp;op=verify&amp;vid=1" target="_blank">
-</a>
-
-<a href="http://bbs.17173.com/home.php?mod=spacecp&amp;ac=profile&amp;op=verify&amp;vid=2" target="_blank">
-</a>
-
-</div>
-</div>
-<div class="p_pop blk bui card_gender_0" id="userinfo187511524" style="display: none; margin-top: -11px;">
-<div class="m z">
-<div id="userinfo187511524_ma"></div>
-</div>
-<div class="i y">
-<div>
-<strong><a href="http://bbs.17173.com/space-uid-126739472.html" target="_blank" class="xi2">帅气逼人的tree</a></strong>
-<em>当前离线</em>
-</div><dl class="cl">
-<dt>UID</dt><dd><a href="?126739472" target="_blank" class="xi2">126739472</a></dd>
-<dt>精华</dt><dd>0</dd>
-<dt>经验</dt><dd>44 </dd>
-<dt>小伙伴</dt><dd>0 </dd>
-<dt>崇高石</dt><dd>0 </dd>
-<dt>水晶</dt><dd>0 </dd>
-<dt>板砖</dt><dd>2 </dd>
-<dt>零食</dt><dd>0 </dd>
-<dt>悬赏币</dt><dd>0 </dd>
-<dt>VR币</dt><dd>0 </dd>
-
-</dl><div class="imicn">
-<a href="http://bbs.17173.com/home.php?mod=space&amp;uid=126739472&amp;do=profile" target="_blank" title="查看详细资料"><img src="/home/picture/userinfo.gif" alt="查看详细资料" /></a>
-</div>
-<div id="avatarfeed"><span id="threadsortswait"></span></div>
-</div>
-</div>
-<div>
-<div class="avatar" onmouseover="showauthor(this, 'userinfo187511524')"><a href="http://bbs.17173.com/space-uid-126739472.html" class="avtm" target="_blank"><img src="/home/picture/avatar.php" /></a></div>
-</div>
-<div class="tns xg2"><table cellspacing="0" cellpadding="0"><th><p><a href="http://bbs.17173.com/home.php?mod=space&uid=126739472&do=thread&type=thread&view=me&from=space" class="xi2">0</a></p>主题</th><th><p><a href="http://bbs.17173.com/home.php?mod=space&uid=126739472&do=thread&type=reply&view=me&from=space" class="xi2">9</a></p>帖子</th><td><p><a href="http://bbs.17173.com/home.php?mod=space&uid=126739472&do=profile" class="xi2">53</a></p>积分</td></table></div>
-
-<p><em><a href="http://bbs.17173.com/home.php?mod=spacecp&amp;ac=usergroup&amp;gid=11" target="_blank">Lv.2</a></em></p>
-
-
-<p><span id="g_up187511524" onmouseover="showMenu({'ctrlid':this.id, 'pos':'12!'});"><img src="/home/picture/star_level1.gif" alt="Rank: 2" /><img src="/home/picture/star_level1.gif" alt="Rank: 2" /></span></p>
-<div id="g_up187511524_menu" class="tip tip_4" style="display: none;"><div class="tip_horn"></div><div class="tip_c">Lv.2, 积分 53, 距离下一级还需 547 积分</div></div>
-
-
-<p><span class="pbg2"  id="upgradeprogress_187511524" onmouseover="showMenu({'ctrlid':this.id, 'pos':'12!', 'menuid':'g_up187511524_menu'});"><span class="pbr2" style="width:2%;"></span></span></p>
-<div id="g_up187511524_menu" class="tip tip_4" style="display: none;"><div class="tip_horn"></div><div class="tip_c">Lv.2, 积分 53, 距离下一级还需 547 积分</div></div>
-
-<dl class="pil cl">
-
-</dl>
-<ul class="xl xl2 o cl">
-<li class="pm2">
-                                                <a href="javascript:;" onclick="lsSubmit()" title="发消息" class="xi2">发消息</a>
-                                            
-                    
-                    
-                    
-                    </li>
-</ul>
-</div>
-</td>
-<td class="plc">
-<div class="pi">
-<strong>
-<a href="http://bbs.17173.com/forum.php?mod=redirect&goto=findpost&ptid=10312367&pid=187511524"   id="postnum187511524" onclick="setCopy(this.href, '帖子地址复制成功');return false;">
-<em>6</em>楼</a>
-</strong>
-<div class="pti">
-<div class="pdbt">
-</div>
-<div class="authi">
-<img class="authicn vm" id="authicon187511524" src="/home/picture/online_member.gif" />
-<em id="authorposton187511524">发表于 2017-6-9 11:01:47</em>
-<span class="pipe">|</span>
-<a href="http://bbs.17173.com/forum.php?mod=viewthread&amp;tid=10312367&amp;page=1&amp;authorid=126739472" rel="nofollow">只看该作者</a>
-</div>
-</div>
-</div><div class="pct"><div class="pcb">
-<div class="t_fsz">
-<table cellspacing="0" cellpadding="0"><tr><td class="t_f" id="postmessage_187511524">
-<img src="/home/picture/3109.gif" smilieid="86" border="0" alt="" /></td></tr></table>
-
-
-</div>
-<div id="comment_187511524" class="cm">
-</div>
-
-<div id="post_rate_div_187511524"></div>
-</div>
-</div>
-
-</td></tr>
-<tr><td class="plc plm">
-</td>
-</tr>
-<tr id="_postposition187511524"></tr>
-<tr>
-<td class="pls"></td>
-<td class="plc" style="overflow:visible;">
-<div class="po hin">
-<div class="pob cl">
-<em>
-<a class="fastre" href="javascript:;" onclick="lsSubmit()">回复</a>
-                                </em>
-
-<p>
-<a href="javascript:;" id="mgc_post_187511524" onmouseover="showMenu(this.id)" class="showmenu">使用道具</a>
-                            <a href="javascript:;" onclick="lsSubmit()">举报</a>
-                            </p>
-
-<ul id="mgc_post_187511524_menu" class="p_pop mgcmn" style="display: none;">
-</ul>
-<script type="text/javascript" reload="1">checkmgcmn('post_187511524')</script>
-</div>
-</div>
-</td>
-</tr>
-<tr class="ad">
-<td class="pls"></td>
-<td class="plc">
-</td>
-</tr>
-
-</table>
-<!-- BEGIN 声望 -->
-<link rel="stylesheet" type="text/css" href="/home/css/prestige_1.css" />
-<div class="pop-rank" id="pop-rank">
-    <span class="p">本版排名：<span id="pop-user-prank" style="display:inline;"><img src="/home/picture/ajax-loader_1.gif" /></span></span>
-    <span class="p">本版声望：<span id="pop-user-pvalue" style="display:inline;"><img src="/home/picture/ajax-loader_1.gif" /></span></span>
-    <span class="link"><a href="plugin.php?id=prestige" target="_blank">[关注管理]</a>&nbsp;<a target="_blank" href="plugin.php?id=prestige:prestige&amp;view=about">[声望说明]</a></span>
-</div>
-<script type="text/javascript">
-var popRankTimer = null;
-jQuery('.user_prestige img').each(function(){
-var prank = jQuery(this).attr('data-rank');
-var pvalue = jQuery(this).attr('data-prestige');
-    jQuery(this).hover(function() {
-
-    jQuery('#pop-user-prank').text(prank);
-    jQuery('#pop-user-pvalue').text(pvalue);
-        var pos = jQuery(this).position();
-        jQuery("#pop-rank").css({
-            left: pos.left,
-            top: pos.top + 38
-        }).show();
-    }, function() {
-        clearTimeout(popRankTimer);
-
-        popRankTimer = setTimeout(function() {
-    jQuery('#pop-user-prank').text('');
-    jQuery('#pop-user-pvalue').text('');
-            jQuery("#pop-rank").hide();
-        }, 400);
-    }); 
-})
-
-jQuery("#pop-rank").hover(function() {
-    clearTimeout(popRankTimer);
-}, function() {
-    jQuery("#pop-rank").hide();
-    jQuery('#pop-user-prank').text('');
-    jQuery('#pop-user-pvalue').text('');
-});
-</script>
-<!-- END 声望 --></div><div id="post_187511529" >
-<table id="pid187511529" class="plhin" summary="pid187511529" cellspacing="0" cellpadding="0">
-<tr>
-<td class="pls" rowspan="2">
-<div id="favatar187511529" class="pls favatar">
- <div class="pi">
-<div class="authi"><a href="http://bbs.17173.com/space-uid-133080919.html" target="_blank" class="xw1">会飞的皮鞋</a>
-
-<a href="http://bbs.17173.com/home.php?mod=spacecp&amp;ac=profile&amp;op=verify&amp;vid=1" target="_blank">
-</a>
-
-<a href="http://bbs.17173.com/home.php?mod=spacecp&amp;ac=profile&amp;op=verify&amp;vid=2" target="_blank">
-</a>
-
-</div>
-</div>
-<div class="p_pop blk bui card_gender_0" id="userinfo187511529" style="display: none; margin-top: -11px;">
-<div class="m z">
-<div id="userinfo187511529_ma"></div>
-</div>
-<div class="i y">
-<div>
-<strong><a href="http://bbs.17173.com/space-uid-133080919.html" target="_blank" class="xi2">会飞的皮鞋</a></strong>
-<em>当前离线</em>
-</div><dl class="cl">
-<dt>UID</dt><dd><a href="?133080919" target="_blank" class="xi2">133080919</a></dd>
-<dt>精华</dt><dd>0</dd>
-<dt>经验</dt><dd>34 </dd>
-<dt>小伙伴</dt><dd>0 </dd>
-<dt>崇高石</dt><dd>0 </dd>
-<dt>水晶</dt><dd>0 </dd>
-<dt>板砖</dt><dd>2 </dd>
-<dt>零食</dt><dd>0 </dd>
-<dt>悬赏币</dt><dd>0 </dd>
-<dt>VR币</dt><dd>0 </dd>
-
-</dl><div class="imicn">
-<a href="http://bbs.17173.com/home.php?mod=space&amp;uid=133080919&amp;do=profile" target="_blank" title="查看详细资料"><img src="/home/picture/userinfo.gif" alt="查看详细资料" /></a>
-</div>
-<div id="avatarfeed"><span id="threadsortswait"></span></div>
-</div>
-</div>
-<div>
-<div class="avatar" onmouseover="showauthor(this, 'userinfo187511529')"><a href="http://bbs.17173.com/space-uid-133080919.html" class="avtm" target="_blank"><img src="/home/picture/avatar.php" /></a></div>
-</div>
-<div class="tns xg2"><table cellspacing="0" cellpadding="0"><th><p><a href="http://bbs.17173.com/home.php?mod=space&uid=133080919&do=thread&type=thread&view=me&from=space" class="xi2">0</a></p>主题</th><th><p><a href="http://bbs.17173.com/home.php?mod=space&uid=133080919&do=thread&type=reply&view=me&from=space" class="xi2">8</a></p>帖子</th><td><p><a href="http://bbs.17173.com/home.php?mod=space&uid=133080919&do=profile" class="xi2">42</a></p>积分</td></table></div>
-
-<p><em><a href="http://bbs.17173.com/home.php?mod=spacecp&amp;ac=usergroup&amp;gid=10" target="_blank">Lv.1</a></em></p>
-
-
-<p><span id="g_up187511529" onmouseover="showMenu({'ctrlid':this.id, 'pos':'12!'});"><img src="/home/picture/star_level1.gif" alt="Rank: 1" /></span></p>
-<div id="g_up187511529_menu" class="tip tip_4" style="display: none;"><div class="tip_horn"></div><div class="tip_c">Lv.1, 积分 42, 距离下一级还需 8 积分</div></div>
-
-
-<p><span class="pbg2"  id="upgradeprogress_187511529" onmouseover="showMenu({'ctrlid':this.id, 'pos':'12!', 'menuid':'g_up187511529_menu'});"><span class="pbr2" style="width:84%;"></span></span></p>
-<div id="g_up187511529_menu" class="tip tip_4" style="display: none;"><div class="tip_horn"></div><div class="tip_c">Lv.1, 积分 42, 距离下一级还需 8 积分</div></div>
-
-<dl class="pil cl">
-
-</dl>
-<ul class="xl xl2 o cl">
-<li class="pm2">
-                                                <a href="javascript:;" onclick="lsSubmit()" title="发消息" class="xi2">发消息</a>
-                                            
-                    
-                    
-                    
-                    </li>
-</ul>
-</div>
-</td>
-<td class="plc">
-<div class="pi">
-<strong>
-<a href="http://bbs.17173.com/forum.php?mod=redirect&goto=findpost&ptid=10312367&pid=187511529"   id="postnum187511529" onclick="setCopy(this.href, '帖子地址复制成功');return false;">
-<em>7</em>楼</a>
-</strong>
-<div class="pti">
-<div class="pdbt">
-</div>
-<div class="authi">
-<img class="authicn vm" id="authicon187511529" src="/home/picture/online_member.gif" />
-<em id="authorposton187511529">发表于 2017-6-9 11:01:57</em>
-<span class="pipe">|</span>
-<a href="http://bbs.17173.com/forum.php?mod=viewthread&amp;tid=10312367&amp;page=1&amp;authorid=133080919" rel="nofollow">只看该作者</a>
-</div>
-</div>
-</div><div class="pct"><div class="pcb">
-<div class="t_fsz">
-<table cellspacing="0" cellpadding="0"><tr><td class="t_f" id="postmessage_187511529">
-666666666</td></tr></table>
-
-
-</div>
-<div id="comment_187511529" class="cm">
-</div>
-
-<div id="post_rate_div_187511529"></div>
-</div>
-</div>
-
-</td></tr>
-<tr><td class="plc plm">
-</td>
-</tr>
-<tr id="_postposition187511529"></tr>
-<tr>
-<td class="pls"></td>
-<td class="plc" style="overflow:visible;">
-<div class="po hin">
-<div class="pob cl">
-<em>
-<a class="fastre" href="javascript:;" onclick="lsSubmit()">回复</a>
-                                </em>
-
-<p>
-<a href="javascript:;" id="mgc_post_187511529" onmouseover="showMenu(this.id)" class="showmenu">使用道具</a>
-                            <a href="javascript:;" onclick="lsSubmit()">举报</a>
-                            </p>
-
-<ul id="mgc_post_187511529_menu" class="p_pop mgcmn" style="display: none;">
-</ul>
-<script type="text/javascript" reload="1">checkmgcmn('post_187511529')</script>
-</div>
-</div>
-</td>
-</tr>
-<tr class="ad">
-<td class="pls"></td>
-<td class="plc">
-</td>
-</tr>
-
-</table>
-<!-- BEGIN 声望 -->
-<link rel="stylesheet" type="text/css" href="/home/css/prestige_1.css" />
-<div class="pop-rank" id="pop-rank">
-    <span class="p">本版排名：<span id="pop-user-prank" style="display:inline;"><img src="/home/picture/ajax-loader_1.gif" /></span></span>
-    <span class="p">本版声望：<span id="pop-user-pvalue" style="display:inline;"><img src="/home/picture/ajax-loader_1.gif" /></span></span>
-    <span class="link"><a href="plugin.php?id=prestige" target="_blank">[关注管理]</a>&nbsp;<a target="_blank" href="plugin.php?id=prestige:prestige&amp;view=about">[声望说明]</a></span>
-</div>
-<script type="text/javascript">
-var popRankTimer = null;
-jQuery('.user_prestige img').each(function(){
-var prank = jQuery(this).attr('data-rank');
-var pvalue = jQuery(this).attr('data-prestige');
-    jQuery(this).hover(function() {
-
-    jQuery('#pop-user-prank').text(prank);
-    jQuery('#pop-user-pvalue').text(pvalue);
-        var pos = jQuery(this).position();
-        jQuery("#pop-rank").css({
-            left: pos.left,
-            top: pos.top + 38
-        }).show();
-    }, function() {
-        clearTimeout(popRankTimer);
-
-        popRankTimer = setTimeout(function() {
-    jQuery('#pop-user-prank').text('');
-    jQuery('#pop-user-pvalue').text('');
-            jQuery("#pop-rank").hide();
-        }, 400);
-    }); 
-})
-
-jQuery("#pop-rank").hover(function() {
-    clearTimeout(popRankTimer);
-}, function() {
-    jQuery("#pop-rank").hide();
-    jQuery('#pop-user-prank').text('');
-    jQuery('#pop-user-pvalue').text('');
-});
-</script>
-<!-- END 声望 --></div><div id="post_187511538" >
-<table id="pid187511538" class="plhin" summary="pid187511538" cellspacing="0" cellpadding="0">
-<tr>
-<td class="pls" rowspan="2">
-<div id="favatar187511538" class="pls favatar">
- <div class="pi">
-<div class="authi"><a href="http://bbs.17173.com/space-uid-133152704.html" target="_blank" class="xw1">王小剑19891102</a>
-
-<a href="http://bbs.17173.com/home.php?mod=spacecp&amp;ac=profile&amp;op=verify&amp;vid=1" target="_blank">
-</a>
-
-<a href="http://bbs.17173.com/home.php?mod=spacecp&amp;ac=profile&amp;op=verify&amp;vid=2" target="_blank">
-</a>
-
-</div>
-</div>
-<div class="p_pop blk bui card_gender_0" id="userinfo187511538" style="display: none; margin-top: -11px;">
-<div class="m z">
-<div id="userinfo187511538_ma"></div>
-</div>
-<div class="i y">
-<div>
-<strong><a href="http://bbs.17173.com/space-uid-133152704.html" target="_blank" class="xi2">王小剑19891102</a></strong>
-<em>当前离线</em>
-</div><dl class="cl">
-<dt>UID</dt><dd><a href="?133152704" target="_blank" class="xi2">133152704</a></dd>
-<dt>精华</dt><dd>0</dd>
-<dt>经验</dt><dd>99 </dd>
-<dt>小伙伴</dt><dd>0 </dd>
-<dt>崇高石</dt><dd>0 </dd>
-<dt>水晶</dt><dd>0 </dd>
-<dt>板砖</dt><dd>42 </dd>
-<dt>零食</dt><dd>0 </dd>
-<dt>悬赏币</dt><dd>0 </dd>
-<dt>VR币</dt><dd>0 </dd>
-
-</dl><div class="imicn">
-<a href="http://bbs.17173.com/home.php?mod=space&amp;uid=133152704&amp;do=profile" target="_blank" title="查看详细资料"><img src="/home/picture/userinfo.gif" alt="查看详细资料" /></a>
-</div>
-<div id="avatarfeed"><span id="threadsortswait"></span></div>
-</div>
-</div>
-<div>
-<div class="avatar" onmouseover="showauthor(this, 'userinfo187511538')"><a href="http://bbs.17173.com/space-uid-133152704.html" class="avtm" target="_blank"><img src="/home/picture/avatar.php" /></a></div>
-</div>
-<div class="tns xg2"><table cellspacing="0" cellpadding="0"><th><p><a href="http://bbs.17173.com/home.php?mod=space&uid=133152704&do=thread&type=thread&view=me&from=space" class="xi2">0</a></p>主题</th><th><p><a href="http://bbs.17173.com/home.php?mod=space&uid=133152704&do=thread&type=reply&view=me&from=space" class="xi2">33</a></p>帖子</th><td><p><a href="http://bbs.17173.com/home.php?mod=space&uid=133152704&do=profile" class="xi2">132</a></p>积分</td></table></div>
-
-<p><em><a href="http://bbs.17173.com/home.php?mod=spacecp&amp;ac=usergroup&amp;gid=11" target="_blank">Lv.2</a></em></p>
-
-
-<p><span id="g_up187511538" onmouseover="showMenu({'ctrlid':this.id, 'pos':'12!'});"><img src="/home/picture/star_level1.gif" alt="Rank: 2" /><img src="/home/picture/star_level1.gif" alt="Rank: 2" /></span></p>
-<div id="g_up187511538_menu" class="tip tip_4" style="display: none;"><div class="tip_horn"></div><div class="tip_c">Lv.2, 积分 132, 距离下一级还需 468 积分</div></div>
-
-
-<p><span class="pbg2"  id="upgradeprogress_187511538" onmouseover="showMenu({'ctrlid':this.id, 'pos':'12!', 'menuid':'g_up187511538_menu'});"><span class="pbr2" style="width:14%;"></span></span></p>
-<div id="g_up187511538_menu" class="tip tip_4" style="display: none;"><div class="tip_horn"></div><div class="tip_c">Lv.2, 积分 132, 距离下一级还需 468 积分</div></div>
-
-<dl class="pil cl">
-
-</dl>
-<ul class="xl xl2 o cl">
-<li class="pm2">
-                                                <a href="javascript:;" onclick="lsSubmit()" title="发消息" class="xi2">发消息</a>
-                                            
-                    
-                    
-                    
-                    </li>
-</ul>
-</div>
-</td>
-<td class="plc">
-<div class="pi">
-<strong>
-<a href="http://bbs.17173.com/forum.php?mod=redirect&goto=findpost&ptid=10312367&pid=187511538"   id="postnum187511538" onclick="setCopy(this.href, '帖子地址复制成功');return false;">
-<em>8</em>楼</a>
-</strong>
-<div class="pti">
-<div class="pdbt">
-</div>
-<div class="authi">
-<img class="authicn vm" id="authicon187511538" src="/home/picture/online_member.gif" />
-<em id="authorposton187511538">发表于 2017-6-9 11:02:40</em>
-<span class="pipe">|</span>
-<a href="http://bbs.17173.com/forum.php?mod=viewthread&amp;tid=10312367&amp;page=1&amp;authorid=133152704" rel="nofollow">只看该作者</a>
-</div>
-</div>
-</div><div class="pct"><div class="pcb">
-<div class="t_fsz">
-<table cellspacing="0" cellpadding="0"><tr><td class="t_f" id="postmessage_187511538">
-6666666666666666666</td></tr></table>
-
-
-</div>
-<div id="comment_187511538" class="cm">
-</div>
-
-<div id="post_rate_div_187511538"></div>
-</div>
-</div>
-
-</td></tr>
-<tr><td class="plc plm">
-</td>
-</tr>
-<tr id="_postposition187511538"></tr>
-<tr>
-<td class="pls"></td>
-<td class="plc" style="overflow:visible;">
-<div class="po hin">
-<div class="pob cl">
-<em>
-<a class="fastre" href="javascript:;" onclick="lsSubmit()">回复</a>
-                                </em>
-
-<p>
-<a href="javascript:;" id="mgc_post_187511538" onmouseover="showMenu(this.id)" class="showmenu">使用道具</a>
-                            <a href="javascript:;" onclick="lsSubmit()">举报</a>
-                            </p>
-
-<ul id="mgc_post_187511538_menu" class="p_pop mgcmn" style="display: none;">
-</ul>
-<script type="text/javascript" reload="1">checkmgcmn('post_187511538')</script>
-</div>
-</div>
-</td>
-</tr>
-<tr class="ad">
-<td class="pls"></td>
-<td class="plc">
-</td>
-</tr>
-
-</table>
-<!-- BEGIN 声望 -->
-<link rel="stylesheet" type="text/css" href="/home/css/prestige_1.css" />
-<div class="pop-rank" id="pop-rank">
-    <span class="p">本版排名：<span id="pop-user-prank" style="display:inline;"><img src="/home/picture/ajax-loader_1.gif" /></span></span>
-    <span class="p">本版声望：<span id="pop-user-pvalue" style="display:inline;"><img src="/home/picture/ajax-loader_1.gif" /></span></span>
-    <span class="link"><a href="plugin.php?id=prestige" target="_blank">[关注管理]</a>&nbsp;<a target="_blank" href="plugin.php?id=prestige:prestige&amp;view=about">[声望说明]</a></span>
-</div>
-<script type="text/javascript">
-var popRankTimer = null;
-jQuery('.user_prestige img').each(function(){
-var prank = jQuery(this).attr('data-rank');
-var pvalue = jQuery(this).attr('data-prestige');
-    jQuery(this).hover(function() {
-
-    jQuery('#pop-user-prank').text(prank);
-    jQuery('#pop-user-pvalue').text(pvalue);
-        var pos = jQuery(this).position();
-        jQuery("#pop-rank").css({
-            left: pos.left,
-            top: pos.top + 38
-        }).show();
-    }, function() {
-        clearTimeout(popRankTimer);
-
-        popRankTimer = setTimeout(function() {
-    jQuery('#pop-user-prank').text('');
-    jQuery('#pop-user-pvalue').text('');
-            jQuery("#pop-rank").hide();
-        }, 400);
-    }); 
-})
-
-jQuery("#pop-rank").hover(function() {
-    clearTimeout(popRankTimer);
-}, function() {
-    jQuery("#pop-rank").hide();
-    jQuery('#pop-user-prank').text('');
-    jQuery('#pop-user-pvalue').text('');
-});
-</script>
-<!-- END 声望 --></div><div id="post_187511546" >
-<table id="pid187511546" class="plhin" summary="pid187511546" cellspacing="0" cellpadding="0">
-<tr>
-<td class="pls" rowspan="2">
-<div id="favatar187511546" class="pls favatar">
- <div class="pi">
-<div class="authi"><a href="http://bbs.17173.com/space-uid-108617830.html" target="_blank" class="xw1">小倩投食计划</a>
-
-<a href="http://bbs.17173.com/home.php?mod=spacecp&amp;ac=profile&amp;op=verify&amp;vid=1" target="_blank">
-</a>
-
-<a href="http://bbs.17173.com/home.php?mod=spacecp&amp;ac=profile&amp;op=verify&amp;vid=2" target="_blank">
-</a>
-
-</div>
-</div>
-<div class="p_pop blk bui card_gender_1" id="userinfo187511546" style="display: none; margin-top: -11px;">
-<div class="m z">
-<div id="userinfo187511546_ma"></div>
-</div>
-<div class="i y">
-<div>
-<strong><a href="http://bbs.17173.com/space-uid-108617830.html" target="_blank" class="xi2">小倩投食计划</a></strong>
-<em>当前在线</em>
-</div><dl class="cl">
-<dt>UID</dt><dd><a href="?108617830" target="_blank" class="xi2">108617830</a></dd>
-<dt>精华</dt><dd>0</dd>
-<dt>经验</dt><dd>432 </dd>
-<dt>小伙伴</dt><dd>0 </dd>
-<dt>崇高石</dt><dd>3 </dd>
-<dt>水晶</dt><dd>1870 </dd>
-<dt>板砖</dt><dd>1785 </dd>
-<dt>零食</dt><dd>0 </dd>
-<dt>悬赏币</dt><dd>62 </dd>
-<dt>VR币</dt><dd>238 </dd>
-
-</dl><div class="imicn">
-<a href="http://bbs.17173.com/home.php?mod=space&amp;uid=108617830&amp;do=profile" target="_blank" title="查看详细资料"><img src="/home/picture/userinfo.gif" alt="查看详细资料" /></a>
-</div>
-<div id="avatarfeed"><span id="threadsortswait"></span></div>
-</div>
-</div>
-<div>
-<div class="avatar" onmouseover="showauthor(this, 'userinfo187511546')"><a href="http://bbs.17173.com/space-uid-108617830.html" class="avtm" target="_blank"><img src="/home/picture/avatar.php" /></a></div>
-
-
-<!--BEGIN prestige 108617830-->
-<div class="user_prestige">
-    <img src="/home/picture/dnf-lv7.gif" data-prestige="550" data-rank="1064" alt="神都根特" >
-</div>
-<!--END prestige 108617830-->
-
-</div>
-<div class="tns xg2"><table cellspacing="0" cellpadding="0"><th><p><a href="http://bbs.17173.com/home.php?mod=space&uid=108617830&do=thread&type=thread&view=me&from=space" class="xi2">1</a></p>主题</th><th><p><a href="http://bbs.17173.com/home.php?mod=space&uid=108617830&do=thread&type=reply&view=me&from=space" class="xi2">252</a></p>帖子</th><td><p><a href="http://bbs.17173.com/home.php?mod=space&uid=108617830&do=profile" class="xi2">686</a></p>积分</td></table></div>
-
-<p><em><a href="http://bbs.17173.com/home.php?mod=spacecp&amp;ac=usergroup&amp;gid=12" target="_blank">Lv.3</a></em></p>
-
-
-<p><span id="g_up187511546" onmouseover="showMenu({'ctrlid':this.id, 'pos':'12!'});"><img src="/home/picture/star_level1.gif" alt="Rank: 3" /><img src="/home/picture/star_level1.gif" alt="Rank: 3" /><img src="/home/picture/star_level1.gif" alt="Rank: 3" /></span></p>
-<div id="g_up187511546_menu" class="tip tip_4" style="display: none;"><div class="tip_horn"></div><div class="tip_c">Lv.3, 积分 686, 距离下一级还需 314 积分</div></div>
-
-
-<p><span class="pbg2"  id="upgradeprogress_187511546" onmouseover="showMenu({'ctrlid':this.id, 'pos':'12!', 'menuid':'g_up187511546_menu'});"><span class="pbr2" style="width:21%;"></span></span></p>
-<div id="g_up187511546_menu" class="tip tip_4" style="display: none;"><div class="tip_horn"></div><div class="tip_c">Lv.3, 积分 686, 距离下一级还需 314 积分</div></div>
-
-<dl class="pil cl">
-
-</dl>
-<ul class="xl xl2 o cl">
-<li class="pm2">
-                                                <a href="javascript:;" onclick="lsSubmit()" title="发消息" class="xi2">发消息</a>
-                                            
-                    
-                    
-                    
-                    </li>
-</ul>
-</div>
-</td>
-<td class="plc">
-<div class="pi">
-<strong>
-<a href="http://bbs.17173.com/forum.php?mod=redirect&goto=findpost&ptid=10312367&pid=187511546"   id="postnum187511546" onclick="setCopy(this.href, '帖子地址复制成功');return false;">
-<em>9</em>楼</a>
-</strong>
-<div class="pti">
-<div class="pdbt">
-</div>
-<div class="authi">
-<img class="authicn vm" id="authicon187511546" src="/home/picture/online_member.gif" />
-<em id="authorposton187511546">发表于 2017-6-9 11:03:20</em>
-<span class="pipe">|</span>
-<a href="http://bbs.17173.com/forum.php?mod=viewthread&amp;tid=10312367&amp;page=1&amp;authorid=108617830" rel="nofollow">只看该作者</a>
-</div>
-</div>
-</div><div class="pct"><div class="pcb">
-<div class="t_fsz">
-<table cellspacing="0" cellpadding="0"><tr><td class="t_f" id="postmessage_187511546">
-王小妹是最帅的<img src="/home/picture/3125.gif" smilieid="106" border="0" alt="" /></td></tr></table>
-
-
-</div>
-<div id="comment_187511546" class="cm">
-</div>
-
-<div id="post_rate_div_187511546"></div>
-</div>
-</div>
-
-</td></tr>
-<tr><td class="plc plm">
-</td>
-</tr>
-<tr id="_postposition187511546"></tr>
-<tr>
-<td class="pls"></td>
-<td class="plc" style="overflow:visible;">
-<div class="po hin">
-<div class="pob cl">
-<em>
-<a class="fastre" href="javascript:;" onclick="lsSubmit()">回复</a>
-                                </em>
-
-<p>
-<a href="javascript:;" id="mgc_post_187511546" onmouseover="showMenu(this.id)" class="showmenu">使用道具</a>
-                            <a href="javascript:;" onclick="lsSubmit()">举报</a>
-                            </p>
-
-<ul id="mgc_post_187511546_menu" class="p_pop mgcmn" style="display: none;">
-</ul>
-<script type="text/javascript" reload="1">checkmgcmn('post_187511546')</script>
-</div>
-</div>
-</td>
-</tr>
-<tr class="ad">
-<td class="pls"></td>
-<td class="plc">
-</td>
-</tr>
-
-</table>
-<!-- BEGIN 声望 -->
-<link rel="stylesheet" type="text/css" href="/home/css/prestige_1.css" />
-<div class="pop-rank" id="pop-rank">
-    <span class="p">本版排名：<span id="pop-user-prank" style="display:inline;"><img src="/home/picture/ajax-loader_1.gif" /></span></span>
-    <span class="p">本版声望：<span id="pop-user-pvalue" style="display:inline;"><img src="/home/picture/ajax-loader_1.gif" /></span></span>
-    <span class="link"><a href="plugin.php?id=prestige" target="_blank">[关注管理]</a>&nbsp;<a target="_blank" href="plugin.php?id=prestige:prestige&amp;view=about">[声望说明]</a></span>
-</div>
-<script type="text/javascript">
-var popRankTimer = null;
-jQuery('.user_prestige img').each(function(){
-var prank = jQuery(this).attr('data-rank');
-var pvalue = jQuery(this).attr('data-prestige');
-    jQuery(this).hover(function() {
-
-    jQuery('#pop-user-prank').text(prank);
-    jQuery('#pop-user-pvalue').text(pvalue);
-        var pos = jQuery(this).position();
-        jQuery("#pop-rank").css({
-            left: pos.left,
-            top: pos.top + 38
-        }).show();
-    }, function() {
-        clearTimeout(popRankTimer);
-
-        popRankTimer = setTimeout(function() {
-    jQuery('#pop-user-prank').text('');
-    jQuery('#pop-user-pvalue').text('');
-            jQuery("#pop-rank").hide();
-        }, 400);
-    }); 
-})
-
-jQuery("#pop-rank").hover(function() {
-    clearTimeout(popRankTimer);
-}, function() {
-    jQuery("#pop-rank").hide();
-    jQuery('#pop-user-prank').text('');
-    jQuery('#pop-user-pvalue').text('');
-});
-</script>
-<!-- END 声望 --></div><div id="post_187511607" >
-<table id="pid187511607" class="plhin" summary="pid187511607" cellspacing="0" cellpadding="0">
-<tr>
-<td class="pls" rowspan="2">
-<div id="favatar187511607" class="pls favatar">
- <div class="pi">
-<div class="authi"><a href="http://bbs.17173.com/space-uid-133174259.html" target="_blank" class="xw1">阳ytujety</a>
-
-<a href="http://bbs.17173.com/home.php?mod=spacecp&amp;ac=profile&amp;op=verify&amp;vid=1" target="_blank">
-</a>
-
-<a href="http://bbs.17173.com/home.php?mod=spacecp&amp;ac=profile&amp;op=verify&amp;vid=2" target="_blank">
-</a>
-
-</div>
-</div>
-<div class="p_pop blk bui card_gender_0" id="userinfo187511607" style="display: none; margin-top: -11px;">
-<div class="m z">
-<div id="userinfo187511607_ma"></div>
-</div>
-<div class="i y">
-<div>
-<strong><a href="http://bbs.17173.com/space-uid-133174259.html" target="_blank" class="xi2">阳ytujety</a></strong>
-<em>当前在线</em>
-</div><dl class="cl">
-<dt>UID</dt><dd><a href="?133174259" target="_blank" class="xi2">133174259</a></dd>
-<dt>精华</dt><dd>0</dd>
-<dt>经验</dt><dd>383 </dd>
-<dt>小伙伴</dt><dd>0 </dd>
-<dt>崇高石</dt><dd>0 </dd>
-<dt>水晶</dt><dd>0 </dd>
-<dt>板砖</dt><dd>204 </dd>
-<dt>零食</dt><dd>0 </dd>
-<dt>悬赏币</dt><dd>0 </dd>
-<dt>VR币</dt><dd>0 </dd>
-
-</dl><div class="imicn">
-<a href="http://bbs.17173.com/home.php?mod=space&amp;uid=133174259&amp;do=profile" target="_blank" title="查看详细资料"><img src="/home/picture/userinfo.gif" alt="查看详细资料" /></a>
-</div>
-<div id="avatarfeed"><span id="threadsortswait"></span></div>
-</div>
-</div>
-<div>
-<div class="avatar" onmouseover="showauthor(this, 'userinfo187511607')"><a href="http://bbs.17173.com/space-uid-133174259.html" class="avtm" target="_blank"><img src="/home/picture/avatar.php" /></a></div>
-
-
-<!--BEGIN prestige 133174259-->
-<div class="user_prestige">
-    <img src="/home/picture/dnf-lv5.gif" data-prestige="159" data-rank="未上榜" alt="绝望冰崖" >
-</div>
-<!--END prestige 133174259-->
-
-</div>
-<div class="tns xg2"><table cellspacing="0" cellpadding="0"><th><p><a href="http://bbs.17173.com/home.php?mod=space&uid=133174259&do=thread&type=thread&view=me&from=space" class="xi2">0</a></p>主题</th><th><p><a href="http://bbs.17173.com/home.php?mod=space&uid=133174259&do=thread&type=reply&view=me&from=space" class="xi2">45</a></p>帖子</th><td><p><a href="http://bbs.17173.com/home.php?mod=space&uid=133174259&do=profile" class="xi2">428</a></p>积分</td></table></div>
-
-<p><em><a href="http://bbs.17173.com/home.php?mod=spacecp&amp;ac=usergroup&amp;gid=11" target="_blank">Lv.2</a></em></p>
-
-
-<p><span id="g_up187511607" onmouseover="showMenu({'ctrlid':this.id, 'pos':'12!'});"><img src="/home/picture/star_level1.gif" alt="Rank: 2" /><img src="/home/picture/star_level1.gif" alt="Rank: 2" /></span></p>
-<div id="g_up187511607_menu" class="tip tip_4" style="display: none;"><div class="tip_horn"></div><div class="tip_c">Lv.2, 积分 428, 距离下一级还需 172 积分</div></div>
-
-
-<p><span class="pbg2"  id="upgradeprogress_187511607" onmouseover="showMenu({'ctrlid':this.id, 'pos':'12!', 'menuid':'g_up187511607_menu'});"><span class="pbr2" style="width:68%;"></span></span></p>
-<div id="g_up187511607_menu" class="tip tip_4" style="display: none;"><div class="tip_horn"></div><div class="tip_c">Lv.2, 积分 428, 距离下一级还需 172 积分</div></div>
-
-<dl class="pil cl">
-
-</dl>
-<ul class="xl xl2 o cl">
-<li class="pm2">
-                                                <a href="javascript:;" onclick="lsSubmit()" title="发消息" class="xi2">发消息</a>
-                                            
-                    
-                    
-                    
-                    </li>
-</ul>
-</div>
-</td>
-<td class="plc">
-<div class="pi">
-<strong>
-<a href="http://bbs.17173.com/forum.php?mod=redirect&goto=findpost&ptid=10312367&pid=187511607"   id="postnum187511607" onclick="setCopy(this.href, '帖子地址复制成功');return false;">
-<em>10</em>楼</a>
-</strong>
-<div class="pti">
-<div class="pdbt">
-</div>
-<div class="authi">
-<img class="authicn vm" id="authicon187511607" src="/home/picture/online_member.gif" />
-<em id="authorposton187511607">发表于 2017-6-9 11:10:02</em>
-<span class="pipe">|</span>
-<a href="http://bbs.17173.com/forum.php?mod=viewthread&amp;tid=10312367&amp;page=1&amp;authorid=133174259" rel="nofollow">只看该作者</a>
-</div>
-</div>
-</div><div class="pct"><div class="pcb">
-<div class="t_fsz">
-<table cellspacing="0" cellpadding="0"><tr><td class="t_f" id="postmessage_187511607">
-<img src="/home/picture/3113.gif" smilieid="87" border="0" alt="" /></td></tr></table>
-
-
-</div>
-<div id="comment_187511607" class="cm">
-</div>
-
-<div id="post_rate_div_187511607"></div>
-</div>
-</div>
-
-</td></tr>
-<tr><td class="plc plm">
-</td>
-</tr>
-<tr id="_postposition187511607"></tr>
-<tr>
-<td class="pls"></td>
-<td class="plc" style="overflow:visible;">
-<div class="po hin">
-<div class="pob cl">
-<em>
-<a class="fastre" href="javascript:;" onclick="lsSubmit()">回复</a>
-                                </em>
-
-<p>
-<a href="javascript:;" id="mgc_post_187511607" onmouseover="showMenu(this.id)" class="showmenu">使用道具</a>
-                            <a href="javascript:;" onclick="lsSubmit()">举报</a>
-                            </p>
-
-<ul id="mgc_post_187511607_menu" class="p_pop mgcmn" style="display: none;">
-</ul>
-<script type="text/javascript" reload="1">checkmgcmn('post_187511607')</script>
-</div>
-</div>
-</td>
-</tr>
-<tr class="ad">
-<td class="pls"></td>
-<td class="plc">
-</td>
-</tr>
-
-</table>
-<!-- BEGIN 声望 -->
-<link rel="stylesheet" type="text/css" href="/home/css/prestige_1.css" />
-<div class="pop-rank" id="pop-rank">
-    <span class="p">本版排名：<span id="pop-user-prank" style="display:inline;"><img src="/home/picture/ajax-loader_1.gif" /></span></span>
-    <span class="p">本版声望：<span id="pop-user-pvalue" style="display:inline;"><img src="/home/picture/ajax-loader_1.gif" /></span></span>
-    <span class="link"><a href="plugin.php?id=prestige" target="_blank">[关注管理]</a>&nbsp;<a target="_blank" href="plugin.php?id=prestige:prestige&amp;view=about">[声望说明]</a></span>
-</div>
-<script type="text/javascript">
-var popRankTimer = null;
-jQuery('.user_prestige img').each(function(){
-var prank = jQuery(this).attr('data-rank');
-var pvalue = jQuery(this).attr('data-prestige');
-    jQuery(this).hover(function() {
-
-    jQuery('#pop-user-prank').text(prank);
-    jQuery('#pop-user-pvalue').text(pvalue);
-        var pos = jQuery(this).position();
-        jQuery("#pop-rank").css({
-            left: pos.left,
-            top: pos.top + 38
-        }).show();
-    }, function() {
-        clearTimeout(popRankTimer);
-
-        popRankTimer = setTimeout(function() {
-    jQuery('#pop-user-prank').text('');
-    jQuery('#pop-user-pvalue').text('');
-            jQuery("#pop-rank").hide();
-        }, 400);
-    }); 
-})
-
-jQuery("#pop-rank").hover(function() {
-    clearTimeout(popRankTimer);
-}, function() {
-    jQuery("#pop-rank").hide();
-    jQuery('#pop-user-prank').text('');
-    jQuery('#pop-user-pvalue').text('');
-});
-</script>
-<!-- END 声望 --></div><div id="post_187511628" >
-<table id="pid187511628" class="plhin" summary="pid187511628" cellspacing="0" cellpadding="0">
-<tr>
-<td class="pls" rowspan="2">
-<div id="favatar187511628" class="pls favatar">
- <div class="pi">
-<div class="authi"><a href="http://bbs.17173.com/space-uid-112895064.html" target="_blank" class="xw1">丶林夕丶</a>
-
-<a href="http://bbs.17173.com/home.php?mod=spacecp&amp;ac=profile&amp;op=verify&amp;vid=1" target="_blank">
-</a>
-
-<a href="http://bbs.17173.com/home.php?mod=spacecp&amp;ac=profile&amp;op=verify&amp;vid=2" target="_blank">
-</a>
-
-</div>
-</div>
-<div class="p_pop blk bui card_gender_0" id="userinfo187511628" style="display: none; margin-top: -11px;">
-<div class="m z">
-<div id="userinfo187511628_ma"></div>
-</div>
-<div class="i y">
-<div>
-<strong><a href="http://bbs.17173.com/space-uid-112895064.html" target="_blank" class="xi2">丶林夕丶</a></strong>
-<em>当前离线</em>
-</div><dl class="cl">
-<dt>UID</dt><dd><a href="?112895064" target="_blank" class="xi2">112895064</a></dd>
-<dt>精华</dt><dd>0</dd>
-<dt>经验</dt><dd>22 </dd>
-<dt>小伙伴</dt><dd>0 </dd>
-<dt>崇高石</dt><dd>0 </dd>
-<dt>水晶</dt><dd>0 </dd>
-<dt>板砖</dt><dd>0 </dd>
-<dt>零食</dt><dd>0 </dd>
-<dt>悬赏币</dt><dd>0 </dd>
-<dt>VR币</dt><dd>0 </dd>
-
-</dl><div class="imicn">
-<a href="http://bbs.17173.com/home.php?mod=space&amp;uid=112895064&amp;do=profile" target="_blank" title="查看详细资料"><img src="/home/picture/userinfo.gif" alt="查看详细资料" /></a>
-</div>
-<div id="avatarfeed"><span id="threadsortswait"></span></div>
-</div>
-</div>
-<div>
-<div class="avatar" onmouseover="showauthor(this, 'userinfo187511628')"><a href="http://bbs.17173.com/space-uid-112895064.html" class="avtm" target="_blank"><img src="/home/picture/avatar.php" /></a></div>
-</div>
-<div class="tns xg2"><table cellspacing="0" cellpadding="0"><th><p><a href="http://bbs.17173.com/home.php?mod=space&uid=112895064&do=thread&type=thread&view=me&from=space" class="xi2">0</a></p>主题</th><th><p><a href="http://bbs.17173.com/home.php?mod=space&uid=112895064&do=thread&type=reply&view=me&from=space" class="xi2">6</a></p>帖子</th><td><p><a href="http://bbs.17173.com/home.php?mod=space&uid=112895064&do=profile" class="xi2">28</a></p>积分</td></table></div>
-
-<p><em><a href="http://bbs.17173.com/home.php?mod=spacecp&amp;ac=usergroup&amp;gid=10" target="_blank">Lv.1</a></em></p>
-
-
-<p><span id="g_up187511628" onmouseover="showMenu({'ctrlid':this.id, 'pos':'12!'});"><img src="/home/picture/star_level1.gif" alt="Rank: 1" /></span></p>
-<div id="g_up187511628_menu" class="tip tip_4" style="display: none;"><div class="tip_horn"></div><div class="tip_c">Lv.1, 积分 28, 距离下一级还需 22 积分</div></div>
-
-
-<p><span class="pbg2"  id="upgradeprogress_187511628" onmouseover="showMenu({'ctrlid':this.id, 'pos':'12!', 'menuid':'g_up187511628_menu'});"><span class="pbr2" style="width:56%;"></span></span></p>
-<div id="g_up187511628_menu" class="tip tip_4" style="display: none;"><div class="tip_horn"></div><div class="tip_c">Lv.1, 积分 28, 距离下一级还需 22 积分</div></div>
-
-<dl class="pil cl">
-
-</dl>
-<ul class="xl xl2 o cl">
-<li class="pm2">
-                                                <a href="javascript:;" onclick="lsSubmit()" title="发消息" class="xi2">发消息</a>
-                                            
-                    
-                    
-                    
-                    </li>
-</ul>
-</div>
-</td>
-<td class="plc">
-<div class="pi">
-<strong>
-<a href="http://bbs.17173.com/forum.php?mod=redirect&goto=findpost&ptid=10312367&pid=187511628"   id="postnum187511628" onclick="setCopy(this.href, '帖子地址复制成功');return false;">
-<em>11</em>楼</a>
-</strong>
-<div class="pti">
-<div class="pdbt">
-</div>
-<div class="authi">
-<img class="authicn vm" id="authicon187511628" src="/home/picture/online_member.gif" />
-<em id="authorposton187511628">发表于 2017-6-9 11:12:06</em>
-<span class="pipe">|</span>
-<a href="http://bbs.17173.com/forum.php?mod=viewthread&amp;tid=10312367&amp;page=1&amp;authorid=112895064" rel="nofollow">只看该作者</a>
-</div>
-</div>
-</div><div class="pct"><div class="pcb">
-<div class="t_fsz">
-<table cellspacing="0" cellpadding="0"><tr><td class="t_f" id="postmessage_187511628">
-厉害了。。。</td></tr></table>
-
-
-</div>
-<div id="comment_187511628" class="cm">
-</div>
-
-<div id="post_rate_div_187511628"></div>
-</div>
-</div>
-
-</td></tr>
-<tr><td class="plc plm">
-</td>
-</tr>
-<tr id="_postposition187511628"></tr>
-<tr>
-<td class="pls"></td>
-<td class="plc" style="overflow:visible;">
-<div class="po hin">
-<div class="pob cl">
-<em>
-<a class="fastre" href="javascript:;" onclick="lsSubmit()">回复</a>
-                                </em>
-
-<p>
-<a href="javascript:;" id="mgc_post_187511628" onmouseover="showMenu(this.id)" class="showmenu">使用道具</a>
-                            <a href="javascript:;" onclick="lsSubmit()">举报</a>
-                            </p>
-
-<ul id="mgc_post_187511628_menu" class="p_pop mgcmn" style="display: none;">
-</ul>
-<script type="text/javascript" reload="1">checkmgcmn('post_187511628')</script>
-</div>
-</div>
-</td>
-</tr>
-<tr class="ad">
-<td class="pls"></td>
-<td class="plc">
-</td>
-</tr>
-
-</table>
-<!-- BEGIN 声望 -->
-<link rel="stylesheet" type="text/css" href="/home/css/prestige_1.css" />
-<div class="pop-rank" id="pop-rank">
-    <span class="p">本版排名：<span id="pop-user-prank" style="display:inline;"><img src="/home/picture/ajax-loader_1.gif" /></span></span>
-    <span class="p">本版声望：<span id="pop-user-pvalue" style="display:inline;"><img src="/home/picture/ajax-loader_1.gif" /></span></span>
-    <span class="link"><a href="plugin.php?id=prestige" target="_blank">[关注管理]</a>&nbsp;<a target="_blank" href="plugin.php?id=prestige:prestige&amp;view=about">[声望说明]</a></span>
-</div>
-<script type="text/javascript">
-var popRankTimer = null;
-jQuery('.user_prestige img').each(function(){
-var prank = jQuery(this).attr('data-rank');
-var pvalue = jQuery(this).attr('data-prestige');
-    jQuery(this).hover(function() {
-
-    jQuery('#pop-user-prank').text(prank);
-    jQuery('#pop-user-pvalue').text(pvalue);
-        var pos = jQuery(this).position();
-        jQuery("#pop-rank").css({
-            left: pos.left,
-            top: pos.top + 38
-        }).show();
-    }, function() {
-        clearTimeout(popRankTimer);
-
-        popRankTimer = setTimeout(function() {
-    jQuery('#pop-user-prank').text('');
-    jQuery('#pop-user-pvalue').text('');
-            jQuery("#pop-rank").hide();
-        }, 400);
-    }); 
-})
-
-jQuery("#pop-rank").hover(function() {
-    clearTimeout(popRankTimer);
-}, function() {
-    jQuery("#pop-rank").hide();
-    jQuery('#pop-user-prank').text('');
-    jQuery('#pop-user-pvalue').text('');
-});
-</script>
-<!-- END 声望 --></div><div id="post_187511631" >
-<table id="pid187511631" class="plhin" summary="pid187511631" cellspacing="0" cellpadding="0">
-<tr>
-<td class="pls" rowspan="2">
-<div id="favatar187511631" class="pls favatar">
- <div class="pi">
-<div class="authi"><a href="http://bbs.17173.com/space-uid-135832345.html" target="_blank" class="xw1">卢卡尔_n6ro</a>
-
-<a href="http://bbs.17173.com/home.php?mod=spacecp&amp;ac=profile&amp;op=verify&amp;vid=1" target="_blank">
-</a>
-
-<a href="http://bbs.17173.com/home.php?mod=spacecp&amp;ac=profile&amp;op=verify&amp;vid=2" target="_blank">
-</a>
-
-</div>
-</div>
-<div class="p_pop blk bui card_gender_0" id="userinfo187511631" style="display: none; margin-top: -11px;">
-<div class="m z">
-<div id="userinfo187511631_ma"></div>
-</div>
-<div class="i y">
-<div>
-<strong><a href="http://bbs.17173.com/space-uid-135832345.html" target="_blank" class="xi2">卢卡尔_n6ro</a></strong>
-<em>当前离线</em>
-</div><dl class="cl">
-<dt>UID</dt><dd><a href="?135832345" target="_blank" class="xi2">135832345</a></dd>
-<dt>精华</dt><dd>0</dd>
-<dt>经验</dt><dd>3 </dd>
-<dt>小伙伴</dt><dd>0 </dd>
-<dt>崇高石</dt><dd>0 </dd>
-<dt>水晶</dt><dd>0 </dd>
-<dt>板砖</dt><dd>0 </dd>
-<dt>零食</dt><dd>0 </dd>
-<dt>悬赏币</dt><dd>0 </dd>
-<dt>VR币</dt><dd>0 </dd>
-
-</dl><div class="imicn">
-<a href="http://bbs.17173.com/home.php?mod=space&amp;uid=135832345&amp;do=profile" target="_blank" title="查看详细资料"><img src="/home/picture/userinfo.gif" alt="查看详细资料" /></a>
-</div>
-<div id="avatarfeed"><span id="threadsortswait"></span></div>
-</div>
-</div>
-<div>
-<div class="avatar" onmouseover="showauthor(this, 'userinfo187511631')"><a href="http://bbs.17173.com/space-uid-135832345.html" class="avtm" target="_blank"><img src="/home/picture/avatar.php" /></a></div>
-</div>
-<div class="tns xg2"><table cellspacing="0" cellpadding="0"><th><p><a href="http://bbs.17173.com/home.php?mod=space&uid=135832345&do=thread&type=thread&view=me&from=space" class="xi2">0</a></p>主题</th><th><p><a href="http://bbs.17173.com/home.php?mod=space&uid=135832345&do=thread&type=reply&view=me&from=space" class="xi2">1</a></p>帖子</th><td><p><a href="http://bbs.17173.com/home.php?mod=space&uid=135832345&do=profile" class="xi2">4</a></p>积分</td></table></div>
-
-<p><em><a href="http://bbs.17173.com/home.php?mod=spacecp&amp;ac=usergroup&amp;gid=10" target="_blank">Lv.1</a></em></p>
-
-
-<p><span id="g_up187511631" onmouseover="showMenu({'ctrlid':this.id, 'pos':'12!'});"><img src="/home/picture/star_level1.gif" alt="Rank: 1" /></span></p>
-<div id="g_up187511631_menu" class="tip tip_4" style="display: none;"><div class="tip_horn"></div><div class="tip_c">Lv.1, 积分 4, 距离下一级还需 46 积分</div></div>
-
-
-<p><span class="pbg2"  id="upgradeprogress_187511631" onmouseover="showMenu({'ctrlid':this.id, 'pos':'12!', 'menuid':'g_up187511631_menu'});"><span class="pbr2" style="width:8%;"></span></span></p>
-<div id="g_up187511631_menu" class="tip tip_4" style="display: none;"><div class="tip_horn"></div><div class="tip_c">Lv.1, 积分 4, 距离下一级还需 46 积分</div></div>
-
-<dl class="pil cl">
-
-</dl>
-<ul class="xl xl2 o cl">
-<li class="pm2">
-                                                <a href="javascript:;" onclick="lsSubmit()" title="发消息" class="xi2">发消息</a>
-                                            
-                    
-                    
-                    
-                    </li>
-</ul>
-</div>
-</td>
-<td class="plc">
-<div class="pi">
-<strong>
-<a href="http://bbs.17173.com/forum.php?mod=redirect&goto=findpost&ptid=10312367&pid=187511631"   id="postnum187511631" onclick="setCopy(this.href, '帖子地址复制成功');return false;">
-<em>12</em>楼</a>
-</strong>
-<div class="pti">
-<div class="pdbt">
-</div>
-<div class="authi">
-<img class="authicn vm" id="authicon187511631" src="/home/picture/online_member.gif" />
-<em id="authorposton187511631">发表于 2017-6-9 11:12:14</em>
-<span class="pipe">|</span>
-<a href="http://bbs.17173.com/forum.php?mod=viewthread&amp;tid=10312367&amp;page=1&amp;authorid=135832345" rel="nofollow">只看该作者</a>
-</div>
-</div>
-</div><div class="pct"><div class="pcb">
-<div class="t_fsz">
-<table cellspacing="0" cellpadding="0"><tr><td class="t_f" id="postmessage_187511631">
-哈哈</td></tr></table>
-
-
-</div>
-<div id="comment_187511631" class="cm">
-</div>
-
-<div id="post_rate_div_187511631"></div>
-</div>
-</div>
-
-</td></tr>
-<tr><td class="plc plm">
-</td>
-</tr>
-<tr id="_postposition187511631"></tr>
-<tr>
-<td class="pls"></td>
-<td class="plc" style="overflow:visible;">
-<div class="po hin">
-<div class="pob cl">
-<em>
-<a class="fastre" href="javascript:;" onclick="lsSubmit()">回复</a>
-                                </em>
-
-<p>
-<a href="javascript:;" id="mgc_post_187511631" onmouseover="showMenu(this.id)" class="showmenu">使用道具</a>
-                            <a href="javascript:;" onclick="lsSubmit()">举报</a>
-                            </p>
-
-<ul id="mgc_post_187511631_menu" class="p_pop mgcmn" style="display: none;">
-</ul>
-<script type="text/javascript" reload="1">checkmgcmn('post_187511631')</script>
-</div>
-</div>
-</td>
-</tr>
-<tr class="ad">
-<td class="pls"></td>
-<td class="plc">
-</td>
-</tr>
-
-</table>
-<!-- BEGIN 声望 -->
-<link rel="stylesheet" type="text/css" href="/home/css/prestige_1.css" />
-<div class="pop-rank" id="pop-rank">
-    <span class="p">本版排名：<span id="pop-user-prank" style="display:inline;"><img src="/home/picture/ajax-loader_1.gif" /></span></span>
-    <span class="p">本版声望：<span id="pop-user-pvalue" style="display:inline;"><img src="/home/picture/ajax-loader_1.gif" /></span></span>
-    <span class="link"><a href="plugin.php?id=prestige" target="_blank">[关注管理]</a>&nbsp;<a target="_blank" href="plugin.php?id=prestige:prestige&amp;view=about">[声望说明]</a></span>
-</div>
-<script type="text/javascript">
-var popRankTimer = null;
-jQuery('.user_prestige img').each(function(){
-var prank = jQuery(this).attr('data-rank');
-var pvalue = jQuery(this).attr('data-prestige');
-    jQuery(this).hover(function() {
-
-    jQuery('#pop-user-prank').text(prank);
-    jQuery('#pop-user-pvalue').text(pvalue);
-        var pos = jQuery(this).position();
-        jQuery("#pop-rank").css({
-            left: pos.left,
-            top: pos.top + 38
-        }).show();
-    }, function() {
-        clearTimeout(popRankTimer);
-
-        popRankTimer = setTimeout(function() {
-    jQuery('#pop-user-prank').text('');
-    jQuery('#pop-user-pvalue').text('');
-            jQuery("#pop-rank").hide();
-        }, 400);
-    }); 
-})
-
-jQuery("#pop-rank").hover(function() {
-    clearTimeout(popRankTimer);
-}, function() {
-    jQuery("#pop-rank").hide();
-    jQuery('#pop-user-prank').text('');
-    jQuery('#pop-user-pvalue').text('');
-});
-</script>
-<!-- END 声望 --></div><div id="post_187511655" >
-<table id="pid187511655" class="plhin" summary="pid187511655" cellspacing="0" cellpadding="0">
-<tr>
-<td class="pls" rowspan="2">
-<div id="favatar187511655" class="pls favatar">
- <div class="pi">
-<div class="authi"><a href="http://bbs.17173.com/space-uid-121680276.html" target="_blank" class="xw1">期许天蓝丶</a>
-
-<a href="http://bbs.17173.com/home.php?mod=spacecp&amp;ac=profile&amp;op=verify&amp;vid=1" target="_blank">
-</a>
-
-<a href="http://bbs.17173.com/home.php?mod=spacecp&amp;ac=profile&amp;op=verify&amp;vid=2" target="_blank">
-</a>
-
-</div>
-</div>
-<div class="p_pop blk bui card_gender_0" id="userinfo187511655" style="display: none; margin-top: -11px;">
-<div class="m z">
-<div id="userinfo187511655_ma"></div>
-</div>
-<div class="i y">
-<div>
-<strong><a href="http://bbs.17173.com/space-uid-121680276.html" target="_blank" class="xi2">期许天蓝丶</a></strong>
-<em>当前离线</em>
-</div><dl class="cl">
-<dt>UID</dt><dd><a href="?121680276" target="_blank" class="xi2">121680276</a></dd>
-<dt>精华</dt><dd>0</dd>
-<dt>经验</dt><dd>279 </dd>
-<dt>小伙伴</dt><dd>0 </dd>
-<dt>崇高石</dt><dd>0 </dd>
-<dt>水晶</dt><dd>0 </dd>
-<dt>板砖</dt><dd>16 </dd>
-<dt>零食</dt><dd>0 </dd>
-<dt>悬赏币</dt><dd>0 </dd>
-<dt>VR币</dt><dd>0 </dd>
-
-</dl><div class="imicn">
-<a href="http://bbs.17173.com/home.php?mod=space&amp;uid=121680276&amp;do=profile" target="_blank" title="查看详细资料"><img src="/home/picture/userinfo.gif" alt="查看详细资料" /></a>
-</div>
-<div id="avatarfeed"><span id="threadsortswait"></span></div>
-</div>
-</div>
-<div>
-<div class="avatar" onmouseover="showauthor(this, 'userinfo187511655')"><a href="http://bbs.17173.com/space-uid-121680276.html" class="avtm" target="_blank"><img src="/home/picture/avatar.php" /></a></div>
-</div>
-<div class="tns xg2"><table cellspacing="0" cellpadding="0"><th><p><a href="http://bbs.17173.com/home.php?mod=space&uid=121680276&do=thread&type=thread&view=me&from=space" class="xi2">0</a></p>主题</th><th><p><a href="http://bbs.17173.com/home.php?mod=space&uid=121680276&do=thread&type=reply&view=me&from=space" class="xi2">20</a></p>帖子</th><td><p><a href="http://bbs.17173.com/home.php?mod=space&uid=121680276&do=profile" class="xi2">299</a></p>积分</td></table></div>
-
-<p><em><a href="http://bbs.17173.com/home.php?mod=spacecp&amp;ac=usergroup&amp;gid=11" target="_blank">Lv.2</a></em></p>
-
-
-<p><span id="g_up187511655" onmouseover="showMenu({'ctrlid':this.id, 'pos':'12!'});"><img src="/home/picture/star_level1.gif" alt="Rank: 2" /><img src="/home/picture/star_level1.gif" alt="Rank: 2" /></span></p>
-<div id="g_up187511655_menu" class="tip tip_4" style="display: none;"><div class="tip_horn"></div><div class="tip_c">Lv.2, 积分 299, 距离下一级还需 301 积分</div></div>
-
-
-<p><span class="pbg2"  id="upgradeprogress_187511655" onmouseover="showMenu({'ctrlid':this.id, 'pos':'12!', 'menuid':'g_up187511655_menu'});"><span class="pbr2" style="width:45%;"></span></span></p>
-<div id="g_up187511655_menu" class="tip tip_4" style="display: none;"><div class="tip_horn"></div><div class="tip_c">Lv.2, 积分 299, 距离下一级还需 301 积分</div></div>
-
-<dl class="pil cl">
-
-</dl>
-<ul class="xl xl2 o cl">
-<li class="pm2">
-                                                <a href="javascript:;" onclick="lsSubmit()" title="发消息" class="xi2">发消息</a>
-                                            
-                    
-                    
-                    
-                    </li>
-</ul>
-</div>
-</td>
-<td class="plc">
-<div class="pi">
-<strong>
-<a href="http://bbs.17173.com/forum.php?mod=redirect&goto=findpost&ptid=10312367&pid=187511655"   id="postnum187511655" onclick="setCopy(this.href, '帖子地址复制成功');return false;">
-<em>13</em>楼</a>
-</strong>
-<div class="pti">
-<div class="pdbt">
-</div>
-<div class="authi">
-<img class="authicn vm" id="authicon187511655" src="/home/picture/online_member.gif" />
-<em id="authorposton187511655">发表于 2017-6-9 11:16:05</em>
-<span class="xg1">来自手机 <img src="/home/picture/icon_phone_1.png" style="vertical-align:middle;position:relative;top:-2px;"></span>
-<span class="pipe">|</span>
-<a href="http://bbs.17173.com/forum.php?mod=viewthread&amp;tid=10312367&amp;page=1&amp;authorid=121680276" rel="nofollow">只看该作者</a>
-</div>
-</div>
-</div><div class="pct"><div class="pcb">
-<div class="t_fsz">
-<table cellspacing="0" cellpadding="0"><tr><td class="t_f" id="postmessage_187511655">
-死肥宅</td></tr></table>
-
-
-</div>
-<div id="comment_187511655" class="cm">
-</div>
-
-<div id="post_rate_div_187511655"></div>
-</div>
-</div>
-
-</td></tr>
-<tr><td class="plc plm">
-</td>
-</tr>
-<tr id="_postposition187511655"></tr>
-<tr>
-<td class="pls"></td>
-<td class="plc" style="overflow:visible;">
-<div class="po hin">
-<div class="pob cl">
-<em>
-<a class="fastre" href="javascript:;" onclick="lsSubmit()">回复</a>
-                                </em>
-
-<p>
-<a href="javascript:;" id="mgc_post_187511655" onmouseover="showMenu(this.id)" class="showmenu">使用道具</a>
-                            <a href="javascript:;" onclick="lsSubmit()">举报</a>
-                            </p>
-
-<ul id="mgc_post_187511655_menu" class="p_pop mgcmn" style="display: none;">
-</ul>
-<script type="text/javascript" reload="1">checkmgcmn('post_187511655')</script>
-</div>
-</div>
-</td>
-</tr>
-<tr class="ad">
-<td class="pls"></td>
-<td class="plc">
-</td>
-</tr>
-
-</table>
-<!-- BEGIN 声望 -->
-<link rel="stylesheet" type="text/css" href="/home/css/prestige_1.css" />
-<div class="pop-rank" id="pop-rank">
-    <span class="p">本版排名：<span id="pop-user-prank" style="display:inline;"><img src="/home/picture/ajax-loader_1.gif" /></span></span>
-    <span class="p">本版声望：<span id="pop-user-pvalue" style="display:inline;"><img src="/home/picture/ajax-loader_1.gif" /></span></span>
-    <span class="link"><a href="plugin.php?id=prestige" target="_blank">[关注管理]</a>&nbsp;<a target="_blank" href="plugin.php?id=prestige:prestige&amp;view=about">[声望说明]</a></span>
-</div>
-<script type="text/javascript">
-var popRankTimer = null;
-jQuery('.user_prestige img').each(function(){
-var prank = jQuery(this).attr('data-rank');
-var pvalue = jQuery(this).attr('data-prestige');
-    jQuery(this).hover(function() {
-
-    jQuery('#pop-user-prank').text(prank);
-    jQuery('#pop-user-pvalue').text(pvalue);
-        var pos = jQuery(this).position();
-        jQuery("#pop-rank").css({
-            left: pos.left,
-            top: pos.top + 38
-        }).show();
-    }, function() {
-        clearTimeout(popRankTimer);
-
-        popRankTimer = setTimeout(function() {
-    jQuery('#pop-user-prank').text('');
-    jQuery('#pop-user-pvalue').text('');
-            jQuery("#pop-rank").hide();
-        }, 400);
-    }); 
-})
-
-jQuery("#pop-rank").hover(function() {
-    clearTimeout(popRankTimer);
-}, function() {
-    jQuery("#pop-rank").hide();
-    jQuery('#pop-user-prank').text('');
-    jQuery('#pop-user-pvalue').text('');
-});
-</script>
-<!-- END 声望 --></div><div id="post_187511667" >
-<table id="pid187511667" class="plhin" summary="pid187511667" cellspacing="0" cellpadding="0">
-<tr>
-<td class="pls" rowspan="2">
-<div id="favatar187511667" class="pls favatar">
- <div class="pi">
-<div class="authi"><a href="http://bbs.17173.com/space-uid-115386042.html" target="_blank" class="xw1">fuimcc</a>
-
-<a href="http://bbs.17173.com/home.php?mod=spacecp&amp;ac=profile&amp;op=verify&amp;vid=1" target="_blank">
-</a>
-
-<a href="http://bbs.17173.com/home.php?mod=spacecp&amp;ac=profile&amp;op=verify&amp;vid=2" target="_blank">
-</a>
-
-</div>
-</div>
-<div class="p_pop blk bui card_gender_0" id="userinfo187511667" style="display: none; margin-top: -11px;">
-<div class="m z">
-<div id="userinfo187511667_ma"></div>
-</div>
-<div class="i y">
-<div>
-<strong><a href="http://bbs.17173.com/space-uid-115386042.html" target="_blank" class="xi2">fuimcc</a></strong>
-<em>当前离线</em>
-</div><dl class="cl">
-<dt>UID</dt><dd><a href="?115386042" target="_blank" class="xi2">115386042</a></dd>
-<dt>精华</dt><dd>0</dd>
-<dt>经验</dt><dd>10 </dd>
-<dt>小伙伴</dt><dd>0 </dd>
-<dt>崇高石</dt><dd>0 </dd>
-<dt>水晶</dt><dd>0 </dd>
-<dt>板砖</dt><dd>1 </dd>
-<dt>零食</dt><dd>0 </dd>
-<dt>悬赏币</dt><dd>0 </dd>
-<dt>VR币</dt><dd>0 </dd>
-
-</dl><div class="imicn">
-<a href="http://bbs.17173.com/home.php?mod=space&amp;uid=115386042&amp;do=profile" target="_blank" title="查看详细资料"><img src="/home/picture/userinfo.gif" alt="查看详细资料" /></a>
-</div>
-<div id="avatarfeed"><span id="threadsortswait"></span></div>
-</div>
-</div>
-<div>
-<div class="avatar" onmouseover="showauthor(this, 'userinfo187511667')"><a href="http://bbs.17173.com/space-uid-115386042.html" class="avtm" target="_blank"><img src="/home/picture/avatar.php" /></a></div>
-</div>
-<div class="tns xg2"><table cellspacing="0" cellpadding="0"><th><p><a href="http://bbs.17173.com/home.php?mod=space&uid=115386042&do=thread&type=thread&view=me&from=space" class="xi2">0</a></p>主题</th><th><p><a href="http://bbs.17173.com/home.php?mod=space&uid=115386042&do=thread&type=reply&view=me&from=space" class="xi2">3</a></p>帖子</th><td><p><a href="http://bbs.17173.com/home.php?mod=space&uid=115386042&do=profile" class="xi2">13</a></p>积分</td></table></div>
-
-<p><em><a href="http://bbs.17173.com/home.php?mod=spacecp&amp;ac=usergroup&amp;gid=10" target="_blank">Lv.1</a></em></p>
-
-
-<p><span id="g_up187511667" onmouseover="showMenu({'ctrlid':this.id, 'pos':'12!'});"><img src="/home/picture/star_level1.gif" alt="Rank: 1" /></span></p>
-<div id="g_up187511667_menu" class="tip tip_4" style="display: none;"><div class="tip_horn"></div><div class="tip_c">Lv.1, 积分 13, 距离下一级还需 37 积分</div></div>
-
-
-<p><span class="pbg2"  id="upgradeprogress_187511667" onmouseover="showMenu({'ctrlid':this.id, 'pos':'12!', 'menuid':'g_up187511667_menu'});"><span class="pbr2" style="width:26%;"></span></span></p>
-<div id="g_up187511667_menu" class="tip tip_4" style="display: none;"><div class="tip_horn"></div><div class="tip_c">Lv.1, 积分 13, 距离下一级还需 37 积分</div></div>
-
-<dl class="pil cl">
-
-</dl>
-<ul class="xl xl2 o cl">
-<li class="pm2">
-                                                <a href="javascript:;" onclick="lsSubmit()" title="发消息" class="xi2">发消息</a>
-                                            
-                    
-                    
-                    
-                    </li>
-</ul>
-</div>
-</td>
-<td class="plc">
-<div class="pi">
-<strong>
-<a href="http://bbs.17173.com/forum.php?mod=redirect&goto=findpost&ptid=10312367&pid=187511667"   id="postnum187511667" onclick="setCopy(this.href, '帖子地址复制成功');return false;">
-<em>14</em>楼</a>
-</strong>
-<div class="pti">
-<div class="pdbt">
-</div>
-<div class="authi">
-<img class="authicn vm" id="authicon187511667" src="/home/picture/online_member.gif" />
-<em id="authorposton187511667">发表于 2017-6-9 11:17:14</em>
-<span class="pipe">|</span>
-<a href="http://bbs.17173.com/forum.php?mod=viewthread&amp;tid=10312367&amp;page=1&amp;authorid=115386042" rel="nofollow">只看该作者</a>
-</div>
-</div>
-</div><div class="pct"><div class="pcb">
-<div class="t_fsz">
-<table cellspacing="0" cellpadding="0"><tr><td class="t_f" id="postmessage_187511667">
-6666666666666666666666666666666666666666666</td></tr></table>
-
-
-</div>
-<div id="comment_187511667" class="cm">
-</div>
-
-<div id="post_rate_div_187511667"></div>
-</div>
-</div>
-
-</td></tr>
-<tr><td class="plc plm">
-</td>
-</tr>
-<tr id="_postposition187511667"></tr>
-<tr>
-<td class="pls"></td>
-<td class="plc" style="overflow:visible;">
-<div class="po hin">
-<div class="pob cl">
-<em>
-<a class="fastre" href="javascript:;" onclick="lsSubmit()">回复</a>
-                                </em>
-
-<p>
-<a href="javascript:;" id="mgc_post_187511667" onmouseover="showMenu(this.id)" class="showmenu">使用道具</a>
-                            <a href="javascript:;" onclick="lsSubmit()">举报</a>
-                            </p>
-
-<ul id="mgc_post_187511667_menu" class="p_pop mgcmn" style="display: none;">
-</ul>
-<script type="text/javascript" reload="1">checkmgcmn('post_187511667')</script>
-</div>
-</div>
-</td>
-</tr>
-<tr class="ad">
-<td class="pls"></td>
-<td class="plc">
-</td>
-</tr>
-
-</table>
-<!-- BEGIN 声望 -->
-<link rel="stylesheet" type="text/css" href="/home/css/prestige_1.css" />
-<div class="pop-rank" id="pop-rank">
-    <span class="p">本版排名：<span id="pop-user-prank" style="display:inline;"><img src="/home/picture/ajax-loader_1.gif" /></span></span>
-    <span class="p">本版声望：<span id="pop-user-pvalue" style="display:inline;"><img src="/home/picture/ajax-loader_1.gif" /></span></span>
-    <span class="link"><a href="plugin.php?id=prestige" target="_blank">[关注管理]</a>&nbsp;<a target="_blank" href="plugin.php?id=prestige:prestige&amp;view=about">[声望说明]</a></span>
-</div>
-<script type="text/javascript">
-var popRankTimer = null;
-jQuery('.user_prestige img').each(function(){
-var prank = jQuery(this).attr('data-rank');
-var pvalue = jQuery(this).attr('data-prestige');
-    jQuery(this).hover(function() {
-
-    jQuery('#pop-user-prank').text(prank);
-    jQuery('#pop-user-pvalue').text(pvalue);
-        var pos = jQuery(this).position();
-        jQuery("#pop-rank").css({
-            left: pos.left,
-            top: pos.top + 38
-        }).show();
-    }, function() {
-        clearTimeout(popRankTimer);
-
-        popRankTimer = setTimeout(function() {
-    jQuery('#pop-user-prank').text('');
-    jQuery('#pop-user-pvalue').text('');
-            jQuery("#pop-rank").hide();
-        }, 400);
-    }); 
-})
-
-jQuery("#pop-rank").hover(function() {
-    clearTimeout(popRankTimer);
-}, function() {
-    jQuery("#pop-rank").hide();
-    jQuery('#pop-user-prank').text('');
-    jQuery('#pop-user-pvalue').text('');
-});
-</script>
-<!-- END 声望 --></div><div id="post_187511676" >
-<table id="pid187511676" class="plhin" summary="pid187511676" cellspacing="0" cellpadding="0">
-<tr>
-<td class="pls" rowspan="2">
-<div id="favatar187511676" class="pls favatar">
- <div class="pi">
-<div class="authi"><a href="http://bbs.17173.com/space-uid-115111100.html" target="_blank" class="xw1">Erdaii</a>
-
-<a href="http://bbs.17173.com/home.php?mod=spacecp&amp;ac=profile&amp;op=verify&amp;vid=1" target="_blank">
-</a>
-
-<a href="http://bbs.17173.com/home.php?mod=spacecp&amp;ac=profile&amp;op=verify&amp;vid=2" target="_blank">
-</a>
-
-</div>
-</div>
-<div class="p_pop blk bui card_gender_0" id="userinfo187511676" style="display: none; margin-top: -11px;">
-<div class="m z">
-<div id="userinfo187511676_ma"></div>
-</div>
-<div class="i y">
-<div>
-<strong><a href="http://bbs.17173.com/space-uid-115111100.html" target="_blank" class="xi2">Erdaii</a></strong>
-<em>当前离线</em>
-</div><dl class="cl">
-<dt>UID</dt><dd><a href="?115111100" target="_blank" class="xi2">115111100</a></dd>
-<dt>精华</dt><dd>0</dd>
-<dt>经验</dt><dd>58 </dd>
-<dt>小伙伴</dt><dd>0 </dd>
-<dt>崇高石</dt><dd>0 </dd>
-<dt>水晶</dt><dd>0 </dd>
-<dt>板砖</dt><dd>43 </dd>
-<dt>零食</dt><dd>0 </dd>
-<dt>悬赏币</dt><dd>0 </dd>
-<dt>VR币</dt><dd>0 </dd>
-
-</dl><div class="imicn">
-<a href="http://bbs.17173.com/home.php?mod=space&amp;uid=115111100&amp;do=profile" target="_blank" title="查看详细资料"><img src="/home/picture/userinfo.gif" alt="查看详细资料" /></a>
-</div>
-<div id="avatarfeed"><span id="threadsortswait"></span></div>
-</div>
-</div>
-<div>
-<div class="avatar" onmouseover="showauthor(this, 'userinfo187511676')"><a href="http://bbs.17173.com/space-uid-115111100.html" class="avtm" target="_blank"><img src="/home/picture/avatar.php" /></a></div>
-</div>
-<div class="tns xg2"><table cellspacing="0" cellpadding="0"><th><p><a href="http://bbs.17173.com/home.php?mod=space&uid=115111100&do=thread&type=thread&view=me&from=space" class="xi2">0</a></p>主题</th><th><p><a href="http://bbs.17173.com/home.php?mod=space&uid=115111100&do=thread&type=reply&view=me&from=space" class="xi2">10</a></p>帖子</th><td><p><a href="http://bbs.17173.com/home.php?mod=space&uid=115111100&do=profile" class="xi2">67</a></p>积分</td></table></div>
-
-<p><em><a href="http://bbs.17173.com/home.php?mod=spacecp&amp;ac=usergroup&amp;gid=11" target="_blank">Lv.2</a></em></p>
-
-
-<p><span id="g_up187511676" onmouseover="showMenu({'ctrlid':this.id, 'pos':'12!'});"><img src="/home/picture/star_level1.gif" alt="Rank: 2" /><img src="/home/picture/star_level1.gif" alt="Rank: 2" /></span></p>
-<div id="g_up187511676_menu" class="tip tip_4" style="display: none;"><div class="tip_horn"></div><div class="tip_c">Lv.2, 积分 67, 距离下一级还需 533 积分</div></div>
-
-
-<p><span class="pbg2"  id="upgradeprogress_187511676" onmouseover="showMenu({'ctrlid':this.id, 'pos':'12!', 'menuid':'g_up187511676_menu'});"><span class="pbr2" style="width:3%;"></span></span></p>
-<div id="g_up187511676_menu" class="tip tip_4" style="display: none;"><div class="tip_horn"></div><div class="tip_c">Lv.2, 积分 67, 距离下一级还需 533 积分</div></div>
-
-<dl class="pil cl">
-
-</dl>
-<ul class="xl xl2 o cl">
-<li class="pm2">
-                                                <a href="javascript:;" onclick="lsSubmit()" title="发消息" class="xi2">发消息</a>
-                                            
-                    
-                    
-                    
-                    </li>
-</ul>
-</div>
-</td>
-<td class="plc">
-<div class="pi">
-<strong>
-<a href="http://bbs.17173.com/forum.php?mod=redirect&goto=findpost&ptid=10312367&pid=187511676"   id="postnum187511676" onclick="setCopy(this.href, '帖子地址复制成功');return false;">
-<em>15</em>楼</a>
-</strong>
-<div class="pti">
-<div class="pdbt">
-</div>
-<div class="authi">
-<img class="authicn vm" id="authicon187511676" src="/home/picture/online_member.gif" />
-<em id="authorposton187511676">发表于 2017-6-9 11:18:12</em>
-<span class="pipe">|</span>
-<a href="http://bbs.17173.com/forum.php?mod=viewthread&amp;tid=10312367&amp;page=1&amp;authorid=115111100" rel="nofollow">只看该作者</a>
-</div>
-</div>
-</div><div class="pct"><div class="pcb">
-<div class="t_fsz">
-<table cellspacing="0" cellpadding="0"><tr><td class="t_f" id="postmessage_187511676">
-ddddddddddddddddddddddd</td></tr></table>
-
-
-</div>
-<div id="comment_187511676" class="cm">
-</div>
-
-<div id="post_rate_div_187511676"></div>
-</div>
-</div>
-
-</td></tr>
-<tr><td class="plc plm">
-</td>
-</tr>
-<tr id="_postposition187511676"></tr>
-<tr>
-<td class="pls"></td>
-<td class="plc" style="overflow:visible;">
-<div class="po hin">
-<div class="pob cl">
-<em>
-<a class="fastre" href="javascript:;" onclick="lsSubmit()">回复</a>
-                                </em>
-
-<p>
-<a href="javascript:;" id="mgc_post_187511676" onmouseover="showMenu(this.id)" class="showmenu">使用道具</a>
-                            <a href="javascript:;" onclick="lsSubmit()">举报</a>
-                            </p>
-
-<ul id="mgc_post_187511676_menu" class="p_pop mgcmn" style="display: none;">
-</ul>
-<script type="text/javascript" reload="1">checkmgcmn('post_187511676')</script>
-</div>
-</div>
-</td>
-</tr>
-<tr class="ad">
-<td class="pls"></td>
-<td class="plc">
-</td>
-</tr>
-
-</table>
-<!-- BEGIN 声望 -->
-<link rel="stylesheet" type="text/css" href="/home/css/prestige_1.css" />
-<div class="pop-rank" id="pop-rank">
-    <span class="p">本版排名：<span id="pop-user-prank" style="display:inline;"><img src="/home/picture/ajax-loader_1.gif" /></span></span>
-    <span class="p">本版声望：<span id="pop-user-pvalue" style="display:inline;"><img src="/home/picture/ajax-loader_1.gif" /></span></span>
-    <span class="link"><a href="plugin.php?id=prestige" target="_blank">[关注管理]</a>&nbsp;<a target="_blank" href="plugin.php?id=prestige:prestige&amp;view=about">[声望说明]</a></span>
-</div>
-<script type="text/javascript">
-var popRankTimer = null;
-jQuery('.user_prestige img').each(function(){
-var prank = jQuery(this).attr('data-rank');
-var pvalue = jQuery(this).attr('data-prestige');
-    jQuery(this).hover(function() {
-
-    jQuery('#pop-user-prank').text(prank);
-    jQuery('#pop-user-pvalue').text(pvalue);
-        var pos = jQuery(this).position();
-        jQuery("#pop-rank").css({
-            left: pos.left,
-            top: pos.top + 38
-        }).show();
-    }, function() {
-        clearTimeout(popRankTimer);
-
-        popRankTimer = setTimeout(function() {
-    jQuery('#pop-user-prank').text('');
-    jQuery('#pop-user-pvalue').text('');
-            jQuery("#pop-rank").hide();
-        }, 400);
-    }); 
-})
-
-jQuery("#pop-rank").hover(function() {
-    clearTimeout(popRankTimer);
-}, function() {
-    jQuery("#pop-rank").hide();
-    jQuery('#pop-user-prank').text('');
-    jQuery('#pop-user-pvalue').text('');
-});
-</script>
-<!-- END 声望 --></div><div id="postlistreply" class="pl"><div id="post_new" class="viewthread_table" style="display: none"></div></div>
+<!-- END 声望 --></div>
+@endforeach
+<div id="postlistreply" class="pl"><div id="post_new" class="viewthread_table" style="display: none"></div></div>
 </div>
 
 
@@ -3454,11 +553,29 @@ jQuery("#pop-rank").hover(function() {
 </form>
 
 
-<div class="pgbtn"><a href="http://bbs.17173.com/thread-10312367-2-1.html" hidefocus="true" class="bm_h">下一页 &raquo;</a></div>
+<div class="pgbtn"><a href="{{ $replies->nextPageUrl() }}" hidefocus="true" class="bm_h">下一页 &raquo;</a></div>
 
 <div class="pgs mtm mbm cl">
-<div class="pg"><strong>1</strong><a href="http://bbs.17173.com/thread-10312367-2-1.html">2</a><a href="http://bbs.17173.com/thread-10312367-3-1.html">3</a><a href="http://bbs.17173.com/thread-10312367-4-1.html">4</a><a href="http://bbs.17173.com/thread-10312367-5-1.html">5</a><a href="http://bbs.17173.com/thread-10312367-6-1.html">6</a><a href="http://bbs.17173.com/thread-10312367-7-1.html">7</a><a href="http://bbs.17173.com/thread-10312367-8-1.html">8</a><a href="http://bbs.17173.com/thread-10312367-9-1.html">9</a><a href="http://bbs.17173.com/thread-10312367-10-1.html">10</a><a href="http://bbs.17173.com/thread-10312367-35-1.html" class="last">... 35</a><label><input type="text" name="custompage" class="px" size="2" title="输入页码，按回车快速跳转" value="1" onkeydown="if(event.keyCode==13) {window.location='forum.php?mod=viewthread&tid=10312367&amp;extra=page%3D1&amp;page='+this.value;; doane(event);}" /><span title="共 35 页"> / 35 页</span></label><a href="http://bbs.17173.com/thread-10312367-2-1.html" class="nxt">下一页</a></div><span class="pgb y"><a href="http://bbs.17173.com/forum-8706-1.html">返回列表</a></span>
-<a id="newspecialtmp" onmouseover="$('newspecial').id = 'newspecialtmp';this.id = 'newspecial';showMenu({'ctrlid':this.id})" onclick="lsSubmit()" href="javascript:;" title="发新帖"><img src="/home/picture/pn_post_1.png" alt="发新帖" /></a>
+<div class="pg">
+		@if(!empty($uid))
+			{!! $replies -> appends(['uid' => $uid]) -> render() !!}
+		@else
+			{!! $replies -> render() !!}
+		@endif
+		<style>
+			.pgs>.pg li {
+				float: left;
+			}
+		</style>
+	</div>
+	<span class="pgb y"><a href="{{ url('home/section?id='.$section['id']) }}">返回列表</a></span>
+	<a href="javascript:;" class="newpost"  onclick="newpost()" title="发新帖"><img src="/home/picture/pn_post.png" alt="发新帖" /></a>
+	<span id="sign_placeholder" style="display:none;"></span>
+	<script type="text/javascript">
+		function newpost() {
+			location.href = '{{ url('home/post/create?id='.$section['id']) }}';
+		}
+	 </script>
 </div>
 
 <!--[diy=diyfastposttop]--><div id="diyfastposttop" class="area"></div><!--[/diy]-->
@@ -3477,32 +594,17 @@ var disablepostctrl = parseInt('0');
 <td class="plc">
 
 <span id="fastpostreturn"></span>
+	<!-- 加载编辑器的容器 -->
+    <script id="container" name="content" style="width: 93%" type="text/plain"></script>
+    <!-- 配置文件 -->
+    <script type="text/javascript" src="/uediter/ueditor.config.js"></script>
+    <!-- 编辑器源码文件 -->
+    <script type="text/javascript" src="/uediter/ueditor.all.js"></script>
+    <!-- 实例化编辑器 -->
+    <script type="text/javascript">
+        var ue = UE.getEditor('container');
+    </script>
 
-
-<div class="cl">
-<div id="fastsmiliesdiv" class="y"><div id="fastsmiliesdiv_data"><div id="fastsmilies"></div></div></div><div class="hasfsl" id="fastposteditor">
-<div class="tedt mtn">
-<div class="bar">
-<span class="y">
-<a href="http://bbs.17173.com/forum.php?mod=post&amp;action=reply&amp;fid=8706&amp;tid=10312367" onclick="return switchAdvanceMode(this.href)">高级模式</a>
-</span><script src="/home/js/seditor_1.js" type="text/javascript"></script>
-<div class="fpd">
-<a href="javascript:;" title="文字加粗" class="fbld">B</a>
-<a href="javascript:;" title="设置文字颜色" class="fclr" id="fastpostforecolor">Color</a>
-<a id="fastpostimg" href="javascript:;" title="图片" class="fmg">Image</a>
-<a id="fastposturl" href="javascript:;" title="添加链接" class="flnk">Link</a>
-<a id="fastpostquote" href="javascript:;" title="引用" class="fqt">Quote</a>
-<a id="fastpostcode" href="javascript:;" title="代码" class="fcd">Code</a>
-<a href="javascript:;" class="fsml" id="fastpostsml">Smilies</a>
-</div></div>
-<div class="area">
-<div class="pt hm">
-您需要登录后才可以回帖 <a href="javascript:;" onclick="lsSubmit()" class="xi2">登录</a> | <a target="_blank" href="member.php?mod=register" class="xi2">立即注册</a>
-</div>
-</div>
-</div>
-</div>
-</div>
 <div id="seccheck_fastpost">
 </div>
 
@@ -3659,74 +761,73 @@ var seourl='http://bbs.17173.com/8706-thread-8706-10312367-1-1.html';
 </script>
 <div id="ft" class="wp cl">
     <div class="footer-follow">
-    
-            <div class="footer">
-                        <div class="footer-in">
-                <div class="global-footer global-footer-full">
-                                <p class="global-footer-link"><a href="http://about.17173.com/" target="_blank">关于17173</a><span class="sep">|</span><a href="http://about.17173.com/join-us.shtml" target="_blank">人才招聘</a><span class="sep">|</span><a href="http://about.17173.com/adv-service.shtml" target="_blank">广告服务</a><span class="sep">|</span><a href="http://about.17173.com/business-cooperate.shtml" target="_blank">商务洽谈</a><span class="sep">|</span><a href="http://about.17173.com/contact-us.shtml" target="_blank">联系方式</a><span class="sep">|</span><a href="http://help.17173.com/" target="_blank">客服中心</a><span class="sep">|</span><a href="http://about.17173.com/site-map.shtml" target="_blank">网站导航</a><span class="sep">|</span><a href="/sitemap.html" target="_blank">论坛地图</a></p>
-                                <p class="global-footer-copyright">Copyright <font>&copy;</font> 2001-2017 17173. All rights reserved.</p>
-                                <p class="global-footer-certificate"><a href="http://www.miibeian.gov.cn/" target="_blank">京ICP证030367号</a><span class="sep">|</span><a href="http://www.17173.com/cert/wenhua.html" target="_blank">文网文[2008]059号</a><span class="sep">|</span><a href="http://www.17173.com/cert/chuban.html" target="_blank">互联网出版许可证</a></p>
+	
+        	<div class="footer">
+						<div class="footer-in">
+				<div class="global-footer global-footer-full"><p class="global-footer-link"><a href="http://about.17173.com/" target="_blank">关于17173</a><span class="sep">|</span><a href="http://about.17173.com/join-us.shtml" target="_blank">人才招聘</a><span class="sep">|</span><a href="http://about.17173.com/adv-service.shtml" target="_blank">广告服务</a><span class="sep">|</span><a href="http://about.17173.com/business-cooperate.shtml" target="_blank">商务洽谈</a><span class="sep">|</span><a href="http://about.17173.com/contact-us.shtml" target="_blank">联系方式</a><span class="sep">|</span><a href="http://help.17173.com/" target="_blank">客服中心</a><span class="sep">|</span><a href="http://about.17173.com/site-map.shtml" target="_blank">网站导航</a><span class="sep">|</span><a href="/sitemap.html" target="_blank">论坛地图</a></p>
+				<p class="global-footer-copyright">Copyright <font>&copy;</font> 2001-2017 17173. All rights reserved.</p>
+								<p class="global-footer-certificate"><a href="http://www.miibeian.gov.cn/" target="_blank">京ICP证030367号</a><span class="sep">|</span><a href="http://www.17173.com/cert/wenhua.html" target="_blank">文网文[2008]059号</a><span class="sep">|</span><a href="http://www.17173.com/cert/chuban.html" target="_blank">互联网出版许可证</a></p>
 <p class="global-footer-safety"><a href="http://www.hd315.gov.cn/beian/view.asp?bianhao=021202001070200001" target="_blank"></br>
 <img alt="经营性网站备案信息" src="/home/picture/cert-beian_1.gif" width="50" height="50" /></a><a href="http://www.fuzhou.cyberpolice.cn/alert_basic.asp" target="_blank"><img alt="福州网络警察报警平台" src="/home/picture/cert-cyberpolice_1.gif" width="50" height="50" /></a></p>
-                            </div>
-            </div>
-                    </div>
+							</div>
+			</div>
+					</div>
 <script type="text/javascript">
-    var forums={
-        f1216f2388f2417:['最终幻想14','http://ff14.17173.com'],
-        f2392f8844f8846:['激战2','    http://gw2.17173.com'],
-        f8714f1534f1535f1537f2455:['魔兽世界','http://wow.17173.com'],
-        f8719f2251f2395f2568:['龙之谷','http://dn.17173.com'],
-        f8721f2549f2618f2653f2857f2799:['御龙在天','http://yl.17173.com'],
-        f8726f2427f2676f2533f2534:['洛奇英雄传','    http://mh.17173.com'],
-        f8730f2601f2684f2695f9438:['斗战神','http://dzs.17173.com'],
-        f8733f1570f1571f2639f2699:['天堂Ⅱ','http://lineage2.17173.com'],
-        f8734f1815f1816:['真三国无双OL','http://wsol.17173.com/'],
-        f8735f1523f2352f2353:['大航海时代',' http://dol.17173.com'],
-        f8873f8862f8997:['地城之光','http://dsol.17173.com'],
-        f8912:['打酱游','http://djy.cy.com'],
-        f8711f2468f2818f2846f8792f2545f2719f9665:['剑灵','    http://bns.17173.com'],
-        f8838f8840f8883f8858:['天涯明月刀',' http://wuxia.17173.com'],
-        f8724f2247f2379f2694:['九阴真经','http://9yin.17173.com'],
-        f8732f2075f2076f2077f2078f2079:['剑网3',' http://jx3.17173.com'],
-        f8921f8922:['黑金','http://hj.17173.com'],
-        f358f2129f2335f2472:['征途2','http://zt2.17173.com'],
-        f1891:['QQ飞车','http://speed.17173.com'],
-        f1956f2102:['QQ炫舞','http://x5.17173.com'],
-        f8718f2179f2501f9019f8876f2499:['笑傲江湖','http://xajh.17173.com'],
-        f8725f2707f2825:['逆战','http://nz.17173.com'],
-        f9414f9415:['炉石传说','http://hs.17173.com'],
-        f8720f1739f2341f2598f1743f1742:['跑跑卡丁车','   http://popkart.17173.com'],
-        f8933f8934f8935:['圣王','http://shengwang.17173.com'],
-        f8708f1546f1547f1548f1549f1551f2874:['梦幻西游','http://xyq.17173.com'],
-        f8709f1774f1777f2770f8895:['天龙八部','http://tl.17173.com'],
-        f890:['大话西游3','http://xy3.17173.com'],
-        f8729f2391f2749f2771:['上古世纪','http://age.17173.com'],
-        f8727f2862:['龙剑','http://ds.17173.com'],
-        f1403f2852f8820f8839:['斗破苍穹','http://dpol.17173.com'],
-        f8723f2451f2746f2548f2592:['坦克世界','http://wot.17173.com'],
-        f8707f2271f2609f2510f2518f2752f2509:['英雄联盟','http://lol.17173.com'],
-        f8713f2597f2864f1770:['DOTA2&DOTA','http://dota2.17173.com'],
-        f2766:['英雄三国综合版','http://yxsg.17173.com'],
-        f8706f1795f1797f8877:['地下城与勇士','http://dnf.17173.com'],
-        f8924f8925:['魂之猎手','http://mf.17173.com'],
-        f8795f8796f8798f8799f8800f8801f9404:['疾风之刃','http://jf.17173.com'],
-        f1341f2648:['超能战联','http://cyphers.17173.com'],
-        f8790:['颓废之心交流区','http://rh.17173.com'],
-        f2210:['Tera综合讨论区','    http://tera.17173.com'],
-        f2643:['天下3综合讨论区','http://tx3.17173.com'],
-        f2646:['天下3演武堂','http://tx3.17173.com'],
+	var forums={
+		f1216f2388f2417:['最终幻想14','http://ff14.17173.com'],
+		f2392f8844f8846:['激战2','	http://gw2.17173.com'],
+		f8714f1534f1535f1537f2455:['魔兽世界','http://wow.17173.com'],
+		f8719f2251f2395f2568:['龙之谷','http://dn.17173.com'],
+		f8721f2549f2618f2653f2857f2799:['御龙在天','http://yl.17173.com'],
+		f8726f2427f2676f2533f2534:['洛奇英雄传','	http://mh.17173.com'],
+		f8730f2601f2684f2695f9438:['斗战神','http://dzs.17173.com'],
+		f8733f1570f1571f2639f2699:['天堂Ⅱ','http://lineage2.17173.com'],
+		f8734f1815f1816:['真三国无双OL','http://wsol.17173.com/'],
+		f8735f1523f2352f2353:['大航海时代','	http://dol.17173.com'],
+		f8873f8862f8997:['地城之光','http://dsol.17173.com'],
+		f8912:['打酱游','http://djy.cy.com'],
+		f8711f2468f2818f2846f8792f2545f2719f9665:['剑灵','	http://bns.17173.com'],
+		f8838f8840f8883f8858:['天涯明月刀','	http://wuxia.17173.com'],
+		f8724f2247f2379f2694:['九阴真经','http://9yin.17173.com'],
+		f8732f2075f2076f2077f2078f2079:['剑网3','	http://jx3.17173.com'],
+		f8921f8922:['黑金','http://hj.17173.com'],
+		f358f2129f2335f2472:['征途2','http://zt2.17173.com'],
+		f1891:['QQ飞车','http://speed.17173.com'],
+		f1956f2102:['QQ炫舞','http://x5.17173.com'],
+		f8718f2179f2501f9019f8876f2499:['笑傲江湖','http://xajh.17173.com'],
+		f8725f2707f2825:['逆战','http://nz.17173.com'],
+		f9414f9415:['炉石传说','http://hs.17173.com'],
+		f8720f1739f2341f2598f1743f1742:['跑跑卡丁车','	http://popkart.17173.com'],
+		f8933f8934f8935:['圣王','http://shengwang.17173.com'],
+		f8708f1546f1547f1548f1549f1551f2874:['梦幻西游','http://xyq.17173.com'],
+		f8709f1774f1777f2770f8895:['天龙八部','http://tl.17173.com'],
+		f890:['大话西游3','http://xy3.17173.com'],
+		f8729f2391f2749f2771:['上古世纪','http://age.17173.com'],
+		f8727f2862:['龙剑','http://ds.17173.com'],
+		f1403f2852f8820f8839:['斗破苍穹','http://dpol.17173.com'],
+		f8723f2451f2746f2548f2592:['坦克世界','http://wot.17173.com'],
+		f8707f2271f2609f2510f2518f2752f2509:['英雄联盟','http://lol.17173.com'],
+		f8713f2597f2864f1770:['DOTA2&DOTA','http://dota2.17173.com'],
+		f2766:['英雄三国综合版','http://yxsg.17173.com'],
+		f8706f1795f1797f8877:['地下城与勇士','http://dnf.17173.com'],
+		f8924f8925:['魂之猎手','http://mf.17173.com'],
+		f8795f8796f8798f8799f8800f8801f9404:['疾风之刃','http://jf.17173.com'],
+		f1341f2648:['超能战联','http://cyphers.17173.com'],
+		f8790:['颓废之心交流区','http://rh.17173.com'],
+		f2210:['Tera综合讨论区','	http://tera.17173.com'],
+		f2643:['天下3综合讨论区','http://tx3.17173.com'],
+		f2646:['天下3演武堂','http://tx3.17173.com'],
                      f9771f9773f9782f9780f9781f9779:['幻想神域','http://hxsy.17173.com/'],
                      f9748f9881f9879f9880f9750:['风暴英雄','http://fbyx.17173.com/']
-    }
-    if(typeof forumId != 'undefined'){
-        for(var pp in forums){
-            var id = 'f'+forumId;
-            if(pp.indexOf(id)>-1){
-                jQuery('<em>›</em><a target="_blank" href="' + forums[pp][1] + '">' + forums[pp][0] + '专区</a>').appendTo('#pt1 .z');
-            }
-        }
-    }
+	}
+	if(typeof forumId != 'undefined'){
+		for(var pp in forums){
+			var id = 'f'+forumId;
+			if(pp.indexOf(id)>-1){
+				jQuery('<em>›</em><a target="_blank" href="' + forums[pp][1] + '">' + forums[pp][0] + '专区</a>').appendTo('#pt1 .z');
+			}
+		}
+	}
 </script>
 </div>
 
@@ -3864,10 +965,10 @@ jQuery('#widthauto-btn').remove();
 <script type="text/javascript" src="/home/js/lp.min_1.js"></script>
 
 <script type="text/javascript">
-    advConfigs.loadConfigFile('http://s.17173cdn.com/qiyu/index.js');
+	advConfigs.loadConfigFile('http://s.17173cdn.com/qiyu/index.js');
 </script>
 <script type="text/javascript">
-    advConfigs.loadConfigFile('http://s.17173cdn.com/bbs/final.js');
+	advConfigs.loadConfigFile('http://s.17173cdn.com/bbs/final.js');
 </script>
 <script type="text/javascript" src="/home/js/setlink.min_1.js"></script>
 </body>
