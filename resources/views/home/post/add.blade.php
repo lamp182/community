@@ -75,7 +75,7 @@
 		    
 
 	      <div class="mtm mbm pnpost"> 
-	       <button type="submit" id="button_submit" class="pn pnc"> <span>发表帖子</span> </button> 
+	       <button type="submit" id="button" class="pn pnc"> <span>发表帖子</span> </button> 
 	      </div> 
 	     </div> 
 	    </div> 

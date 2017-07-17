@@ -38,7 +38,7 @@
     <link rel="stylesheet" id="css_widthauto" type="text/css" href='/home/css/style_6_widthauto.css' />
     <script>HTMLNODE.className += ' widthauto'</script>
 
-    <script src="/home/js/forum.js"></script>
+<!--     <script src="/home/js/forum.js"></script> -->
     <link rel="stylesheet" type="text/css" href="/home/css/forum.css" />
     <script src="/home/js/jquery-1.7.2.js"></script>
     <script src="/home/js/libs.js"></script>
