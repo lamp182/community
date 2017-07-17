@@ -93,7 +93,7 @@
             <ul class="sidebar-nav">
                 
                 <li class="sidebar-nav-link">
-                    <a href="{{url('admin/index')}}" class="active">
+                    <a href="{{url('admin/index')}}">
                         <i class="am-icon-home sidebar-nav-link-logo"></i> 首页
                     </a>
                 </li>
@@ -159,7 +159,7 @@
                 </li>
               
                 <li class="sidebar-nav-link">
-                    <a href="chart.html">
+                    <a href="{{url('admin/posts')}}">
                         <i class="am-icon-bar-chart sidebar-nav-link-logo"></i> 帖子管理
 
                     </a>
