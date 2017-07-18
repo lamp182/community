@@ -109,14 +109,15 @@ class PostController extends Controller
         	$replies = Reply::where('pid', $id) -> paginate(3);
         	$uid = '';
         }
-        
+//         dd($input);
         $i = 0;
+        $page = array_key_exists('page', $input) ? $input['page'] : 1; 
         foreach($replies as $reply) {
         	$reply['user'] = Reply::find($reply['uid']) -> user;
         	$reply['user']['detail'] = User::find($reply['uid']) -> userdetail;
         	$reply['user']['operate'] = User::find($reply['uid']) -> userOperate;
         	$reply['user']['replies'] = User::find($reply['uid']) -> replies -> count();
-        	$reply['count'] = ++$i;
+        	$reply['count'] = ++$i + ($page - 1) * 3;
         }
         $data = [
         	'section' => $section,

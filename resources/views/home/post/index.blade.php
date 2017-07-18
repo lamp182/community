@@ -12,7 +12,9 @@
 <meta name="MSSmartTagsPreventParsing" content="True" />
 <meta http-equiv="MSThemeCompatible" content="Yes" />
     <meta name="baidu-site-verification" content="f5874a3f8e49646e5917517f21be2764"/>
-<link rel="stylesheet" type="text/css" href="/home/css/style_6_common_1.css" /><link rel="stylesheet" type="text/css" href="/home/css/style_6_forum_viewthread.css" /><script>var STYLEID = '6', STATICURL = 'static/', IMGDIR = 'static/image/common', VERHASH = 'Z88', charset = 'utf-8', discuz_uid = '0', cookiepre = 'bbsPro_2132_', cookiedomain = '', cookiepath = '/', showusercard = '1', attackevasive = '0', disallowfloat = 'newthread', creditnotice = '1|经验|,2|小伙伴|,3|崇高石|,4|水晶|,5|板砖|,6|零食|,7|悬赏币|,8|VR币|', defaultstyle = '', REPORTURL = 'aHR0cDovL2Jicy4xNzE3My5jb20vdGhyZWFkLTEwMzEyMzY3LTEtMS5odG1s', SITEURL = 'http://bbs.17173.com/', JSPATH = 'static/js/', CSSPATH = 'data/cache/style_', DYNAMICURL = '';</script>
+<link rel="stylesheet" type="text/css" href="/home/css/style_6_common_1.css" />
+<link rel="stylesheet" type="text/css" href="/home/css/style_6_forum_viewthread.css" />
+<script>var STYLEID = '6', STATICURL = 'static/', IMGDIR = 'static/image/common', VERHASH = 'Z88', charset = 'utf-8', discuz_uid = '0', cookiepre = 'bbsPro_2132_', cookiedomain = '', cookiepath = '/', showusercard = '1', attackevasive = '0', disallowfloat = 'newthread', creditnotice = '1|经验|,2|小伙伴|,3|崇高石|,4|水晶|,5|板砖|,6|零食|,7|悬赏币|,8|VR币|', defaultstyle = '', REPORTURL = 'aHR0cDovL2Jicy4xNzE3My5jb20vdGhyZWFkLTEwMzEyMzY3LTEtMS5odG1s', SITEURL = 'http://bbs.17173.com/', JSPATH = 'static/js/', CSSPATH = 'data/cache/style_', DYNAMICURL = '';</script>
 <script src="/home/js/common_1.js" type="text/javascript"></script>
     <!--globalHeadBegin-->
 
@@ -55,7 +57,7 @@ J('<style type="text/css">.bbs-global-bar, .boardnav #bnav, #hd, #pt1, .sub-scre
 
 </head>
 
-<body id="nv_forum" class="pg_viewthread" onkeydown="if(event.keyCode==27) return false;">
+<body id="nv_forum" class="pg_viewthread" onkeydown="if(event.keyCode==27){ return false;}">
  
 <script type="text/javascript" src="/home/js/seed_1.js"></script>
 
@@ -211,9 +213,9 @@ initSearchmenu('scbar', '');
 
 <div id="pt" style="background: url(/home/images/hd-bg01_1.jpg) no-repeat;" class="bm cl">
 <div class="z">
-<a href="./" class="nvhm" title="首页">17173有料社区</a> <em>&rsaquo;</em> 
-<a href="http://bbs.17173.com/forum-8706-1.html">{{ $section -> name }}</a> <em>&rsaquo;</em> 
-<a href="http://bbs.17173.com/thread-10312367-1-1.html">{{ $post -> title }}</a>
+<a href="{{ url('') }}" class="nvhm" title="首页">17173有料社区</a> <em>&rsaquo;</em> 
+<a href="{{ url('home/section?id='.$section -> id) }}">{{ $section -> name }}</a> <em>&rsaquo;</em> 
+<a href="{{ url('home/post/'.$post -> id) }}">{{ $post -> title }}</a>
 </div>
     
 </div>
@@ -273,7 +275,7 @@ document.body.appendChild(jljs);
 <tr>
 <td class="pls ptn pbn">
 <div class="hm ptn">
-<span class="xg1">查看:</span> <span class="xi1">36584</span><span class="pipe">|</span><span class="xg1">回复:</span> <span class="xi1">512</span>
+<span class="xg1">查看:</span> <span class="xi1">36584</span><span class="pipe">|</span><span class="xg1">回复:</span> <span class="xi1">{{ $post['count'] }}</span>
 </div>
 </td>
 <td class="plc ptm pbn vwthd">
@@ -316,11 +318,9 @@ document.body.appendChild(jljs);
 		{{ $reply['user']['userdetail']['username'] }}
 	</a>
 
-<a href="http://bbs.17173.com/home.php?mod=spacecp&amp;ac=profile&amp;op=verify&amp;vid=1" target="_blank">
+<a href="" target="_blank">
 <img src="/home/picture/{1aeced34-8254-418f-8374-13aad7b8f8e8}_1.png" class="vm" alt="个人认证" title="个人认证" /></a>
 
-<a href="http://bbs.17173.com/home.php?mod=spacecp&amp;ac=profile&amp;op=verify&amp;vid=2" target="_blank">
-</a>
 
 </div>
 </div>
@@ -361,7 +361,7 @@ document.body.appendChild(jljs);
  <!-- 用户状态结束 -->
 <div>
 <div class="avatar" onmouseover="showauthor(this, 'userinfo187510523')">
-	<a href="http://bbs.17173.com/space-uid-68660209.html" class="avtm" target="_blank">
+	<a href="{{ url('home/user/'.$reply['user']['id']) }}" class="avtm" target="_blank">
 		<img src="{{ $reply['user']['userdetail']['faceico'] }}" />
 	</a>
 </div>
@@ -434,28 +434,27 @@ document.body.appendChild(jljs);
 					</table>
 				</div>
 			</div>
-		
 	</td>
 </tr>
 <tr>
 	<td class="plc plm">
 		<div id="p_btn" class="mtw mbm hm cl">
 		                    <!-- Baidu Button BEGIN -->
-		<div class="bdsharebuttonbox" id="bdshare">
-			<a href="#" class="bds_more" data-cmd="more"></a>
-			<a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
-			<a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
-			<a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a>
-			<a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a>
-			<a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
-		</div>
+<!-- 		<div class="bdsharebuttonbox" id="bdshare"> -->
+<!-- 			<a href="#" class="bds_more" data-cmd="more"></a> -->
+<!-- 			<a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a> -->
+<!-- 			<a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a> -->
+<!-- 			<a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a> -->
+<!-- 			<a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a> -->
+<!-- 			<a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a> -->
+<!-- 		</div> -->
 		                    <!-- Baidu Button END -->
 		
 		<a href="javascript:;" id="k_favorite" onclick="lsSubmit()" onmouseover="this.title = $('favoritenumber').innerHTML + ' 人收藏'" title="收藏本帖">
 		
 		<i><img src="/home/picture/fav.gif" alt="收藏" />收藏<span id="favoritenumber" style="display:none">0</span></i></a>
-		<a id="recommend_add" href="forum.php?mod=misc&amp;action=recommend&amp;do=add&amp;tid=10312367&amp;hash=e79c97f0"  onclick="showWindow('login', this.href)" onmouseover="this.title = $('recommendv_add').innerHTML + ' 人支持'" title="顶一下"><i><img src="/home/picture/rec_add.gif" alt="支持" />支持<span id="recommendv_add" style="display:none">0</span></i></a>
-		<a id="recommend_subtract" href="forum.php?mod=misc&amp;action=recommend&amp;do=subtract&amp;tid=10312367&amp;hash=e79c97f0"  onclick="showWindow('login', this.href)" onmouseover="this.title = $('recommendv_subtract').innerHTML + ' 人反对'" title="踩一下"><i><img src="/home/picture/rec_subtract.gif" alt="反对" />反对<span id="recommendv_subtract" style="display:none">0</span></i></a>
+		<a id="recommend_add" href=""  onclick="showWindow('login', this.href)" onmouseover="this.title = $('recommendv_add').innerHTML + ' 人支持'" title="顶一下"><i><img src="/home/picture/rec_add.gif" alt="支持" />支持<span id="recommendv_add" style="display:none">0</span></i></a>
+		<a id="recommend_subtract" href=""  onclick="showWindow('login', this.href)" onmouseover="this.title = $('recommendv_subtract').innerHTML + ' 人反对'" title="踩一下"><i><img src="/home/picture/rec_subtract.gif" alt="反对" />反对<span id="recommendv_subtract" style="display:none">0</span></i></a>
 		</div>
 	</td>
 </tr>
@@ -465,13 +464,13 @@ document.body.appendChild(jljs);
 <div class="po hin">
 <div class="pob cl">
 <em>
-<a class="fastre" href="javascript:;" onclick="lsSubmit()">回复</a>
-                                </em>
+	
+	<a id="re_{{ $reply['id'] }}" class="fastre" href="javascript:;" onclick="reply()">回复</a>
+</em>
 
 <p>
-<a href="javascript:;" id="mgc_post_187510523" onmouseover="showMenu(this.id)" class="showmenu">使用道具</a>
-                            <a href="javascript:;" onclick="lsSubmit()">举报</a>
-                            </p>
+	<a href="javascript:;" onclick="lsSubmit()">举报</a>
+</p>
 
 <ul id="mgc_post_187510523_menu" class="p_pop mgcmn" style="display: none;">
 </ul>
@@ -492,19 +491,18 @@ document.body.appendChild(jljs);
 </tr>
 
 </table>
-<script type="text/javascript" reload="1">
-aimgcount[187510523] = ['2680636','2680637','2680638','2680639','2680640','2680641','2680642','2680643','2680645','2680646','2680648','2680649','2680650','2680651','2680652','2680653','2680654','2680655','2680656','2680657','2680659','2680660','2680662','2680663','2680664','2680665','2680666','2680667','2681062'];
-attachimggroup(187510523);
-attachimgshow(187510523);
-var aimgfid = 0;
+
+<!-- END 声望 --></div>
+@endforeach
+
+<script type="text/javascript">
+	// 回复
+	function reply() {
+		$('.plc .po .pob #reply_' + id).css('display', 'block');
+	}
 </script>
 <!-- BEGIN 声望 -->
 <link rel="stylesheet" type="text/css" href="/home/css/prestige_1.css" />
-<div class="pop-rank" id="pop-rank">
-    <span class="p">本版排名：<span id="pop-user-prank" style="display:inline;"><img src="/home/picture/ajax-loader_1.gif" /></span></span>
-    <span class="p">本版声望：<span id="pop-user-pvalue" style="display:inline;"><img src="/home/picture/ajax-loader_1.gif" /></span></span>
-    <span class="link"><a href="plugin.php?id=prestige" target="_blank">[关注管理]</a>&nbsp;<a target="_blank" href="plugin.php?id=prestige:prestige&amp;view=about">[声望说明]</a></span>
-</div>
 <script type="text/javascript">
 var popRankTimer = null;
 jQuery('.user_prestige img').each(function(){
@@ -538,19 +536,8 @@ jQuery("#pop-rank").hover(function() {
     jQuery('#pop-user-pvalue').text('');
 });
 </script>
-<!-- END 声望 --></div>
-@endforeach
 <div id="postlistreply" class="pl"><div id="post_new" class="viewthread_table" style="display: none"></div></div>
 </div>
-
-
-<form method="post" autocomplete="off" name="modactions" id="modactions">
-<input type="hidden" name="formhash" value="e79c97f0" />
-<input type="hidden" name="optgroup" />
-<input type="hidden" name="operation" />
-<input type="hidden" name="listextra" value="page%3D1" />
-<input type="hidden" name="page" value="1" />
-</form>
 
 
 <div class="pgbtn"><a href="{{ $replies->nextPageUrl() }}" hidefocus="true" class="bm_h">下一页 &raquo;</a></div>
@@ -584,9 +571,81 @@ var postminchars = parseInt('6');
 var postmaxchars = parseInt('100000');
 var disablepostctrl = parseInt('0');
 </script>
-
+<!-- 回复 -->
+<script src="http://apps.bdimg.com/libs/jquery/1.6.4/jquery.min.js"></script>
+<script>
+	function reply(id){
+		$('#reply').css('display', 'block');
+		$('#reply #rid').val(id);
+	}
+	$('#replyform').submit(function(){
+		alert(11111111);
+	});
+</script>
+<div id="reply" class="fwinmask" style="display: none; width: 640px; position: fixed; z-index: 201; left: 312px; top: 161px;" initialized="true">
+	  <table cellpadding="0" cellspacing="0" class="fwin">
+	    <tbody>
+	      <tr>
+	        <td class="t_l"></td>
+	        <td class="t_c" style="cursor:move" onmousedown="dragMenu($('fwin_reply'), event, 1)" ondblclick="hideWindow('reply')"></td>
+	        <td class="t_r"></td>
+	      </tr>
+	      <tr>
+	        <td class="m_l" style="cursor:move" onmousedown="dragMenu($('fwin_reply'), event, 1)" ondblclick="hideWindow('reply')" ) "=" ">&nbsp;&nbsp;</td><td class="m_c " id="fwin_content_reply " fwin="reply ">
+	        <h3 class="flb " id="fctrl_reply " style="cursor: move; ">
+	        <em id="return_reply " fwin="reply ">
+	        	回复</em>
+	        <span>
+	        <a href="javascript:; " class="flbc " onclick="hideWindow( 'reply') " title="关闭 ">关闭</a></span>
+	        </h3>
+	        <form method="post " id='replyform' class="reply" action="javascript:;" fwin="reply ">
+	        	{{ csrf_field() }}
+	        	<input type="hidden" id='rid' name="rid" value="" />
+	        	<input type="hidden" name="uid" value="{{ session('user')['id'] }}" />
+	        	<input type="hidden" name="pid" value="{{ $post['id'] }}" />
+		        <div class="c " id="floatlayout_reply " fwin="reply ">
+				    <div class="p_c ">
+				        
+				        <div class="pbt cl ">
+					        <span id="subjecthide " class="z " fwin="reply ">RE：{{ $post['title'] }}}</span>
+				        </div>
+				        <div class="pbt cl ">
+				        	<div class="quote ">
+				        		<blockquote>
+				        			<font size="2 ">
+				        				<a href="" target="_blank ">
+				        				<font color="#999999 ">决断曾经 发表于 2017-7-11 20:00</font>
+				        				</a>
+				        			</font>
+				        				<br> <span class="content">不错</span>
+				        		</blockquote>
+				        	</div>
+				        </div>
+				        <div class="tedt ">
+					        <script id="container" name="content" style="" type="text/plain"></script>
+				        </div>
+			        	<div id="seccheck_reply " fwin="reply "></div>
+			        </div>
+		        </div>
+		        <div class="o pns " id="moreconf " fwin="reply ">
+		        	<button type="submit " id="postsubmit " class="pn pnc z " value="true " tabindex="23 " fwin="reply ">
+		        		<span>回复</span>
+		        	</button>
+		        </div>
+	        </form>
+	        </td><td class="m_r " style="cursor:move " onmousedown="dragMenu($( 'fwin_reply'), event, 1) " ondblclick="hideWindow( 'reply') " "=""></td>
+	      </tr>
+	      <tr>
+	        <td class="b_l"></td>
+	        <td class="b_c" style="cursor:move" onmousedown="dragMenu($('fwin_reply'), event, 1)" ondblclick="hideWindow('reply')"></td>
+	        <td class="b_r"></td>
+	      </tr>
+	    </tbody>
+	  </table>
+	</div>
+	<!-- 回复 -->
 <div id="f_pst" class="pl bm bmw">
-<form method="post" autocomplete="off" id="fastpostform" action="forum.php?mod=post&amp;action=reply&amp;fid=8706&amp;tid=10312367&amp;extra=page%3D1&amp;replysubmit=yes&amp;infloat=yes&amp;handlekey=fastpost" onSubmit="return fastpostvalidate(this)">
+<form method="post" autocomplete="off" id="fastpostform" action="{{ url('home/reply') }}" onSubmit="return fastpostvalidate(this)">
 <table cellspacing="0" cellpadding="0">
 <tr>
 <td class="pls">
@@ -605,18 +664,14 @@ var disablepostctrl = parseInt('0');
         var ue = UE.getEditor('container');
     </script>
 
-<div id="seccheck_fastpost">
-</div>
-
-
-<input type="hidden" name="formhash" value="e79c97f0" />
-<input type="hidden" name="usesig" value="" />
-<input type="hidden" name="subject" value="  " />
 <p class="ptm pnpost">
-<a href="http://bbs.17173.com/home.php?mod=spacecp&amp;ac=credit&amp;op=rule&amp;fid=8706" class="y" target="_blank">本版积分规则</a>
-<button type="button" onclick="lsSubmit()" name="replysubmit" id="fastpostsubmit" class="pn pnc vm" value="replysubmit" tabindex="5"><strong>发表回复</strong></button>
-<label for="fastpostrefresh"><input id="fastpostrefresh" type="checkbox" class="pc" />回帖后跳转到最后一页</label>
-<script type="text/javascript">if(getcookie('fastpostrefresh') == 1) {$('fastpostrefresh').checked=true;}</script>
+	<button type="submit" id="fastpostsubmit" class="pn pnc vm"><strong>发表回复</strong></button>
+	{{ csrf_field() }}
+	<label for="fastpostrefresh"><input id="fastpostrefresh" type="checkbox" class="pc" name='page[]' value='{{ $replies -> lastPage() }}' />回帖后跳转到最后一页</label>
+	<input type="hidden" name="ctime" value="{{ time() }}" />
+	<input type="hidden" name="uid" value="1" />
+<!-- 	<input type="hidden" name="uid" value="{{ session('user')['uid'] }}" /> -->
+	<input type="hidden" name="pid" value="{{ $post['id'] }}" />
 </p>
 </td>
 </tr>
@@ -624,48 +679,6 @@ var disablepostctrl = parseInt('0');
 </form>
 </div>
 
-<div id="md_145_menu" class="tip tip_4" style="display: none;">
-<div class="tip_horn"></div>
-<div class="tip_c">
-<h4>DNF圣骑士勋章</h4>
-<p>DNF圣骑士二次觉醒纪念勋章</p>
-</div>
-</div>
-<div id="md_152_menu" class="tip tip_4" style="display: none;">
-<div class="tip_horn"></div>
-<div class="tip_c">
-<h4>DNF召唤师勋章</h4>
-<p>DNF女魔法师-召唤师二次觉醒纪念勋章</p>
-</div>
-</div>
-<div id="md_154_menu" class="tip tip_4" style="display: none;">
-<div class="tip_horn"></div>
-<div class="tip_c">
-<h4>DNF死灵术士勋章</h4>
-<p>DNF暗夜使者-死灵术士二次觉醒纪念勋章</p>
-</div>
-</div>
-<div id="md_158_menu" class="tip tip_4" style="display: none;">
-<div class="tip_horn"></div>
-<div class="tip_c">
-<h4>万圣节勋章</h4>
-<p>不给糖就捣乱！17173论坛万圣节节日纪念勋章</p>
-</div>
-</div>
-
-<script type="text/javascript">
-//ÈÏÖ¤
-jQuery(function($){
-$('span:contains("»ú¹¹ÈÏÖ¤")','.pls').css('color','#0000c5');
-})
-</script>
-
-<script type="text/javascript">document.onkeyup = function(e){keyPageScroll(e, 0, 1, 'forum.php?mod=viewthread&tid=10312367', 1);}</script>
-</div>
-
-<div class="wp mtn">
-<!--[diy=diy3]--><div id="diy3" class="area"></div><!--[/diy]-->
-</div>
 
 <script type="text/javascript">
 function succeedhandle_followmod(url, msg, values) {
@@ -678,7 +691,7 @@ fObj.innerHTML = '收听TA';
 fObj.href = 'home.php?mod=spacecp&ac=follow&op=add&hash=e79c97f0&fuid='+values['fuid'];
 }
 }
-fixed_top_nv();
+
 var isWidth = jQuery('.t_f').width();
 jQuery('.t_f img, .pattl img').each(function(){var jq_this=jQuery(this);jq_this.removeAttr('height');jq_this.removeAttr('width');jq_this.removeAttr('onload');jq_this.load(function(){var w=jq_this.width();if(isWidth){if(isWidth<1200&&w>(isWidth*0.8)){jq_this.css({width:'80%','max-width':'960px'})}}else{if(w>600){jq_this.css({width:'600px'})}}})});
 
@@ -834,9 +847,10 @@ var seourl='http://bbs.17173.com/8706-thread-8706-10312367-1-1.html';
 
 
     <div id="flk" class="y" style="display:none;">
-        <p>
-                                                                                                                        <strong><a href="http://bbs.17173.com/" target="_blank">17173.com</a></strong>
-                                    &nbsp;&nbsp;<span id="tcss"></span><script type="text/javascript" src="/home/js/ping_1.js" charset="utf-8"></script><script type="text/javascript" reload="1">pgvMain({"discuzParams":{"r2":"21621576","ui":0,"rt":"forum","md":"viewthread","fi":"8706","ti":"10312367","pn":1,"qq":"000"},"extraParams":""});</script><script type='text/javascript'>
+   <p>
+	 <strong><a href="{{ url('/') }}" target="_blank">17173.com</a></strong>
+           &nbsp;&nbsp;<span id="tcss"></span><script type="text/javascript" src="/home/js/ping_1.js" charset="utf-8"></script>
+    <script type='text/javascript'>
       var _vds = _vds || [];
       window._vds = _vds;
       (function(){
@@ -905,6 +919,7 @@ var seourl='http://bbs.17173.com/8706-thread-8706-10312367-1-1.html';
 
     
 </div>
+
 <script>
     var forumId = "8706";
 </script>

@@ -36,7 +36,7 @@
 
 <!--     <script src="/home/js/forum.js" type="text/javascript"></script> -->
     <link rel="stylesheet" type="text/css" href="/home/css/forum.css" />
-    <script src="/home/js/jquery-1.7.2.js" type="text/javascript"></script>
+    <script src="/home/js/jquery-1.8.3-min.js" type="text/javascript"></script>
     <script src="/home/js/libs.js" type="text/javascript"></script>
     <script src="/home/js/passport.js" type="text/javascript"></script>
     <script>

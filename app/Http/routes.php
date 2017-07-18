@@ -22,6 +22,8 @@ Route::group(['prefix' => 'home', 'namespace' => 'Home'], function ()
 	Route::get('/section', 'SectionController@index');
 	
 	Route::resource('post', 'PostController');
+	Route::resource('reply', 'ReplyController');
+	Route::post('reply', 'ReplyController@reply');
 });
 
 
