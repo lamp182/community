@@ -36,10 +36,10 @@
                                             <td>{{$data->address}}</td>
                                             <td>{{$data->faceico}}</td>
                                             <td>{{$data->status}}</td>
-                                            <td>{{$res->vip}}</td>
-                                            <td>{{$res->score}}</td>
                                             <td>{{$data->ctime}}</td>
                                             <td>{{$data->ltime}}</td>
+                                            <td>{{$oper->vip}}</td>
+                                            <td>{{$oper->score}}</td>
                                             
                                         </tr>
 										

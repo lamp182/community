@@ -45,7 +45,6 @@ class User extends Model implements AuthenticatableContract,
     {
         return $this->hasOne('App\Http\Model\UserDetail', 'uid', 'id');
     }
-    
 
     public function userOperate()
     {
@@ -55,5 +54,10 @@ class User extends Model implements AuthenticatableContract,
     public function replies()
     {
     	return $this -> hasMany('App\Http\Model\Reply', 'uid', 'id');
+    }
+
+     public function Operate()
+    {
+        return $this->hasOne('App\Http\Model\Operate', 'uid', 'id');
     }
 }

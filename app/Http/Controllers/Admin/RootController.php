@@ -14,6 +14,7 @@ use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\Input;
 
 
+
 class RootController extends Controller
 {
     public function getIndex(Request $request)
@@ -22,13 +23,14 @@ class RootController extends Controller
         if($request->has('keywords')){
             $key = trim($request->input('keywords')) ;
             // echo $key;
-            $root = Root::where('name','like',"%".$key."%")->paginate(2);;
+            $root = Root::where('name','like',"%".$key."%")->paginate(5);
             // dd($root);
             return view('admin.root.index',['data'=>$root,'key'=>$key]);
             // return $key;
         }else{
-             $root = Root::orderBy('id','asc') -> paginate(2);
-        return view('admin.root.index',['data'=>$root]);
+             $root = Root::orderBy('id','asc') -> paginate(5);
+             // dd($root);
+             return view('admin.root.index',['data'=>$root]);
         }
        
     }
@@ -49,35 +51,38 @@ class RootController extends Controller
     public function postDoadd(Request $request)
     {
         // $data = $request -> except('_token');
-        $input  =  Input::except('_token');
-        // dd($data);
+        $input  =  Input::except('_token','file_upload');
+        // dd($input);
         //表单验证
          $role =[
-            'name'=>'required',
+            'name'=>'required|unique:admin',
             'password'=>'required|between:6,18',
             'realname'=>'required',
-            // 'cid'=>'regex:/^[1-9]{1}[0-9]{14}$|^[1-9]{1}[0-9]{16}([0-9]|[xX])$/|required',
             'cid'=>'regex:/^[1-9]{1}[0-9]{16}([0-9xX])$/|required',
             'phone'=>'regex:/^1[34578][0-9]{9}$/|required',
             'email'=>'required|email',
+            'faceico'=>'required',
+
         ];
 
         $mess =[
             'name.required'=>'用户名必填',
+            'name.unique'=>'该用户名已经存在',
             'password.required'=>'密码必填',
             'password.between'=>'密码必须在6-18位之间',
-            'realname.required'=>'用户名必填',
+            'realname.required'=>'真实姓名必填',
             'cid.required'=>'身份证号码必填',
             'cid.regex'=>'身份证号码不正确',
             'phone.required'=>'手机号码必填',
             'phone.regex'=>'手机号码不正确',
             'email.required'=>'邮箱必填',
             'email.email'=>'邮箱格式不正确',
+            'faceico.required'=>'头像必选',
             
         ];
         $v = Validator::make($input,$role,$mess);
         if($v->passes()){
-        $res = $request -> except('_token');
+        $res = $request -> except('_token','file_upload');
         // dd($res);
         $user = new Root();
         $user -> name = $res['name'];
@@ -86,7 +91,7 @@ class RootController extends Controller
         $user -> cid = $res['cid'];
         $user -> phone = $res['phone'];
         $user -> email = $res['email'];
-        // $user -> faceico = $res['faceico'];
+        $user -> faceico = $res['faceico'];
 
         // dd($user);
         $re = $user -> save();
@@ -105,19 +110,28 @@ class RootController extends Controller
     */
     public function postUpload()
     {
-               // 将上传文件移动到制定目录，并以新文件名命名
+        // $aa = $request -> all();
+        // dump($aa);
+        // die;
+        // return $request;
+//        将上传文件移动到制定目录，并以新文件名命名
         $file = Input::file('file_upload');
+        // dd($file);
         if($file->isValid()) {
             $entension = $file->getClientOriginalExtension();//上传文件的后缀名
             $newName = date('YmdHis') . mt_rand(1000, 9999) . '.' . $entension;
 
-        //            将图片上传到本地服务器
+//            将图片上传到本地服务器
             $path = $file->move(public_path() . '/uploads', $newName);
 
-        //            将图片上传到七牛云
-        //            \Storage::disk('qiniu')->writeStream('uploads/'.$newName, fopen($file->getRealPath(), 'r'));
+//            将图片上传到七牛云
+//            \Storage::disk('qiniu')->writeStream('uploads/'.$newName, fopen($file->getRealPath(), 'r'));
 
-        //        返回文件的上传路径
+//            oss上传
+
+//            $result = OSS::upload('uploads/'.$newName, $file->getRealPath());
+
+//        返回文件的上传路径
             $filepath = 'uploads/' . $newName;
             return $filepath;
         }
@@ -141,6 +155,7 @@ class RootController extends Controller
    {
     //接受修改后的值
     $data = $request -> except('_token');
+    // dd($data);
     //将修改后的值存入数据库
     $res = Root::where('id',$data['id']) -> update($data);
     if($res){
@@ -177,7 +192,8 @@ class RootController extends Controller
         $data = Root::where('id',$id)->first();
         $res = $data->password;
        
-        // dd($pass);
+        // dd($res);
+        // eyJpdiI6ImljMlZ4alIreERIdTJsZFo4bHVsbGc9PSIsInZhbHVlIjoiWCswRmxabDhPWWljZTluNlpIQVdwUT09IiwibWFjIjoiNzE4ZjNhYzc0OGMxYmMzY2VmM2YyOGQwMWUxNTZjMWYzMmQ4OTY1MjBkNjBhMjQyN2RjYzk2MmY5ZDYwZThkYyJ9
         return view('admin.root.changepass',['id'=>$id]);
     }
 
@@ -190,31 +206,39 @@ class RootController extends Controller
         // dd($id);
         $res = $request ->all();
         // dd($res);
+        // 1234
 
         //用户id
         $id = $res['hidden'];
-
+        // dd($id);
         //用户输入的密码
         $old = $res['oldname'];
         // dd($old);
+        $relnew = $res['relnew'];
+        // dd($relnew);
+        // dd($old);
+        // 1234
         $data = Root::where('id',$id)->first();
         // dd($data);
         $pass = $data->password;
         // dd($pass);
         //数据库中的密码
-        $pass = Crypt::decrypt($pass);
+        $pass1 = Crypt::decrypt($pass);
         // echo 11111;
-        // dd($pass);
+        // dd($pass1);  
         // $old = $pass;
         // 判断用户输入的密码是否正确
-        if($old != $pass){
-            
-            echo '原密码错误!';die;
-        }else if($res['name'] !=$res['relname']){
-            echo '新密码输入不一致!';die;
+        if($old != $pass1){
+            // 1234  123
+            echo '原密码错误!';
+            die;
+        }else if($res['new'] !=$res['relnew']){
+            echo '新密码输入不一致!';
+            die;
         }
         $data = [];
-        $data['password'] = Crypt::encrypt($pass);
+        $data['password'] = Crypt::encrypt($relnew);
+        // $data['password'] = $relname;
         // dd($data);
         $flag = Root::where('id',$id) -> update($data);
         if($flag){

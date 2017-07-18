@@ -26,7 +26,7 @@
                 </span>
             </label>
             <div class="am-u-sm-12">
-                <input type="text" class="tpl-form-input am-margin-top-xs" id="new" name="name"
+                <input type="text" class="tpl-form-input am-margin-top-xs" id="new" name="new"
                 value="" placeholder="请输入新密码">
                 <small>
                     请填写新密码
@@ -44,7 +44,7 @@
                 </span>
             </label>
             <div class="am-u-sm-12">
-                <input type="text" class="tpl-form-input am-margin-top-xs" id="replnew" name="relname"
+                <input type="text" class="tpl-form-input am-margin-top-xs" id="replnew" name="relnew"
                 value="" placeholder="请输入新密码">
                 <small>
                     请再次填写新密码
