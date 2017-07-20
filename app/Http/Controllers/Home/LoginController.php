@@ -12,6 +12,8 @@ use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Cookie;
 use Illuminate\Http\Response;
 use App\Http\Model\User;
+// use Illuminate\Routing\Controller;
+
 class LoginController extends Controller
 {
     public function getLogin()
@@ -22,12 +24,12 @@ class LoginController extends Controller
    
     public function postInsert(Request $request)
     {    
+
+      $request -> flash(); 
        $re = $request -> except('_token');
-     // dd($re);
-         // $re['email']
-       // SetCookie("WithExpire","Expire in 1 hour",time()+3600);//3600秒=1小时
-       // setcookie("TestCookie", $value, time()+3600); 
-      
+    
+       
+       // dd($re);
 
        $user = login::where('email', $re['email'])->orwhere('phone',$re['email']) -> first(); 
        $statu =  UserDetail::where('id',$user['id'])->select('status')->first();
@@ -39,11 +41,7 @@ class LoginController extends Controller
                   if($statu['status'] != '1'){
                       echo '请您去邮箱激活或验证码错误!';
                   }else{
-                      // if($re['persistentcookie'] == 'on'){
-
-                      //  $user_info = array(['name'=>$re['email'],'password'=>$re['password']]);
-
-                      //   $use = Cookie::make('user',$user_info,60);
+                  
 
                         // return Response::make()->withCookie($use);
                         // return response($content)->header('Content-Type', $type)->withCookie('name', 'value');
@@ -53,11 +51,7 @@ class LoginController extends Controller
                       $user['operate'] = User::find($user['id']) -> userOperate;
                       session(['user'=>$user]);
 
-
                       return redirect('/');
-                            
-                      // }
-
                   }
                  }else{
                      // echo '登录失败'; 
@@ -82,6 +76,12 @@ class LoginController extends Controller
  
     }
    
-  
+  //退出登录
+      public function getQuit()
+      {
+        //清空session
+        session(['user'=>null]);
+        return view('home.login.login');
+      }
 
 }

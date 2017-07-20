@@ -21,7 +21,7 @@ class DefaultController extends Controller
 //邮箱验证
      public function postDodefault(Request $request)
      {  
-
+          // $request -> flash();
         $input = $request -> except('_token');
           $name = $input['name']; 
           // dd($name);

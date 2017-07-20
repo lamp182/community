@@ -55,10 +55,10 @@ class LoginController extends Controller
           }
 
           //将用户信息添加到session中
-          session(['user'=>$user]);
+          session(['admin'=>$user]);
           //登录
-           return view('admin.index');
-           // return redirect('admin/layout/index');
+           return redirect('admin/index');
+          
       }else{
 //          如果没有通过表单验证
           return back()->withErrors($validator);
@@ -76,5 +76,12 @@ class LoginController extends Controller
         echo Crypt::decrypt($str1);
     }
 
-   
+   //退出登录
+      public function getQuit()
+      {
+        //清空session
+        session(['admin'=>null]);
+        return view('admin.login.login');
+      }
+
 }

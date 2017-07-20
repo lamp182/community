@@ -32,8 +32,7 @@ class ZhuceController extends Controller
             return back() -> with('error','验证码错误');
             exit;
         }
-         // $input['password'] = Hash::make($input['password']);
-         // dd($request -> all());
+         
         $input['password']  = Crypt::encrypt( $input['password']);
 
            $id= DB::table('users')->insertGetId($input);
@@ -49,7 +48,7 @@ class ZhuceController extends Controller
         }
        
         return redirect('/home/login/login');
-         // return redirect('post/create')
+        
    }
 
     public function getJihuo(Request $request){
@@ -62,7 +61,8 @@ class ZhuceController extends Controller
             // 修改数据库
             $res =  UserDetail::where('id',$arr['id'])->update(['status'=>1,'token'=>str_random(50)]);
             if($res){
-                echo '激活成功';
+                // echo '激活成功';
+               return redirect('/home/login/login');
             }else{
                 // echo '激活失败';
                  return redirect('/home/zhuce/zhuce')->with('error','激活失败，请重新激活!');
@@ -129,7 +129,7 @@ class ZhuceController extends Controller
            $phone = $request -> input('phone');
         // return $phone;die;
         $res = self::phoneto($phone);
-        // echo $res;
+         echo $res;
         
     }   
 

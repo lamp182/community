@@ -58,7 +58,7 @@
       list-style: none;
       margin:0;
       padding:0;
-      background: #ccc;
+      background: #f7f7f7;
       width:65px;
       height:20px;
       float:left;
@@ -121,7 +121,7 @@
          <div class="fbox passport"> 
           <div class="fbox-main"> 
            <div class="border-passport"> 
-            <input type="text"  class="input-txt input-passport" id="email"; name="email" data-maillist="[&quot;qq.com&quot;,&quot;163.com&quot;,&quot;sina.com&quot;,&quot;126.com&quot;,&quot;sohu.com&quot;,&quot;gmail.com&quot;,&quot;hotmail.com&quot;]" placeholder="邮箱" autofocus="" /> <span id="span" style="color:#ccc; size:'2';">请输入注册的邮箱</span>
+            <input type="text"  class="input-txt input-passport" id="email"; name="email" data-maillist="[&quot;qq.com&quot;,&quot;163.com&quot;,&quot;sina.com&quot;,&quot;126.com&quot;,&quot;sohu.com&quot;,&quot;gmail.com&quot;,&quot;hotmail.com&quot;]" placeholder="邮箱" autofocus="" /> <span id="span" style="color:#ccc; size:'2';">请输入163或qq的邮箱</span>
            </div> 
           </div> 
           <div class="fbox-tip"> 
@@ -284,7 +284,7 @@
           list-style: none;
           margin:0;
           padding:0;
-          background: #ccc;
+          background: #f7f7f7;
           width:65px;
           height:20px;
           float:left;
