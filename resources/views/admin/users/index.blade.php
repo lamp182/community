@@ -29,25 +29,36 @@
                                             <th>用户id</th>
                                             <th>邮箱</th>
                                             <th>手机</th>
-                                            <th>密码</th>
+                                            <th>状态</th>
                                             <th>操作</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                     @foreach($data as $k=>$v)
+
                                         <tr class="gradeX">
                                             <td>{{$v->id}}</td>
                                             <td>{{$v->email}}</td>
+                                            <td>{{$v->email}}</td>
                                             <td>{{$v->phone}}</td>
-                                            <td>{{$v->password}}</td>
                                             <td>
                                                 <div class="tpl-table-black-operation">
-                                                    <a href="{{ url('admin/user/update/'.$v->id) }}">
+                                                    <!-- <a href="{{ url('admin/user/update/'.$v->id) }}">
                                                         <i class="am-icon-pencil"></i> 编辑
-                                                    </a>
+                                                    </a> -->
                                                     <a href="{{ url('admin/user/details/'.$v->id) }}">
                                                         <i class="am-icon-comments"></i> 详情
                                                     </a>
+                                                    @if($v->status == 0)
+                                                    <a href="{{ url('admin/user/auth/'.$v->id) }}">
+                                                        <i class="am-icon-comments"></i> 拉黑
+                                                    </a>
+                                                    @elseif($v->status == 1)
+                                                    <input type="hidden" name="status" value="">
+                                                    <a href="{{ url('admin/user/details/'.$v->id) }}">
+                                                        <i class="am-icon-comments"></i> 解封
+                                                    </a>
+                                                    @endif
                                                     <a href="javascript:;" onclick="deluser({{$v->id}})" class="tpl-table-black-operation-del">
                                                         <i class="am-icon-trash"></i> 删除
                                                     </a>

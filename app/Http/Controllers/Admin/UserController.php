@@ -9,6 +9,7 @@ use App\Http\Controllers\Controller;
 
 use App\Http\Model\User;
 use App\Http\Model\Userdetail;
+use Illuminate\Support\Facades\Input;
 
 class UserController extends Controller
 {
@@ -27,7 +28,8 @@ class UserController extends Controller
             // return $key;
         }else{
             $user = User::orderBy('id','asc') -> paginate(2);
-      // // dd($user);
+      // dd($user);
+            // $userdetail = Userdetail::where('id',$id)->first();
             return view('admin.users.index',['data'=>$user]);
         }
     	
@@ -84,9 +86,41 @@ class UserController extends Controller
    public function getDetails($id)
    {
    	$data = User::find($id) -> userDetail;
+    // dd($data);
+    if($data['status'] == 0){
+      $data['status'] = '未激活';
+    }
+
+    if($data['status'] == 1){
+      $data['status'] = '已激活';
+    }
+
     $data2 = User::find($id) -> operate;
       
    	return view('admin.users.usersdetails',['data'=>$data,'oper'=>$data2]);
+   }
+
+   /**
+    *用户权限
+    */
+   public function getAuth($id)
+   {
+    
+
+    $data = User::find($id) -> userDetail;
+    
+     
+
+     $b = Userdetail::where('uid',$data['uid']) -> update(['status'=>1]);
+   
+    die;
+    // $data2 = User::find($id) -> operate;
+
+
+
+
+      
+    return view('admin.users.index',['data'=>$data,'res'=>$res]);
    }
 
     

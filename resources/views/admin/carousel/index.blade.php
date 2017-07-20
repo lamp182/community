@@ -5,7 +5,7 @@
 <div class="am-u-sm-12 am-u-md-12 am-u-lg-12">
                         <div class="widget am-cf">
                             <div class="widget-head am-cf">
-                                <div class="widget-title am-fl">广告申请</div>
+                                <div class="widget-title am-fl">轮播图</div>
                                 <div class="widget-function am-fr">
                                     
                                 </div>
@@ -27,7 +27,7 @@
 							
                             <div class="widget-body am-fr">
 
-                                <form class="am-form tpl-form-line-form" enctype="multipart/form-data" action="{{url('admin/adverts')}}" id="art_form" methid="art_form" method="post">
+                                <form class="am-form tpl-form-line-form" enctype="multipart/form-data" action="{{url('admin/carousel/doadd')}}" id="art_form" method="post">
                                 {{ csrf_field() }}
                                     <div class="am-form-group">
                                         <label for="user-name" class="am-u-sm-3 am-form-label">URL地址 <span class="tpl-form-line-small-title">url</span></label>
@@ -37,16 +37,7 @@
                                         </div>
                                     </div>
 
-                                    <input type="hidden" name="ctime" value="{{ time() }}">
-
-                                    <div class="am-form-group">
-                                        <label for="user-name" class="am-u-sm-3 am-form-label">广告名 <span class="tpl-form-line-small-title">url</span></label>
-                                        <div class="am-u-sm-9">
-                                            <input name="name" value="" type="text" class="tpl-form-input" id="user-name" placeholder="请输入广告名">
-                                            <small>请输入广告名。</small>
-                                        </div>
-                                    </div>
-
+                                    
 
                                     <div class="am-form-group" style="margin-left:135px">
                                         <label for="user-weibo" class="am-u-sm-12 am-form-label  am-text-left">picture <span class="tpl-form-line-small-title">Images</span></label>
@@ -64,18 +55,9 @@
                                         </div>
                                     </div>
 
-                                    <div class="am-form-group">
-                                        <label for="user-name" class="am-u-sm-3 am-form-label">广告位 <span class="tpl-form-line-small-title">position_id</span></label>
-                                        <div class="am-u-sm-9">
-                                            <input name="position_id" value="" type="text" class="tpl-form-input" id="user-name" placeholder="广告位为1,2,3">
-                                            <small>广告位为1,2,3。</small>
-                                        </div>
-                                    </div>
-
                                     <script type="text/javascript">
                                         $(function () {
                                             $("#doc_form_file").change(function () {
-
                                                 uploadImage();
                                             });
                                         });
@@ -97,11 +79,11 @@
 
                                             var formData = new FormData($('#art_form')[0]);       
 
-                                            
+                                            // console.log(formData);
 
                                             $.ajax({
                                                 type: "post",
-                                                url: "/admin/upload",
+                                                url: "/admin/carousel/upload",
                                                 data: formData,
                                                 async: true,
                                                 cache: false,
@@ -124,19 +106,6 @@
                                             });
                                         }
                                     </script>
-
-                                    <div class="am-form-group">
-                                        <label for="user-name" class="am-u-sm-3 am-form-label">截止日期 <span class="tpl-form-line-small-title">etime</span></label>
-                                        <div class="am-u-sm-9">
-                                             <select name="etime">
-                                                <option value="{{ strtotime('+3 month') }}">三个月</option>
-                                                <option value="{{ strtotime('+6 month') }}">半年</option>
-                                                <option value="{{ strtotime('+1 year') }}">一年</option>
-                                                <i class="am-selected-icon am-icon-caret-down"></i>
-                                             </select>
-                                        </div>
-                                    </div>
-                                    
                                     <div class="am-form-group">
                                         <div class="am-u-sm-9 am-u-sm-push-3">
                                             <button type="submit" class="am-btn am-btn-primary tpl-btn-bg-color-success ">确认添加</button>

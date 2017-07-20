@@ -82,6 +82,10 @@ class WebController extends Controller
     {
         // dd($id);
         $data = $request -> except('_token','file_upload');
+         foreach($data as $k=>$v){   
+            if( !$v )   
+                unset( $data[$k] );   
+        }
         // $logo = $data['icon'];
         // dd($data);
          $res = Web::where('id',$data['id']) -> update($data);

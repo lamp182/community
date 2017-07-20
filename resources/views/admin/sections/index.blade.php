@@ -54,8 +54,8 @@
                                                         <a href="javascript:;" id="{{ $vv->id }}" class="tpl-table-black-operation-del shanchu">
                                                             <i class="am-icon-trash"></i> 删除
                                                         </a>
-                                                        <a href="{{url('admin/sections/'.$vv->id)}}" class="am-btn am-btn-secondary">
-                                                            <i class="am-icon-trash"></i> 查看板块详情
+                                                        <a href="{{url('admin/sections/'.$vv->id)}}" >
+                                                            <i class="am-icon-comments"></i> 查看板块详情
                                                         </a>
                                                     </div>
                                                 </td>

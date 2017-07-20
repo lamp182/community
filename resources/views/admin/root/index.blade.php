@@ -45,7 +45,7 @@
                                       <td class="am-text-middle">
                                             <div class="tpl-table-black-operation">
                                                         <a href="{{ url('admin/root/update/'.$v->id) }}">
-                                                        <!-- <a href="update/{{$v->id}}"> -->
+                                                        
                                                             <i class="am-icon-pencil"></i> 编辑
                                                         </a>
                                                         <a href="javascript:;" onclick="delroot({{$v->id}})" class="tpl-table-black-operation-del" >
