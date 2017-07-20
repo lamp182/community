@@ -67,6 +67,15 @@ Route::group(['prefix'=>'admin','namespace'=>'Admin','middleware'=>['admin.login
 
     //版主申请
     Route::resource('moderators','ModeratorsController');
+    Route::any('kankan','ModeratorsController@kankan');
+
+    //版主申请后
+    Route::controller('confirmsection','ConfirmController');
+
+    //轮播图
+    Route::controller('carousel','CarouselController');
+    Route::post('carousel/upload','CarouselController@upload');
+    
 
 
 

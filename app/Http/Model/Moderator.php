@@ -20,4 +20,9 @@ class Moderator extends Model
     {
         return $this -> hasMany('App\Http\Model\User', 'uid', 'uid');
     }
+
+    public function userDetail()
+    {
+        return $this->hasMany('App\Http\Model\UserDetail', 'uid', 'id');
+    }
 }

@@ -3,12 +3,7 @@
 <form action="{{url('admin/moderators')}}" method="get">
     <div class="widget-body  am-fr">
 	
-                                <div class="widget-title  am-cf">
-                                    版主申请
-                                <a href="{{url('admin/kankan')}}" style="float:right">
-                                    查看所有版主
-                                </a>
-                                </div>
+                                <div class="widget-title  am-cf">版主申请</div>
                                 <div class="am-u-sm-12 am-u-md-6 am-u-lg-3">
                                     <div class="am-form-group tpl-table-list-select">
                                         
@@ -20,46 +15,40 @@
                                         <thead>
                                             <tr>
                                                 <th>id</th>
-                                                <th>板块名称</th>
+                                                <th>板块id</th>
                                                 <th>版主</th>
-                                                <th>操作</th>
                                             </tr>
                                         </thead>
                                         <tbody>
-                                           @foreach($data as $k=>$v)  
+                                          @foreach($data as $k=>$v)  
+                                          
                                 <tr class="gradeX">
                                     
                                                 
                                                 
                                                 <td class="am-text-middle">{{$v->id}}
                                                 </td>
-                                                <td class="am-text-middle">{{$v->section}}
+                                                <td class="am-text-middle">{{$v->sid}}
                                                 </td>
-                                                <td class="am-text-middle">{{$v->username}}
+                                                <td class="am-text-middle">{{$v['username']}}
                                                 </td>
-                                      <td class="am-text-middle">
-                                            <div class="tpl-table-black-operation">
-                                                        <a href="{{url('admin/moderators/create?id=').$v->id}}">
-                                                        
-                                                            <i class="am-icon-check-circle"></i> 通过
-                                                        </a>
+                                                <td class="am-text-middle">
+                                                    <div class="tpl-table-black-operation">
+                                                    
 
-                                                        <a href="javascript:;" onclick="del({{$v->id}})" class="tpl-table-black-operation-del">
-                                                            <i class="am-icon-times"></i> 驳回
+                                                    <a href="javascript:;" onclick="del({{$v->id}})" class="tpl-table-black-operation-del">
+                                                            <i class="am-icon-times"></i> 取消版主
                                                         </a>
-                                                    <a href="">
-                                                        <i class="am-icon-twitch"></i> 
-                                                        版主详情
-                                                    </a>
-                                            </div>
-                                    </td>
+                                                    
+                                                    </div>
+                                                </td>
+                                      
                                 </tr>
-                                            @endforeach
+                                         @endforeach
                                             <!-- more data -->
                                         </tbody>
                                     </table>
                                 </div>
-
 
                                 <div class="am-u-lg-12 am-cf">
                                     
@@ -85,11 +74,11 @@
     function del(id){
 
         ///询问框
-            layer.confirm('是否确认删除？', {
+            layer.confirm('是否确认取消版主？', {
                 btn: ['确定','取消'] //按钮
             }, function(){
 //        $.post(url,data,function(){});
-                $.post("{{url('admin/moderators/')}}/"+id,{'_method':'delete','_token':"{{csrf_token()}}"},function(data){
+                $.post("{{url('admin/confirmsection/del')}}/"+id,{'_method':'post','_token':"{{csrf_token()}}"},function(data){
                    console.log(data.status);
                     if(data.status == 0){
 //                        location.href = location.href;

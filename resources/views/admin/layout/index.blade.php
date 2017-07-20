@@ -158,12 +158,7 @@
                     </ul>
                 </li>
               
-                <li class="sidebar-nav-link">
-                    <a href="{{url('admin/posts')}}">
-                        <i class="am-icon-bar-chart sidebar-nav-link-logo"></i> 帖子管理
-
-                    </a>
-                </li>
+               
                 <li class="sidebar-nav-link">
                     <a href="chart.html">
                         <i class="am-icon-bar-chart sidebar-nav-link-logo"></i> 回复管理
@@ -206,6 +201,12 @@
                         <li class="sidebar-nav-link">
                             <a href="{{url('admin/link')}}">
                                 <span class="am-icon-angle-right sidebar-nav-link-logo"></span> 友情链接申请
+                            </a>
+                        </li>
+
+                        <li class="sidebar-nav-link">
+                            <a href="{{url('admin/carousel')}}">
+                                <span class="am-icon-angle-right sidebar-nav-link-logo"></span> 轮播图
                             </a>
                         </li>
                     </ul>

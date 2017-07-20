@@ -71,12 +71,13 @@ class AdvertsController extends Controller
     public function store(Request $request)
     {
         $input  =  Input::except('_token','file_upload');
-       dd($input);
+       // dd($input);
        $role =[
             'name'=>'required',
             'url'=>'required',
             'etime'=>'required',
             'picture'=>'required',
+            'position_id'=>'required',
         ];
 
          $mess =[
@@ -84,6 +85,7 @@ class AdvertsController extends Controller
             'url.required'=>'链接地址必填',
             'etime.required'=>'截止日期必选',
             'picture.required'=>'图片必选',
+            'position_id.required'=>'广告id必选',
         ];
         $v = Validator::make($input,$role,$mess);
         if($v->passes()){
@@ -95,6 +97,7 @@ class AdvertsController extends Controller
             $adverts -> ctime = $res['ctime'];
             $adverts -> etime = $res['etime']; 
             $adverts -> picture = $res['picture']; 
+            $adverts -> position_id = $res['position_id']; 
 
                 // dd($link);
                 $re = $adverts -> save();

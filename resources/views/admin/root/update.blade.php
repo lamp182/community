@@ -92,25 +92,26 @@
         <div class="am-u-sm-12 am-margin-top-xs">
             <div class="am-form-group am-form-file">
                 <div class="tpl-form-file-img">
-                    <img src="assets/img/a5.png" alt="">
+                    <img src="/{{$data->faceico}}"  name="pic" id="pic" width="100px" height="100px" alt="">
                 </div>
                 <button type="button" class="am-btn am-btn-danger am-btn-sm ">
                     <i class="am-icon-cloud-upload">
                     </i>
                     修改
                 </button>
-                <input id="doc-form-file" type="file" multiple="">
+                <input type="hidden" name="faceico" id="art_thumb" style="width:120px;height:60px" value="">
+                <input type="file" name="file_upload" id="doc_form_file" value="">
             </div>
         </div>
     </div>
 
-    <tr>
+    <!-- <tr>
         <th></th>
          <td>
             <img src="" alt="" name="pic" id="pic" style="width:100px;display:none;" >
          </td>
     </tr>
-    
+     -->
     <div class="am-form-group">
         <div class="am-u-sm-12 am-u-sm-push-12">
             <button type="submit" class="am-btn am-btn-primary tpl-btn-bg-color-success " id="button">
@@ -121,60 +122,52 @@
 
 
     <script type="text/javascript">
-    var root_cid = $('#small:eq(3)').value;
-    console.log(root_cid);
-    $('#root_cid').blur(function(){
-        var preg = /^(\d{15}$|^\d{18}$|^\d{17}(\d|X|x))$/;
-        var val = this.value;
-        // alert(val);
-         if(preg.test(val)){
-
-         }
-    });
-
-            $(function () {
-                   $("#file_upload").change(function () {
-                        uploadImage();
-                     });
-                  });
-
-        function uploadImage() {
-            //                            判断是否有选择上传文件
-            var imgPath = $("#file_upload").val();
-            if (imgPath == "") {
-                alert("请选择上传图片！");
-                return;
-            }
-            //判断上传文件的后缀名
-            var strExtension = imgPath.substr(imgPath.lastIndexOf('.') + 1);
-            if (strExtension != 'jpg' && strExtension != 'gif' && strExtension != 'png' && strExtension != 'bmp') {
-                alert("请选择图片文件");
-                return;
-            }
-
-            var formData = new FormData($('#root_form')[0]);
-
-            $.ajax({
-                type: "POST",
-                url: "/admin/upload",
-                data: formData,
-                async: true,
-                cache: false,
-                contentType: false,
-                processData: false,
-                success: function(data) {
-                    //                                    console.log(data);
-                    //                                    alert("上传成功");
-                    $('#pic').attr('src', '{{env('QINIU_DOMAIN ')}}' + data);
-                    $('#pic').show();
-                    $('#doc-form-file').val(data);
-
-                },
-                error: function(XMLHttpRequest, textStatus, errorThrown) {
-                    alert("上传失败，请检查网络后重试");
-                }
+    $(function() {
+                $("#doc_form_file").change(function() {
+                    uploadImage();
+                });
             });
-        }
+
+            function uploadImage() {
+                //                            判断是否有选择上传文件
+                var imgPath = $("#doc_form_file").val();
+                // alert(imgPath);
+                if (imgPath == "") {
+                    alert("请选择上传图片！");
+                    return;
+                }
+                //判断上传文件的后缀名
+                var strExtension = imgPath.substr(imgPath.lastIndexOf('.') + 1);
+                if (strExtension != 'jpg' && strExtension != 'gif' && strExtension != 'png' && strExtension != 'bmp') {
+                    alert("请选择图片文件");
+                    return;
+                }
+
+                var formData = new FormData($('#root_form')[0]);
+                console.log(formData);
+                $.ajax({
+                    type: "post",
+                    url: "/admin/root/upload",
+                    data: formData,
+                    async: true,
+                    cache: false,
+                    contentType: false,
+                    processData: false,
+                     success: function(res) {
+                       // console.log(data);
+                       // alert(res);
+                                $('#pic').attr('src','/'+res);
+                                $('#pic').show();
+                                $("#art_thumb").val(res);
+                                // $('#icon').val(data);
+
+                            },
+                    // alert('2345');
+                    error: function(XMLHttpRequest, textStatus, errorThrown) {
+                        alert("上传失败，请检查网络后重试");
+                    }
+                });
+            }
     </script>
 
 

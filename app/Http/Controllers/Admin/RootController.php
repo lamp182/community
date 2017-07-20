@@ -154,7 +154,11 @@ class RootController extends Controller
    public function postDoupdate(Request $request)
    {
     //接受修改后的值
-    $data = $request -> except('_token');
+    $data = $request -> except('_token','file_upload');
+     foreach($data as $k=>$v){   
+            if( !$v )   
+                unset( $data[$k] );   
+        }
     // dd($data);
     //将修改后的值存入数据库
     $res = Root::where('id',$data['id']) -> update($data);
