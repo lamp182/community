@@ -26,7 +26,7 @@
                                
                                 <p class="account">
                                 <label for="account"><span class="red">*</span>通行证：</label>
-                                <input type="text" class="input-txt input-account" placeholder="手机/邮箱" id="name" name="name" data-maillist='["qq.com","sina.com","163.com","126.com","vip.sina.com","sina.cn","hotmail.com","gmail.com","sohu.com","139.com"]'/>
+                                <input type="text" class="input-txt input-account" placeholder="手机/邮箱" id="name" value="{{ old('name') }}" name="name" data-maillist='["qq.com","sina.com","163.com","126.com","vip.sina.com","sina.cn","hotmail.com","gmail.com","sohu.com","139.com"]'/>
                                 <span  id="span1"  style="font-size:12px;" class="errContainer"></span>
                             </p>
                             <p class="safe-code">

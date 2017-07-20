@@ -4,7 +4,7 @@ namespace App\Http\Middleware;
 
 use Closure;
 
-class AdminLogin
+class HomeLogin
 {
     /**
      * Handle an incoming request.
@@ -15,12 +15,13 @@ class AdminLogin
      */
     public function handle($request, Closure $next)
     {   
-       //后台的登录中间插件 
-       //if(用户没有登录){
+        //前台登录中间插件间
+        //if(用户没有登录){
             // 跳转到登录页面
         // }
-        if(!session('admin')){
-            return redirect('admin/login/login');
+        if(!session('user')){
+            
+            return redirect('home/login/login');
         }
         return $next($request);
     }

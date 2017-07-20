@@ -93,7 +93,8 @@ if(/AppleWebKit.*Mobile/i.test(navigator.userAgent) || (/MIDP|SymbianOS|NOKIA|SA
 					<div class="border-passport">
 						<span class="input-ibox"><i class="ico"></i></span>
 						<span class="input-empty"><i class="empty"></i></span>
-						<input type="text" class="input-txt input-passport" id="passport" name="email" placeholder="手机/邮箱"/>
+						<!-- value="{{ old('email') }}" -->
+						<input type="text" class="input-txt input-passport" id="passport"  name="email" placeholder="手机/邮箱"/>
 					</div><span id="span"></span>
 					<span class="btn btn-clear js-clear" data-target="#passport" style="display:none"></span>
 				</div>
@@ -126,7 +127,7 @@ if(/AppleWebKit.*Mobile/i.test(navigator.userAgent) || (/MIDP|SymbianOS|NOKIA|SA
 			  <div class="ue-passport-validcode-container" style="display: none;"></div>
 			  <div class="fbox fbox-remember">
 					<span class="remember">
-					<label for="persistentcookie"><input class="check-remember" name="persistentcookie" id="persistentcookie" type="checkbox"><span>下次自动登录</span></label>
+					<label for="persistentcookie"><input class="check-remember" name="persistentcookie" id="persistentcookie" value="{{ cookie('user') }}" type="checkbox"><span>下次自动登录</span></label>
 					</span>
 					<span class="tip tip-pw"><a href="{{url('/home/default/default')}}" title="忘记密码？" target="_blank">忘记密码</a>|<a class="" href="{{url('/home/zhuce/zhuce')}}" data-currevent="even1">立即注册</a><!--<a href="/safe/UserFind" title="请尝试***@17173.com登录" class="ppcontrol" data-currevent="even3" target="_blank">账号</a>--></span></span>
 				</div>
@@ -178,7 +179,7 @@ if(/AppleWebKit.*Mobile/i.test(navigator.userAgent) || (/MIDP|SymbianOS|NOKIA|SA
 							$.post("{{url('/home/login/dologin')}}",{'email':input,'_token':"{{csrf_token()}}"},function(msg){
 						 // console.log(msg);
 								if(msg==1){
-									 $('#span').html("<font color='green'  size='2'>用户已存在</font>");		
+									 $('#span').html("<font color='green'  size='2'>用户名正确</font>");		
 									 	time = true;	
 							}else{
 								$('#span').html("<font color='red' size='2'>用户不存在</font>");		

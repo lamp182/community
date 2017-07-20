@@ -12,7 +12,7 @@
       list-style: none;
       margin:0;
       padding:0;
-      background: #ccc;
+      background: #fff;
       width:65px;
       height:20px;
       float:left;

@@ -15,7 +15,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::group(['prefix' => 'home', 'namespace' => 'Home'], function ()
+
+
+Route::group(['prefix' => 'home', 'namespace' => 'Home','middleware'=>['home.login.login']], function ()
 {
 	Route::get('/index', 'IndexController@index');
 	Route::get('/column', 'ColumnController@index');
@@ -25,7 +27,9 @@ Route::group(['prefix' => 'home', 'namespace' => 'Home'], function ()
 });
 
 
-	Route::group(['prefix'=>'admin','namespace'=>'Admin'],function(){
+
+
+	Route::group(['prefix'=>'admin','namespace'=>'Admin','middleware'=>['admin.login.login']],function(){
     // 栏目路由
     Route::controller('columns','ColumnsController');
     // 板块路由
@@ -49,16 +53,19 @@ Route::group(['prefix' => 'home', 'namespace' => 'Home'], function ()
     Route::controller('web','WebController');
 
 });
+    //前台用户个人中心
+    Route::controller('home/personal','Home\PersonalController');
+    //前台设置个人资料
+    Route::controller('home/set','Home\SetController');
+    //后台登录
+    Route::controller('admin/login','Admin\LoginController');
+    // 验证码的路由
+    Route::get('/code','CodeController@code');
+    //忘记密码
+    Route::controller('home/default','Home\DefaultController');
 
-//后台登录
-Route::controller('admin/login','Admin\LoginController');
-// 验证码的路由
-Route::get('/code','CodeController@code');
-//忘记密码
-Route::controller('home/default','Home\DefaultController');
-
-//前台注册
- Route::Controller('home/zhuce','Home\ZhuceController');
-//前台登录
- Route::controller('home/login','Home\LoginController');
+    //前台注册
+     Route::Controller('home/zhuce','Home\ZhuceController');
+    //前台登录
+     Route::controller('home/login','Home\LoginController');
 

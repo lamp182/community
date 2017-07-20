@@ -42,15 +42,15 @@
                     <ul>
                         <!-- 欢迎语 -->
                         <li class="am-text-sm tpl-header-navbar-welcome">
-                            <a href="javascript:;">欢迎你, <span>Amaze UI</span> </a>
+                            <a href="javascript:;">欢迎你, <span>{{ session('admin')['name'] }}</span> </a>
                         </li>
 
                        
 
                         <!-- 退出 -->
                         <li class="am-text-sm">
-                            <a href="javascript:;">
-                                <span class="am-icon-sign-out"></span> 退出
+                           <a href="{{ url('admin/login/quit') }}">
+                                <span class="am-icon-sign-out">退出</span>
                             </a>
                         </li>
                     </ul>
@@ -79,13 +79,13 @@
        		  <div class="tpl-sidebar-user-panel">
                 <div class="tpl-user-panel-slide-toggleable">
                     <div class="tpl-user-panel-profile-picture">
-                        <img src="{{asset('admin/assets/img/user04.png')}}" alt="">
+                        <img src="{{ session('admin')['faceico'] }}" alt="">
                     </div>
                     <span class="user-panel-logged-in-text">
               <i class="am-icon-circle-o am-text-success tpl-user-panel-status-icon"></i>
-              禁言小张
+              {{ session('admin')['name'] }}
           </span>
-                    <a href="javascript:;" class="tpl-user-panel-action-link"> <span class="am-icon-pencil"></span> 账号设置</a>
+                    <!-- <a href="javascript:;" class="tpl-user-panel-action-link"> <span class="am-icon-pencil"></span> 账号设置</a> -->
                 </div>
             </div>
 

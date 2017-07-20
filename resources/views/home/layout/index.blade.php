@@ -177,14 +177,14 @@
                                 <div class="pp-login pp-login2" style="">
                                     <div class="pp-login-in">
                                         <div class="pp-login-c1">
-                                            <a href="javascript:;" class="pp-login-bt1"><i class="ico-user"></i>安全登录</a>
+                                            <a href="{{url('/home/login/login')}}" class="pp-login-bt1"><i class="ico-user"></i>安全登录</a>
                                         </div>
                                         <div class="pp-login-c2">
                                             <div class="item-1">
-                                                <a href="" target="_blank" class="pp-login-bt2"><i class="ico-forget"></i>忘记密码</a>
+                                                <a href="{{url('/home/default/default')}}" target="_blank" class="pp-login-bt2"><i class="ico-forget"></i>忘记密码</a>
                                             </div>
                                             <div class="item-2">
-                                                <a href="" target="_blank" class="pp-login-bt2"><i class="ico-quick"></i>快速注册</a>
+                                                <a href="{{url('/home/zhuce/zhuce')}}" target="_blank" class="pp-login-bt2"><i class="ico-quick"></i>快速注册</a>
                                             </div>
                                         </div>
                                     </div>

@@ -50,7 +50,7 @@
 						<div class="con">
 							<p class="intro-tip">点击邮件中的验证链接,即可完成邮箱验证。</p>
 							<p class="intro-tip">如果没有收到任何邮件<br>请尝试进入垃圾箱查看。<br>可能因为网络原因，请您耐心等待2-3分钟。</p>
-							<p class="intro-tip">如您所有的找回方式均不可用，请使用<a href="/appeal" target="_blank" title="帐号申诉">帐号申诉</a></p>
+							<!-- <p class="intro-tip">如您所有的找回方式均不可用，请使用<a href="/appeal" target="_blank" title="帐号申诉">帐号申诉</a></p> -->
 						</div>
 					</div>
                 	<!--form-->
