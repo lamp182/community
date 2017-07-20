@@ -626,39 +626,39 @@ function showMenu(v) {
 		hideMenu(layer, mtype);
 	}
 
-	if(ctrlObj) {
-		if(!ctrlObj.getAttribute('initialized')) {
-			ctrlObj.setAttribute('initialized', true);
-			ctrlObj.unselectable = true;
-
-			ctrlObj.outfunc = typeof ctrlObj.onmouseout == 'function' ? ctrlObj.onmouseout : null;
-			ctrlObj.onmouseout = function() {
-				if(this.outfunc) this.outfunc();
-				if(duration < 3 && !JSMENU['timer'][menuid]) {
-					JSMENU['timer'][menuid] = setTimeout(function () {
-						hideMenu(menuid, mtype);
-					}, timeout);
-				}
-			};
-
-			ctrlObj.overfunc = typeof ctrlObj.onmouseover == 'function' ? ctrlObj.onmouseover : null;
-			ctrlObj.onmouseover = function(e) {
-				doane(e);
-				if(this.overfunc) this.overfunc();
-				if(evt == 'click') {
-					clearTimeout(JSMENU['timer'][menuid]);
-					JSMENU['timer'][menuid] = null;
-				} else {
-					for(var i in JSMENU['timer']) {
-						if(JSMENU['timer'][i]) {
-							clearTimeout(JSMENU['timer'][i]);
-							JSMENU['timer'][i] = null;
-						}
-					}
-				}
-			};
-		}
-	}
+//	if(ctrlObj) {
+//		if(!ctrlObj.getAttribute('initialized')) {
+//			ctrlObj.setAttribute('initialized', true);
+//			ctrlObj.unselectable = true;
+//
+//			ctrlObj.outfunc = typeof ctrlObj.onmouseout == 'function' ? ctrlObj.onmouseout : null;
+//			ctrlObj.onmouseout = function() {
+//				if(this.outfunc) this.outfunc();
+//				if(duration < 3 && !JSMENU['timer'][menuid]) {
+//					JSMENU['timer'][menuid] = setTimeout(function () {
+//						hideMenu(menuid, mtype);
+//					}, timeout);
+//				}
+//			};
+//
+//			ctrlObj.overfunc = typeof ctrlObj.onmouseover == 'function' ? ctrlObj.onmouseover : null;
+//			ctrlObj.onmouseover = function(e) {
+//				doane(e);
+//				if(this.overfunc) this.overfunc();
+//				if(evt == 'click') {
+//					clearTimeout(JSMENU['timer'][menuid]);
+//					JSMENU['timer'][menuid] = null;
+//				} else {
+//					for(var i in JSMENU['timer']) {
+//						if(JSMENU['timer'][i]) {
+//							clearTimeout(JSMENU['timer'][i]);
+//							JSMENU['timer'][i] = null;
+//						}
+//					}
+//				}
+//			};
+//		}
+//	}
 
 	if(!menuObj.getAttribute('initialized')) {
 		menuObj.setAttribute('initialized', true);

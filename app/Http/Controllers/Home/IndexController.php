@@ -20,16 +20,6 @@ class IndexController extends Controller
      */
     public function index()
     {
-        $columns = Column::all();
-        $sections = Section::all();
-        return view('home.index.index', ["columns" => $columns, "sections" => $sections]);
-   }
-
-
-
-    public function section(Request $request)
-    {
-        dd(Input::get());
-//        return view('home.index.section');
-   }
+    	return redirect('/');
+    }
 }

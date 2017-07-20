@@ -61,22 +61,7 @@
 <![endif]-->
 
 <div id="append_parent"></div><div id="ajaxwaitid"></div>
-<div id="toptb" class="cl">
-    <div class="wp" style="display:none;">
-        <div class="z"><a href="javascript:;"  onclick="setHomepage('http://bbs.17173.com/');">设为首页</a><a href="http://bbs.17173.com/"  onclick="addFavorite(this.href, '17173有料社区');return false;">收藏本站</a><script type="text/javascript">var _speedMark = new Date();</script></div>
-        <div class="y">
-            <a id="switchblind" href="javascript:;" onclick="toggleBlind(this)" title="开启辅助访问" class="switchblind">开启辅助访问</a>
-            <a href="javascript:;" id="switchwidth" onclick="widthauto(this)" title="切换到窄版" class="switchwidth">切换到窄版</a>
-        </div>
-    </div>
-</div>
 
-
-<div id="qmenu_menu" class="p_pop blk" style="display: none;">
-    <div class="ptm pbw hm">
-        请 <a href="javascript:;" class="xi2" onclick="lsSubmit()"><strong>登录</strong></a> 后使用快捷导航<br />没有帐号？<a href="member.php?mod=register" class="xi2 xw1">立即注册</a>
-    </div>
-</div>
 <meta baidu-gxt-verify-token="1bbacc7dd885064ba6efec7a0a007614">
 <div class="bbs-global-bar clearfix wp">
     <div class="bbs-bar-con">
@@ -98,7 +83,7 @@
         <div class="wrap-top">
             <div id="hd">
                 <div class="wp">
-                    <div class="hdc cl" id="hdc"><h2><a href="../index">
+                    <div class="hdc cl" id="hdc"><h2><a href="{{ url() }}">
                     <img src="/home/picture/youliao-logo.png" alt="17173有料社区"></a></h2>
                         <div class="h-ad y">                    </div>
                     </div>
@@ -107,12 +92,8 @@
 
                         <ul></ul>
                     </div>
-                    <ul class="p_pop h_pop" id="plugin_menu" style="display: none">
-                        <li>
-                            <a href="plugin.php?id=hux_zp2:hux_zp2" id="mn_plink_hux_zp2">
-                                转盘抽奖</a></li>
-                    </ul>
-                    <div class="p_pop h_pop" id="mn_userapp_menu" style="display: none"></div><div id="mu" class="cl">
+                   
+                    <div id="mu" class="cl">
                     </div>
                     <div class="sc-quick-bar cl">
                         <div class="sc-quick-bar-c">
@@ -120,18 +101,19 @@
                             <div class="scqb-co01">
                                 <div class="z search-box">
                                     <div id="scbar" class="scbar_narrow cl">
-                                        <form id="scbar_form" method="post" autocomplete="off" onsubmit="searchFocus($('scbar_txt'))" action="search.php?searchsubmit=yes" target="_blank">
-                                            <input type="hidden" name="mod" id="scbar_mod" value="search" />
-                                            <input type="hidden" name="formhash" value="2f70169e" />
-                                            <input type="hidden" name="srchtype" value="title" />
-                                            <input type="hidden" name="srhfid" value="8706" />
-                                            <input type="hidden" name="srhlocality" value="forum::forumdisplay" />
+                                        <form id="scbar_form" method="post" autocomplete="off" onsubmit="searchFocus($('scbar_txt'))" action="{{ url('home/query') }}">
                                             <table cellspacing="0" cellpadding="0">
                                                 <tr>
                                                     <td class="scbar_icon_td">&nbsp;</td>
-                                                    <td class="scbar_txt_td"><input type="text" name="srchtxt" id="scbar_txt" value="请输入搜索内容" onfocus="if(this.value == '请输入搜索内容'){this.value = '';}" onblur="if(this.value == ''){this.value = '请输入搜索内容';}" autocomplete="off" x-webkit-speech speech /></td>
-                                                    <td class="scbar_type_td"><a href="javascript:;" id="scbar_type" class="showmenu xg1 xs2" onclick="showMenu(this.id)" hidefocus="true">搜索</a></td>
-                                                    <td class="scbar_btn_td"><button type="submit" name="searchsubmit" id="scbar_btn" sc="1" class="pn" value="true"><strong class="">搜索</strong></button></td>
+                                                    <td class="scbar_txt_td">
+                                                    	{{ csrf_field() }}
+                                                    	<input type="text" name="query" id="scbar_txt" placeholder="请输入搜索内容" value="@if(!empty($query)){{ $query }}@endif" onfocus="if(this.value == '请输入搜索内容'){this.value = '';}" onblur="if(this.value == ''){this.value = '请输入搜索内容';}" autocomplete="off" x-webkit-speech speech />
+                                                    </td>
+                                                    <td class="scbar_btn_td">
+                                                    	<button type="submit" name="searchsubmit" id="scbar_btn" sc="1" class="pn" value="true">
+                                                    		<strong class="">搜索</strong>
+                                                    	</button>
+                                                    </td>
                                                     <td class="scbar_hot_td">&nbsp;</td>
                                                 </tr>
                                             </table>
@@ -169,27 +151,63 @@
                                     </div>
                                     <ul id="scbar_type_menu" class="p_pop" style="display: none;"><li><a href="javascript:;" rel="curforum" fid="8706" >本版</a></li><li><a href="javascript:;" rel="forum" class="curtype">帖子</a></li><li><a href="javascript:;" rel="user">用户</a></li></ul>
                                     <script type="text/javascript">
-                                        initSearchmenu('scbar', '');
+//                                         initSearchmenu('scbar', '');
                                     </script>
                                 </div>
                             </div>
                             <div class="scqb-co02">
+                            @if(session('user'))
+                            	<div id="psptR" class="y login-box  login-box-success ">
+                                    <div id="um" class="login-flag">
+		                                <div class="avt z">
+		                                	<a href="{{ url('home/user/'.session('user')['id']) }}" class="js-login-avatar">
+		                                		<img src="/{{ trim(session('user')['detail']['faceico'], '/') }}">
+		                                	</a>
+		                                </div>
+			                                <div class="z">
+				                                <p>
+				                                    <strong class="vwmy"><a href="{{ url('home/user/'.session('user')['id']) }}" target="_blank" title="访问我的空间">{{ session('user')['detail']['username'] }}</a></strong>
+				                                    <span class="pipe">|</span>
+				                                    <a href="">设置</a>
+				                                    <span class="pipe">|</span>
+													<a href="" id="myprompt" class="a showmenu" onmouseover="showMenu({'ctrlid':'myprompt'});">提醒</a>
+													
+				                                    <span class="pipe">|</span>
+				                                    <a href="{{ url('home/login/quit') }}" id="logout">退出</a>
+				                                </p>
+				                                <p>
+				                                    用户组: <a href="" id="g_upmine" >vip{{ session('user')['operate']['vip'] }}</a>
+				                                    <span class="pipe" style="margin:0;">|</span>
+				                                    <a href="" id="extcreditmenu" onmouseover="delayShow(this, showCreditmenu);" class="showmenu">积分: {{ session('user')['operate']['vip'] }}</span></a>
+				                                                                                                            
+				                                </p>
+			                                </div>
+
+                            		</div>
+                            	</div>
+                            @else
                                 <div class="pp-login pp-login2" style="">
                                     <div class="pp-login-in">
                                         <div class="pp-login-c1">
-                                            <a href="javascript:;" class="pp-login-bt1"><i class="ico-user"></i>安全登录</a>
+                                            <a href="{{ url('home/login/login') }}" class="pp-login-bt1">
+                                            	<i class="ico-user"></i>安全登录
+                                            </a>
                                         </div>
                                         <div class="pp-login-c2">
                                             <div class="item-1">
-                                                <a href="" target="_blank" class="pp-login-bt2"><i class="ico-forget"></i>忘记密码</a>
+                                                <a href="{{ url('home/default/default') }}" target="_blank" class="pp-login-bt2">
+                                                	<i class="ico-forget"></i>忘记密码
+                                                </a>
                                             </div>
                                             <div class="item-2">
-                                                <a href="" target="_blank" class="pp-login-bt2"><i class="ico-quick"></i>快速注册</a>
+                                                <a href="{{ url('home/zhuce/zhuce') }}" target="_blank" class="pp-login-bt2">
+                                                	<i class="ico-quick"></i>快速注册
+                                                </a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-
+							@endif
                                 <div id="psptR" class="y login-box ">
 
                                 </div>
@@ -211,21 +229,50 @@
 @show
 
 
-<div class="wp a_f AdBbs2BannerBottom"></div><div class="wp a_f"><iframe align=center marginWidth=0 marginHeight=0 src="http://bbs.17173.com/x/bbsbottom96060.htm" frameBorder=0 width=960 scrolling=no height=60></iframe></div><script type="text/javascript">
-var seourl='http://bbs.17173.com/8706-forum-8706-1.html';
-</script>
+<div class="wp a_f">
+	<a href="{{ $adverts[2]['url'] }}"><img alt="{{ $adverts[2]['name'] }}" src="{{ $adverts[2]['picture'] }}"></a>
+</div>
+<div class="wp a_f">
+	<iframe align=center marginWidth=0 marginHeight=0 src="http://bbs.17173.com/x/bbsbottom96060.htm" frameBorder=0 width=960 scrolling=no height=60></iframe>
+</div>
 <div id="ft" class="wp cl">
     <div class="footer-follow">
 	
-        	<div class="footer">
-						<div class="footer-in">
+        <div class="footer">
+			<div class="footer-in">
 				<div class="global-footer global-footer-full">
-								<p class="global-footer-link"><a href="http://about.17173.com/" target="_blank">关于17173</a><span class="sep">|</span><a href="http://about.17173.com/join-us.shtml" target="_blank">人才招聘</a><span class="sep">|</span><a href="http://about.17173.com/adv-service.shtml" target="_blank">广告服务</a><span class="sep">|</span><a href="http://about.17173.com/business-cooperate.shtml" target="_blank">商务洽谈</a><span class="sep">|</span><a href="http://about.17173.com/contact-us.shtml" target="_blank">联系方式</a><span class="sep">|</span><a href="http://help.17173.com/" target="_blank">客服中心</a><span class="sep">|</span><a href="http://about.17173.com/site-map.shtml" target="_blank">网站导航</a><span class="sep">|</span><a href="/sitemap.html" target="_blank">论坛地图</a></p>
-								<p class="global-footer-copyright">Copyright <font>&copy;</font> 2001-2017 17173. All rights reserved.</p>
-								<p class="global-footer-certificate"><a href="http://www.miibeian.gov.cn/" target="_blank">京ICP证030367号</a><span class="sep">|</span><a href="http://www.17173.com/cert/wenhua.html" target="_blank">文网文[2008]059号</a><span class="sep">|</span><a href="http://www.17173.com/cert/chuban.html" target="_blank">互联网出版许可证</a></p>
-<p class="global-footer-safety"><a href="http://www.hd315.gov.cn/beian/view.asp?bianhao=021202001070200001" target="_blank"></br>
-<img alt="经营性网站备案信息" src="/home/picture/cert-beian_1.gif" width="50" height="50" /></a><a href="http://www.fuzhou.cyberpolice.cn/alert_basic.asp" target="_blank"><img alt="福州网络警察报警平台" src="/home/picture/cert-cyberpolice_1.gif" width="50" height="50" /></a></p>
-							</div>
+					<p class="global-footer-link">
+						<a href="http://about.17173.com/" target="_blank">关于17173</a>
+						<span class="sep">|</span>
+						<a href="http://about.17173.com/join-us.shtml" target="_blank">人才招聘</a>
+						<span class="sep">|</span>
+						<a href="http://about.17173.com/adv-service.shtml" target="_blank">广告服务</a>
+						<span class="sep">|</span>
+						<a href="http://about.17173.com/business-cooperate.shtml" target="_blank">商务洽谈</a>
+						<span class="sep">|</span>
+						<a href="http://about.17173.com/contact-us.shtml" target="_blank">联系方式</a>
+						<span class="sep">|</span>
+						<a href="http://help.17173.com/" target="_blank">客服中心</a>
+						<span class="sep">|</span>
+						<a href="http://about.17173.com/site-map.shtml" target="_blank">网站导航</a>
+						<span class="sep">|</span><a href="/sitemap.html" target="_blank">论坛地图</a></p>
+					<p class="global-footer-copyright">Copyright <font>&copy;</font> 2001-2017 17173. All rights reserved.</p>
+					<p class="global-footer-certificate">
+						<a href="http://www.miibeian.gov.cn/" target="_blank">京ICP证030367号</a>
+						<span class="sep">|</span>
+						<a href="http://www.17173.com/cert/wenhua.html" target="_blank">文网文[2008]059号</a>
+						<span class="sep">|</span>
+						<a href="http://www.17173.com/cert/chuban.html" target="_blank">互联网出版许可证</a>
+					</p>
+					<p class="global-footer-safety">
+						<a href="http://www.hd315.gov.cn/beian/view.asp?bianhao=021202001070200001" target="_blank"></br>
+							<img alt="经营性网站备案信息" src="/home/picture/cert-beian_1.gif" width="50" height="50" />
+						</a>
+						<a href="http://www.fuzhou.cyberpolice.cn/alert_basic.asp" target="_blank">
+							<img alt="福州网络警察报警平台" src="/home/picture/cert-cyberpolice_1.gif" width="50" height="50" />
+						</a>
+					</p>
+				</div>
 			</div>
 					</div>
 <script type="text/javascript">
@@ -350,46 +397,6 @@ var seourl='http://bbs.17173.com/8706-forum-8706-1.html';
     }
     var _showApptip = false;
 </script>
-
-<div class="scroll-back" id="scroll-back">
-
-
-    <a style="background:none; margin-bottom:5px;" target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=1401993324&amp;site=qq&amp;menu=yes"><img border="0" src="/home/picture/qq_1.png" alt="点击这里给我发消息" title="点击这里给我发消息" /></a>
-
-    <a style="background:none; margin-bottom:5px;" target="_blank" href="https://jq.qq.com/?_wv=1027&amp;k=49ZMi0k"><img border="0" src="/home/picture/qq-group_1.png" alt="点击链接加入【17173社区玩家群1】" title="点击链接加入【17173社区玩家群1】" /></a>
-
-    
-    <a href="#" id="scrolltop1" class="scroll-top js-scroll-top"></a>
-
-    
-</div>
-<script>
-    var forumId = "8706";
-</script>
-<!-- <script src="/home/js/forum_1.js" type="text/javascript" type="text/javascript"></script> -->
-
-<!--[if IE 6]>
-<script type="text/javascript">
-showTopLinkNew();
-jQuery('#widthauto-btn').remove();
-</script>
-<style type="text/css">
-#widthauto-btn{ display:none;}
-.ie6 .wp{ width:960px;}
-    html.ie6 .bbs-global-bar{ width:auto;}
-    .scroll-back{ position:absolute;}
-</style>
-<![endif]-->
-
-<!--[if lt IE 9]>
-<script src="/home/js/ltie9_1.js" type="text/javascript"></script>
-<![endif]-->
-
-
-
-
-
-
 
 <script type="text/javascript">advConfigs.loadConfigFile('//s.17173cdn.com/global/global.js');</script>
 <script type="text/javascript" src="/home/js/apptip_1.js"></script>

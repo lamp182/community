@@ -23,10 +23,22 @@ class PostController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function query(Request $request)
     {
-        //
-        return view('home.post.index');
+    	$query = Input::only('query')['query'];
+//         dd($query);
+        $posts = Post::where('title', 'like', '%'.$query.'%') -> paginate(1);
+		foreach($posts as $post){
+			$post['user'] = Post::find($post['id']) -> user -> userDetail;
+			$post['replies'] = Post::find($post['id']) -> replies -> count();
+			$post['last'] = Post::find($post['id']) -> orderBy('ctime', 'desc') -> limit(1) -> first();
+			$post['theme'] = Post::find($post['id']) -> theme;
+			$post['section'] = Post::find($post['id']) -> section;
+		}
+		// 获取广告
+		$adverts = $this -> getAdverts();
+// 		dd(str_replace('\&laquo\;', '上一页',$posts -> appends(['query' => $query]) -> render()));
+        return view('home.post.query', ['adverts' => $adverts, 'posts' => $posts, 'query' => $query]);
     }
 
     /**
@@ -50,7 +62,9 @@ class PostController extends Controller
     		'themes' => $themes
     	];
 //     	dd($section);
-    	return view('home.post.add', ['data' => $data]);
+		// 获取广告
+    	$adverts = $this -> getAdverts();
+    	return view('home.post.add', ['adverts' => $adverts, 'data' => $data]);
     }
 
     /**
@@ -119,12 +133,16 @@ class PostController extends Controller
         	$reply['user']['replies'] = User::find($reply['uid']) -> replies -> count();
         	$reply['count'] = ++$i + ($page - 1) * 3;
         }
+        // 获取广告
+        $adverts = $this -> getAdverts();
         $data = [
         	'section' => $section,
         	'post' => $post,
         	'replies' => $replies,
-        	'uid' => $uid
+        	'uid' => $uid,
+        	'adverts' => $adverts,
         ];
+        Post::where('id', $id) -> increment('pvs');
 //         dd($replies);
         return view('home.post.index', $data);
     }

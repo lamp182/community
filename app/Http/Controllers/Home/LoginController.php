@@ -11,6 +11,7 @@ use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Cookie;
 use Illuminate\Http\Response;
+use App\Http\Model\User;
 class LoginController extends Controller
 {
     public function getLogin()
@@ -48,10 +49,12 @@ class LoginController extends Controller
                         // return response($content)->header('Content-Type', $type)->withCookie('name', 'value');
                         
                       //将用户信息添加到session中
+                      $user['detail'] = User::find($user['id']) -> userDetail;
+                      $user['operate'] = User::find($user['id']) -> userOperate;
                       session(['user'=>$user]);
 
 
-                      echo '登录成功';
+                      return redirect('/');
                             
                       // }
 

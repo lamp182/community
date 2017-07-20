@@ -20,4 +20,12 @@ class Post extends Model
     {
     	return $this -> hasMany('App\Http\Model\Reply', 'pid', 'id');
     }
+    public function user()
+    {
+    	return $this -> belongsTo('App\Http\Model\User', 'uid', 'id');
+    }
+    public function section()
+    {
+    	return $this -> belongsTo('App\Http\Model\Section', 'sid', 'id');
+    }
 }

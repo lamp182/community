@@ -11,19 +11,21 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'IndexController@index');
 
 Route::group(['prefix' => 'home', 'namespace' => 'Home'], function ()
 {
 	Route::get('/index', 'IndexController@index');
 	Route::get('/column', 'ColumnController@index');
 	Route::get('/section', 'SectionController@index');
-	
+	// 帖子路由
 	Route::resource('post', 'PostController');
+	// 查询路由
+	Route::post('query', 'PostController@query');
+	// 回复路由
 	Route::resource('reply', 'ReplyController');
 	Route::post('reply', 'ReplyController@reply');
+	
 });
 
 

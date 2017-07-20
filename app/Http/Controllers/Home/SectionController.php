@@ -40,12 +40,14 @@ class SectionController extends Controller
             $post['auther'] = User::find($post['uid']) -> userDetail;
             $post['theme'] = Theme::where('sid', $section['id']) -> where('id', $post['tid']) -> first()['name'];
         }
-        
+        // 获取广告
+        $adverts = $this -> getAdverts();
         $data = [
             'section' => $section,
             'themes' => $themes,
             'moderators' => $moderators,
             'posts' => $posts,
+        	'adverts' => $adverts,
         ];
         return view('home.section.index', $data);
     }

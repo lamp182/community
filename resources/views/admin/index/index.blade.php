@@ -19,7 +19,7 @@
                             @foreach($section as $k=>$v)
                                 <tr class="gradeX">
                                     <td>
-                                        <img src="/{{ $v->icon }}" class="tpl-table-line-img" alt="">
+                                        <img src="/{{ trim($v->icon, '/') }}" class="tpl-table-line-img" alt="">
                                     </td>
                                     <td class="am-text-middle">{{ $v['cname'] }}</td>
                                     <td class="am-text-middle">{{ $v['name'] }}</td>

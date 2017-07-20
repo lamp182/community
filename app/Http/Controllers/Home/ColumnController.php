@@ -8,6 +8,9 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use App\Http\Model\Post;
+use App\Http\Model\User;
+use App\Http\Model\UserDetail;
 
 class ColumnController extends Controller
 {
@@ -22,6 +25,18 @@ class ColumnController extends Controller
         $id = $request -> all()['id'];
         $column = Column::where('id', $id) -> first();
         $sections = Section::where('cid', $column['id']) -> get();
-        return view('home.column.index', ['column' => $column, 'sections' => $sections]);
+        $postCount = Post::all() -> count();
+        $user['count'] = User::all() -> count();
+        $user['new'] = UserDetail::orderBy('ctime', 'desc') -> limit(1) -> get()[0];
+        // 获取广告
+        $adverts = $this -> getAdverts();
+        $data = [
+        		"column" => $column,
+        		"sections" => $sections,
+        		'postCount' => $postCount,
+        		'user' => $user,
+        		'adverts' => $adverts,
+        ];
+        return view('home.column.index', $data);
     }
 }
