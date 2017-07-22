@@ -156,7 +156,7 @@
 <li><a href="{{ url('home/set/tou') }}">修改头像</a></li>
 <li class="a"><a href="{{ url('/home/set/set') }}">个人资料</a></li>
 <!-- <li><a href="http://bbs.17173.com/home.php?mod=spacecp&amp;ac=profile&amp;op=verify">认证</a></li> -->
-<li><a href="http://bbs.17173.com/home.php?mod=spacecp&amp;ac=credit">积分</a></li>
+<li><a href="{{ url('home/set/jifen') }}">积分</a></li>
 <li><a href="http://bbs.17173.com/home.php?mod=spacecp&amp;ac=usergroup">用户组</a></li>
 <!-- <li><a href="http://bbs.17173.com/home.php?mod=spacecp&amp;ac=privacy">隐私筛选</a></li> -->
 
