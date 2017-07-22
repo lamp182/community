@@ -42,6 +42,7 @@ class ZhuceController extends Controller
           $time = time();
           $data = ['uid' => $id, 'token' => $token,'ctime'=>$time];
           $res= DB::table('userdetails')->insert($data);
+          $res2= DB::table('useroperate')->insert(['uid' => $id]);
              
         if($id){
            self::mailto($input['email'],$id,  $token );
@@ -107,7 +108,7 @@ class ZhuceController extends Controller
           $time = time();
           $data = ['uid' => $id, 'token' => $token,'ctime'=>$time,'status'=>'1'];
           $res1= DB::table('userdetails')->insert($data);
-          
+          $res2= DB::table('useroperate')->insert(['uid' => $id]);
           return redirect('/home/login/login');
     }
 

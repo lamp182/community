@@ -24,6 +24,8 @@ class SectionController extends Controller
 
     public function index(Request $request)
     {
+    	// 每页显示数据条数
+    	$pieces = 10;
         $params = Input::get();
        
         $section = Section::where('id', $params['id']) -> first();
@@ -35,7 +37,7 @@ class SectionController extends Controller
         foreach ($moderators as $moderator){
             $moderator['user'] = User::find($moderator['moderator']) -> userDetail;
         }
-        $posts = Post::where('sid', $params['id']) -> where('status', 0) -> paginate(2);
+        $posts = Post::where('sid', $params['id']) -> where('status', 0) -> paginate($pieces);
         foreach ($posts as $post){
             $post['auther'] = User::find($post['uid']) -> userDetail;
             $post['theme'] = Theme::where('sid', $section['id']) -> where('id', $post['tid']) -> first()['name'];

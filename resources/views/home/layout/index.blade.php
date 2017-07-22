@@ -12,7 +12,18 @@
     <meta name="MSSmartTagsPreventParsing" content="True" />
     <meta http-equiv="MSThemeCompatible" content="Yes" />
     <meta name="baidu-site-verification" content="f5874a3f8e49646e5917517f21be2764"/>
-    <link rel="stylesheet" type="text/css" href="/home/css/style_6_common.css" /><link rel="stylesheet" type="text/css" href="/home/css/style_6_forum_forumdisplay.css" /><script>var STYLEID = '6', STATICURL = 'static/', IMGDIR = 'static/image/common', VERHASH = 'Z88', charset = 'utf-8', discuz_uid = '0', cookiepre = 'bbsPro_2132_', cookiedomain = '', cookiepath = '/', showusercard = '1', attackevasive = '0', disallowfloat = 'newthread', creditnotice = '1|经验|,2|小伙伴|,3|崇高石|,4|水晶|,5|板砖|,6|零食|,7|悬赏币|,8|VR币|', defaultstyle = '', REPORTURL = 'aHR0cDovL2Jicy4xNzE3My5jb20vZm9ydW0tODcwNi0xLmh0bWw=', SITEURL = 'http://bbs.17173.com/', JSPATH = 'static/js/', CSSPATH = 'data/cache/style_', DYNAMICURL = '';</script>
+    <link rel="stylesheet" type="text/css" href="/home/css/style_6_common.css" />
+    <link rel="stylesheet" type="text/css" href="/home/css/style_6_forum_forumdisplay.css" />
+    <script>
+    	var STYLEID = '6', STATICURL = 'static/', IMGDIR = 'static/image/common', 
+    	VERHASH = 'Z88', charset = 'utf-8', discuz_uid = '0', cookiepre = 'bbsPro_2132_', 
+    	cookiedomain = '', cookiepath = '/', showusercard = '1', attackevasive = '0', 
+    	disallowfloat = 'newthread', 
+    	creditnotice = '1|经验|,2|小伙伴|,3|崇高石|,4|水晶|,5|板砖|,6|零食|,7|悬赏币|,8|VR币|', 
+    	defaultstyle = '', REPORTURL = 'aHR0cDovL2Jicy4xNzE3My5jb20vZm9ydW0tODcwNi0xLmh0bWw=',
+    	 SITEURL = 'http://bbs.17173.com/', JSPATH = 'static/js/',
+    	  CSSPATH = 'data/cache/style_', DYNAMICURL = '';
+  	</script>
     <script src="/home/js/common.js" type="text/javascript"></script>
     <!--globalHeadBegin-->
 
@@ -83,8 +94,11 @@
         <div class="wrap-top">
             <div id="hd">
                 <div class="wp">
-                    <div class="hdc cl" id="hdc"><h2><a href="{{ url() }}">
-                    <img src="/home/picture/youliao-logo.png" alt="17173有料社区"></a></h2>
+                    <div class="hdc cl" id="hdc">
+                    <h2>
+                    <a href="{{ url() }}">
+                    	<img src="/home/picture/youliao-logo.png" alt="17173有料社区">
+                    </a></h2>
                         <div class="h-ad y">                    </div>
                     </div>
 
@@ -230,7 +244,8 @@
 
 
 <div class="wp a_f">
-	<a href="{{ $adverts[2]['url'] }}"><img alt="{{ $adverts[2]['name'] }}" src="{{ $adverts[2]['picture'] }}"></a>
+	<a href="{{ $adverts[2]['url'] }}">
+	<img style="width: 960px; height: 60px;" alt="{{ $adverts[2]['name'] }}" src="{{ $adverts[2]['picture'] }}"></a>
 </div>
 <div class="wp a_f">
 	<iframe align=center marginWidth=0 marginHeight=0 src="http://bbs.17173.com/x/bbsbottom96060.htm" frameBorder=0 width=960 scrolling=no height=60></iframe>

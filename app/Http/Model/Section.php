@@ -20,4 +20,8 @@ class Section extends Model
     {
         return $this -> hasMany('\App\Http\Model\Post', 'sid', 'id');
     }
+    public function column()
+    {
+    	return $this -> belongsTo('\App\Http\Model\Column', 'cid', 'id');
+    }
 }

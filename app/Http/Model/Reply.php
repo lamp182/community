@@ -13,6 +13,11 @@ class Reply extends Model
     
     public function user()
     {
-    	return $this -> belongsTo('App\Http\Model\User', 'uid', 'id');
+    	return $this -> belongsTo('App\Http\Model\UserDetail', 'uid');
+    }
+    
+    public function post()
+    {
+    	return $this -> belongsTo('App\Http\Model\Post', 'pid', 'id');
     }
 }

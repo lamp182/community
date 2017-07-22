@@ -25,9 +25,13 @@ Route::group(['prefix' => 'home', 'namespace' => 'Home','middleware'=>['home.log
 	// 查询路由
 	Route::post('query', 'PostController@query');
 	// 回复路由
-	Route::resource('reply', 'ReplyController');
-	Route::post('reply', 'ReplyController@reply');
-	
+	Route::post('reply', 'ReplyController@store');
+    Route::get('reply/add', 'ReplyController@add');
+	Route::get('reply/doadd', 'ReplyController@doadd');
+	Route::any('estimate', 'ReplyController@estimate');
+	// 用户路由
+	// 关注好友
+	Route::get('user/follow', 'UserController@follow');
 });
 
 

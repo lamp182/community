@@ -114,11 +114,12 @@
                                 	</a>
                                 </div>
                                 <div class="txt-area">
-                                    <div style="font-size: 16px;" class="ui-attr-list">
-                                    	<strong class="vwmy">
-                                    		<a href="{{ url('home/user/'.$topUser['detail']['uid']) }}">{{ $topUser['detail']['username'] }}</a>
-                                    	</strong>
+                                    <div style="" class="ui-attr-list">
+                                    	
+                                    	明星用户：<a href="{{ url('home/user/'.$topUser['detail']['uid']) }}">{{ $topUser['detail']['username'] }}</a>
+                                    	
                                     	<br />发回帖：{{ $topUser['replies'] }}
+                                    	<br />粉丝数：{{ $topUser['followers'] }}
                                     	<br />用户组：vip{{ $topUser['operate']['vip'] }}
                                     	<br />积分：{{ $topUser['operate']['score'] }}
                                     </div>
@@ -143,10 +144,11 @@
 @foreach($columns as $column)
     
     <div class="bm bmw  flg cl con0{{ $column['id'] }}" style="background: white;">
-    	<div class="bm_h cl">
-        	<h2><i class="jg"></i>
-<!--        	<a href="{{ url('home/column?id='.$column['id']) }}" style="">{{ $column['name'] }}</a></h2> --> 
-        	<a href="{{ url('?id='.$column['id']) }}" style="">{{ $column['name'] }}</a></h2>
+    	<div class="bm_h cl" style= "height: 47px;">
+        	<h2>
+        		<a href="{{ url('?id='.$column['id']) }}" style="">{{ $column['name'] }}</a>
+        		<i class="jg"></i>
+        	</h2>
         </div>
         <div id="column_{{ $column['id'] }}" class="bm_c" style="">
            	<table cellspacing="0" cellpadding="0" class="fl_tb">
@@ -161,7 +163,7 @@
                                         <td class="fl_g" width="32.9%">
                                             <div class="fl_icn_g" style="width: 120px;">
                                                 <a href="{{ url('home/section?id='.$section['id']) }}">
-                                                <img src="/{{ trim($section['icon'],'/') }}" align="left" alt="{{ $section['name'] }}" /></a></div>
+                                                <img style="width: 120px; height: 72px;" src="/{{ trim($section['icon'],'/') }}" align="left" alt="{{ $section['name'] }}" /></a></div>
                                             <dl style="margin-left: 120px;">
                                                 <dt>
                                                     <a href="{{ url('home/section?id='.$section['id']) }}"   class="game-title" >{{ $section['name'] }}</a>

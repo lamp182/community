@@ -37,10 +37,13 @@ class PostController extends Controller
 		}
 		// 获取广告
 		$adverts = $this -> getAdverts();
-// 		dd(str_replace('\&laquo\;', '上一页',$posts -> appends(['query' => $query]) -> render()));
         return view('home.post.query', ['adverts' => $adverts, 'posts' => $posts, 'query' => $query]);
     }
-
+	
+    public function index()
+    {
+    	return view('errors.404');
+    }
     /**
      * Show the form for creating a new resource.
      *
@@ -79,7 +82,7 @@ class PostController extends Controller
     	$rules = [
     			'tid' => 'required',
     			'sid' => 'required',
-//     			'uid' => 'required',
+    			'uid' => 'required',
 //     			'title' => 'requried|max:80',
     	];
         //       提示信息
@@ -113,26 +116,30 @@ class PostController extends Controller
     public function show($id)
     {
         //
+        $pieces = 5;
     	$input = Input::all();
         $post = Post::where('id', $id) -> first();
-        $section = Section::where('id', $post -> id) -> first();
-        if(!empty($input)&&array_key_exists('uid', $input)){
-        		$replies = Reply::where('pid', $id) -> where('uid', $input['uid']) -> paginate(3);
+        $section = Section::where('id', $post -> sid) -> first();
+        if(Input::has('uid')){
+        	$replies = Reply::where('pid', $id) -> where('rid', '<>', '1') -> where('uid', $input['uid']) -> paginate($pieces);
         		$uid = $input['uid'];
         }else {
-        	$replies = Reply::where('pid', $id) -> paginate(3);
+        	$replies = Reply::where('pid', $id) -> where('rid', '<>', '1') -> paginate($pieces);
         	$uid = '';
         }
-//         dd($input);
+
         $i = 0;
-        $page = array_key_exists('page', $input) ? $input['page'] : 1; 
+        $page = Input::has('page') ? $input['page'] : 1; 
         foreach($replies as $reply) {
         	$reply['user'] = Reply::find($reply['uid']) -> user;
         	$reply['user']['detail'] = User::find($reply['uid']) -> userdetail;
         	$reply['user']['operate'] = User::find($reply['uid']) -> userOperate;
         	$reply['user']['replies'] = User::find($reply['uid']) -> replies -> count();
         	$reply['count'] = ++$i + ($page - 1) * 3;
+        	$reply['sons'] = $this -> getSons($reply, $reply['id']);
+//         	dump($reply);
         }
+//         die;
         // 获取广告
         $adverts = $this -> getAdverts();
         $data = [
@@ -143,10 +150,64 @@ class PostController extends Controller
         	'adverts' => $adverts,
         ];
         Post::where('id', $id) -> increment('pvs');
-//         dd($replies);
+        
         return view('home.post.index', $data);
     }
-
+	
+    public function getSons($reply, $fid)
+    {
+    	$grandsons = Reply::where('rid', $reply['id']) -> get();
+    	if($reply['rid'] != 0) {
+    		$sons = '<div style="margin: 5px ; border: solid 1px #999;">';
+    		$user = Reply::find($reply['id']) -> user;
+    		$sons .= '
+				<div >
+					<div style="background: #eee;">
+						<h3>
+							&nbsp;&nbsp;<a href="/home/user/'.$user['uid'].'">'.$user['username'].'</a>
+							<span style="float: right; margin-left: 10px;">发表于'.date('Y-m-d H:i:s', $reply['ctime']).'&nbsp;&nbsp;</span>
+						</h3>
+					</div>
+					<div style="font-size: 14px; margin: 0 10px 0 10px; border-bottom: dashed 1px #999;">'.$reply['content'].'</div>
+				</div>';
+    	}else {
+    		if(count($grandsons) == 0) {
+    			$sons = '<div style="">';
+    		}else {
+    			$sons = '<div style="border: solid 1px #666;">';
+    		}
+    	}
+    	$sons .= '
+			<div class="pob cl" style="padding: 0 10px 0 10px;">
+				<em>
+					<a class="fastre" href="/home/reply/add?fid='.$fid.'&rid='.$reply['id'].'" >回复</a>
+				</em>
+				<div id="" style="float: right;">
+					<a id="" href="/home/estimate?fid='.$fid.'&est=1&id='.$reply['id'].'"  onmouseover="this.title = $(\'recommendv_add_'.$reply['id'].'\').innerHTML + \' 人支持\'" title="顶一下">
+						<i>
+							<img src="/home/picture/rec_add.gif" alt="支持" />支持
+							<span id="recommendv_add_'.$reply['id'].'" style="display:none">'.$reply['support'].'</span>
+						</i>
+					</a>
+					<a id="" href="/home/estimate?fid='.$fid.'&est=-1&id='.$reply['id'].'"  onmouseover="this.title = $(\'recommendv_subtract_'.$reply['id'].'\').innerHTML + \' 人反对\'" title="踩一下">
+						<i>
+							<img src="/home/picture/rec_subtract.gif" alt="反对" />反对
+							<span id="recommendv_subtract_'.$reply['id'].'" style="display:none">'.$reply['oppose'].'</span>
+						</i>
+					</a>
+				</div>
+			';
+    	$sons .= '</div>';
+    	
+    	if(count($grandsons) != 0) {
+    		foreach ($grandsons as $grandson) {
+    			$sons .= $this -> getSons($grandson, $fid);
+    		}
+		}
+    	$sons .= '</div>';
+    	return $sons;
+    }
+    
     /**
      * Show the form for editing the specified resource.
      *

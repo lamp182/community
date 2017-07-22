@@ -30,14 +30,7 @@
 		</div>
 		
 	@endif
-	<script type="text/javascript">
-		$(function() {
-			var time = setInterval(function() {
-				console.log(1111111);
-				clearInterval(time);
-				}, 10);
-		});
-		</script>
+	
 	<form method="post" id="form" action="{{ url('home/post') }}" onsubmit=""> 
 <!-- 	   <div id="ct" class="ct2_a ct2_a_r wp cl">  -->
 	   {{ csrf_field() }}

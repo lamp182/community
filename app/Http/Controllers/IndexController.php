@@ -16,6 +16,7 @@ use App\Http\Model\Carousel;
 use App\Http\Model\Adverts;
 use App\Http\Model\Reply;
 use DB;
+use App\Http\Model\Follow;
 
 class IndexController extends Controller
 {
@@ -61,6 +62,7 @@ class IndexController extends Controller
     	}
     	$topUser['detail'] = User::find($top['uid']) -> userDetail;
     	$topUser['operate'] = User::find($top['uid']) -> userOperate;
+    	$topUser['followers'] = Follow::where('concern_id', $top['uid']) -> count();
     	$topUser['replies'] = $top['replies'];
 // 		dd($adverts[0]);
     	$data = [

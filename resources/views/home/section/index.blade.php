@@ -2,7 +2,7 @@
 
 @section('title', $section['name'])
 @section('contents')
-            <div id="wp" class="wp"><style id="diy_style" type="text/css"></style>
+            <div id="wp" class="wp"><style id="diy_style" type="text/css"></style></div>
                 <!--[diy=diynavtop]--><div id="diynavtop" class="area"></div><!--[/diy]-->
                 <script type="text/javascript">
                     var forumId = '8706';
@@ -32,7 +32,7 @@
                             <a href="http://www.17173.com/" target="_blank" >17173首页</a>
                         </div>
                     </div>
-                    <iframe width="100%" height="165" marginwidth=0 marginheight=0 hspace=0 vspace=0 frameborder=0 scrolling=no src="http://dnf.17173.com/bbs/dnf2013bbs.shtml"></iframe><!-- CMS CACHE END -->
+                    
 
                     <div id="ct" class="wp cl">
 
@@ -51,7 +51,7 @@
                                         <span class="pipe">|</span> <a href="javascript:;" id="a_favorite" class="fa_fav" onclick="lsSubmit()">收藏本版</a>
                                         <span id="attention_placeholder" style="display:none;"></span>
                                         <span class="pipe">|</span>
-                                        <a href="http://bbs.17173.com/forum.php?mod=rss&amp;fid=8706&amp;auth=0" class="fa_rss" target="_blank" title="RSS">订阅</a>
+                                        <a href="" class="fa_rss" target="_blank" title="RSS">订阅</a>
                                     </span>
                                     <div class="xs2 forum-name">
                                         <img src="/home/picture/dnf.png" class="tit-img" />
@@ -76,14 +76,31 @@
                             <div id="pgt" class="pgs cl pgt">
                                 <span id="fd_page_top">
 	                                <div class="pg">
-	                                	{!! $posts -> appends(['id' => $section['id']]) -> render() !!}
+	                                	{!! str_replace('&raquo;','下一页',str_replace('&laquo;','上一页',$posts -> appends(['id' => $section['id']]) -> render())) !!}
 	                                </div>
                                 </span>
                                 <style>
-                              		.pagination li {
+                                    .pagination li {
+                                        float: left;
+                                        font-size: 12px;
+                                    }
+                              		.pagination li span{
                               			float: left;
-                              			font-size: 12px;
+                                        display: inline;
+                                        margin-left: 4px;
+                                        padding: 0 8px;
+                                        height: 26px;
+                                        border: 1px solid;
+                                        border-color: #C2D5E3;
+                                        background-color: #FFF;
+                                        background-repeat: no-repeat;
+                                        color: #333;
+                                        overflow: hidden;
+                                        text-decoration: none;
                               		}
+                                    .pagination .active span{
+                                        background-color: #ccc;
+                                    }
                                </style>
                                 <a href="javascript:;" class="newpost"  onclick="newpost()" title="发新帖"><img src="/home/picture/pn_post.png" alt="发新帖" /></a>
                                  <span id="sign_placeholder" style="display:none;"></span>
@@ -96,7 +113,7 @@
                                 <li><a href="{{ url('home\section?theme='.$theme['id']) }}">{{ $theme['name'] }}<span class="xg1 num">{{ $theme['count'] }}</span></a></li>
                                @endforeach
                             </ul>
-                            <script type="text/javascript">showTypes('thread_types');</script>
+                            <script type="text/javascript">//showTypes('thread_types');</script>
                             <div id="threadlist" class="tl bm bmw">
                                 <div class="th">
                                     <table cellspacing="0" cellpadding="0">
@@ -178,15 +195,10 @@
                             <div id="pgt" class="pgs cl pgt">
                                 <span id="fd_page_top">
 	                                <div class="pg">
-	                                	{!! $posts -> appends(['id' => $section['id']]) -> render() !!}
-	                                </div>
+                                        {!! str_replace('&raquo;','下一页',str_replace('&laquo;','上一页',$posts -> appends(['id' => $section['id']]) -> render())) !!}
+                                    </div>
                                 </span>
-                                <style>
-                              		.pagination li {
-                              			float: left;
-                              			font-size: 12px;
-                              		}
-                               </style>
+                                
                                 <a href="javascript:;" class="newpost"  onclick="newpost()" title="发新帖"><img src="/home/picture/pn_post.png" alt="发新帖" /></a>
                                  <span id="sign_placeholder" style="display:none;"></span>
                             </div>
