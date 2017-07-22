@@ -3,7 +3,7 @@
 @section('contents')
 				<div style="width: 98%; margin:0px auto;">
 					<div id="chart" class="bw0 cl">
-					    <p class="chart z">&nbsp;&nbsp;&nbsp;帖子: <em>{{ $postCount }}</em><span class="pipe">|</span>会员: <em>{{ $user['count'] }}</em><span class="pipe">|</span>欢迎新会员: <em><a href="{{ url('home/user/'.$user['new']['uid']) }}" target="_blank" class="xi2">{{ $user['new']['username'] }}</a></em></p>
+					    <p class="chart z">&nbsp;&nbsp;&nbsp;帖子: <em>{{ $postCount }}</em><span class="pipe">|</span>会员: <em>{{ $user['count'] }}</em><span class="pipe">|</span>欢迎新会员: <em><a href="{{ url('home/personal/personal') }}" target="_blank" class="xi2">{{ $user['new']['username'] }}</a></em></p>
                         <div class="y" style="display:none;">
                             <a href="http://bbs.17173.com/forum.php?mod=guide&amp;view=new" title="最新回复" class="xi2">最新回复</a></div>
 

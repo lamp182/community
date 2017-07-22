@@ -94,7 +94,7 @@ if(/AppleWebKit.*Mobile/i.test(navigator.userAgent) || (/MIDP|SymbianOS|NOKIA|SA
 						<span class="input-ibox"><i class="ico"></i></span>
 						<span class="input-empty"><i class="empty"></i></span>
 						<!-- value="{{ old('email') }}" -->
-						<input type="text" class="input-txt input-passport" id="passport"  name="email" placeholder="手机/邮箱"/>
+						<input type="text" class="input-txt input-passport" id="passport"  value="{{ old('email') }}"  name="email" placeholder="手机/邮箱"/>
 					</div><span id="span"></span>
 					<span class="btn btn-clear js-clear" data-target="#passport" style="display:none"></span>
 				</div>

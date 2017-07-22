@@ -174,15 +174,15 @@
                             	<div id="psptR" class="y login-box  login-box-success ">
                                     <div id="um" class="login-flag">
 		                                <div class="avt z">
-		                                	<a href="{{ url('home/user/'.session('user')['id']) }}" class="js-login-avatar">
+		                                	<a href="{{ url('/home/personal/personal') }}" class="js-login-avatar">
 		                                		<img src="/{{ trim(session('user')['detail']['faceico'], '/') }}">
 		                                	</a>
 		                                </div>
 			                                <div class="z">
-				                                <p>
-				                                    <strong class="vwmy"><a href="{{ url('home/user/'.session('user')['id']) }}" target="_blank" title="访问我的空间">{{ session('user')['detail']['username'] }}</a></strong>
+				                                <!-- <p> {{ session('user')['email'] }}  -->
+				                                    <strong class="vwmy"><a href="{{ url('home/personal/personal') }}" target="_blank" title="访问我的空间">{{ session('user')['detail']['username'] }} </a></strong>
 				                                    <span class="pipe">|</span>
-				                                    <a href="">设置</a>
+				                                    <a href="{{ url('home/set/set') }}">设置</a>
 				                                    <span class="pipe">|</span>
 													<a href="" id="myprompt" class="a showmenu" onmouseover="showMenu({'ctrlid':'myprompt'});">提醒</a>
 													
@@ -192,7 +192,7 @@
 				                                <p>
 				                                    用户组: <a href="" id="g_upmine" >vip{{ session('user')['operate']['vip'] }}</a>
 				                                    <span class="pipe" style="margin:0;">|</span>
-				                                    <a href="" id="extcreditmenu" onmouseover="delayShow(this, showCreditmenu);" class="showmenu">积分: {{ session('user')['operate']['vip'] }}</span></a>
+				                                    <a href="{{ url('/home/set/jifen  ') }}" id="extcreditmenu" onmouseover="delayShow(this, showCreditmenu);" class="showmenu">积分: {{ session('user')['operate']['vip'] }}</span></a>
 				                                                                                                            
 				                                </p>
 			                                </div>

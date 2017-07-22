@@ -49,4 +49,16 @@ class SetController extends Controller
     return view('home.set.tou');
    }
 
+
+   //积分
+   public function getJifen()
+   {
+    return view('home.set.jifen');
+   }
+
+   //积分规则
+   public function getGuize()
+   {
+    return view('home.set.guize');
+   }
 }

@@ -1,179 +1,249 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> <html
-xmlns="http://www.w3.org/1999/xhtml">  <head>    <meta http-equiv="Content-
-Type" content="text/html; charset=utf-8" />    <title>sunshine0121的个人资料 -
-17173有料社区 -  爱游戏，爱17173!</title>    <meta name="keywords"
-content="sunshine0121的个人资料" />    <meta name="description"
-content="sunshine0121的个人资料 ,17173有料社区" />    <meta name="renderer"
-content="webkit" />    <meta name="generator" content="17173" />    <meta
-name="author" content="17173" />    <meta name="copyright" content="2001-2017
-17173. All rights reserved." />    <meta name="MSSmartTagsPreventParsing"
-content="True" />    <meta http-equiv="MSThemeCompatible" content="Yes" />
-<meta name="baidu-site-verification"
-content="f5874a3f8e49646e5917517f21be2764" />    <link rel="stylesheet"
-type="text/css" href="/home/css/style_6_common_1.css" />   <link
-rel="stylesheet" type="text/css" href="/home/css/style_6_home_space.css" />
-<script>var STYLEID = '6', STATICURL = 'static/', IMGDIR =
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head> 
+  <meta http-equiv="Content-
+Type" content="text/html; charset=utf-8" /> 
+  <title>sunshine0121的个人资料 -
+17173有料社区 -  爱游戏，爱17173!</title> 
+  <meta name="keywords" content="sunshine0121的个人资料" /> 
+  <meta name="description" content="sunshine0121的个人资料 ,17173有料社区" /> 
+  <meta name="renderer" content="webkit" /> 
+  <meta name="generator" content="17173" /> 
+  <meta name="author" content="17173" /> 
+  <meta name="copyright" content="2001-2017
+17173. All rights reserved." /> 
+  <meta name="MSSmartTagsPreventParsing" content="True" /> 
+  <meta http-equiv="MSThemeCompatible" content="Yes" /> 
+  <meta name="baidu-site-verification" content="f5874a3f8e49646e5917517f21be2764" /> 
+  <link rel="stylesheet" type="text/css" href="/home/css/style_6_common_1.css" /> 
+  <link rel="stylesheet" type="text/css" href="/home/css/style_6_home_space.css" /> 
+  <script>var STYLEID = '6', STATICURL = 'static/', IMGDIR =
 'static/image/common', VERHASH = 'Z88', charset = 'utf-8', discuz_uid = '0',
 cookiepre = 'bbsPro_2132_', cookiedomain = '', cookiepath = '/', showusercard
 = '1', attackevasive = '0', disallowfloat = 'newthread', creditnotice =
 '1|经验|,2|小伙伴|,3|崇高石|,4|水晶|,5|板砖|,6|零食|,7|悬赏币|,8|VR币|', defaultstyle = '',
 REPORTURL = 'aHR0cDovL2Jicy4xNzE3My5jb20vc3BhY2UtdWlkLTEzNTk3MTIzNy5odG1s',
 SITEURL = 'http://bbs.17173.com/', JSPATH = 'static/js/', CSSPATH =
-'data/cache/style_', DYNAMICURL = '';</script>    <script
-src="/home/js/common_1.js" type="text/javascript"></script>    <!--
-globalHeadBegin-->    <link rel="dns-prefetch" href="//ue.17173cdn.com/" />
-<link rel="dns-prefetch" href="//ue1.17173cdn.com/" />    <link rel="dns-
-prefetch" href="//ue2.17173cdn.com/" />    <link rel="dns-prefetch"
-href="//ue3.17173cdn.com/" />    <link type="image/x-icon" rel="icon"
-h_blankref="//ue.17173cdn.com/images/lib/v1/favicon-hd.ico" />    <link
-type="image/x-icon" rel="shortcut icon"
-href="//ue.17173cdn.com/images/lib/v1/favicon.ico" />    <meta name
-="application-name" content="17173有料社区" />    <meta name="msapplication-
-tooltip" content="17173有料社区" />    <meta name="msapplication-task"
-content="name=论坛;action-uri=http://bbs.17173.com/forum.php;icon-
-uri=http://bbs.17173.com/static/image/common/bbs.ico" />    <link
-rel="stylesheet" id="css_widthauto" type="text/css"
-href="/home/css/style_6_widthauto_1.css" />    <script>HTMLNODE.className += '
-widthauto'</script>    <script src="/home/js/home_1.js"
-type="text/javascript"></script>    <link rel="stylesheet" type="text/css"
-href="/home/css/forum_1.css" />    <script src="/home/js/jquery-1.7.2_1.js"
-type="text/javascript"></script>    <script src="/home/js/libs_1.js"
-type="text/javascript"></script>    <script src="/home/js/passport_1.js"
-type="text/javascript"></script>    <script>         var J =
+'data/cache/style_', DYNAMICURL = '';</script> 
+  <script src="/home/js/common_1.js" type="text/javascript"></script> 
+  <!--
+globalHeadBegin--> 
+  <link rel="dns-prefetch" href="//ue.17173cdn.com/" /> 
+  <link rel="dns-prefetch" href="//ue1.17173cdn.com/" /> 
+  <link rel="dns-
+prefetch" href="//ue2.17173cdn.com/" /> 
+  <link rel="dns-prefetch" href="//ue3.17173cdn.com/" /> 
+  <link type="image/x-icon" rel="icon" h_blankref="//ue.17173cdn.com/images/lib/v1/favicon-hd.ico" /> 
+  <link type="image/x-icon" rel="shortcut icon" href="//ue.17173cdn.com/images/lib/v1/favicon.ico" /> 
+  <meta name="application-name" content="17173有料社区" /> 
+  <meta name="msapplication-
+tooltip" content="17173有料社区" /> 
+  <meta name="msapplication-task" content="name=论坛;action-uri=http://bbs.17173.com/forum.php;icon-
+uri=http://bbs.17173.com/static/image/common/bbs.ico" /> 
+  <link rel="stylesheet" id="css_widthauto" type="text/css" href="/home/css/style_6_widthauto_1.css" /> 
+  <script>HTMLNODE.className += '
+widthauto'</script> 
+  <script src="/home/js/home_1.js" type="text/javascript"></script> 
+  <link rel="stylesheet" type="text/css" href="/home/css/forum_1.css" /> 
+  <script src="/home/js/jquery-1.7.2_1.js" type="text/javascript"></script> 
+  <script src="/home/js/libs_1.js" type="text/javascript"></script> 
+  <script src="/home/js/passport_1.js" type="text/javascript"></script> 
+  <script>         var J =
 jQuery.noConflict();         if(self != top){ J('<style type="text/css">.bbs-
 global-bar, .boardnav #bnav, #hd, #pt1, .sub-screen-hot, .mn-main .bml, .mn-
 main .bm.bmw.fl, #ft, .a_f{ display:none;}.wrap-top, .wrap-bottom,
-.wrap{background:none;}</style>').appendTo('head'); }     </script>   </head>
-<body id="nv_home" class="pg_space" onkeydown="if(event.keyCode==27) return
-false;">    <script type="text/javascript" src="/home/js/seed_1.js"></script>
-<!--[if lte IE 6]> <script src="/home/js/browser_update.min_1.js"></script>
-<![endif]-->    <div id="append_parent"></div>   <div id="ajaxwaitid"></div>
-<div id="toptb" class="cl">     <div class="wp" style="display:none;">
-<div class="z">      <a href="javascript:;"
-onclick="setHomepage('http://bbs.17173.com/');">设为首页</a>      <a
-href="http://bbs.17173.com/" onclick="addFavorite(this.href,
-'17173有料社区');return false;">收藏本站</a>      <script type="text/javascript">var
-_speedMark = new Date();</script>     </div>      <div class="y">       <a
-id="switchblind" href="javascript:;" onclick="toggleBlind(this)"
-title="开启辅助访问" class="switchblind">开启辅助访问</a>       <a href="javascript:;"
-id="switchwidth" onclick="widthauto(this)" title="切换到窄版"
-class="switchwidth">切换到窄版</a>      </div>     </div>    </div>    <meta baidu-
-gxt-verify-token="1bbacc7dd885064ba6efec7a0a007614" />    <div class="bbs-
-global-bar clearfix wp">     <div class="bbs-bar-con">      <div class="logo-
-box">       <a href="http://www.17173.com" target="_blank" class="simple-
-logo-17173"></a>      <a href="http://bbs.17173.com" target="_self" class
-="simple-logo-bbs"></a>      </div>      <div class="bgb-quick-menu">       <a
-target="_blank" href="http://news.17173.com">看新闻</a>-       <a target="_blank"
-href="http://www.17173.com/f/index.shtml">找游戏</a>-       <a target="_blank"
-href="http://hao.17173.com/">抢礼包</a>-       <a target="_blank"
-href="http://download.17173.com/">下载</a>-       <a
-href="http://bk.17173.com/">问答</a>-       <a target="_blank"
-href="http://media.17173.com/">视频</a>      </div>     </div>    </div>    <div
-class="wrap">     <div class="wrap-bottom">      <div class="wrap-top">
-<div id="hd">        <div class="wp">         <div class="hdc cl" id="hdc">
-<h2><a href="../../../public/home"><img src="/home/picture/youliao-logo_1.png"
-alt="17173有料社区" /></a></h2>          <div class="h-ad y">          </div>
-</div>         <div id="nv">          <ul></ul>         </div>         <ul
-class="p_pop h_pop" id="plugin_menu" style="display: none">          <li><a
-href="plugin.php?id=hux_zp2:hux_zp2" id="mn_plink_hux_zp2">转盘抽奖</a></li>
-</ul>         <div class="p_pop h_pop" id="mn_userapp_menu" style="display:
-none"></div>        <div id="mu" class="cl">         </div>         <div class
-="sc-quick-bar cl">          <div class="sc-quick-bar-c">           <div class
-="sc-quick-bar-l"></div>           <div class="scqb-co01">            <div
-class="z search-box">             <div id="scbar" class="scbar_narrow cl">
-<!-- action="{{ url('home/personal/dopersonal') }}" -->             <form
-id="scbar_form" method="post" autocomplete="off"
-onsubmit="searchFocus($('scbar_txt'))" action="{{
-url('home/personal/dopersonal') }}" action="search.php?searchsubmit=yes"
-target="_blank">              {{ csrf_field() }}              <input
-type="hidden" name="mod" id="scbar_mod" value="forum" />               <input
-type="hidden" name="formhash" value="61e1cbdd" />               <input
-type="hidden" name="srchtype" value="title" />               <input
-type="hidden" name="srhfid" value="0" />               <input type="hidden"
-name="srhlocality" value="home::space" />               <table cellspacing="0"
-cellpadding="0">                <tbody>                <tr>
-<td class="scbar_icon_td">&nbsp;</td>                  <td
-class="scbar_txt_td"><input type="text" name="srchtxt" id="scbar_txt"
-value="请输入搜索内容" onfocus="if(this.value == '请输入搜索内容'){this.value = '';}"
-onblur="if(this.value == ''){this.value = '请输入搜索内容';}" autocomplete="off" x
--webkit-speech="" speech="" class=" xg1" placeholder="请输入搜索内容" /></td>
-<td class="scbar_type_td"><a href="javascript:;" id="scbar_type"
-class="showmenu xg1 xs2" onclick="showMenu(this.id)"
-hidefocus="true">帖子</a></td>                  <td class="scbar_btn_td"><button
-type="submit" name="searchsubmit" id="scbar_btn" sc="1" class="pn"
-value="true"><strong class="">搜索</strong></button></td>                  <td
-class="scbar_hot_td">&nbsp;</td>                 </tr>                </tbody>
-</table>              </form>              <div id="scbar_hot">
-<strong class="xw1">热搜: </strong>               <a href="search.php?mod=forum&
+.wrap{background:none;}</style>').appendTo('head'); }     </script> 
+ </head> 
+ <body id="nv_home" class="pg_space" onkeydown="if(event.keyCode==27) return
+false;"> 
+  <script type="text/javascript" src="/home/js/seed_1.js"></script> 
+  <!--[if lte IE 6]> <script src="/home/js/browser_update.min_1.js"></script>
+<![endif]--> 
+  <div id="append_parent"></div> 
+  <div id="ajaxwaitid"></div> 
+  <div id="toptb" class="cl"> 
+   <div class="wp" style="display:none;"> 
+    <div class="z"> 
+     <a href="javascript:;" onclick="setHomepage('http://bbs.17173.com/');">设为首页</a> 
+     <a href="http://bbs.17173.com/" onclick="addFavorite(this.href,
+'17173有料社区');return false;">收藏本站</a> 
+     <script type="text/javascript">var
+_speedMark = new Date();</script> 
+    </div> 
+    <div class="y"> 
+     <a id="switchblind" href="javascript:;" onclick="toggleBlind(this)" title="开启辅助访问" class="switchblind">开启辅助访问</a> 
+     <a href="javascript:;" id="switchwidth" onclick="widthauto(this)" title="切换到窄版" class="switchwidth">切换到窄版</a> 
+    </div> 
+   </div> 
+  </div> 
+  <meta baidu-="" gxt-verify-token="1bbacc7dd885064ba6efec7a0a007614" /> 
+ <!--  <div class="bbs-
+global-bar clearfix wp"> 
+   <div class="bbs-bar-con"> 
+    <div class="logo-
+box"> 
+     <a href="http://www.17173.com" target="_blank" class="simple-
+logo-17173"></a> 
+     <a href="http://bbs.17173.com" target="_self" class="simple-logo-bbs"></a> 
+    </div> 
+    <div class="bgb-quick-menu"> 
+     <a target="_blank" href="http://news.17173.com">看新闻</a>- 
+     <a target="_blank" href="http://www.17173.com/f/index.shtml">找游戏</a>- 
+     <a target="_blank" href="http://hao.17173.com/">抢礼包</a>- 
+     <a target="_blank" href="http://download.17173.com/">下载</a>- 
+     <a href="http://bk.17173.com/">问答</a>- 
+     <a target="_blank" href="http://media.17173.com/">视频</a> 
+    </div> 
+   </div> 
+  </div>  -->
+  <div class="wrap"> 
+   <div class="wrap-bottom"> 
+    <div class="wrap-top"> 
+     <div id="hd"> 
+      <div class="wp"> 
+       <div class="hdc cl" id="hdc"> 
+        <h2><a href="{{ url('/') }}"><img src="/home/picture/youliao-logo_1.png" alt="17173有料社区" /></a></h2> 
+        <div class="h-ad y"> 
+        </div> 
+       </div> 
+       <div id="nv"> 
+        <ul></ul> 
+       </div> 
+       <ul class="p_pop h_pop" id="plugin_menu" style="display: none"> 
+        <li><a href="plugin.php?id=hux_zp2:hux_zp2" id="mn_plink_hux_zp2">转盘抽奖</a></li> 
+       </ul> 
+       <div class="p_pop h_pop" id="mn_userapp_menu" style="display:
+none"></div> 
+       <div id="mu" class="cl"> 
+       </div> 
+       <div class="sc-quick-bar cl"> 
+        <div class="sc-quick-bar-c"> 
+         <div class="sc-quick-bar-l"></div> 
+         <div class="scqb-co01"> 
+          <div class="z search-box"> 
+           <div id="scbar" class="scbar_narrow cl"> 
+            <!-- action="{{ url('home/personal/dopersonal') }}" --> 
+          <!--   <form id="scbar_form" method="post" autocomplete="off" onsubmit="searchFocus($('scbar_txt'))" action="search.php?searchsubmit=yes" target="_blank">
+              {{ csrf_field() }} 
+             <input type="hidden" name="mod" id="scbar_mod" value="forum" /> 
+             <input type="hidden" name="formhash" value="61e1cbdd" /> 
+             <input type="hidden" name="srchtype" value="title" /> 
+             <input type="hidden" name="srhfid" value="0" /> 
+             <input type="hidden" name="srhlocality" value="home::space" /> 
+             <table cellspacing="0" cellpadding="0"> 
+              <tbody> 
+               <tr> 
+                <td class="scbar_icon_td">&nbsp;</td> 
+                <td class="scbar_txt_td"><input type="text" name="srchtxt" id="scbar_txt" value="请输入搜索内容" onfocus="if(this.value == '请输入搜索内容'){this.value = '';}" onblur="if(this.value == ''){this.value = '请输入搜索内容';}" autocomplete="off" x="" -webkit-speech="" speech="" class=" xg1" placeholder="请输入搜索内容" /></td> 
+                <td class="scbar_type_td"><a href="javascript:;" id="scbar_type" class="showmenu xg1 xs2" onclick="showMenu(this.id)" hidefocus="true">帖子</a></td> 
+                <td class="scbar_btn_td"><button type="submit" name="searchsubmit" id="scbar_btn" sc="1" class="pn" value="true"><strong class="">搜索</strong></button></td> 
+                <td class="scbar_hot_td">&nbsp;</td> 
+               </tr> 
+              </tbody> 
+             </table> 
+            </form>  -->
+            <div id="scbar_hot"> 
+<!--              <strong class="xw1">热搜: </strong> 
+             <a href="search.php?mod=forum&amp;
 amp;srchtxt=%E6%95%B0%E6%8D%AE%E5%BA%93&amp;formhash=61e1cbdd&amp;searchsubmit
-=true&amp;source=hotsearch" target="_blank" class="xi2" sc="1">数据库</a>
-<a href="search.php?mod=forum&amp;srchtxt=%E6%94%BB%E7%95%A5&amp;formhash=61e1
-cbdd&amp;searchsubmit=true&amp;source=hotsearch" target="_blank" class="xi2"
-sc="1">攻略</a>               <a href="search.php?mod=forum&amp;srchtxt=%E6%BF%8
+=true&amp;source=hotsearch" target="_blank" class="xi2" sc="1">数据库</a> 
+             <a href="search.php?mod=forum&amp;srchtxt=%E6%94%BB%E7%95%A5&amp;formhash=61e1
+cbdd&amp;searchsubmit=true&amp;source=hotsearch" target="_blank" class="xi2" sc="1">攻略</a> 
+             <a href="search.php?mod=forum&amp;srchtxt=%E6%BF%8
 0%E6%B4%BB%E7%A0%81&amp;formhash=61e1cbdd&amp;searchsubmit=true&amp;source=hot
-search" target="_blank" class="xi2" sc="1">激活码</a>               <a href="sear
+search" target="_blank" class="xi2" sc="1">激活码</a> 
+             <a href="sear
 ch.php?mod=forum&amp;srchtxt=%E7%82%89%E7%9F%B3%E4%BC%A0%E8%AF%B4&amp;formhash
-=61e1cbdd&amp;searchsubmit=true&amp;source=hotsearch" target="_blank"
-class="xi2" sc="1">炉石传说</a>               <a href="search.php?mod=forum&amp;sr
+=61e1cbdd&amp;searchsubmit=true&amp;source=hotsearch" target="_blank" class="xi2" sc="1">炉石传说</a> 
+             <a href="search.php?mod=forum&amp;sr
 chtxt=%E7%BE%8E%E5%9B%BE&amp;formhash=61e1cbdd&amp;searchsubmit=true&amp;sourc
-e=hotsearch" target="_blank" class="xi2" sc="1">美图</a>               <a href="
+e=hotsearch" target="_blank" class="xi2" sc="1">美图</a> 
+             <a href="
 search.php?mod=forum&amp;srchtxt=%E5%89%91%E7%81%B5&amp;formhash=61e1cbdd&amp;
-searchsubmit=true&amp;source=hotsearch" target="_blank" class="xi2"
-sc="1">剑灵</a>              </div>             </div>             <ul
-id="scbar_type_menu" class="p_pop" style="display: none;">             <li><a
-href="javascript:;" rel="forum" class="curtype">帖子</a></li>             <li><a
-href="javascript:;" rel="user">用户</a></li>            </ul>
-<script type="text/javascript"> // initSearchmenu('scbar', '');  </script>
-</div>           </div>           <div class="scqb-co02">            <!--
-<div class="pp-login pp-login2" style="display:none;">
-<div class="pp-login-in">                                 <div class="pp-
-login-c1">                                     <a href="javascript:;" class
-="pp-login-bt1"><i class="ico-user"></i>安全登录</a>
-</div>                                 <div class="pp-login-c2">
-<div class="item-1">                                         <a
-href="http://passport.17173.com/password/forget" target="_blank" class="pp-
-login-bt2"><i class="ico-forget"></i>忘记密码</a>
-</div>                                     <div class="item-2">
-<a href="http://passport.17173.com/register" target="_blank" class="pp-login-
-bt2"><i class="ico-quick"></i>快速注册</a>
-</div>                                 </div>
-</div>                         </div> -->            <!-- <div id="psptR"
-class="y login-box  login-box-success " style="display:block;"> -->
-<div id="um" class="login-flag">             <!-- js-login-avatar -->
-<div class="avt z">             <a href="{{ url('/home/personal/personal') }}"
-class=""><img
-src="http://bbs.17173.com/uc/avatar.php?uid=136130969&amp;size=small" /></a>
-</div>             <div class="z">              <!--  welcome@lege-->
-<p> <strong class="vwmy"><a href="{{ url('/home/personal/personal') }}"
-target="_blank" title="访问我的空间">{{ session('user')['email'] }}</a></strong>
-<span class="pipe">|</span> <a href="{{ url('home/set/set') }}">设置</a> <span
-class="pipe">|</span>             <!--  <a
+searchsubmit=true&amp;source=hotsearch" target="_blank" class="xi2" sc="1">剑灵</a> 
+ -->            </div> 
+           </div> 
+           <ul id="scbar_type_menu" class="p_pop" style="display: none;"> 
+            <li><a href="javascript:;" rel="forum" class="curtype">帖子</a></li> 
+            <li><a href="javascript:;" rel="user">用户</a></li> 
+           </ul> 
+           <script type="text/javascript"> // initSearchmenu('scbar', '');  </script> 
+          </div> 
+         </div> 
+         <div class="scqb-co02"> 
+           @if(session('user'))
+
+          <div id="um" class="login-flag"> 
+           <!-- js-login-avatar --> 
+           <div class="avt z"> 
+            <a href="{{ url('/home/personal/personal') }}" class=""><img src="/{{ trim(session('user')['detail']['faceico'], '/')}}" /></a> 
+           </div> 
+           <div class="z"> 
+            <!--  welcome@lege--> 
+            <p> <strong class="vwmy"><a href="{{ url('/home/personal/personal') }}" target="_blank" title="访问我的空间">{{ session('user')['detail']['username'] }}</a></strong> <span class="pipe">|</span> <a href="{{ url('home/set/set') }}">设置</a> <span class="pipe">|</span> 
+             <!--  <a
 href="http://bbs.17173.com/home.php?mod=space&amp;do=notice" id="myprompt"
 class="a showmenu" onmouseover="showMenu({'ctrlid':'myprompt'});">提醒</a><span
-id="myprompt_check"></span> <span class="pipe">|</span> -->              <a
-href="{{ url('home/login/quit') }}">退出</a> </p>              <p> <a
-href="http://bbs.17173.com/home.php?mod=spacecp&amp;ac=usergroup"
-id="g_upmine" class="showmenu" onmouseover="delayShow(this,
-showUpgradeinfo)">用户组: Lv.1</a> <span class="pipe" style="margin:0;">|</span>
-<a href="http://bbs.17173.com/home.php?mod=spacecp&amp;ac=credit&amp;showcredi
-t=1" id="extcreditmenu" onmouseover="delayShow(this, showCreditmenu);"
-class="showmenu">积分: <span class="js-login-credits">2</span></a> </p>
-</div>            </div>            <!-- </div> -->           </div>
-<div class="sc-quick-bar-r"></div>          </div>         </div>
-</div>       </div>    <div id="wp" class="wp">       <div id="pt" class="bm
-cl">         <div class="z">          <a href="../../../public/home"
-class="nvhm" title="首页">17173有料社区</a>          <em>›</em>          <a href="{{
-url('/home/personal/personal') }}">sunshine0121</a>          <em>›</em> 个人资料
-</div>         <!--    <div class="y chart-bar" style="padding:4px 0 0;">
+id="myprompt_check"></span> <span class="pipe">|</span> --> <a href="{{ url('home/login/quit') }}">退出</a> </p> 
+            <p> <a href="http://bbs.17173.com/home.php?mod=spacecp&amp;ac=usergroup" id="g_upmine" class="showmenu" onmouseover="delayShow(this,
+showUpgradeinfo)">用户组: Lv.1</a> <span class="pipe" style="margin:0;">|</span> <a href="{{ url('/home/set/jifen  ') }}" onmouseover="delayShow(this, showCreditmenu);" class="showmenu">积分: <span class="js-login-credits">2</span></a> </p> 
+           </div> 
+          </div> 
+          <!-- </div> -->
+            @else 
+         <div class="pp-login pp-login2" style="">
+                                    <div class="pp-login-in">
+                                        <div class="pp-login-c1">
+                                            <a href="{{ url('home/login/login') }}" class="pp-login-bt1">
+                                              <i class="ico-user"></i>安全登录
+                                            </a>
+                                        </div>
+                                        <div class="pp-login-c2">
+                                            <div class="item-1">
+                                                <a href="{{ url('home/default/default') }}" target="_blank" class="pp-login-bt2">
+                                                  <i class="ico-forget"></i>忘记密码
+                                                </a>
+                                            </div>
+                                            <div class="item-2">
+                                                <a href="{{ url('home/zhuce/zhuce') }}" target="_blank" class="pp-login-bt2">
+                                                  <i class="ico-quick"></i>快速注册
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                @endif
+
+         </div> 
+         <div class="sc-quick-bar-r"></div> 
+        </div> 
+       </div> 
+      </div> 
+     </div> 
+     <div id="wp" class="wp"> 
+      <div id="pt" class="bm
+cl"> 
+       <div class="z"> 
+        <a href="{{url('/')}}" class="nvhm" title="首页">17173有料社区</a> 
+        <em>›</em> 
+        <a href="{{
+url('/home/personal/personal') }}">{{ session('user')['detail']['username'] }}</a> 
+        <em>›</em> 个人资料 
+       </div> 
+       <!--    <div class="y chart-bar" style="padding:4px 0 0;">
 <a href="javascript:;" id="qmenu" onMouseOver="showMenu({'ctrlid':'qmenu','pos
 ':'34!','ctrlclass':'a','duration':2});">快捷导航</a>             <a href="#"
 onclick="widthauto(this);return false;"  class="y widthauto-btn" id
-="widthauto-btn">切换到窄版</a>     </div> -->        </div>        <style
-id="diy_style" type="text/css"></style>        <div class="wp">
-<!--[diy=diy1]-->        <div id="diy1" class="area"></div>
-<!--[/diy]-->        </div>       <!-- <div style="position:relative;">  -->
-<!-- <div class="y chart-bar" style="position: absolute; top:-32px;
+="widthauto-btn">切换到窄版</a>     </div> --> 
+      </div> 
+      <style id="diy_style" type="text/css"></style> 
+      <div class="wp"> 
+       <!--[diy=diy1]--> 
+       <div id="diy1" class="area"></div> 
+       <!--[/diy]--> 
+      </div> 
+      <!-- <div style="position:relative;">  --> 
+      <!-- <div class="y chart-bar" style="position: absolute; top:-32px;
 right:10px;">          <a href="javascript:;" id="qmenu" onmouseover="showMenu
 ({'ctrlid':'qmenu','pos':'34!','ctrlclass':'a','duration':2});">快捷导航</a>
 <a href="#" onclick="widthauto(this);return false;" class="y widthauto-btn" id
@@ -188,42 +258,35 @@ class="xg1">http://bbs.17173.com/?135971237</a> </p>          <div class="mn">
 id="a_friend_li_135971237" onclick="lsSubmit()" class="xi2">加为好友</a> </li>
 <li class="pm2"> <a href="javascript:;" id="a_sendpm_135971237"
 onclick="lsSubmit()" title="发送消息">发送消息</a> </li>           </ul>
-</div>         </div>  -->        <!-- <ul class="tb cl" style="padding-left:
+</div>         </div>  --> 
+      <!-- <ul class="tb cl" style="padding-left:
 75px;">          <li class="a"><a href="{{ url('/home/personal/personal')
 }}">个人资料</a></li>          <li > <a href="{{ url('home/set/zhuti')
 }}">主题</a></li>          <li><a href="{{ url('home/set/huifu') }}">回复</a></li>
-</ul>        </div> --> 
-@section('contents')
-           
-@show
+</ul>        </div> -->
+ @section('contents')
 
-
-
-
-
-
-
-
-      <div class="wp a_f AdBbs2BannerBottom"></div>
-     <div class="wp a_f">
-      <iframe align="center" marginwidth="0" marginheight="0" src="http://bbs.17173.com/x/bbsbottom96060.htm" frameborder="0" width="960" scrolling="no" height="60"></iframe>
-     </div>
-     <script type="text/javascript">
+  @show 
+      <div class="wp a_f AdBbs2BannerBottom"></div> 
+      <div class="wp a_f"> 
+       <iframe align="center" marginwidth="0" marginheight="0" src="http://bbs.17173.com/x/bbsbottom96060.htm" frameborder="0" width="960" scrolling="no" height="60"></iframe> 
+      </div> 
+      <script type="text/javascript">
 var seourl='http://bbs.17173.com/-forum--1.html';
 </script> 
-     <div id="ft" class="wp cl"> 
-      <div class="footer-follow"> 
-       <div class="footer"> 
-        <div class="footer-in"> 
-         <div class="global-footer global-footer-full"> 
-          <p class="global-footer-link"><a href="http://about.17173.com/" target="_blank">关于17173</a><span class="sep">|</span><a href="http://about.17173.com/join-us.shtml" target="_blank">人才招聘</a><span class="sep">|</span><a href="http://about.17173.com/adv-service.shtml" target="_blank">广告服务</a><span class="sep">|</span><a href="http://about.17173.com/business-cooperate.shtml" target="_blank">商务洽谈</a><span class="sep">|</span><a href="http://about.17173.com/contact-us.shtml" target="_blank">联系方式</a><span class="sep">|</span><a href="http://help.17173.com/" target="_blank">客服中心</a><span class="sep">|</span><a href="http://about.17173.com/site-map.shtml" target="_blank">网站导航</a><span class="sep">|</span><a href="/sitemap.html" target="_blank">论坛地图</a></p> 
-          <p class="global-footer-copyright">Copyright <font>&copy;</font> 2001-2017 17173. All rights reserved.</p> 
-          <p class="global-footer-certificate"><a href="http://www.miibeian.gov.cn/" target="_blank">京ICP证030367号</a><span class="sep">|</span><a href="http://www.17173.com/cert/wenhua.html" target="_blank">文网文[2008]059号</a><span class="sep">|</span><a href="http://www.17173.com/cert/chuban.html" target="_blank">互联网出版许可证</a></p> 
-          <p class="global-footer-safety"><a href="http://www.hd315.gov.cn/beian/view.asp?bianhao=021202001070200001" target="_blank"><br /> <img alt="经营性网站备案信息" src="/home/picture/cert-beian_1.gif" width="50" height="50" /></a><a href="http://www.fuzhou.cyberpolice.cn/alert_basic.asp" target="_blank"><img alt="福州网络警察报警平台" src="/home/picture/cert-cyberpolice_1.gif" width="50" height="50" /></a></p> 
+      <div id="ft" class="wp cl"> 
+       <div class="footer-follow"> 
+        <div class="footer"> 
+         <div class="footer-in"> 
+          <div class="global-footer global-footer-full"> 
+           <p class="global-footer-link"><a href="http://about.17173.com/" target="_blank">关于17173</a><span class="sep">|</span><a href="http://about.17173.com/join-us.shtml" target="_blank">人才招聘</a><span class="sep">|</span><a href="http://about.17173.com/adv-service.shtml" target="_blank">广告服务</a><span class="sep">|</span><a href="http://about.17173.com/business-cooperate.shtml" target="_blank">商务洽谈</a><span class="sep">|</span><a href="http://about.17173.com/contact-us.shtml" target="_blank">联系方式</a><span class="sep">|</span><a href="http://help.17173.com/" target="_blank">客服中心</a><span class="sep">|</span><a href="http://about.17173.com/site-map.shtml" target="_blank">网站导航</a><span class="sep">|</span><a href="/sitemap.html" target="_blank">论坛地图</a></p> 
+           <p class="global-footer-copyright">Copyright <font>&copy;</font> 2001-2017 17173. All rights reserved.</p> 
+           <p class="global-footer-certificate"><a href="http://www.miibeian.gov.cn/" target="_blank">京ICP证030367号</a><span class="sep">|</span><a href="http://www.17173.com/cert/wenhua.html" target="_blank">文网文[2008]059号</a><span class="sep">|</span><a href="http://www.17173.com/cert/chuban.html" target="_blank">互联网出版许可证</a></p> 
+           <p class="global-footer-safety"><a href="http://www.hd315.gov.cn/beian/view.asp?bianhao=021202001070200001" target="_blank"><br /> <img alt="经营性网站备案信息" src="/home/picture/cert-beian_1.gif" width="50" height="50" /></a><a href="http://www.fuzhou.cyberpolice.cn/alert_basic.asp" target="_blank"><img alt="福州网络警察报警平台" src="/home/picture/cert-cyberpolice_1.gif" width="50" height="50" /></a></p> 
+          </div> 
          </div> 
         </div> 
-       </div> 
-       <script type="text/javascript">
+        <script type="text/javascript">
     var forums={
         f1216f2388f2417:['最终幻想14','http://ff14.17173.com'],
         f2392f8844f8846:['激战2','    http://gw2.17173.com'],
@@ -280,15 +343,11 @@ var seourl='http://bbs.17173.com/-forum--1.html';
         }
     }
 </script> 
-      </div> 
-      <div id="flk" class="y" style="display:none;"> 
-      <p> <strong><a href="http://bbs.17173.com/" target="_blank">17173.com</a></strong> &nbsp;&nbsp;<span id="tcss"></span><script type="text/javascript" src="/home/js/ping_1.js" charset="utf-8"></script>
-       
-       <script type="text/javascript" reload="1">
+       </div> 
+       <div id="flk" class="y" style="display:none;"> 
+        <p> <strong><a href="http://bbs.17173.com/" target="_blank">17173.com</a></strong> &nbsp;&nbsp;<span id="tcss"></span><script type="text/javascript" src="/home/js/ping_1.js" charset="utf-8"></script> <script type="text/javascript" reload="1">
        // pgvMain({"discuzParams":{"r2":"21621576","ui":0,"rt":"home","md":"space","pn":1,"qq":"000"},"extraParams":""});
-       </script>
-
-       <script type="text/javascript">
+       </script> <script type="text/javascript">
       var _vds = _vds || [];
       window._vds = _vds;
       (function(){
@@ -303,51 +362,51 @@ var seourl='http://bbs.17173.com/-forum--1.html';
         })();
       })();
   </script> </p> 
-       <p class="xs0"> GMT+8, 2017-6-26 22:15 <span id="debuginfo"> </span> </p> 
+        <p class="xs0"> GMT+8, 2017-6-26 22:15 <span id="debuginfo"> </span> </p> 
+       </div> 
       </div> 
      </div> 
+     <!--/.wrap-top--> 
     </div> 
-    <!--/.wrap-top--> 
+    <!--/.wrap-bottom--> 
    </div> 
-   <!--/.wrap-bottom--> 
-  </div> 
-  <!--/.wrap--> 
-  <script src="/home/js/home_1.js" type="text/javascript"></script> 
-  <div class="focus plugin" id="m_notice" style="z-index: 10001; top: 50%; margin-top: -150px; left: 50%; margin-left: -200px; bottom: inherit; box-shadow: rgba(0, 0, 0, 0.8) 0px 0px 5px; border-radius: 5px; width: 400px; display:none;"> 
-   <div class="bm" style="border: 5px solid #dedede;  margin-bottom:0;"> 
-    <div class="cl" style="border-color: #CDCDCD;color: #444;/* background: #F2F2F2; */line-height:28px;padding:0 10px;"> 
-     <a href="javascript:;" onclick="$('ver_mask').style.display='none';$('m_notice').style.display='none';zsetCookie('17173bbs_m_notice', '1', 9999999);" class="y" title="关闭">关闭</a> 
-    </div> 
-    <div class="bm_c" style="padding: 0 30px 10px;"> 
-     <dl class="xld cl bbda"> 
-      <dd style="text-align: center;font-size: 24px;margin-bottom: 10px;margin-top: -10px;">
-       公告
-      </dd> 
-      <dd style="font-size: 18px;text-indent: 2em;padding-bottom:15px;line-height: 2;">
-       17173论坛手机优化版正式上线，欢迎使用手机浏览器访问论坛并给我们提建议~
-      </dd> 
-     </dl> 
-     <p class="ptn cl"><a href="http://bbs.17173.com/thread-9988229-1-1.html" onclick="$('ver_mask').style.display='none';$('m_notice').style.display='none';zsetCookie('17173bbs_m_notice', '1', 9999999);" class="xi2 y" target="_blank">查看详情 &raquo;</a></p> 
+   <!--/.wrap--> 
+   <script src="/home/js/home_1.js" type="text/javascript"></script> 
+   <div class="focus plugin" id="m_notice" style="z-index: 10001; top: 50%; margin-top: -150px; left: 50%; margin-left: -200px; bottom: inherit; box-shadow: rgba(0, 0, 0, 0.8) 0px 0px 5px; border-radius: 5px; width: 400px; display:none;"> 
+    <div class="bm" style="border: 5px solid #dedede;  margin-bottom:0;"> 
+     <div class="cl" style="border-color: #CDCDCD;color: #444;/* background: #F2F2F2; */line-height:28px;padding:0 10px;"> 
+      <a href="javascript:;" onclick="$('ver_mask').style.display='none';$('m_notice').style.display='none';zsetCookie('17173bbs_m_notice', '1', 9999999);" class="y" title="关闭">关闭</a> 
+     </div> 
+     <div class="bm_c" style="padding: 0 30px 10px;"> 
+      <dl class="xld cl bbda"> 
+       <dd style="text-align: center;font-size: 24px;margin-bottom: 10px;margin-top: -10px;">
+         公告 
+       </dd> 
+       <dd style="font-size: 18px;text-indent: 2em;padding-bottom:15px;line-height: 2;">
+         17173论坛手机优化版正式上线，欢迎使用手机浏览器访问论坛并给我们提建议~ 
+       </dd> 
+      </dl> 
+      <p class="ptn cl"><a href="http://bbs.17173.com/thread-9988229-1-1.html" onclick="$('ver_mask').style.display='none';$('m_notice').style.display='none';zsetCookie('17173bbs_m_notice', '1', 9999999);" class="xi2 y" target="_blank">查看详情 &raquo;</a></p> 
+     </div> 
     </div> 
    </div> 
-  </div> 
-  <div id="ver_mask" style="z-index:10000; background: #000; opacity: .5; filter: alpha(opacity=50); width: 100%; height: 100%; top:0; left:0; position:fixed; display:none;"></div> 
-  <script type="text/javascript">
+   <div id="ver_mask" style="z-index:10000; background: #000; opacity: .5; filter: alpha(opacity=50); width: 100%; height: 100%; top:0; left:0; position:fixed; display:none;"></div> 
+   <script type="text/javascript">
     if (zgetCookie('17173bbs_m_notice') != 1) {
         jQuery('#m_notice,#ver_mask').show();
     }
     var _showApptip = false;
 </script> 
-  <div class="scroll-back" id="scroll-back"> 
-   <a style="background:none; margin-bottom:5px;" target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=1401993324&amp;site=qq&amp;menu=yes"><img border="0" src="/home/picture/qq_1.png" alt="点击这里给我发消息" title="点击这里给我发消息" /></a> 
-   <a style="background:none; margin-bottom:5px;" target="_blank" href="https://jq.qq.com/?_wv=1027&amp;k=49ZMi0k"><img border="0" src="/home/picture/qq-group_1.png" alt="点击链接加入【17173社区玩家群1】" title="点击链接加入【17173社区玩家群1】" /></a> 
-   <a href="#" id="scrolltop1" class="scroll-top js-scroll-top"></a> 
-  </div> 
-  <script>
+   <div class="scroll-back" id="scroll-back"> 
+    <a style="background:none; margin-bottom:5px;" target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=1401993324&amp;site=qq&amp;menu=yes"><img border="0" src="/home/picture/qq_1.png" alt="点击这里给我发消息" title="点击这里给我发消息" /></a> 
+    <a style="background:none; margin-bottom:5px;" target="_blank" href="https://jq.qq.com/?_wv=1027&amp;k=49ZMi0k"><img border="0" src="/home/picture/qq-group_1.png" alt="点击链接加入【17173社区玩家群1】" title="点击链接加入【17173社区玩家群1】" /></a> 
+    <a href="#" id="scrolltop1" class="scroll-top js-scroll-top"></a> 
+   </div> 
+   <script>
     var forumId = "0";
 </script> 
-  <script src="/home/js/forum_1.js" type="text/javascript"></script> 
-  <!--[if IE 6]>
+   <script src="/home/js/forum_1.js" type="text/javascript"></script> 
+   <!--[if IE 6]>
 <script type="text/javascript">
 showTopLinkNew();
 jQuery('#widthauto-btn').remove();
@@ -359,10 +418,10 @@ jQuery('#widthauto-btn').remove();
     .scroll-back{ position:absolute;}
 </style>
 <![endif]--> 
-  <!--[if lt IE 9]>
+   <!--[if lt IE 9]>
 <script src="/home/js/ltie9_1.js" type="text/javascript"></script>
-<![endif]-->  
-  <script>
+<![endif]--> 
+   <script>
 //     !function() {
 //         if (/Android|iPad|iPhone|iPod|BlackBerry/.test(navigator.userAgent)) {
 //             var url = /mobile=no/.test(location.href) ? location.href.replace(/mobile=no/, 'mobile=2') : location.href + '?mobile=2';
@@ -378,19 +437,20 @@ jQuery('#widthauto-btn').remove();
 //         }
 //     }()
 // </script> 
-  <script type="text/javascript">advConfigs.loadConfigFile('//s.17173cdn.com/global/global.js');</script> 
-  <script type="text/javascript" src="/home/js/apptip_1.js"></script> 
-  <script type="text/javascript" src="/home/js/shouyoushanwan_1.js"></script> 
-  <!-- START 17173 Site Census --> 
-  <script type="text/javascript" src="/home/js/ping_1.js"></script> 
-  <!-- END 17173 Site Census --> 
-  <script type="text/javascript" src="/home/js/lp.min_1.js"></script> 
-  <script type="text/javascript">
+   <script type="text/javascript">advConfigs.loadConfigFile('//s.17173cdn.com/global/global.js');</script> 
+   <script type="text/javascript" src="/home/js/apptip_1.js"></script> 
+   <script type="text/javascript" src="/home/js/shouyoushanwan_1.js"></script> 
+   <!-- START 17173 Site Census --> 
+   <script type="text/javascript" src="/home/js/ping_1.js"></script> 
+   <!-- END 17173 Site Census --> 
+   <script type="text/javascript" src="/home/js/lp.min_1.js"></script> 
+   <script type="text/javascript">
     advConfigs.loadConfigFile('http://s.17173cdn.com/qiyu/index.js');
 </script> 
-  <script type="text/javascript">
+   <script type="text/javascript">
     advConfigs.loadConfigFile('http://s.17173cdn.com/bbs/final.js');
 </script> 
-  <script type="text/javascript" src="/home/js/setlink.min_1.js"></script>  
+   <script type="text/javascript" src="/home/js/setlink.min_1.js"></script>  
+  </div>
  </body>
 </html>

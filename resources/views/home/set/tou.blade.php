@@ -66,7 +66,7 @@ document.write(AC_FL_RunContent('width','450','height','253','scale','exactfit',
 <button type="button" class="am-btn am-btn-danger am-btn-sm ">
                         <i class="am-icon-cloud-upload">
                         </i>
-                        添加
+                        修改
                     </button>
                     </div>
 </td>
@@ -77,6 +77,7 @@ document.write(AC_FL_RunContent('width','450','height','253','scale','exactfit',
 </form>
 </div>
 </div>
+<div>
 <script type="text/javascript">
 var redirecturl = loadUserdata('avatar_redirect');
 if(redirecturl) {
@@ -89,7 +90,7 @@ $('retpre').innerHTML = '<a href="' + redirecturl + '">返回上一页</a>';
 <li class="a"><a href="{{ url('home/set/tou') }}">修改头像</a></li>
 <li><a href="{{ url('/home/set/set') }}">个人资料</a></li>
 <!-- <li><a href="http://bbs.17173.com/home.php?mod=spacecp&amp;ac=profile&amp;op=verify">认证</a></li> -->
-<li><a href="http://bbs.17173.com/home.php?mod=spacecp&amp;ac=credit">积分</a></li>
+<li><a href="{{ url('home/set/jifen') }}">积分</a></li>
 <li><a href="http://bbs.17173.com/home.php?mod=spacecp&amp;ac=usergroup">用户组</a></li>
 <!-- <li><a href="http://bbs.17173.com/home.php?mod=spacecp&amp;ac=privacy">隐私筛选</a></li> -->
 
