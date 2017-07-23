@@ -22,8 +22,9 @@ class UserController extends Controller
 			'concern_id' => $input['concern_id'],
 			'follower_id' => session('user')['id'],
 		];
-		$res = Follow::where('concern_id', $data['concern_id']) -> where('follower_id', $data['follower_id']) -> first();
-		if($res == null)
+		$res1 = $data['concern_id'] == $data['follower_id'];
+		$res2 = Follow::where('concern_id', $data['concern_id']) -> where('follower_id', $data['follower_id']) -> first();
+		if($res1 == false && $res2 == null)
 			Follow::insert($data);
 		return redirect('home/post/'.$input['pid'].'#reply_'.$input['fid']);
 	}

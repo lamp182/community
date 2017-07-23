@@ -3,15 +3,10 @@
  <head> 
   <meta http-equiv="Content-
 Type" content="text/html; charset=utf-8" /> 
-  <title>sunshine0121的个人资料 -
-17173有料社区 -  爱游戏，爱17173!</title> 
-  <meta name="keywords" content="sunshine0121的个人资料" /> 
-  <meta name="description" content="sunshine0121的个人资料 ,17173有料社区" /> 
-  <meta name="renderer" content="webkit" /> 
-  <meta name="generator" content="17173" /> 
-  <meta name="author" content="17173" /> 
-  <meta name="copyright" content="2001-2017
-17173. All rights reserved." /> 
+  <title>@yield('title')</title> 
+  <meta name="keywords" content="@yield('keywords')" /> 
+  <meta name="description" content="@yield('desctiption')" /> 
+ 
   <meta name="MSSmartTagsPreventParsing" content="True" /> 
   <meta http-equiv="MSThemeCompatible" content="Yes" /> 
   <meta name="baidu-site-verification" content="f5874a3f8e49646e5917517f21be2764" /> 
@@ -170,6 +165,64 @@ searchsubmit=true&amp;source=hotsearch" target="_blank" class="xi2" sc="1">剑�
            <script type="text/javascript"> // initSearchmenu('scbar', '');  </script> 
           </div> 
          </div> 
+         <div class="scqb-co01">
+                                <div class="z search-box">
+                                    <div id="scbar" class="scbar_narrow cl">
+                                        <form id="scbar_form" method="post" autocomplete="off"  action="{{ url('home/query') }}">
+                                            <table cellspacing="0" cellpadding="0">
+                                                <tr>
+                                                    <td class="scbar_icon_td">&nbsp;</td>
+                                                    <td class="scbar_txt_td">
+                                                    	{{ csrf_field() }}
+                                                    	<input type="text" name="query" id="scbar_txt" placeholder="请输入搜索内容" value="@if(!empty($query)){{ $query }}@endif" onfocus="if(this.value == '请输入搜索内容'){this.value = '';}" onblur="if(this.value == ''){this.value = '请输入搜索内容';}" autocomplete="off" x-webkit-speech speech />
+                                                    </td>
+                                                    <td class="scbar_btn_td">
+                                                    	<button type="submit" name="searchsubmit" id="scbar_btn" sc="1" class="pn" value="true">
+                                                    		<strong class="">搜索</strong>
+                                                    	</button>
+                                                    </td>
+                                                    <td class="scbar_hot_td">&nbsp;</td>
+                                                </tr>
+                                            </table>
+                                        </form>
+
+                                        <div id="scbar_hot">
+                                            <strong class="xw1">热搜: </strong>
+
+
+                                            <a href='search.php?mod=forum&srchtxt=%E6%95%B0%E6%8D%AE%E5%BA%93&formhash=2f70169e&searchsubmit=true&source=hotsearch' target="_blank" class="xi2" sc="1">数据库</a>
+
+
+
+                                            <a href='search.php?mod=forum&srchtxt=%E6%94%BB%E7%95%A5&formhash=2f70169e&searchsubmit=true&source=hotsearch' target="_blank" class="xi2" sc="1">攻略</a>
+
+
+
+                                            <a href='search.php?mod=forum&srchtxt=%E6%BF%80%E6%B4%BB%E7%A0%81&formhash=2f70169e&searchsubmit=true&source=hotsearch' target="_blank" class="xi2" sc="1">激活码</a>
+
+
+
+                                            <a href='search.php?mod=forum&srchtxt=%E7%82%89%E7%9F%B3%E4%BC%A0%E8%AF%B4&formhash=2f70169e&searchsubmit=true&source=hotsearch' target="_blank" class="xi2" sc="1">炉石传说</a>
+
+
+
+                                            <a href='search.php?mod=forum&srchtxt=%E7%BE%8E%E5%9B%BE&formhash=2f70169e&searchsubmit=true&source=hotsearch' target="_blank" class="xi2" sc="1">美图</a>
+
+
+
+                                            <a href='search.php?mod=forum&srchtxt=%E5%89%91%E7%81%B5&formhash=2f70169e&searchsubmit=true&source=hotsearch' target="_blank" class="xi2" sc="1">剑灵</a>
+
+                                        </div>
+
+
+                                    </div>
+                                    <ul id="scbar_type_menu" class="p_pop" style="display: none;"><li><a href="javascript:;" rel="curforum" fid="8706" >本版</a></li><li><a href="javascript:;" rel="forum" class="curtype">帖子</a></li><li><a href="javascript:;" rel="user">用户</a></li></ul>
+                                    <script type="text/javascript">
+//                                         initSearchmenu('scbar', '');
+                                    </script>
+                                </div>
+                            </div>
+                            
          <div class="scqb-co02"> 
            @if(session('user'))
 
@@ -180,11 +233,13 @@ searchsubmit=true&amp;source=hotsearch" target="_blank" class="xi2" sc="1">剑�
            </div> 
            <div class="z"> 
             <!--  welcome@lege--> 
-            <p> <strong class="vwmy"><a href="{{ url('/home/personal/personal') }}" target="_blank" title="访问我的空间">{{ session('user')['detail']['username'] }}</a></strong> <span class="pipe">|</span> <a href="{{ url('home/set/set') }}">设置</a> <span class="pipe">|</span> 
-             <!--  <a
-href="http://bbs.17173.com/home.php?mod=space&amp;do=notice" id="myprompt"
-class="a showmenu" onmouseover="showMenu({'ctrlid':'myprompt'});">提醒</a><span
-id="myprompt_check"></span> <span class="pipe">|</span> --> <a href="{{ url('home/login/quit') }}">退出</a> </p> 
+            <p> <strong class="vwmy">
+            	<a href="{{ url('/home/personal/personal') }}" title="">{{ session('user')['detail']['username'] }}</a></strong> 
+            	<span class="pipe">|</span> 
+            	<a href="{{ url('home/set/set') }}">设置</a> 
+            	<span class="pipe">|</span> 
+             	<a href="{{ url('home/login/quit') }}">退出</a> 
+            </p> 
             <p> <a href="http://bbs.17173.com/home.php?mod=spacecp&amp;ac=usergroup" id="g_upmine" class="showmenu" onmouseover="delayShow(this,
 showUpgradeinfo)">用户组: Lv.1</a> <span class="pipe" style="margin:0;">|</span> <a href="{{ url('/home/set/jifen  ') }}" onmouseover="delayShow(this, showCreditmenu);" class="showmenu">积分: <span class="js-login-credits">2</span></a> </p> 
            </div> 
@@ -221,8 +276,7 @@ showUpgradeinfo)">用户组: Lv.1</a> <span class="pipe" style="margin:0;">|</sp
       </div> 
      </div> 
      <div id="wp" class="wp"> 
-      <div id="pt" class="bm
-cl"> 
+      <div id="pt" class="bm cl" style="background: url(/home/images/hd-bg01_1.jpg) no-repeat;"> 
        <div class="z"> 
         <a href="{{url('/')}}" class="nvhm" title="首页">17173有料社区</a> 
         <em>›</em> 
@@ -230,11 +284,7 @@ cl">
 url('/home/personal/personal') }}">{{ session('user')['detail']['username'] }}</a> 
         <em>›</em> 个人资料 
        </div> 
-       <!--    <div class="y chart-bar" style="padding:4px 0 0;">
-<a href="javascript:;" id="qmenu" onMouseOver="showMenu({'ctrlid':'qmenu','pos
-':'34!','ctrlclass':'a','duration':2});">快捷导航</a>             <a href="#"
-onclick="widthauto(this);return false;"  class="y widthauto-btn" id
-="widthauto-btn">切换到窄版</a>     </div> --> 
+      
       </div> 
       <style id="diy_style" type="text/css"></style> 
       <div class="wp"> 
@@ -242,48 +292,66 @@ onclick="widthauto(this);return false;"  class="y widthauto-btn" id
        <div id="diy1" class="area"></div> 
        <!--[/diy]--> 
       </div> 
-      <!-- <div style="position:relative;">  --> 
-      <!-- <div class="y chart-bar" style="position: absolute; top:-32px;
-right:10px;">          <a href="javascript:;" id="qmenu" onmouseover="showMenu
-({'ctrlid':'qmenu','pos':'34!','ctrlclass':'a','duration':2});">快捷导航</a>
-<a href="#" onclick="widthauto(this);return false;" class="y widthauto-btn" id
-="widthauto-btn">切换到窄版</a>         </div>        </div>        <div id="uhd">
-<div class="h cl" id="uhd_avatar">          <div class="icn avt">          <a
-href="http://bbs.17173.com/space-uid-135971237.html"><img
-src="/home/picture/avatar_1.php" /></a>         </div>          <h2
-class="mt"> sunshine0121</h2>          <p> <a
-href="http://bbs.17173.com/?135971237"
-class="xg1">http://bbs.17173.com/?135971237</a> </p>          <div class="mn">
-<ul class="cl">            <li class="addf"> <a href="javascript:;"
-id="a_friend_li_135971237" onclick="lsSubmit()" class="xi2">加为好友</a> </li>
-<li class="pm2"> <a href="javascript:;" id="a_sendpm_135971237"
-onclick="lsSubmit()" title="发送消息">发送消息</a> </li>           </ul>
-</div>         </div>  --> 
-      <!-- <ul class="tb cl" style="padding-left:
-75px;">          <li class="a"><a href="{{ url('/home/personal/personal')
-}}">个人资料</a></li>          <li > <a href="{{ url('home/set/zhuti')
-}}">主题</a></li>          <li><a href="{{ url('home/set/huifu') }}">回复</a></li>
-</ul>        </div> -->
+      
  @section('contents')
 
   @show 
-      <div class="wp a_f AdBbs2BannerBottom"></div> 
-      <div class="wp a_f"> 
-       <iframe align="center" marginwidth="0" marginheight="0" src="http://bbs.17173.com/x/bbsbottom96060.htm" frameborder="0" width="960" scrolling="no" height="60"></iframe> 
+  
+    <div class="wp a_f">
+		<a href="{{ $adverts[2]['url'] }}">
+		<img style="width: 960px; height: 60px;" alt="{{ $adverts[2]['name'] }}" src="{{ $adverts[2]['picture'] }}"></a>
+    </div>
+  
+  
+  
+  
+      <div class="wp a_f" style="background: white;">
+      	<span style="font-size: 16px; float: left;">友情链接：</span>
+		<ul>
+			@foreach($links as $link)
+			<li style="float: left; margin: 0px 10px;"><a href="{{ $link['url'] }}">{{ $link['title'] }}</a></li>
+			@endforeach
+			<div style="clear: both;"></div>
+		</ul>
       </div> 
-      <script type="text/javascript">
-var seourl='http://bbs.17173.com/-forum--1.html';
-</script> 
+     
       <div id="ft" class="wp cl"> 
        <div class="footer-follow"> 
         <div class="footer"> 
          <div class="footer-in"> 
           <div class="global-footer global-footer-full"> 
-           <p class="global-footer-link"><a href="http://about.17173.com/" target="_blank">关于17173</a><span class="sep">|</span><a href="http://about.17173.com/join-us.shtml" target="_blank">人才招聘</a><span class="sep">|</span><a href="http://about.17173.com/adv-service.shtml" target="_blank">广告服务</a><span class="sep">|</span><a href="http://about.17173.com/business-cooperate.shtml" target="_blank">商务洽谈</a><span class="sep">|</span><a href="http://about.17173.com/contact-us.shtml" target="_blank">联系方式</a><span class="sep">|</span><a href="http://help.17173.com/" target="_blank">客服中心</a><span class="sep">|</span><a href="http://about.17173.com/site-map.shtml" target="_blank">网站导航</a><span class="sep">|</span><a href="/sitemap.html" target="_blank">论坛地图</a></p> 
-           <p class="global-footer-copyright">Copyright <font>&copy;</font> 2001-2017 17173. All rights reserved.</p> 
-           <p class="global-footer-certificate"><a href="http://www.miibeian.gov.cn/" target="_blank">京ICP证030367号</a><span class="sep">|</span><a href="http://www.17173.com/cert/wenhua.html" target="_blank">文网文[2008]059号</a><span class="sep">|</span><a href="http://www.17173.com/cert/chuban.html" target="_blank">互联网出版许可证</a></p> 
-           <p class="global-footer-safety"><a href="http://www.hd315.gov.cn/beian/view.asp?bianhao=021202001070200001" target="_blank"><br /> <img alt="经营性网站备案信息" src="/home/picture/cert-beian_1.gif" width="50" height="50" /></a><a href="http://www.fuzhou.cyberpolice.cn/alert_basic.asp" target="_blank"><img alt="福州网络警察报警平台" src="/home/picture/cert-cyberpolice_1.gif" width="50" height="50" /></a></p> 
-          </div> 
+           <p class="global-footer-link">
+				<a href="http://about.17173.com/" target="_blank">关于17173</a>
+				<span class="sep">|</span>
+				<a href="http://about.17173.com/join-us.shtml" target="_blank">人才招聘</a>
+				<span class="sep">|</span>
+				<a href="http://about.17173.com/adv-service.shtml" target="_blank">广告服务</a>
+				<span class="sep">|</span>
+				<a href="http://about.17173.com/business-cooperate.shtml" target="_blank">商务洽谈</a>
+				<span class="sep">|</span>
+				<a href="http://about.17173.com/contact-us.shtml" target="_blank">联系方式</a>
+				<span class="sep">|</span>
+				<a href="http://help.17173.com/" target="_blank">客服中心</a>
+				<span class="sep">|</span>
+				<a href="http://about.17173.com/site-map.shtml" target="_blank">网站导航</a>
+				<span class="sep">|</span><a href="/sitemap.html" target="_blank">论坛地图</a></p>
+			<p class="global-footer-copyright">{{ $website['rights'] }}</p>
+			<p class="global-footer-certificate">
+				<a href="http://www.miibeian.gov.cn/" target="_blank">{{ $website['records'] }}</a>
+				<span class="sep">|</span>
+				<a href="http://www.17173.com/cert/wenhua.html" target="_blank">文网文[2008]059号</a>
+				<span class="sep">|</span>
+				<a href="http://www.17173.com/cert/chuban.html" target="_blank">互联网出版许可证</a>
+			</p>
+			<p class="global-footer-safety">
+				<a href="http://www.hd315.gov.cn/beian/view.asp?bianhao=021202001070200001" target="_blank"></br>
+					<img alt="经营性网站备案信息" src="/home/picture/cert-beian_1.gif" width="50" height="50" />
+				</a>
+				<a href="http://www.fuzhou.cyberpolice.cn/alert_basic.asp" target="_blank">
+					<img alt="福州网络警察报警平台" src="/home/picture/cert-cyberpolice_1.gif" width="50" height="50" />
+				</a>
+			</p>
+		</div> 
          </div> 
         </div> 
         <script type="text/javascript">
@@ -398,8 +466,6 @@ var seourl='http://bbs.17173.com/-forum--1.html';
     var _showApptip = false;
 </script> 
    <div class="scroll-back" id="scroll-back"> 
-    <a style="background:none; margin-bottom:5px;" target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=1401993324&amp;site=qq&amp;menu=yes"><img border="0" src="/home/picture/qq_1.png" alt="点击这里给我发消息" title="点击这里给我发消息" /></a> 
-    <a style="background:none; margin-bottom:5px;" target="_blank" href="https://jq.qq.com/?_wv=1027&amp;k=49ZMi0k"><img border="0" src="/home/picture/qq-group_1.png" alt="点击链接加入【17173社区玩家群1】" title="点击链接加入【17173社区玩家群1】" /></a> 
     <a href="#" id="scrolltop1" class="scroll-top js-scroll-top"></a> 
    </div> 
    <script>

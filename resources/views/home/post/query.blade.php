@@ -25,6 +25,7 @@
 			</li>
 			@endforeach
 			@endif
+			@if($posts -> appends(['query' => $query]) -> render() != null)
 			<li class="pbw" style="background: #fff; margin: 10px 0;">
 				<div class="pg" style="margin-bottom: 10px; background: white; height: 20px;">
 					{!! $posts -> appends(['query' => $query]) -> render() !!}
@@ -36,6 +37,7 @@
 					</style>
 				</div>
 			</li>
+			@endif
 		</ul>
 	</div>
 </div>

@@ -98,7 +98,8 @@ class AdvertsController extends Controller
             $adverts -> etime = $res['etime']; 
             $adverts -> picture = $res['picture']; 
             $adverts -> position_id = $res['position_id']; 
-
+            $tmp = Adverts::where('position_id', $res['position_id']) -> first();
+            Adverts::where('id', $tmp['id']) -> update(['position_id' => 0]);
                 // dd($link);
                 $re = $adverts -> save();
                 if($re)

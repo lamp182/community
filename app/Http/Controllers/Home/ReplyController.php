@@ -54,7 +54,10 @@ class ReplyController extends Controller
     {
         // 获取广告
         $adverts = $this -> getAdverts();
-		
+        // 获取友情链接
+        $links = $this -> getLinks();
+        // 获取网站信息
+        $website = $this -> getWeb();
     	$input = Input::all();
     	// 楼层id
     	$fid = $input['fid'];
@@ -66,6 +69,8 @@ class ReplyController extends Controller
         $column = Section::find($section -> id) -> column;
         $data = [
             'adverts' => $adverts,
+        	'links' => $links,
+        	'website' => $website,
         	'fid' => $fid,
             'reply' => $reply,
         	'post' => $post,

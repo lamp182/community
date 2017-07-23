@@ -42,7 +42,7 @@
                                         <div class="am-u-sm-12 am-margin-top-xs">
                                             <div class="am-form-group am-form-file">
                                                 <div class="tpl-form-file-img">
-                                                    <img id="pic" src="/{{$data['logo']}}" width="100px" height="100px" alt="">
+                                                    <img id="pic" src="/{{ trim($data['logo'], '/') }}" width="239px" height="70px" alt="">
                                                 </div>
                                                 <button type="button" class="am-btn am-btn-danger am-btn-sm ">
                                                 <i class="am-icon-cloud-upload"></i> 添加Logo</button>

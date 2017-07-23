@@ -79,7 +79,7 @@
        		  <div class="tpl-sidebar-user-panel">
                 <div class="tpl-user-panel-slide-toggleable">
                     <div class="tpl-user-panel-profile-picture">
-                        <img src="{{ session('admin')['faceico'] }}" alt="">
+                        <img src="/{{ trim(session('admin')['faceico'], '/') }}" alt="">
                     </div>
                     <span class="user-panel-logged-in-text">
               <i class="am-icon-circle-o am-text-success tpl-user-panel-status-icon"></i>
@@ -157,14 +157,7 @@
                         </li>
                     </ul>
                 </li>
-              
-               
-                <li class="sidebar-nav-link">
-                    <a href="chart.html">
-                        <i class="am-icon-bar-chart sidebar-nav-link-logo"></i> 回复管理
-
-                    </a>
-                </li>
+                
                  <li class="sidebar-nav-link">
                     <a href="{{url('admin/user/index')}}">
                         <i class="am-icon-bar-chart sidebar-nav-link-logo"></i> 前台用户管理

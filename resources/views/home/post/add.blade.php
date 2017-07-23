@@ -1,18 +1,16 @@
 @extends('home.layout.index')
 
-@section('title', '发表帖子--'.$data['section'])
+@section('title', '发表帖子--'.$data['section']['name'])
 @section('contents')
 <div id="wp" class="wp"> 
 <!--    <link href="/home/css/showmessage.css" rel="stylesheet" type="text/css" />  -->
-	<div id="pt" class="bm cl"> 
+	<div id="pt" class="bm cl" style="background: url(/home/images/hd-bg01_1.jpg) no-repeat;"> 
 	   <div class="z">
-	    <a href="./" class="nvhm" title="首页">17173有料社区</a> 
+	    <a href="{{ url() }}" class="nvhm" title="首页">17173有料社区</a>
 	    <em>›</em> 
-	    <a href="">论坛</a> 
+	    <a href="{{ url('?id='.$data['column']['id']) }}">{{ $data['column']['name'] }}</a> 
 	    <em>›</em> 
-	    <a href="">热门游戏</a> 
-	    <em>›</em> 
-	    <a href="">{{ $data['section'] }}</a> 
+	    <a href="{{ url('home/section?id='.$data['section']['id']) }}">{{ $data['section']['name'] }}</a> 
 	    <em>›</em> 发表帖子 
 	   </div> 
 	</div>

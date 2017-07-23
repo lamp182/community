@@ -33,69 +33,91 @@ window.location.href = document.location.href.replace('&reload=1', '') + '&reloa
 }
 saveUserdata('avatar_redirect', document.referrer);
 </script>
-<form method="post" autocomplete="off" action="home.php?mod=spacecp&amp;ac=avatar&amp;ref">
+<form method="post" id="form" action="{{url('home/set/doface')}}">
 <table cellspacing="0" cellpadding="0" class="tfm">
-<!-- <caption>
-<span id="retpre" class="y xi2"><a href="http://www.lege182.com/home/set/set">返回上一页</a></span>
-<h2 class="xs2">当前我的头像</h2>
-<p>如果您还没有设置自己的头像，系统会显示为默认头像，您需要自己上传一张新照片来作为自己的个人头像 </p>
-</caption>
-<tbody> -->
-<tr>
-<td><img src="http://bbs.17173.com/uc/avatar.php?uid=136130969&amp;size=big"></td>
-</tr>
-<!--  </tbody>
-</table>
 
-<table cellspacing="0" cellpadding="0" class="tfm">
-<caption>
-<h2 class="xs2">设置我的新头像</h2>
-<p>请选择一个新照片进行上传编辑。<br>头像保存后，您可能需要刷新一下本页面(按Ctrl+F5键)，才能查看最新的头像效果 </p>
-</caption> -->
+<tr>
+<td><img id="pic" style="width: 200px; height: 200px;" src="/{{ trim(session('user')['detail']['faceico'], '/') }}"></td>
+</tr>
 <tbody>
 <tr>
-<!-- <td>
-<script type="text/javascript">
-document.write(AC_FL_RunContent('width','450','height','253','scale','exactfit','src','http://bbs.17173.com/uc/images/camera.swf?inajax=1&appid=2&input=8670fb9NJ0FF%2FdPthaWH1FyTtc74bGAg7sWfv%2FaMmlJYHQyGPkCHFsyOfhm1PJVKlYw5G9IniQaqHZ7B3GIWVtRT5YV1ci8hrpxYlhucRdmmL1QVtQRyf2id543Rho3cGg&agent=ba081c70c62b1a73f7586809b37ba98f&ucapi=bbs.17173.com%2Fuc&avatartype=virtual&uploadSize=2048','id','mycamera','name','mycamera','quality','high','bgcolor','#ffffff','menu','false','swLiveConnect','true','allowScriptAccess','always'));</script>
-<embed width="450" height="253" scale="exactfit" src="http://bbs.17173.com/uc/images/camera.swf?inajax=1&amp;appid=2&amp;input=8670fb9NJ0FF%2FdPthaWH1FyTtc74bGAg7sWfv%2FaMmlJYHQyGPkCHFsyOfhm1PJVKlYw5G9IniQaqHZ7B3GIWVtRT5YV1ci8hrpxYlhucRdmmL1QVtQRyf2id543Rho3cGg&amp;agent=ba081c70c62b1a73f7586809b37ba98f&amp;ucapi=bbs.17173.com%2Fuc&amp;avatartype=virtual&amp;uploadSize=2048" name="mycamera" quality="high" bgcolor="#ffffff" menu="false" swliveconnect="true" allowscriptaccess="always" type="application/x-shockwave-flash">
-</td> -->
+
 <td>
 
-<input id="file0" type="file" multiple="" value="">
+<input id="addface" type="file" multiple="" value="">
+<input type="hidden" name="faceico" id="art_thumb" style="width:120px;height:60px" value="">
+<script type="text/javascript">
+    $(function() {
+                $("#addface").change(function() {
+                    uploadImage();
+                });
+            });
+
+            function uploadImage() {
+                //                            判断是否有选择上传文件
+                var imgPath = $("#addface").val();
+                // alert(imgPath);
+                if (imgPath == "") {
+                    alert("请选择上传图片！");
+                    return;
+                }
+                //判断上传文件的后缀名
+                var strExtension = imgPath.substr(imgPath.lastIndexOf('.') + 1);
+                if (strExtension != 'jpg' && strExtension != 'gif' && strExtension != 'png' && strExtension != 'bmp') {
+                    alert("请选择图片文件");
+                    return;
+                }
+
+                var formData = new FormData($('#form')[0]);
+                console.log(formData);
+                $.ajax({
+                    type: "post",
+                    url: "/home/set/upload",
+                    data: formData,
+                    async: true,
+                    cache: false,
+                    contentType: false,
+                    processData: false,
+                     success: function(res) {
+                       // console.log(data);
+                       // alert(res);
+                                $('#pic').attr('src','/'+res);
+//                                 $('#pic').show();
+                                $("#art_thumb").val(res);
+                                // $('#icon').val(data);
+
+                            },
+                    // alert('2345');
+                    error: function(XMLHttpRequest, textStatus, errorThrown) {
+                        console.log(XMLHttpRequest);
+                        console.log(textStatus);
+                        console.log(errorThrown);
+                        alert("上传失败，请检查网络后重试");
+                    }
+                });
+            }
+    </script>
 <div>
-<button type="button" class="am-btn am-btn-danger am-btn-sm ">
-                        <i class="am-icon-cloud-upload">
-                        </i>
+<br>
+<button type="button" class="am-btn am-btn-danger am-btn-sm " style="width: 200px; height: 30px; border: 0; background: #aaa;">
                         修改
-                    </button>
+</button>
                     </div>
 </td>
 </tr>
 </tbody>
 </table>
-<input type="hidden" name="formhash" value="98c1a666">
+<input type="hidden" name="" value="">
 </form>
 </div>
 </div>
 <div>
-<script type="text/javascript">
-var redirecturl = loadUserdata('avatar_redirect');
-if(redirecturl) {
-$('retpre').innerHTML = '<a href="' + redirecturl + '">返回上一页</a>';
-}
-</script>
+
 <div class="appl"><div class="tbn">
 <h2 class="mt bbda">设置</h2>
 <ul>
 <li class="a"><a href="{{ url('home/set/tou') }}">修改头像</a></li>
 <li><a href="{{ url('/home/set/set') }}">个人资料</a></li>
-<!-- <li><a href="http://bbs.17173.com/home.php?mod=spacecp&amp;ac=profile&amp;op=verify">认证</a></li> -->
-<li><a href="{{ url('home/set/jifen') }}">积分</a></li>
-<li><a href="http://bbs.17173.com/home.php?mod=spacecp&amp;ac=usergroup">用户组</a></li>
-<!-- <li><a href="http://bbs.17173.com/home.php?mod=spacecp&amp;ac=privacy">隐私筛选</a></li> -->
-
-<!-- <li><a href="http://bbs.17173.com/home.php?mod=spacecp&amp;ac=profile&amp;op=password">密码安全</a></li> -->
-
 </ul>
 </div></div>
 </div></div>

@@ -151,8 +151,8 @@ class SectionsController extends Controller
            $v['cname'] = Columns::where('id',$v['cid'])->first()['name'];
            // dump($v['cid']);
         }
-       
-        return view('admin.sections.details',['section'=>$v]);
+       $themes = Section::find($id) -> themes;
+        return view('admin.sections.details',['section'=>$v, 'themes' => $themes]);
 
 
         // dump($id);

@@ -23,8 +23,8 @@
 <div class="bm bw0">
 <div class="bm_c">
 <p class="tbmu">
-<a href="{{ url('home/set/zhuti') }}">主题</a>
-<span class="pipe">|</span>
+<!-- <a href="{{ url('home/set/zhuti') }}">主题</a> -->
+<!-- <span class="pipe">|</span> -->
 <a href="{{ url('home/set/huifu') }}" class="a">回复</a>
 </p>
 <div class="tl">
@@ -33,17 +33,28 @@
 <input type="hidden" name="delthread" value="true">
 
 <table cellspacing="0" cellpadding="0">
-<tbody><tr class="th">
-<td class="icn">&nbsp;</td>
-<th>帖子</th>
-<td class="frm">版块</td>
-<td class="num">回复/查看</td>
-<td class="by"><cite>最后发帖</cite></td>
+<tbody><tr class="th" style="">
+<th style="width: 150px;">帖子</th>
+<th class="frm">版块</th>
+<th class="num">回复/查看</th>
+<th class="by"><cite>最后发帖</cite></th>
 </tr>
-
+@if($replies == null)
 <tr>
-<td colspan="5"><p class="emp">还没有相关的帖子</p></td>
+	<td class="icn">&nbsp;</td>
+	<td colspan="3"><p class="emp">还没有相关的帖子</p></td>
 </tr>
+@else
+	@foreach($replies as $reply)
+		<tr>
+			
+			<td colspan=""><p class="emp"><a href="{{ asset('home/post/'.$reply['post']['id']) }}">{{ $reply['post']['title'] }}</a></p></td>
+			<td colspan=""><p id="rcontent" style="width: 100px; overfollow: hidden;" class="emp"><a href="{{ asset('home/section/?id='.$reply['section']['id']) }}">{{ $reply['section']['name'] }}</a></p></td>
+			<td colspan=""><p class="emp"><a href="{{ asset('home/post/'.$reply['post']['id'].'#reply_'.$reply['id']) }}">{!! str_replace('<img', '<img style="width: 100px;height:100px;"', $reply['content']) !!}</a></p></td>
+			<td colspan=""><p class="emp">{{ date('Y-m-d H:i:s', $reply['last']['ctime']) }}</p></td>
+		</tr>
+	@endforeach
+@endif
 </tbody></table>
 
 </form>

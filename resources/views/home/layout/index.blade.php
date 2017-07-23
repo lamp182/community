@@ -25,6 +25,7 @@
     	  CSSPATH = 'data/cache/style_', DYNAMICURL = '';
   	</script>
     <script src="/home/js/common.js" type="text/javascript"></script>
+    <script type="text/javascript" src="{{asset('layer/layer.js')}}"></script>
     <!--globalHeadBegin-->
 
 
@@ -74,8 +75,8 @@
 <div id="append_parent"></div><div id="ajaxwaitid"></div>
 
 <meta baidu-gxt-verify-token="1bbacc7dd885064ba6efec7a0a007614">
-<div class="bbs-global-bar clearfix wp">
-    <div class="bbs-bar-con">
+<!-- <div class="bbs-global-bar clearfix wp">
+   <div class="bbs-bar-con">
         <div class="logo-box"> <a href="http://www.17173.com" target="_blank" class="simple-logo-17173"></a><a href="http://bbs.17173.com" target="_self" class="simple-logo-bbs"></a>
         </div>
         <div class="bgb-quick-menu">
@@ -87,7 +88,7 @@
             <a target="_blank" href="http://media.17173.com/">视频</a>
         </div>
     </div>
-</div>
+</div> --> 
 
 </div><div class="wrap">
     <div class="wrap-bottom">
@@ -115,7 +116,7 @@
                             <div class="scqb-co01">
                                 <div class="z search-box">
                                     <div id="scbar" class="scbar_narrow cl">
-                                        <form id="scbar_form" method="post" autocomplete="off" onsubmit="searchFocus($('scbar_txt'))" action="{{ url('home/query') }}">
+                                        <form id="scbar_form" method="post" autocomplete="off"  action="{{ url('home/query') }}">
                                             <table cellspacing="0" cellpadding="0">
                                                 <tr>
                                                     <td class="scbar_icon_td">&nbsp;</td>
@@ -184,9 +185,6 @@
 				                                    <span class="pipe">|</span>
 				                                    <a href="{{ url('home/set/set') }}">设置</a>
 				                                    <span class="pipe">|</span>
-													<a href="" id="myprompt" class="a showmenu" onmouseover="showMenu({'ctrlid':'myprompt'});">提醒</a>
-													
-				                                    <span class="pipe">|</span>
 				                                    <a href="{{ url('home/login/quit') }}" id="logout">退出</a>
 				                                </p>
 				                                <p>
@@ -247,9 +245,17 @@
 	<a href="{{ $adverts[2]['url'] }}">
 	<img style="width: 960px; height: 60px;" alt="{{ $adverts[2]['name'] }}" src="{{ $adverts[2]['picture'] }}"></a>
 </div>
-<div class="wp a_f">
-	<iframe align=center marginWidth=0 marginHeight=0 src="http://bbs.17173.com/x/bbsbottom96060.htm" frameBorder=0 width=960 scrolling=no height=60></iframe>
-</div>
+<div class="wp a_f" style="background: white;">
+	<span style="font-size: 16px; float: left;">友情链接：</span>
+	<ul>
+		@foreach($links as $link)
+		<li style="float: left; margin: 0px 10px;"><a href="{{ $link['url'] }}">{{ $link['title'] }}</a></li>
+		@endforeach
+		<div style="clear: both;"></div>
+	</ul>
+</div> 
+     
+     
 <div id="ft" class="wp cl">
     <div class="footer-follow">
 	
@@ -271,9 +277,9 @@
 						<span class="sep">|</span>
 						<a href="http://about.17173.com/site-map.shtml" target="_blank">网站导航</a>
 						<span class="sep">|</span><a href="/sitemap.html" target="_blank">论坛地图</a></p>
-					<p class="global-footer-copyright">Copyright <font>&copy;</font> 2001-2017 17173. All rights reserved.</p>
+					<p class="global-footer-copyright">{{ $website['rights'] }}</p>
 					<p class="global-footer-certificate">
-						<a href="http://www.miibeian.gov.cn/" target="_blank">京ICP证030367号</a>
+						<a href="http://www.miibeian.gov.cn/" target="_blank">{{ $website['records'] }}</a>
 						<span class="sep">|</span>
 						<a href="http://www.17173.com/cert/wenhua.html" target="_blank">文网文[2008]059号</a>
 						<span class="sep">|</span>

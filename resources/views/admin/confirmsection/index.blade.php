@@ -15,8 +15,9 @@
                                         <thead>
                                             <tr>
                                                 <th>id</th>
-                                                <th>板块id</th>
+                                                <th>板块名称</th>
                                                 <th>版主</th>
+                                                <th>操作</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -28,7 +29,7 @@
                                                 
                                                 <td class="am-text-middle">{{$v->id}}
                                                 </td>
-                                                <td class="am-text-middle">{{$v->sid}}
+                                                <td class="am-text-middle">{{$v['section']['name']}}
                                                 </td>
                                                 <td class="am-text-middle">{{$v['username']}}
                                                 </td>

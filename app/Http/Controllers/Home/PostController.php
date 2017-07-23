@@ -27,7 +27,7 @@ class PostController extends Controller
     {
     	$query = Input::only('query')['query'];
 //         dd($query);
-        $posts = Post::where('title', 'like', '%'.$query.'%') -> paginate(1);
+        $posts = Post::where('title', 'like', '%'.$query.'%') -> paginate(10);
 		foreach($posts as $post){
 			$post['user'] = Post::find($post['id']) -> user -> userDetail;
 			$post['replies'] = Post::find($post['id']) -> replies -> count();
@@ -37,7 +37,18 @@ class PostController extends Controller
 		}
 		// 获取广告
 		$adverts = $this -> getAdverts();
-        return view('home.post.query', ['adverts' => $adverts, 'posts' => $posts, 'query' => $query]);
+		// 获取友情链接
+		$links = $this -> getLinks();
+		// 获取网站信息
+		$website = $this -> getWeb();
+		$data = [
+			'adverts' => $adverts, 
+			'posts' => $posts,
+			'query' => $query,
+			'links' => $links,
+			'website' => $website,
+		];
+        return view('home.post.query', $data);
     }
 	
     public function index()
@@ -52,22 +63,34 @@ class PostController extends Controller
     public function create()
     {
         //
-    	$params = Input::get();
-    	$section = Section::find($params['id']) -> name;
+    	$params = Input::all();
+    	$section = Section::where('id', $params['id']) -> first();
     	$themes = Section::find($params['id']) -> themes;
     	foreach ($themes as $theme){
     		$theme['count'] = Theme::find($theme['id']) -> posts -> count();
     	}
-		
+		$column = Section::find($params['id']) -> column;
     	$data = [
     		'sid' => $params['id'],
     		'section' => $section,
-    		'themes' => $themes
+    		'themes' => $themes,
+    			'column' => $column,
     	];
 //     	dd($section);
 		// 获取广告
     	$adverts = $this -> getAdverts();
-    	return view('home.post.add', ['adverts' => $adverts, 'data' => $data]);
+    	// 获取友情链接
+    	$links = $this -> getLinks();
+    	// 获取网站信息
+    	$website = $this -> getWeb();
+    	$datas = [
+    			'adverts' => $adverts,
+    			'links' => $links,
+    			'website' => $website,
+    			'data' => $data,
+    	];
+//     	dd($params);
+    	return view('home.post.add', $datas);
     }
 
     /**
@@ -142,15 +165,21 @@ class PostController extends Controller
 //         die;
         // 获取广告
         $adverts = $this -> getAdverts();
+        // 获取友情链接
+        $links = $this -> getLinks();
+        // 获取网站信息
+        $website = $this -> getWeb();
         $data = [
         	'section' => $section,
         	'post' => $post,
         	'replies' => $replies,
         	'uid' => $uid,
         	'adverts' => $adverts,
+        	'links' => $links,
+        	'website' => $website,
         ];
         Post::where('id', $id) -> increment('pvs');
-        
+        Section::where('id', $post['sid']) -> increment('pvs');
         return view('home.post.index', $data);
     }
 	

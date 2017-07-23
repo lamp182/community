@@ -37,7 +37,7 @@ class IndexController extends Controller
     	
 //     	dd($top);
     	// 获取轮播图
-    	$carouels = Carousel::all();
+    	$carouels = Carousel::orderby('id', 'desc') -> limit(6) -> get();
     	// 获取回复量top8 帖子
     	$tops = Post::orderBy('count', 'desc') -> limit(8) -> get();
     	foreach ($tops as $top) {
@@ -45,6 +45,10 @@ class IndexController extends Controller
     	}
     	// 获取广告
     	$adverts = $this -> getAdverts();
+    	// 获取友情链接
+    	$links = $this -> getLinks();
+    	// 获取网站信息
+    	$website = $this -> getWeb();
     	// 获取用户明星(回复最多)
     	$res = DB::select('select uid,count(id) count from replies group by uid');
     	$tmp = [];
@@ -73,8 +77,11 @@ class IndexController extends Controller
     		'carouels' => $carouels,
     		'tops' => $tops,
     		'adverts' => $adverts,
+    		'links' => $links,
+    		'website' => $website,
     		'topUser' => $topUser,
     	];
+//     	dd($website);
     	return view('home.index.index', $data);
     }
 }

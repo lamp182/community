@@ -113,7 +113,7 @@ class UserController extends Controller
 
      $b = Userdetail::where('uid',$data['uid']) -> update(['status'=>1]);
    
-    die;
+//     die;
     // $data2 = User::find($id) -> operate;
 
 

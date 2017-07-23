@@ -20,6 +20,7 @@ Route::group(['prefix' => 'home', 'namespace' => 'Home','middleware'=>['home.log
 	Route::get('/index', 'IndexController@index');
 	Route::get('/column', 'ColumnController@index');
 	Route::get('/section', 'SectionController@index');
+	Route::get('/moderator', 'SectionController@moderator');
 	// 帖子路由
 	Route::resource('post', 'PostController');
 	// 查询路由
@@ -80,8 +81,8 @@ Route::group(['prefix'=>'admin','namespace'=>'Admin','middleware'=>['admin.login
     Route::controller('carousel','CarouselController');
     Route::post('carousel/upload','CarouselController@upload');
     
-
-
+	// 添加主题
+	Route::get('theme/add', 'ThemeController@add');
 
 
 });

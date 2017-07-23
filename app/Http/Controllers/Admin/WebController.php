@@ -50,10 +50,10 @@ class WebController extends Controller
     {
         $res = Web::all();
 
-        // dd($res);
+//         dd($res);
         foreach($res as $v){}
         // dd($v);
-
+		$v = $res[0];
         return view('admin.website.index',['data'=>$v]);
         
     }
@@ -82,6 +82,7 @@ class WebController extends Controller
     {
         // dd($id);
         $data = $request -> except('_token','file_upload');
+//         dd($data);
          foreach($data as $k=>$v){   
             if( !$v )   
                 unset( $data[$k] );   

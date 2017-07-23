@@ -41,7 +41,7 @@
                                             @foreach($section as $kk=>$vv)
                                             <tr class="even gradeC">
                                                 <td>
-                                                    <img src="/{{ $vv->icon }}" class="tpl-table-line-img" alt="">
+                                                    <img src="/{{ trim($vv->icon, '/') }}" class="tpl-table-line-img" alt="">
                                                 </td>
                                                 <td class="am-text-middle">{{ $vv->cname }}</td>
                                                 <td class="am-text-middle">{{ $vv->id }}</td>

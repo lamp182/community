@@ -41,7 +41,7 @@
                                         <div class="am-u-sm-12 am-margin-top-xs">
                                             <div class="am-form-group am-form-file">
                                                 <div class="tpl-form-file-img">
-                                                    <img src="/{{$data->logo}}" width="100px" height="100px" alt="">
+                                                    <img src="/{{ trim($data->logo, '/') }}" width="239px" height="70px" alt="">
                                                 </div>
                                                
                                                 

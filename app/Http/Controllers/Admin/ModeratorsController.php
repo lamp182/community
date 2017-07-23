@@ -131,12 +131,12 @@ class ModeratorsController extends Controller
 
    public function kankan()
    {
-    $moderator = Confirmsection::orderBy('id','asc') -> paginate(2);
+    $moderator = Confirmsection::orderBy('id','asc') -> paginate(6);
 
         // dd($moderator);
         foreach($moderator as $k=>$v){
-            $v['username'] = Userdetail::where('uid',$v['moderator'])->first()['username'];
-            $v['section'] = Section::where('id',$v['id'])->first()['name'];
+        	$moderator[$k]['username'] = Userdetail::where('uid',$v['moderator'])->first()['username'];
+        	$moderator[$k]['section'] = Section::where('id',$v['id'])->first();
         }
 
     return view('admin.confirmsection.index',['data'=>$moderator]);

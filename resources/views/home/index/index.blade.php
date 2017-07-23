@@ -1,5 +1,7 @@
 @extends('home.layout.index')
-
+@section('title', $website['title'])
+@section('keywords', $website['keywords'])
+@section('description', $website['description'])
 @section('contents')
 				<div style="width: 98%; margin:0px auto;">
 					<div id="chart" class="bw0 cl">
@@ -144,11 +146,10 @@
 @foreach($columns as $column)
     
     <div class="bm bmw  flg cl con0{{ $column['id'] }}" style="background: white;">
-    	<div class="bm_h cl" style= "height: 47px;">
-        	<h2>
-        		<a href="{{ url('?id='.$column['id']) }}" style="">{{ $column['name'] }}</a>
-        		<i class="jg"></i>
-        	</h2>
+    	<div class="bm_h cl">
+        	<h2><i class="jg"></i>
+<!--        	<a href="{{ url('home/column?id='.$column['id']) }}" style="">{{ $column['name'] }}</a></h2> --> 
+        	<a href="{{ url('?id='.$column['id']) }}" style="">{{ $column['name'] }}</a></h2>
         </div>
         <div id="column_{{ $column['id'] }}" class="bm_c" style="">
            	<table cellspacing="0" cellpadding="0" class="fl_tb">

@@ -118,22 +118,23 @@ J('<style type="text/css">.bbs-global-bar, .boardnav #bnav, #hd, #pt1, .sub-scre
                     <div class="scqb-co01">
                         <div class="z search-box">
                             <div id="scbar" class="scbar_narrow cl">
-<form id="scbar_form" method="post" autocomplete="off" onsubmit="searchFocus($('scbar_txt'))" action="search.php?searchsubmit=yes" target="_blank">
-<input type="hidden" name="mod" id="scbar_mod" value="search" />
-<input type="hidden" name="formhash" value="e79c97f0" />
-<input type="hidden" name="srchtype" value="title" />
-<input type="hidden" name="srhfid" value="8706" />
-<input type="hidden" name="srhlocality" value="forum::viewthread" />
-<table cellspacing="0" cellpadding="0">
-<tr>
-<td class="scbar_icon_td">&nbsp;</td>
-<td class="scbar_txt_td"><input type="text" name="srchtxt" id="scbar_txt" value="请输入搜索内容" onfocus="if(this.value == '请输入搜索内容'){this.value = '';}" onblur="if(this.value == ''){this.value = '请输入搜索内容';}" autocomplete="off" x-webkit-speech speech /></td>
-<td class="scbar_type_td"><a href="javascript:;" id="scbar_type" class="showmenu xg1 xs2" onclick="showMenu(this.id)" hidefocus="true">搜索</a></td>
-<td class="scbar_btn_td"><button type="submit" name="searchsubmit" id="scbar_btn" sc="1" class="pn" value="true"><strong class="">搜索</strong></button></td>
-<td class="scbar_hot_td">&nbsp;</td>
-</tr>
-</table>
-</form>
+										<form id="scbar_form" method="post" autocomplete="off"  action="{{ url('home/query') }}">
+                                            <table cellspacing="0" cellpadding="0">
+                                                <tr>
+                                                    <td class="scbar_icon_td">&nbsp;</td>
+                                                    <td class="scbar_txt_td">
+                                                    	{{ csrf_field() }}
+                                                    	<input type="text" name="query" id="scbar_txt" placeholder="请输入搜索内容" value="@if(!empty($query)){{ $query }}@endif" onfocus="if(this.value == '请输入搜索内容'){this.value = '';}" onblur="if(this.value == ''){this.value = '请输入搜索内容';}" autocomplete="off" x-webkit-speech speech />
+                                                    </td>
+                                                    <td class="scbar_btn_td">
+                                                    	<button type="submit" name="searchsubmit" id="scbar_btn" sc="1" class="pn" value="true">
+                                                    		<strong class="">搜索</strong>
+                                                    	</button>
+                                                    </td>
+                                                    <td class="scbar_hot_td">&nbsp;</td>
+                                                </tr>
+                                            </table>
+                                        </form>
     
     <div id="scbar_hot">
                     <strong class="xw1">热搜: </strong>

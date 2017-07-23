@@ -69,11 +69,12 @@ class LoginController extends Controller
     public function getCrypt()
     {
 
-        // $str = '123456';
-        // echo Crypt::encrypt($str);die;
+        $str = '123456';
+        echo Crypt::encrypt($str);die;
        
-        $str1 ='eyJpdiI6IlwvWWJJUTkydGc0c1RXN1pUTVVyXC9HUT09IiwidmFsdWUiOiJSNzlDYlJRUGpTU1dLaXhKNVwvdjZKZz09IiwibWFjIjoiNjY4YzQyOGEzY2Q2ZjhlN2I4YzEwZGVmMDRmZDc4MjFhMThhYWFjOGQ2YTdlODFhZGFlNmQwYmUxY2Y3Njk1MiJ9';
-        echo Crypt::decrypt($str1);
+//         $str1 ='eyJpdiI6IlwvWWJJUTkydGc0c1RXN1pUTVVyXC9HUT09IiwidmFsdWUiOiJSNzlDYlJRUGpTU1dLaXhKNVwvdjZKZz09IiwibWFjIjoiNjY4YzQyOGEzY2Q2ZjhlN2I4YzEwZGVmMDRmZDc4MjFhMThhYWFjOGQ2YTdlODFhZGFlNmQwYmUxY2Y3Njk1MiJ9';
+//         $str1 ='eyJpdiI6ImJtTW5pUmVUOHdmVnR0OHQyWEJnYkE9PSIsInZhbHVlIjoic1VlbVRCSm01Q2ZaQzBkOXg5OFFSUT09IiwibWFjIjoiYzNkNGEyNjkyYzgyZjUyOGFmMDdjZmYxNzZlYmQ4MjNiMmNhOTZiZGUxNWI2MDIxOGE0ZjVjMGExOTcxMzE4YiJ9';
+//         echo Crypt::decrypt($str1);
     }
 
    //退出登录
