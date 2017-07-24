@@ -35,6 +35,9 @@ class SetController extends Controller
    {
     $input = $requset->except('_token');
   	UserDetail::where('id', session('user')['id']) -> update($input);
+  	$user = session('user');
+  	$user['detail'] = User::find(session('user')['id']) -> userDetail;
+  	session(['user' => $user]);
     return redirect('home/set/set');
      // $user = Userdetail::where('username',$input['username'])->first();
      // dd($user);

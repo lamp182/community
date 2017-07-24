@@ -1,5 +1,6 @@
 @extends('admin.layout.index')
 @section('content')
+<div>{{ session('error') }}</div>
 <form class="am-form tpl-form-border-form" action="{{url('admin/root/uppass')}}"method="post" id="root_form">
     {{csrf_field()}}
         
@@ -11,7 +12,7 @@
                 </span>
             </label>
             <div class="am-u-sm-12">
-                <input type="text" class="tpl-form-input  am-margin-top-xs" id="old" name="oldname" value="" placeholder="请输入原密码">
+                <input type="password" class="tpl-form-input  am-margin-top-xs" id="old" name="oldname" value="" placeholder="请输入原密码">
                 <small class="one">
                     请填写原密码
                 </small>
@@ -26,7 +27,7 @@
                 </span>
             </label>
             <div class="am-u-sm-12">
-                <input type="text" class="tpl-form-input am-margin-top-xs" id="new" name="new"
+                <input type="password" class="tpl-form-input am-margin-top-xs" id="new" name="new"
                 value="" placeholder="请输入新密码">
                 <small>
                     请填写新密码
@@ -44,7 +45,7 @@
                 </span>
             </label>
             <div class="am-u-sm-12">
-                <input type="text" class="tpl-form-input am-margin-top-xs" id="replnew" name="relnew"
+                <input type="password" class="tpl-form-input am-margin-top-xs" id="replnew" name="relnew"
                 value="" placeholder="请输入新密码">
                 <small>
                     请再次填写新密码

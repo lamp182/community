@@ -14,7 +14,7 @@
                                     <div class="am-form-group">
                                         <label for="user-name" class="am-u-sm-3 am-form-label">帖子标题</label>
                                         <div class="am-u-sm-9">
-                                            <a href="">{{$post['title']}}</a>                  
+                                            <a href="{{url('home/post/'. $post['id'])}}">{{$post['title']}}</a>                  
                                         </div>
                                     </div>
 

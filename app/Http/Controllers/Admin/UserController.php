@@ -18,19 +18,25 @@ class UserController extends Controller
     */
     public function getIndex(Request $request)
     {
-
+//     	$status= ['未激活', '已激活'];
+		$pieces = 6;
       if($request->has('keywords')){
             $key = trim($request->input('keywords')) ;
             // echo $key;
-            $root = User::where('phone','like',"%".$key."%")->paginate(5);
+            $root = User::where('phone','like',"%".$key."%")->paginate($pieces);
+            foreach ($root as $k => $v){
+            	$root[$k]['detail'] = User::find($v['id']) -> userDetail;
+            }
             // dd($root);
             return view('admin.users.index',['data'=>$root,'key'=>$key]);
             // return $key;
         }else{
-            $user = User::orderBy('id','asc') -> paginate(2);
-      // dd($user);
-            // $userdetail = Userdetail::where('id',$id)->first();
-            return view('admin.users.index',['data'=>$user]);
+        	$user = User::orderBy('id','asc') -> paginate($pieces);
+        	foreach ($user as $k => $v){
+        		$user[$k]['detail'] = User::find($v['id']) -> userDetail;
+        	}
+//       dd($user);
+        	return view('admin.users.index',['data'=>$user]);
         }
     	
 
@@ -103,24 +109,18 @@ class UserController extends Controller
    /**
     *用户权限
     */
-   public function getAuth($id)
+   public function getAuth($id, $auth)
    {
     
-
+// 	dd($id.'---'.$auth);
     $data = User::find($id) -> userDetail;
     
      
 
-     $b = Userdetail::where('uid',$data['uid']) -> update(['status'=>1]);
+     $b = Userdetail::where('uid',$data['uid']) -> update(['status'=> $auth]);
    
-//     die;
-    // $data2 = User::find($id) -> operate;
-
-
-
-
       
-    return view('admin.users.index',['data'=>$data,'res'=>$res]);
+    return redirect('admin/user/index');
    }
 
     

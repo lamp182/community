@@ -169,7 +169,7 @@
                                                 <dt>
                                                     <a href="{{ url('home/section?id='.$section['id']) }}"   class="game-title" >{{ $section['name'] }}</a>
                                                     {{--使用Redis--}}
-                                                    <em class="game-todayposts" title="今日"> (2471)</em>
+                                                    <em class="game-todayposts" title="浏览量"> ({{ $section['pvs'] }})</em>
                                                 </dt>
                                                 <dd class="game-desc">{{ $section['characteristic'] }}<br />
                                                     <a href="{{ url() }}" target="_blank">专区</a>|<a href="{{ url('home/section?id='.$section['id']) }}" target="_blank">论坛</a>|<a href="http://dnf.db.17173.com" target="_blank">数据库</a>|<a href="http://news.17173.com/game/dnf.shtml" target="_blank">新闻</a>|<a href="http://download.17173.com/20011/" target="_blank">下载</a>

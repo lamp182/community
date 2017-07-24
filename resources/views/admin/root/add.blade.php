@@ -41,7 +41,7 @@
                 </span>
             </label>
             <div class="am-u-sm-12">
-                <input type="text" class="tpl-form-input am-margin-top-xs" name="password"
+                <input type="password" class="tpl-form-input am-margin-top-xs" name="password"
                 value="" placeholder="请输入密码">
                 <small>
                     请输入密码

@@ -39,8 +39,8 @@
                                         <tr class="gradeX">
                                             <td>{{$v->id}}</td>
                                             <td>{{$v->email}}</td>
-                                            <td>{{$v->email}}</td>
                                             <td>{{$v->phone}}</td>
+                                            <td>@if($v['detail']['status'] == 0)未激活@else已激活@endif</td>
                                             <td>
                                                 <div class="tpl-table-black-operation">
                                                     <!-- <a href="{{ url('admin/user/update/'.$v->id) }}">
@@ -49,13 +49,14 @@
                                                     <a href="{{ url('admin/user/details/'.$v->id) }}">
                                                         <i class="am-icon-comments"></i> 详情
                                                     </a>
-                                                    @if($v->status == 0)
-                                                    <a href="{{ url('admin/user/auth/'.$v->id) }}">
+                                                    @if($v['detail']['status'] == 1)
+                                            
+                                                    <a href="{{ url('admin/user/auth/'.$v->id.'/2') }}">
                                                         <i class="am-icon-comments"></i> 拉黑
                                                     </a>
-                                                    @elseif($v->status == 1)
+                                                    @elseif($v['detail']['status'] == 2)
                                                     <input type="hidden" name="status" value="">
-                                                    <a href="{{ url('admin/user/details/'.$v->id) }}">
+                                                    <a href="{{ url('admin/user/auth/'.$v->id.'/1') }}">
                                                         <i class="am-icon-comments"></i> 解封
                                                     </a>
                                                     @endif

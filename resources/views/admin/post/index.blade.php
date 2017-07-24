@@ -41,7 +41,7 @@
                                         <tbody>
                                             <tr class="gradeX">
                                                 <td>{{ $v->id }}</td>
-                                                <td><a href="">{{ $v->title }}</a></td>
+                                                <td><a href="{{url('home/post/'. $v->id)}}">{{ $v->title }}</a></td>
                                                 <td>{{ $v->vname }}</td>
                                                 <td>
                                                     <div class="tpl-table-black-operation">

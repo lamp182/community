@@ -234,10 +234,11 @@ class RootController extends Controller
         // 判断用户输入的密码是否正确
         if($old != $pass1){
             // 1234  123
-            echo '原密码错误!';
+           	return back() -> with('error','原密码错误!');
             die;
         }else if($res['new'] !=$res['relnew']){
-            echo '新密码输入不一致!';
+//             echo '新密码输入不一致!';
+           	return back() -> with('error','新密码输入不一致!');
             die;
         }
         $data = [];

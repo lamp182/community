@@ -137,7 +137,12 @@
                         </li>
                     </ul>
                 </li>
-                
+                <li class="sidebar-nav-link">
+                    <a href="{{url('admin/posts')}}">
+                        <i class="am-icon-bar-chart sidebar-nav-link-logo"></i> 帖子管理
+
+                    </a>
+                </li>
                  <li class="sidebar-nav-link">
                     <a href="javascript:;" class="sidebar-nav-sub-title">
                         <i class="am-icon-table sidebar-nav-link-logo"></i> 后台用户管理

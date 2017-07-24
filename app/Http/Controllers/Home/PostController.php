@@ -154,13 +154,13 @@ class PostController extends Controller
         $i = 0;
         $page = Input::has('page') ? $input['page'] : 1; 
         foreach($replies as $reply) {
-        	$reply['user'] = Reply::find($reply['uid']) -> user;
+        	$reply['user'] = Reply::find($reply['id']) -> user;
+//         	dump($reply);
         	$reply['user']['detail'] = User::find($reply['uid']) -> userdetail;
         	$reply['user']['operate'] = User::find($reply['uid']) -> userOperate;
         	$reply['user']['replies'] = User::find($reply['uid']) -> replies -> count();
         	$reply['count'] = ++$i + ($page - 1) * 3;
         	$reply['sons'] = $this -> getSons($reply, $reply['id']);
-//         	dump($reply);
         }
 //         die;
         // 获取广告
